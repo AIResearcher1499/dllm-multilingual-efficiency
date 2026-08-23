@@ -1,0 +1,3215 @@
+The following values were not passed to `accelerate launch` and had defaults used instead:
+	`--num_processes` was set to a value of `1`
+	`--num_machines` was set to a value of `1`
+	`--mixed_precision` was set to a value of `'no'`
+	`--dynamo_backend` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+2026-08-23:06:46:10,503 WARNING  [lm_eval.__main__:316]  --limit SHOULD ONLY BE USED FOR TESTING.REAL METRICS SHOULD NOT BE COMPUTED USING LIMIT.
+2026-08-23:06:46:10,504 INFO     [lm_eval.__main__:379] Selected Tasks: ['mgsm_native_cot_es']
+2026-08-23:06:46:10,505 INFO     [lm_eval.evaluator:169] Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+2026-08-23:06:46:10,505 INFO     [lm_eval.evaluator:206] Initializing llada_dist model, with arguments: {'model_path': 'GSAI-ML/LLaDA-8B-Instruct', 'gen_length': 1024, 'steps': 1024, 'block_length': 32, 'use_cache': True, 'threshold': 0.9, 'show_speed': True, 'is_check_greedy': False}
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:03,  1.31it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:01<00:03,  1.15it/s]Loading checkpoint shards:  50%|█████     | 3/6 [00:02<00:02,  1.04it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:03<00:01,  1.02it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:04<00:00,  1.04it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.09it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.08it/s]
+2026-08-23:06:47:28,696 INFO     [lm_eval.api.task:420] Building contexts for mgsm_native_cot_es on rank 0...
+  0%|          | 0/100 [00:00<?, ?it/s]100%|██████████| 100/100 [00:00<00:00, 1211.15it/s]
+2026-08-23:06:47:28,782 INFO     [lm_eval.evaluator:517] Running generate_until requests
+Batching...:   0%|          | 0/100 [00:00<?, ?it/s]Batching...: 100%|██████████| 100/100 [00:00<00:00, 1576806.02it/s]
+Generating...:   0%|          | 0/100 [00:00<?, ?it/s]====================
+answer:  Para determinar cuánto gana Janet todos los días en el mercado de productores, necesitamos seguir estos pasos:
+
+1. **Calcular el número de huevos que utiliza por día:**
+   - Ella come 3 huevos en el desayuno.
+   - Ella usa 4 huevos para hornear magdalenas.
+   - Total de huevos utilizados por día: \(3 + 4 = 7\) huevos.
+
+2. **Calcular el número de huevos que sobra por día:**
+   - Los patos ponen 16 huevos por día.
+   - Huevos utilizados por día: 7 huevos.
+   - Huevos sobrantes por día: \(16 - 7 = 9\) huevos.
+
+3. **Calcular la ganancia diaria:**
+   - Ella vende cada huevo fresco $2.
+   - Ganancia diaria: \(9 \times 2 = 18\) dólares.
+
+En resumen, Janet gana $18 todos los días en el mercado de productores.
+nfe:  151
+avg nfe:  151.0
+====================
+
+Generating...:   1%|          | 1/100 [00:19<32:15, 19.55s/it]====================
+answer:  Para resolver este problema, vamos a dividirlo en pasos clave:
+
+1. **Identificar la cantidad de tela azul:**
+   - La bata lleva 2 rollos de tela azul.
+
+2. **Identificar la cantidad de tela blanca:**
+   - La bata lleva la mitad de la cantidad de tela azul en tela blanca.
+   - La mitad de 2 rollos es \( \frac{2}{2} = 1 \) rolo de tela blanca.
+
+3. **Calcular la cantidad total de rollos:**
+   - Suma a la cantidad de tela azul y la cantidad de tela blanca.
+   - 2 rollos de tela azul + 1 rolo de tela blanca = 3 rollos.
+
+Entonces, se necesitan 3 rollos en total.
+nfe:  133
+avg nfe:  142.0
+====================
+
+Generating...:   2%|▏         | 2/100 [00:35<28:25, 17.40s/it]====================
+answer:  Para calcular la ganancia de Josh, debemos seguir los pasos siguientes:
+
+1. **Valor inicial de la casa**: Josh compra la casa por $80,000.
+2. **Aumento de reparaciones**: Agrega $50,000 para las reparaciones.
+3. **Aumento de valor due a las reparaciones**: Esto aumenta el valor de la casa un 150%.
+
+Primero, calculamos el nuevo valor de la casa al realizar las reparaciones:
+
+\[ \text{Valor nuevo} = \text{Valor inicial} + \text{Valor de reparaciones} \]
+\[ \text{Valor nuevo} = 80,000 + 50,000 = 130,000 \]
+
+Luego, calculamos el aumento de valor due a las reparaciones:
+
+\[ \text{Aumento de valor} = \text{Valor nuevo} \times 150\% \]
+\[ \text{Aumento de valor} = 130,000 \times 1.50 = 195,000 \]
+
+Luego, calculamos el nuevo valor de la casa al realizar las reparaciones:
+
+\[ \text{Valor final} = \text{Valor nuevo} + \text{Aumento de valor} \]
+\[ \text{Valor final} = 130,000 + 195,000 = 325,000 \]
+
+**Finalmente, calculamos la ganancia**:
+
+\[ \text{Ganancia} = \text{Valor final} - \text{Valor inicial} \]
+\[ \text{Ganancia} = 325,000 - 80,000 = 245,000 \]
+
+**Respuesta**: Josh obtuvo una ganancia de $245,000.
+nfe:  203
+avg nfe:  162.33333333333334
+====================
+
+Generating...:   3%|▎         | 3/100 [00:57<31:49, 19.68s/it]====================
+answer:  Para determinar cuántos metros James corre en total por semana, podemos dividir el problema en pasos prácticos:
+
+1. **Calcular la distancia correo por día:**
+   - James corre 3 carreras de velocidad por día.
+   - Cada carrera es de 60 metros.
+   - Entonces, la distancia correo por día es:
+     \[
+     3 \text{ carreras} \times 60 \text{ metros/carrera} = 180 \text{ metros}
+     \]
+
+2. **Calcular la distancia correo por semana:**
+   - James corre 3 veces por semana.
+   - Entonces, la distancia correo por semana es:
+     \[
+     180 \text{ metros/día} \times 3 \text{ días/semana} = 540 \text{ metros}
+     \]
+
+En resumen, James corre un total de 540 metros por semana.
+nfe:  117
+avg nfe:  151.0
+====================
+
+Generating...:   4%|▍         | 4/100 [01:11<27:51, 17.41s/it]====================
+answer:  Para determinar cuántas tazas de alimento Wendi necesita dar a sus pollos en la última comida del día, podemos seguir los siguientes pasos:
+
+1. **Calcular la cantidad total de tazas de alimento necesarias para todos los pollos:**
+   - Cada pollo recibe 3 tazas de alimento.
+   - Wendi tiene 20 pollos.
+   - Total de tazas necesarias = 20 pollos * 3 tazas/pollo = 60 tazas.
+
+2. **Calcular la cantidad total de tazas de alimento ya servidas:**
+   - Por la mañana, servía 15 tazas.
+   - Por la tarde, servía 25 tazas.
+   - Total de tazas ya servidas = 15 tazas + 25 tazas = 40 tazas.
+
+3. **Calcular la cantidad de tazas de alimento faltantes para la última comida:**
+   - Total de tazas necesarias = 60 tazas.
+   - Total de tazas ya servidas = 40 tazas.
+   - Tazas faltantes = 60 tazas - 40 tazas = 20 tazas.
+
+Así, Wendi necesita dar 20 tazas de alimento en la última comida del día.
+nfe:  163
+avg nfe:  153.4
+====================
+
+Generating...:   5%|▌         | 5/100 [01:30<28:31, 18.02s/it]====================
+answer:  Para determinar cuánto dinero Kylar necesita para comprar 16 vasos, podemos dividir el problema en pasos prácticos.
+
+1. **Determinar el precio de cada vaso:**
+   - El primer vaso cuesta $5.
+   - El segundo vaso cuesta el 60% del precio del primer vaso.
+   - El tercer vaso cuesta el 60% del precio del segundo vaso.
+   - Y así suces.
+
+2. **Calcular el precio de cada vaso:**
+   - Primero vaso: $5
+   - Segundo vaso: \( 5 \times 0.60 = 3 \)
+   - Tercer vaso: \( 3 \times 0.60 = 1.80 \)
+   - Cuarto vaso: \( 1.80 \times 0.60 = 1.08 \)
+   - Sexto vaso: \( 1.08 \times 0.60 = 0.648 \)
+   - Sexto vaso: \( 0.648 \times 0.60 = 0.3888 \)
+   - Sétimo vaso: \( 0.3888 \times 0.60 = 0.23328 \)
+   - Oitavo vaso: \( 0.23328 \times 0.60 = 0.139968 \)
+   - Ocavo vaso: \( 0.139968 \times 0.60 = 0.0839808 \)
+   - Décimo vaso: \( 0.0839808 \times 0.60 = 0.05038848 \)
+   - Décimo vaso: \( 0.05038848 \times 0.60 = 0.030233088 \)
+   - Doceavo vaso: \( 0.030233088 \times 0.60 = 0.0181399528 \)
+   - Quinzeo vaso: \( 0.0181399528 \times 0.60 = 0.01088397168 \)
+   - Quinceo vaso: \( 0.01088397168 \times 0.60 = 0.005530386008 \)
+   - Sextavo vaso: \( 0.005530386008 \times 0.60 = 0.0033182316048 \)
+
+3. **Sumar los precios de todos los vasos:**
+   \[
+   5 + 3 + 1.80 + 1.08 + 0.648 + 0.3888 + 0.23328 + 0.139968 + 0.0839808 + 0.05038848 + 0.030233088 + 0.0181399528 + 0.01088397168 + 0.005530386008 + 0.0033182316048
+   \]
+
+   Sumando estos valores:
+   \[
+   5 + 3 + 1.80 + 1.08 + 0.648 + 0.3888 + 0.23328 + 0.139968 + 0.0839808 + 0.05038848 + 0.030233088 + 0.0181399528 + 0.01088397168 + 0.005530386008 + 0.0033182316048
+   \]
+
+   El precio total es de $12.00.
+nfe:  288
+avg nfe:  175.83333333333334
+====================
+
+Generating...:   6%|▌         | 6/100 [01:55<31:59, 20.42s/it]====================
+answer:  Para resolver el problema paso a paso, vamos a utilizar la información dada:
+
+1. **Cantidad de ovejas en Seattle:**
+   - Se aporta que en Seattle hay 20 ovejas.
+
+2. **Cantidad de ovejas en Charleston:**
+   - En Charleston hay 4 veces más ovejas que en Seattle.
+   - Enton, la cantidad de ovejas en Charleston es:
+     \[
+     4 \times 20 = 80
+     \]
+
+3. **Cantidad de ovejas en Toulouse:**
+   - En Toulouse hay el doble de ovejas que en Charleston.
+   - Enton, la cantidad de ovejas en Toulouse es:
+     \[
+     2 \times 80 = 160
+     \]
+
+4. **Total de ovejas en Toulouse, Charleston y Seattle:**
+   - Sumaamos la cantidad de ovejas en cada ciudad:
+     \[
+     20 + 80 + 160 = 260
+     \]
+
+Entonces, el total de ovejas en Toulouse, Charleston y Seattle es 260.
+nfe:  122
+avg nfe:  168.14285714285714
+====================
+
+Generating...:   7%|▋         | 7/100 [02:10<28:34, 18.44s/it]====================
+answer:  Para determinar el tiempo total de la descarga del archivo, debemos considerar both el tiempo de descarga inicial y el tiempo de reinicio. Vamos de paso a paso:
+
+1. **Descarga inicial:**
+   - La descarga inicial se realiza en un ritmo de 2 GB por minuto.
+   - El archivo tiene 200 GB.
+   - El tiempo de descarga inicial se calcula como sigue:
+     \[
+     \text{Tiempo de descarga inicial} = \frac{200 \text{ GB}}{2 \text{ GB/minuto}} = 100 \text{ minutos}
+     \]
+
+2. **Descarga desde el reinicio:**
+   - Después del reinicio, la descarga se reinicia desde el principio.
+   - La descarga se continua a un ritmo de 2 GB por minuto.
+   - El archivo tiene 200 GB en total, pero ya había sido descargado 100 GB.
+   - El tiempo de descarga desde el reinicio se calcula como sigue:
+     \[
+     \text{Tiempo de descarga desde el reinicio} = \frac{100 \text{ GB}}{2 \text{ GB/minuto}} = 50 \text{ minutos}
+     \]
+
+3. **Tiempo de reinicio:**
+   - El reinicio demora 20 minutos.
+
+4. **Tiempo total de la descarga:**
+   - El tiempo total de la descarga es la suma del tiempo de descarga inicial, el tiempo de descarga desde el reinicio y el tiempo de reinicio:
+     \[
+     \text{Tiempo total} = 100 \text{ minutos} + 50 \text{ minutos} + 20 \text{ minutos} = 170 \text{ minutos}
+     \]
+
+Por tanto, la descarga del archivo lleva 170 minutos.
+nfe:  228
+avg nfe:  175.625
+====================
+
+Generating...:   8%|▊         | 8/100 [02:35<31:47, 20.74s/it]====================
+answer:  Para resolver este problema, necesitamos calcular la distancia que John conduce durante cada etapa y luego sumar estas distancias. Vamos a hacerlo paso a paso:
+
+1. **Primera etapa:**
+   - John conduce durante 3 horas a una velocidad de 60 mph.
+   - Distancia = Velocidad × Tiempo = 60 mph × 3 horas = 180 miles.
+
+2. **Segunda etapa:**
+   - John pasa 2 horas en un embotellamiento de tráfico.
+   - Durante la primera media hora, conduce a una velocidad de 30 mph.
+   - Distancia = Velocidad × Tiempo = 30 mph × 0.5 horas = 15 miles.
+   - Durante la segunda media hora, conduce a una velocidad de 80 mph.
+   - Distancia = Velocidad × Tiempo = 80 mph × 0.5 horas = 40 miles.
+   - Distancia total de la segunda etapa = 15 miles + 40 miles = 55 miles.
+
+3. **Distancia total:**
+   - Distancia total = Distancia de la primera etapa + Distancia de la segunda etapa = 180 miles + 55 miles = 235 miles.
+
+Por tanto, al final de las 4 horas, John se encuentra a 235 miles de la casa.
+nfe:  161
+avg nfe:  174.0
+====================
+
+Generating...:   9%|▉         | 9/100 [02:54<30:26, 20.07s/it]====================
+answer:  Para determinar cuánto gana Eliza si trabajó 45 horas, debemos dividir la situación en dos partes: las primeras 40 horas y las horas extras.
+
+1. **Primeras 40 horas:**
+   - La tarifa por hora para las primeras 40 horas es $10.
+   - Pago por las primeras 40 horas: \( 40 \times 10 = \$400 \)
+
+2. **Horas extras:**
+   - Eliza trabajó 45 horas en total.
+   - Las horas extras son \( 45 - 40 = 5 \) horas.
+   - La tarifa por hora para las horas extras es 1.2 veces la tarifa habitual.
+   - La tarifa habitual es $10 por hora, por lo que la tarifa para las horas extras es \( 1.2 \times 10 = \$12 \) por hora.
+   - Pago por las horas extras: \( 5 \times 12 = \$60 \)
+
+3. **Pago total:**
+   - Pago total = Pago por las primeras 40 horas + Pago por las horas extras
+   - Pago total = \$400 + \$60 = \$460
+
+Por tanto, Eliza gana \$460 esta semana si trabajó 45 horas.
+nfe:  155
+avg nfe:  172.1
+====================
+
+Generating...:  10%|█         | 10/100 [03:12<29:01, 19.35s/it]====================
+answer:  Para determinar la cantidad total de descargas del programa durante los tres meses, seguiré los pasos siguientes:
+
+1. **Descargas en el primer mes:**
+   - El programa tuvo 60 descargas en el primer mes.
+
+2. **Descargas en el segundo mes:**
+   - La cantidad de descargas en el segundo mes fue tres veces más que las descargas en el primer mes.
+   - Entonces, las descargas en el segundo mes fueron:
+     \[
+     3 \times 60 = 180 \text{ descargas}
+     \]
+
+3. **Descargas en el tercer mes:**
+   - La cantidad de descargas en el tercer mes se redujo un 30% de las descargas en el segundo mes.
+   - Para calcular las descargas en el tercer mes, primero, calcula 30% de las descargas en el segundo mes:
+     \[
+     0.30 \times 180 = 54 \text{ descargas}
+     \]
+   - Luego, las descargas en el tercer mes fueron:
+     \[
+     180 - 54 = 126 \text{ descargas}
+     \]
+
+4. **Descargas totales:**
+   - Para calcular la cantidad total de descargas durante los tres meses, se suman las descargas de cada mes:
+     \[
+     60 + 180 + 126 = 366 \text{ descargas}
+     \]
+
+Entonces, el programa tuvo un total de 366 descargas durante los tres meses.
+nfe:  141
+avg nfe:  169.27272727272728
+====================
+
+Generating...:  11%|█         | 11/100 [03:27<27:02, 18.23s/it]====================
+answer:  Para calcular el costo total de las pasteles que Toula compró, necesitamos calcular el costo de cada tipo de pastel y luego los sumamos. Aquí hay la respuesta paso a paso:
+
+1. **Calcular el costo de las donas:**
+   - Toula compró 3 docenas de donas.
+   - Cada docena cuesta $68.
+   - Costo de las donas = 3 docenas * $68 por docena = $204
+
+2. **Calcular el costo de los mini pastelillos:**
+   - Toula compró 2 docenas de mini pastelillos.
+   - Cada docena cuesta $80.
+   - Costo de los mini pastelillos = 2 docenas * $80 por docena = $160
+
+3. **Calcular el costo de las tortitas de queso:**
+   - Toula compró 6 docenas de tortitas de queso.
+   - Cada docena cuesta $55.
+   - Costo de las tortitas de queso = 6 docenas * $55 por docena = $330
+
+4. **Sumar los costos:**
+   - Costo de las donas: $204
+   - Costo de los mini pastelillos: $160
+   - Costo de las tortitas de queso: $330
+   - Costo total = $204 + $160 + $330 = $694
+
+Entonces, el costo total de las pasteles que Toula compró es $694.
+nfe:  117
+avg nfe:  164.91666666666666
+====================
+
+Generating...:  12%|█▏        | 12/100 [03:41<24:38, 16.80s/it]====================
+answer:  Para determinar cuántos años le llevará a comenzar a ganar dinero con el limonero, necesitamos calcular los costos y los ingresos cada año hasta que los ingresos superan los costos. Vamos a hacerlo paso a paso.
+
+1. **Costos iniciales:**
+   - Costo de plantar el árbol: $90
+   - Costo de regar y nutrir el árbol al año: $3
+
+2. **Ingresos años:**
+   - Cantidad de limones al año: 7
+   - Precio del limón: $1.5
+   - Ingresos al año: \( 7 \times 1.5 = 10.5 \)
+
+3. **Calculo de los ingresos y costos al año:**
+   - Ingresos al año: $10.5
+   - Costos al año: $3
+   - Neto al año: \( 10.5 - 3 = 7.5 \)
+
+4. **Calculo de los años necesarios para superar los costos:**
+   - Costo inicial: $90
+   - Neto al año: $7.5
+   - Años necesarios: \( \frac{90}{7.5} \)
+
+   - \( \frac{90}{7.5} \approx 12.67 \)
+
+   - Como no podemos tener una parte de un año, necesitamos 13 años para superar los costos.
+
+Por tanto, le llevará 13 años para comenzar a ganar dinero con el limonero.
+nfe:  243
+avg nfe:  170.92307692307693
+====================
+
+Generating...:  13%|█▎        | 13/100 [04:08<28:36, 19.74s/it]====================
+answer:  Para resolver este problema, vamos a analizarlo paso a paso:
+
+1. **Número de aspiradoras inicial**:
+   - Digamos \( x \) sea el número de aspiradoras que Melanie tenía al comienzo.
+
+2. **Aspadoras vendidas en la casa verde**:
+   - Vendió un tercio de sus aspiradoras en la casa verde.
+   - Entonces, vendió \( \frac{x}{3} \) aspiradoras en la casa verde.
+
+3. **Aspadoras vendidas en la casa roja**:
+   - Vendió 2 más aspiradoras en la casa roja.
+   - Entonces, vendió \( \frac{x}{3} + 2 \) aspiradoras en la casa roja.
+
+4. **Aspadoras vendidas en la casa naranja**:
+   - Vendió la mitad de lo que le quedaba en la casa naranja.
+   - Entonces, vendió \( \frac{1}{2} \left( x - \left( \frac{x}{3} + 2 \right) \right) \) aspiradoras en la casa naranja.
+
+5. **Aspadoras quedantes**:
+   - Se sabe que a Melanie le quedan 5 aspiradoras.
+   - Entonces, la número de aspiradoras quedantes es:
+     \[
+     x - \left( \frac{x}{3} + 2 \right) - \frac{1}{2} \left( x - \left( \frac{x}{3} + 2 \right) \right) = 5
+     \]
+
+6. **Simplificar la ecuación**:
+   - Primero, expandimos la ecuación:
+     \[
+     x - \left( \frac{x}{3} + 2 \right) - \frac{1}{2} \left( x - \frac{x}{3} - 2 \right) = 5
+     \]
+   - Simplificamos los termos:
+     \[
+     x - \frac{x}{3} - 2 - \frac{1}{2} \left( x - \frac{x}{3} - 2 \right) = 5
+     \]
+   - Concatamos los termos:
+     \[
+     x - \frac{x}{3} - 2 - \frac{1}{2} \left( \frac{2x}{3} - 2 \right) = 5
+     \]
+   - Simplificamos la fraction:
+     \[
+     x - \frac{x}{3} - 2 - \frac{1}{2} \left( \frac{2x}{3} - 2 \right) = 5
+     \]
+   - combinamos los termos:
+     \[
+     x - \frac{x}{3} - 2 - \frac{2x}{3} + 1 = 5
+     \]
+   - Simplificamos los termos:
+     \[
+     x - \frac{x}{3} - \frac{2x}{3} + 1 = 5
+     \]
+   - combinamos los termos:
+     \[
+     x - \frac{2x}{3} + 1 = 5
+     \]
+   - combinamos los termos:
+     \[
+     \frac{2x}{3} + 1 = 5
+     \]
+   - combinamos los termos:
+     \[
+     \frac{2x}{3} = 5 - 1
+     \]
+   - combinamos los termos:
+     \[
+     \frac{2x}{3} = 4
+     \]
+
+7. **Resuelve \( x \)**:
+   - Multiplicamos los lados por 3:
+     \[
+     2x = 4 \times 3
+     \]
+   - Simplificamos la derecha:
+     \[
+     2x = 12
+     \]
+   - Dividiamos los lados por 2:
+     \[
+     x = \frac{12}{2}
+     \]
+   - Simplificamos la derecha:
+     \[
+     x = 6
+     \]
+
+Entonces, Melanie tenía \(\boxed{6}\) aspiradoras al comienzo.
+nfe:  361
+avg nfe:  184.5
+====================
+
+Generating...:  14%|█▍        | 14/100 [04:37<32:18, 22.55s/it]====================
+answer:  Para resolver este problema, vamos a dividirlo en varios pasos:
+
+1. **Calcular el número de estudiantes que se inscribieron en danza contemporánea:**
+   - El 20% de los 20 estudiantes se inscribieron en danza contemporánea.
+   - \( 20\% \times 20 = 0.20 \times 20 = 4 \) estudiantes.
+
+2. **Calcular el número de estudiantes que no se inscribieron en danza contemporánea:**
+   - Hay 20 estudiantes en total.
+   - 4 estudiantes se inscribieron en danza contemporánea.
+   - \( 20 - 4 = 16 \) estudiantes.
+
+3. **Calcular el número de estudiantes que se inscribieron en danza jazz:**
+   - El 25% de los 16 estudiantes se inscribieron en danza jazz.
+   - \( 25\% \times 16 = 0.25 \times 16 = 4 \) estudiantes.
+
+4. **Calcular el número de estudiantes que se inscribieron en danza hip-hop:**
+   - El resto de los estudiantes se inscribieron en danza hip-hop.
+   - Hay 4 estudiantes que se inscribieron en danza contemporánea y 4 estudiantes que se inscribieron en danza jazz.
+   - \( 20 - 4 - 4 = 12 \) estudiantes.
+
+5. **Calcular el porcentaje de estudiantes que se inscribieron en danza hip-hop:**
+   - Hay 20 estudiantes en total.
+   - 12 estudiantes se inscribieron en danza hip-hop.
+   - \( \left( \frac{12}{20} \right) \times 100\% = 60\% \).
+
+Por tanto, el porcentaje del total de los estudiantes que se inscribió en danza hip-hop es **60%**.
+nfe:  180
+avg nfe:  184.2
+====================
+
+Generating...:  15%|█▌        | 15/100 [04:56<30:27, 21.50s/it]====================
+answer:  Para determinar la opción que maximice la ganancia, necesitamos calcular el valor futuro de las joyas y los dispositivos electrónicos en función de su precio actual y el porcentaje de aumento esperado.
+
+### Paso 1: Calcular el valor futuro de las joyas
+
+- Valor actual de las joyas: $5000
+- Porcentaje de aumento esperado: 2.5%
+
+Valor futuro de las joyas:
+\[ \text{Valor futuro de las joyas} = 5000 \times (1 + 0.025) \]
+\[ \text{Valor futuro de las joyas} = 5000 \times 1.025 \]
+\[ \text{Valor futuro de las joyas} = 5125 \]
+
+### Paso 2: Calcular el valor futuro de los dispositivos electrónicos
+
+- Valor actual de los dispositivos electrónicos: $8000
+- Porcentaje de aumento esperado: 1.2%
+
+Valor futuro de los dispositivos electrónicos:
+\[ \text{Valor futuro de los dispositivos electrónicos} = 8000 \times (1 + 0.012) \]
+\[ \text{Valor futuro de los dispositivos electrónicos} = 8000 \times 1.012 \]
+\[ \text{Valor futuro de los dispositivos electrónicos} = 8096 \]
+
+### Paso 3: Calcular la ganancia de cada opción
+
+#### Ganancia de las joyas:
+\[ \text{Ganancia de las joyas} = \text{Valor futuro de las joyas} - \text{Valor actual de las joyas} \]
+\[ \text{Ganancia de las joyas} = 5125 - 5000 \]
+\[ \text{Ganancia de las joyas} = 125 \]
+
+#### Ganancia de los dispositivos electrónicos:
+\[ \text{Ganancia de los dispositivos electrónicos} = \text{Valor futuro de los dispositivos electrónicos} - \text{Valor actual de los dispositivos electrónicos} \]
+\[ \text{Ganancia de los dispositivos electrónicos} = 8096 - 8000 \]
+\[ \text{Ganancia de los dispositivos electrónicos} = 96 \]
+
+### Paso 4: Determinar la opción que maximiza la ganancia
+
+- Ganancia de las joyas: $125
+- Ganancia de los dispositivos electrónicos: $96
+
+La opción que maximiza la ganancia es la opción de las joyas, que ofrece una ganancia de $125.
+
+### Resumen
+
+El comerciante debe elegir la opción de las joyas, que ofrece una ganancia de $125.
+nfe:  199
+avg nfe:  185.125
+====================
+
+Generating...:  16%|█▌        | 16/100 [05:15<29:23, 20.99s/it]====================
+answer:  Para determinar la distancia recorrida por cada tren en los dos días, debemos considerar la distancia recorrida cada día y sumarlas.
+
+1. **Distancia recorrida cada día:**
+   - El primer día, ambos trenes recorren 80 millas hacia el oeste.
+   - El siguiente día, ambos trenes recorren 150 millas hacia el norte.
+
+2. **Distancia recorrida por cada tren en los dos días:**
+   - El primer tren:
+     - 80 millas el primer día
+     - 150 millas el siguiente día
+     - Distancia total del primer tren = 80 millas + 150 millas = 230 millas
+
+   - El segundo tren:
+     - 80 millas el primer día
+     - 150 millas el siguiente día
+     - Distancia total del segundo tren = 80 millas + 150 millas = 230 millas
+
+En resumen:
+- El primer tren recorrió 230 millas en los dos días.
+- El segundo tren también recorió 230 millas en los dos días.
+nfe:  131
+avg nfe:  181.94117647058823
+====================
+
+Generating...:  17%|█▋        | 17/100 [05:31<26:41, 19.29s/it]====================
+answer:  Para calcular el salario anual de Jill, necesitamos calcular su salario semanal y luego multiplicarlo por la cantidad de semanas al año. Vamos hacer paso a paso:
+
+1. **Calcular el salario semanal como maestra:**
+   - Jill trabaja 35 horas a la semana como maestra.
+   - Su salario por hora como maestra es $20.
+   - Therefore, su salario semanal como maestra es:
+     \[
+     35 \text{ horas} \times \$20/\text{ hora} = \$700
+     \]
+
+2. **Calcular el salario semanal como entrenadora:**
+   - Jill trabaja 15 horas a la semana como entrenadora.
+   - Su salario por hora como entrenadora es $30.
+   - Therefore, su salario semanal como entrenadora es:
+     \[
+     15 \text{ horas} \times \$30/\text{ hora} = \$450
+     \]
+
+3. **Calcular el salario semanal total:**
+   - Suma el salario semanal como maestra y el salario semanal como entrenadora:
+     \[
+     \$700 + \$450 = \$1150
+     \]
+
+4. **Calcular el salario anual:**
+   - Jill trabaja 50 semanas al año.
+   - Multiplica su salario semanal total por la cantidad de semanas al año:
+     \[
+     \$1150/\text{ semana} \times 50 \text{ semanas} = \$57,500
+     \]
+
+Por lo tanto, el salario anual de Jill es $57,500.
+nfe:  142
+avg nfe:  179.72222222222223
+====================
+
+Generating...:  18%|█▊        | 18/100 [05:47<25:02, 18.32s/it]====================
+answer:  Para determinar cuántas docenas de huevos Claire prepara en 4 semanas, debemos dividir esto en pasos fáciles.
+
+1. **Determinar la cantidad de huevos preparados por día:**
+   - Claire prepara una tortilla de huevos con 3 huevos todas las mañanas.
+
+2. **Calcular la cantidad de huevos preparados en 4 semanas:**
+   - Hace 7 días en una semana.
+   - Por tanto, en 4 semanas hay \(4 \times 7 = 28\) días.
+
+3. **Calcular la cantidad de huevos preparados en 28 días:**
+   - Si Claire prepara 3 huevos por día, en 28 días prepara \(3 \times 28 = 84\) huevos.
+
+4. **Calcular la cantidad de docenas de huevos:**
+   - Una docena contiene 12 huevos.
+   - Para obtener la cantidad de docenas, dividimos la cantidad de huevos totales por la cantidad de huevos en una docena: \(84 \div 12 = 7\) docenas.
+
+Entonces, Claire prepara 7 docenas de huevos en 4 semanas.
+nfe:  179
+avg nfe:  179.68421052631578
+====================
+
+Generating...:  19%|█▉        | 19/100 [06:07<25:37, 18.98s/it]====================
+answer:  Para resolver este problema, vamos a dividirlo en pasos clave:
+
+1. **Calcular la distancia total a caminar:**
+   - La distancia inicial es de 12 millas.
+
+2. **Calcular la distancia caminada:**
+   - Y le llevó 1 hora caminar las primeras 4 millas.
+   - Y le llevó otra hora caminar las siguientes 2 millas.
+   - Total caminada = 4 millas + 2 millas = 6 millas.
+
+3. **Calcular la distancia restante:**
+   - Distancia restante = 12 millas - 6 millas = 6 millas.
+
+4. **Calcular el tiempo total para caminar:**
+   - Y le llevó 1 hora caminar las primeras 4 millas.
+   - Y le llevó 1 hora caminar las siguientes 2 millas.
+   - Total de tiempo = 1 hora + 1 hora = 2 horas.
+
+5. **Calcular el tiempo restante:**
+   - Tiempo restante = 2 horas - 2 horas = 0 horas.
+
+6. **Calcular la velocidad promedio:**
+   - La velocidad promedio se quiere que sea 4 millas por hora.
+   - Velocidad promedio = 4 millas por hora.
+
+7. **Calcular la velocidad necesaria para el resto de la distancia:**
+   - Para caminar las 6 millas restantes en el tiempo restante (0 horas), la velocidad necesaria es 0 millas por hora.
+
+En resumen, Marissa debe caminar el resto de la distancia a una velocidad de 0 millas por hora.
+nfe:  258
+avg nfe:  183.6
+====================
+
+Generating...:  20%|██        | 20/100 [06:35<28:41, 21.52s/it]====================
+answer:  Por claro, vamos a resuello paso a paso.
+
+1. **Calcular la cantidad de agua en el refresco de naranja:**
+   - Tengo 10 litros de refresco de naranja.
+   - Cada litro contiene dos tercios de agua.
+   - Dos tercios de agua son iguales a \(\frac{2}{3}\) de agua.
+   - Entonces, la cantidad de agua en el refresco de naranja es:
+     \[
+     10 \times \frac{2}{3} = \frac{20}{3} \text{ litros}
+     \]
+
+2. **Calcular la cantidad de agua en el refresco de piña:**
+   - Tengo 15 litros de refresco de piña.
+   - Cada litro contiene tres quintos de agua.
+   - Tres quintos de agua son iguales a \(\frac{3}{5}\) de agua.
+   - Entonces, la cantidad de agua en el refresco de piña es:
+     \[
+     15 \times \frac{3}{5} = 9 \text{ litros}
+     \]
+
+3. **Calcular la cantidad de agua total en el refresco de naranja y el refresco de piña:**
+   - El agua en el refresco de naranja es \(\frac{20}{3}\) litros.
+   - El agua en el refresco de piña es 9 litros.
+   - Entonces, la cantidad de agua total es:
+     \[
+     \frac{20}{3} + 9 = \frac{20}{3} + \frac{27}{3} = \frac{47}{3} \text{ litros}
+     \]
+
+4. **Calcular la cantidad de agua restante al derramar un litro de refresco de naranja:**
+   - Derramo un litro de refresco de naranja, que contiene \(\frac{20}{3}\) litros de agua.
+   - Entonces, la cantidad de agua restante es:
+     \[
+     \frac{47}{3} - \frac{20}{3} = \frac{47 - 20}{3} = \frac{27}{3} \text{ litros}
+     \]
+
+5. **Calcular la cantidad de agua en los 24 litros restantes:**
+   - Tengo 24 litros de refresco de piña restantes.
+   - Cada litro contiene tres quintos de agua.
+   - Tres quintos de agua son iguales a \(\frac{3}{5}\) de agua.
+   - Entonces, la cantidad de agua en los 24 litros restantes es:
+     \[
+     24 \times \frac{3}{5} = \frac{72}{5} \text{ litros}
+     \]
+
+6. **Calcular la cantidad de agua restante en los 24 litros restantes:**
+   - El agua restante en el refresco de naranja es \(\frac{27}{3}\) litros.
+   - El agua en el refresco de piña restante es \(\frac{72}{5}\) litros.
+   - Entonces, la cantidad de agua restante en los 24 litros restantes es:
+     \[
+     \frac{27}{3} + \frac{72}{5}
+     \]
+   - Para sumar estos números, necesitamos un denominador común. El denominador común de 3 y 5 es 15.
+     \[
+     \frac{27}{3} = \frac{135}{15}, \quad \frac{72}{5} = \frac{216}{15}
+     \]
+     \[
+     \frac{135}{15} + \frac{216}{15} = \frac{351}{15} \text{ litros}
+     \]
+
+Entonces, la cantidad de agua en los 24 litros restantes es \(\frac{117}{5}\) litros.
+nfe:  297
+avg nfe:  189.0
+====================
+
+Generating...:  21%|██        | 21/100 [06:59<29:25, 22.35s/it]====================
+answer:  Para resolver este problema, vamos analizarlo paso a paso:
+
+1. **Determininar la edad de Samantha:**
+   - Samantha ahora tiene 31 años.
+
+2. **Determininar la edad de Raymond:**
+   - Raymond nació 6 años antes que Samantha.
+   - Entonces, Raymond ahora tiene \( 31 - 6 = 25 \) años.
+
+3. **Determininar cuántos años hace que nació el hijo de Raymond:**
+   - Raymond tuvo un hijo a los 23 años.
+   - Raymond ahora tiene 25 años.
+   - Entonces, el hijo nació hace \( 25 - 23 = 2 \) años.
+
+En resumen, el hijo de Raymond nació hace 2 años.
+nfe:  112
+avg nfe:  185.5
+====================
+
+Generating...:  22%|██▏       | 22/100 [07:13<25:34, 19.67s/it]====================
+answer:  Para determinar cuántos DVD vendió Billy el martes, debemos analizar cada grupo de clientes y la cantidad de DVD que compra cada uno.
+
+1. **Primero grupo de clientes:**
+   - Los primeros 3 clientes compran un DVD cada uno.
+   - Total de DVD comprados por este grupo: \(3 \times 1 = 3\) DVDs.
+
+2. **Segundo grupo de clientes:**
+   - Los siguientes 2 clientes compran 2 DVD cada uno.
+   - Total de DVD comprados por este grupo: \(2 \times 2 = 4\) DVDs.
+
+3. **Tercer grupo de clientes:**
+   - Los últimos 3 clientes no compran ningún DVD.
+   - Total de DVD comprados por este grupo: \(3 \times 0 = 0\) DVDs.
+
+Ahora, sumamos todos los DVD comprados por cada grupo:
+
+\[ 3 + 4 + 0 = 7 \]
+
+Por tanto, Billy vendió 7 DVDs el martes.
+nfe:  131
+avg nfe:  183.1304347826087
+====================
+
+Generating...:  23%|██▎       | 23/100 [07:28<23:37, 18.41s/it]====================
+answer:  Para determinar cuántos centímetros más corta será la vela después de arder de la 1:00 p. m. a las 5:00 p. m., podemos seguir los siguiente pasos:
+
+1. **Calcular la duración de la vela:**
+   - La vela se enciende desde la 1:00 p. m. hasta la 5:00 p. m.
+   - La duración de la vela es 4 horas.
+
+2. **Calcular la duración de la vela:**
+   - La vela se derrite 2 centímetros cada hora.
+   - La duración de la vela es 4 horas.
+   - La duración de la vela se calcula como:
+     \[
+     \text{Duración de la vela} = 2 \text{ centímetros/hora} \times 4 \text{ horas} = 8 \text{ centímetros}
+     \]
+
+3. **Verificar la solución:**
+   - Para verificar, podemos calcular la duración inicial de la vela y la duración final de la vela.
+   - La duración inicial de la vela es 0 centímetros (porque la vela no está encendida).
+   - La duración final de la vela es 8 centímetros.
+   - La diferencia entre la duración final y la duración inicial es:
+     \[
+     \text{Diferencia} = 8 \text{ centímetros} - 0 \text{ centímetros} = 8 \text{ centímetros}
+     \]
+
+Por lo tanto, la vela será 8 centímetros más corta después de arder de la 1:00 p. m. a las 5:00 p. m.
+nfe:  222
+avg nfe:  184.75
+====================
+
+Generating...:  24%|██▍       | 24/100 [07:52<25:20, 20.01s/it]====================
+answer:  Para encontrar el precio original del libro, debemos siguir los siguientes pasos:
+
+1. **Identificar el precio final**: Kyle compró el libro por $19,50.
+2. **Identificar el porcentaje de descuento**: El descuento es del 25%.
+3. **Encontrar el precio original**: Para obtener el precio original, debemos dividir el precio final por (100% - 25%), que es 75%.
+
+   \[
+   \text{Precio original} = \frac{\text{Precio final}}{100\% - 25\%}
+   \]
+
+   \[
+   \text{Precio original} = \frac{19,50}{75\%}
+   \]
+
+4. **Realizar la división**: Para dividir por un porcentaje, debemos dividir el valor por 100.
+
+   \[
+   \text{Precio original} = \frac{19,50}{0,75}
+   \]
+
+5. **Realizar la operación**: Ahora, dividimos $19,50 por 0.75.
+
+   \[
+   \text{Precio original} = 26,00
+   \]
+
+Entonces, el precio original del libro fue $26,00.
+nfe:  190
+avg nfe:  184.96
+====================
+
+Generating...:  25%|██▌       | 25/100 [08:13<25:34, 20.46s/it]====================
+answer:  Para determinar cuantas cajas de pizza Marie pidió, vamos a sigir estos pasos:
+
+1. **Calcula el costo del pollo:**
+   - El pollo cuesta $12.
+
+2. **Calcula el costo de las cajas de leche:**
+   - Marie pidió 5 cajas de leche, y cada una cuesta $3.
+   - El costo de las cajas de leche es \( 5 \times 3 = 15 \).
+
+3. **Calcula el costo de las manazas:**
+   - Marie pidió 4 manazas, y cada una cuesta $1.50.
+   - El costo de las manazas es \( 4 \times 1.50 = 6 \).
+
+4. **Calcula el costo total de las cajas de leche y las manazas:**
+   - El costo total de las cajas de leche y las manazas es \( 15 + 6 = 21 \).
+
+5. **Calcula el costo de las cajas de pizza:**
+   - Marie pagó un total de $50.
+   - El costo de las cajas de pizza es \( 50 - 21 = 29 \).
+
+6. **Determina el número de cajas de pizza:**
+   - Cada caja de pizza cuesta $8.50.
+   - El número de cajas de pizza es \( \frac{29}{8.50} \).
+
+7. **Realiza la división:**
+   - \( \frac{29}{8.50} \approx 3.3529 \).
+
+Como no puede pidi una caja de pizza, siempre tomamos el número entero de la división, que es 3.
+
+**Respuesta:** Marie pidió 3 cajas de pizza.
+nfe:  188
+avg nfe:  185.07692307692307
+====================
+
+Generating...:  26%|██▌       | 26/100 [08:33<24:50, 20.14s/it]====================
+answer:  Para calcular el costo total que Mishka gastó en todas las prendas de vestir, debemos calcular el costo de cada tipo de prenda y luego los sumamos. Aquí hay la información paso a paso:
+
+1. **Costo de los pantalones cortos:**
+   - Mishka compró 3 pares de pantalones cortos.
+   - Un par de pantalones cortos cuesta $16,50.
+   - Therefore, el costo de los pantalones cortos es:
+     \[
+     3 \times 16.50 = 49.50
+     \]
+
+2. **Costo de los pantalones:**
+   - Mishka compró 3 pares de pantalones.
+   - Un par de pantalones cuesta $22,50.
+   - Therefore, el costo de los pantalones es:
+     \[
+     3 \times 22.50 = 67.50
+     \]
+
+3. **Costo de los zapatos:**
+   - Mishka compró 3 pares de zapatos.
+   - Un par de zapatos cuesta $42.
+   - Therefore, el costo de los zapatos es:
+     \[
+     3 \times 42 = 126.00
+     \]
+
+Ahora, sumamos todos los costos para obtener el costo total:
+
+\[
+49.50 + 67.50 + 126.00 = 243.00
+\]
+
+Por tanto, Mishka gastó $243.00 en todas las prendas de vestir.
+nfe:  133
+avg nfe:  183.14814814814815
+====================
+
+Generating...:  27%|██▋       | 27/100 [08:48<22:42, 18.67s/it]====================
+answer:  Para determinar cuánto gastará en helado después de 60 días, debemos dividir esto en pasos:
+
+1. **Calcular la cantidad de helado que consuma por día:**
+   - Cynthia come una porción de helado todas las noches.
+   - Por tanto, consuma 1 porción de helado por día.
+
+2. **Calcular la cantidad de helado que consuma en 60 días:**
+   - Si consuma 1 porción por día, en 60 días consumará 60 porciones de helado.
+
+3. **Determinar la cantidad de cajas necesarias:**
+   - Cada caja contiene 15 porciones de helado.
+   - Para calcular cuantas cajas necesita, dividimos la cantidad total de porciones consumidas por la cantidad de porciones por caja:
+     \[
+     \frac{60 \text{ porciones}}{15 \text{ porciones/caja}} = 4 \text{ cajas}
+     \]
+
+4. **Calcular el costo total de las cajas:**
+   - Cada caja cuesta $4.00.
+   - Para calcular el costo total, multiplicamos la cantidad de cajas por el costo por caja:
+     \[
+     4 \text{ cajas} \times \$4.00/\text{ caja} = \$16.00
+     \]
+
+Por tanto, Cynthia gastará $16.00 en helado después de 60 días.
+nfe:  174
+avg nfe:  182.82142857142858
+====================
+
+Generating...:  28%|██▊       | 28/100 [09:07<22:44, 18.96s/it]====================
+answer:  Para determinar cuántas millas Henry recoró entre la primera y la segunda parada, podemos seguir los pasos siguientes:
+
+1. **Identificar la distancia total del viaje:**
+   - El viaje total fue de 60 millas.
+
+2. **Identificar la distancia de la primera parada:**
+   - La primera parada fue después de 20 millas.
+
+3. **Identificar la distancia de la segunda parada:**
+   - La segunda parada fue 15 millas antes de terminar el viaje.
+
+4. **Calcular la distancia entre la primera y la segunda parada:**
+   - La distancia entre la primera y la segunda parada es la diferencia entre la distancia de la segunda parada y la distancia de la primera parada.
+   - Distancia de la segunda parada = 45 millas
+   - Distancia de la primera parada = 20 millas
+   - Distancia entre la primera y la segunda parada = 45 millas - 20 millas = 25 millas
+
+Entonces, Henry recorrió 25 millas entre la primera y la segunda parada.
+nfe:  131
+avg nfe:  181.0344827586207
+====================
+
+Generating...:  29%|██▉       | 29/100 [09:23<21:06, 17.83s/it]====================
+answer:  Para resolver este problema, vamos a pasarlo paso a paso:
+
+1. **Definir las variables:**
+   - Sea que \( B \) sea el costo de las botas.
+   - Sea que \( T_1 \) sea el costo de un par de zapatos de taco alto.
+   - Sea que \( T_2 \) sea el costo del otro par de zapatos de taco alto.
+
+2. **Dato conocido:**
+   - Un par de zapatos de taco alto cuesta $33.
+   - El otro par de zapatos de taco alto cuesta el doble de otro, por lo que \( T_2 = 2 \times T_1 \).
+   - El costo total de los tres pares de zapatos de taco alto es cinco dólares menos que el costo de las botas, por lo que \( T_1 + T_2 + T_1 = B - 5 \).
+
+3. **Substituir los valores:**
+   - Sabemos que \( T_1 = 33 \) y \( T_2 = 2 \times T_1 \), por lo que \( T_2 = 2 \times 33 = 66 \).
+   - Substituimos \( T_1 = 33 \) y \( T_2 = 66 \) en la ecuación \( T_1 + T_2 + T_1 = B - 5 \):
+     \[
+     33 + 66 + 33 = B - 5
+     \]
+
+4. **Simplificar la ecuación:**
+   - Suma los valores de \( T_1 \) y \( T_2 \):
+     \[
+     33 + 66 + 33 = 132
+     \]
+   - Ahora, la ecuación es:
+     \[
+     132 = B - 5
+     \]
+
+5. **Encontrar \( B \):**
+   - Suma 5 a ambos lados de la ecuación:
+     \[
+     132 + 5 = B
+     \]
+   - Calculamos:
+     \[
+     B = 137
+     \]
+
+Entonces, las botas cuestan $137.
+nfe:  233
+avg nfe:  182.76666666666668
+====================
+
+Generating...:  30%|███       | 30/100 [09:47<23:14, 19.92s/it]====================
+answer:  Para calcular la edad de Allen dentro de 10 años, seguirás estos pasos:
+
+1. **Identificar la proporción de las edades:**
+   - La proporción de las edades de Darrell y Allen es 7:11.
+
+2. **Definir las edades:**
+   - Dé que la edad de Darrell sea \( 7x \) años.
+   - La edad de Allen sea \( 11x \) años.
+
+3. **Establear la relación de la edad total:**
+   - La edad total de ambos ahora es 162 años.
+   - Entonces, \( 7x + 11x = 162 \).
+
+4. **Resolver la ecuación:**
+   - \( 18x = 162 \).
+   - \( x = \frac{162}{18} \).
+   - \( x = 9 \).
+
+5. **Calcular las edades actuales:**
+   - La edad de Darrell es \( 7x = 7 \times 9 = 63 \) años.
+   - La edad de Allen es \( 11x = 11 \times 9 = 99 \) años.
+
+6. **Calcular la edad de Allen dentro de 10 años:**
+   - La edad de Allen dentro de 10 años será \( 99 + 10 = 109 \) años.
+
+En resumen, la edad de Allen dentro de 10 años será 109 años.
+nfe:  138
+avg nfe:  181.32258064516128
+====================
+
+Generating...:  31%|███       | 31/100 [10:03<21:30, 18.71s/it]====================
+answer:  Para calcular el promedio de los caramelos de goma que Gunter creen que hay en el frasco, seguirás estos pasos:
+
+1. **Identificar las estimaciones de cada amigo:**
+   - Primero amigo: 80 caramelos
+   - Segundo amigo: 20 más que la mitad del primero
+   - Tercero amigo: 25% más que el primero
+
+2. **Calcular la estimación del segundo amigo:**
+   - La mitad de 80 es \( \frac{80}{2} = 40 \)
+   - Añadir 20: \( 40 + 20 = 60 \)
+   - Así, el segundo amigo estima 60 caramelos.
+
+3. **Calcular la estimación del tercero amigo:**
+   - 25% de 80 es \( 0.25 \times 80 = 20 \)
+   - Añadir 20: \( 80 + 20 = 100 \)
+   - Así, el tercero amigo estima 100 caramelos.
+
+4. **Sumar las estimaciones:**
+   - Primero amigo: 80 caramelos
+   - Segundo amigo: 60 caramelos
+   - Tercero amigo: 100 caramelos
+   - Suma: \( 80 + 60 + 100 = 240 \)
+
+5. **Calcular el promedio:**
+   - Hace 3 amigos.
+   - Promedio: \( \frac{240}{3} = 80 \)
+
+Por tanto, el promedio de los caramelos de goma que Gunter creen que hay en el frasco es 80 caramelos.
+nfe:  172
+avg nfe:  181.03125
+====================
+
+Generating...:  32%|███▏      | 32/100 [10:23<21:21, 18.84s/it]====================
+answer:  Para determinar cuántas horas John dedica al cuidado de los perros en la semana, podemos dividir la tarea en pasos fáctiles.
+
+1. **Identificar las horas dedicadas por día:**
+   - Cada perro lleva media hora por día pasear y hacer sus necesidades.
+
+2. **Calcular las horas dedicadas por día:**
+   - John cuida 10 perros.
+   - Por tanto, las horas dedicadas por día son:
+     \[
+     10 \text{ perros} \times 0.5 \text{ hora por perro} = 5 \text{ horas por día}
+     \]
+
+3. **Calcular las horas dedicadas por semana:**
+   - HAY 7 días en la semana.
+   - Por tanto, las horas dedicadas por semana son:
+     \[
+     5 \text{ horas por día} \times 7 \text{ días} = 35 \text{ horas por semana}
+     \]
+
+En resumen, John dedica 35 horas al cuidado de los perros en la semana.
+nfe:  150
+avg nfe:  180.0909090909091
+====================
+
+Generating...:  33%|███▎      | 33/100 [10:40<20:35, 18.44s/it]====================
+answer:  Para resolver este problema paso a paso, vamos a utilizar la información dada y crear una ecuación.
+
+1. **Definir las variables:**
+   - Sea \( P \) sea el número de monedas de plata que Gretchen tiene.
+   - Sea \( O \) sea el número de monedas de oro que Gretchen tiene.
+
+2. **Formular las ecuaciones:**
+   - La cantidad total de monedas es 110:
+     \[
+     P + O = 110
+     \]
+   - Hay 30 monedas más de oro que de plata:
+     \[
+     O = P + 30
+     \]
+
+3. **Substituir la expresión de \( O \) en la primera ecuación:**
+   \[
+   P + (P + 30) = 110
+   \]
+
+4. **Simplific la ecuación:**
+   \[
+   2P + 30 = 110
+   \]
+
+5. **Isolar \( P \):**
+   \[
+   2P = 110 - 30
+   \]
+   \[
+   2P = 80
+   \]
+
+6. **Resuelve \( P \):**
+   \[
+   P = \frac{80}{2}
+   \]
+   \[
+   P = 40
+   \]
+
+7. **Substituir \( P \) en la expresión de \( O \):**
+   \[
+   O = P + 30
+   \]
+   \[
+   O = 40 + 30
+   \]
+   \[
+   O = 70
+   \]
+
+Entonces, Gretchen tiene 70 monedas de oro.
+nfe:  150
+avg nfe:  179.2058823529412
+====================
+
+Generating...:  34%|███▍      | 34/100 [10:57<19:40, 17.89s/it]====================
+answer:  Para resolver el problema paso a paso, vamos a seguir la información proporcionada:
+
+1. **Raymond tiene 40 joyas.**
+2. **Aaron tiene 5 joyas más que la mitad de las joyas de Raymond.**
+3. **Siobhan tiene 2 joyas menos que Aaron.**
+
+Vamos a calcular la cantidad de joyas de Siobhan paso a paso:
+
+1. **Calculo de la cantidad de joyas de Aaron:**
+   - Aaron tiene 5 joyas más que la mitad de las joyas de Raymond.
+   - Raymond tiene 40 joyas.
+   - La mitad de las joyas de Raymond es \( \frac{40}{2} = 20 \) joyas.
+   - Aaron tiene 5 joyas más que la mitad de las joyas de Raymond.
+   - Por tanto, Aaron tiene \( 20 + 5 = 25 \) joyas.
+
+2. **Calculo de la cantidad de joyas de Siobhan:**
+   - Siobhan tiene 2 joyas menos que Aaron.
+   - Aaron tiene 25 joyas.
+   - Siobhan tiene 2 joyas menos que Aaron.
+   - Por tanto, Siobhan tiene \( 25 - 2 = 23 \) joyas.
+
+En resumen, Siobhan tiene **23 joyas**.
+nfe:  133
+avg nfe:  177.88571428571427
+====================
+
+Generating...:  35%|███▌      | 35/100 [11:12<18:30, 17.09s/it]====================
+answer:  Para calcular los puntos totales que Mike ganó, debemos dividir el juego en dos partes: los primeros 20 minutos y los segundos 20 minutos.
+
+1. **Primeros 20 minutos:**
+   - Mike gana 4 puntos.
+
+2. **Segundos 20 minutos:**
+   - Mike gana 25% más de puntos que en los primeros 20 minutos.
+   - Para calcular los puntos en los segundos 20 minutos, primero calculamos 25% de los puntos de los primeros 20 minutos.
+   - 25% de 4 puntos es \( 0.25 \times 4 = 1 \) puntos.
+   - Entonces, en los segundos 20 minutos, Mike gana \( 4 + 1 = 5 \) puntos.
+
+3. **Puntos totales:**
+   - Sumaamos los puntos de los primeros 20 minutos y los segundos 20 minutos.
+   - Puntos totales = 4 puntos + 5 puntos = 9 puntos.
+
+Por tanto, Mike ganó un total de 9 puntos.
+nfe:  152
+avg nfe:  177.16666666666666
+====================
+
+Generating...:  36%|███▌      | 36/100 [11:29<18:19, 17.18s/it]====================
+answer:  Para determinar por cuánto Terry gasta en yogur durante 30 días, podemos seguir los siguiente pasos:
+
+1. **Calcular el número de yogures que Terry come por día:**
+   - Terry come 2 yogures por día.
+
+2. **Determinar el costo del yogur por día:**
+   - La oferta es de 4 yogures por $5.
+   - Para obtener el costo de 1 yogur, dividimos $5 por 4:
+     \[
+     \text{Costo de 1 yogur} = \frac{5}{4} = 1.25 \text{ dólares}
+     \]
+
+3. **Calcular el costo del yogur por día:**
+   - Terry come 2 yogures por día.
+   - El costo de 1 yogur es $1.25.
+   - Por tanto, el costo de 2 yogures por día es:
+     \[
+     \text{Costo de 2 yogures por día} = 2 \times 1.25 = 2.50 \text{ dólares}
+     \]
+
+4. **Calcular el costo total de 30 días:**
+   - El costo de 2 yogures por día es $2.50.
+   - Para obtener el costo total de 30 días, multiplicamos $2.50 por 30:
+     \[
+     \text{Costo total de 30 días} = 2.50 \times 30 = 75 \text{ dólares}
+     \]
+
+Por tanto, Terry gasta $75 en yogur durante 30 días.
+nfe:  168
+avg nfe:  176.9189189189189
+====================
+
+Generating...:  37%|███▋      | 37/100 [11:48<18:35, 17.70s/it]====================
+answer:  Para resolver este problema, vamos a dividirlo en pasos clave:
+
+1. **Calcula el dinero total que obtiene al vender todos los juegos de Lego:**
+   - John tiene 13 juegos de Lego.
+   - Cada juego vende por $15.
+   - Dinero total de los juegos de Lego: \( 13 \times 15 = 195 \) $.
+
+2. **Calcula el dinero total que se gasta en los videojuegos:**
+   - John compra 8 videojuegos.
+   - Cada videojuego cuesta $20.
+   - Dinero total gastado en los videojuegos: \( 8 \times 20 = 160 \) $.
+
+3. **Calcula el dinero total que se quedan al comprar los videojuegos:**
+   - John quedan $5 al comprar los videojuegos.
+   - Dinero total antes comprar los videojuegos: \( 160 + 5 = 165 \) $.
+
+4. **Calcula el dinero total antes de comprar los videojuegos:**
+   - Dinero total antes de comprar los videojuegos = Dinero total de los juegos de Lego + Dinero total antes comprar los videojuegos
+   - Dinero total antes de comprar los videojuegos: \( 195 + 165 = 360 \) $.
+
+5. **Calcula el numero de juegos de Lego que quedan:**
+   -Como cada juego vende por $15, el numero de juegos de Lego que quedan es el dinero total antes de comprar los videojuegos dividido por el precio de cada juego.
+   - Numero de juegos de Lego que quedan: \( \frac{360}{15} = 24 \).
+
+Por tanto, John tiene 24 juegos de Lego todavía.
+nfe:  259
+avg nfe:  179.07894736842104
+====================
+
+Generating...:  38%|███▊      | 38/100 [12:15<21:07, 20.44s/it]====================
+answer:  Para determinar la velocidad de John, necesitamos calcular la distancia total que recorre en la semana y dividirla por el tiempo total que recorre. Vamos hacerlo paso a paso:
+
+1. **Distancia recorreada por día:**
+   - John corre 60 millas por semana.
+   - Corre 3 días en la semana.
+   - Por tanto, la distancia recorreada por día es:
+     \[
+     \frac{60 \text{ millas}}{3 \text{ días}} = 20 \text{ millas por día}
+     \]
+
+2. **Tiempo de correo por día:**
+   - El primer día, corre 3 horas.
+   - En los otros dos días, corre la mitad de lo que corre el primer día.
+   - Por tanto, corre:
+     \[
+     \frac{3 \text{ horas}}{2} = 1.5 \text{ horas por día}
+     \]
+
+3. **Tiempo total de correo por día:**
+   - El tiempo total de correo por día es:
+     \[
+     3 \text{ horas} + 1.5 \text{ horas} = 4.5 \text{ horas}
+     \]
+
+4. **Tiempo total de correo por semana:**
+   - John corre 3 días en la semana.
+   - Por tanto, el tiempo total de correo por semana es:
+     \[
+     4.5 \text{ horas por día} \times 3 \text{ días} = 13.5 \text{ horas}
+     \]
+
+5. **Velocidad:**
+   - La velocidad es la distancia total recorreada dividida por el tiempo total de correo.
+   - Por tanto, la velocidad es:
+     \[
+     \frac{60 \text{ millas}}{13.5 \text{ horas}} \approx 4.44 \text{ millas por hora}
+     \]
+
+En resumen, John corre aproximadamente 4.44 millas por hora.
+nfe:  223
+avg nfe:  180.2051282051282
+====================
+
+Generating...:  39%|███▉      | 39/100 [12:39<21:47, 21.44s/it]====================
+answer:  Para resolver este problema, primero necesitamos determinar las velocidades de correo y caminar de Dana, luego calcular la distancia recorrida en seis horas según las condiciones mencionadas.
+
+1. **Velocidad de correo:**
+   - Se conoce que Dana puede saltar a 3 millas por hora.
+   - La velocidad de correo es la mitad de la velocidad de saltar. Entonces, la velocidad de correo es \( \frac{3}{2} = 1.5 \) millas por hora.
+
+2. **Velocidad de caminar:**
+   - La velocidad de correo es cuatro veces más rápida que la velocidad de caminar. Entonces, la velocidad de caminar es \( \frac{1.5}{4} = 0.375 \) millas por hora.
+
+3. **Tiempo de correo y caminar:**
+   - Dana corre un tercio del tiempo y camina dos tercios del tiempo.
+   - Se supone que el tiempo total es 6 horas.
+   - El tiempo de correo es \( \frac{1}{3} \times 6 = 2 \) horas.
+   - El tiempo de caminar es \( \frac{2}{3} \times 6 = 4 \) horas.
+
+4. **Distancia recorrida:**
+   - La distancia recorrida en 2 horas de correo es \( 1.5 \) millas por hora \( \times 2 \) horas \( = 3 \) millas.
+   - La distancia recorrida en 4 horas de caminar es \( 0.375 \) millas por hora \( \times 4 \) horas \( = 1.5 \) millas.
+   - La distancia total recorrida en 6 horas es \( 3 \) millas \( + 1.5 \) millas \( = 4.5 \) millas.
+
+5. **Distancia recorrida en seis horas:**
+   - Para calcular la distancia recorrida en seis horas, debemos multiplicar la distancia recorrida en 6 horas por 6.
+   - La distancia recorrida en seis horas es \( 4.5 \) millas \( \times 6 = 27 \) millas.
+
+Por tanto, Dana puede recorrer 27 millas en seis horas.
+nfe:  278
+avg nfe:  182.65
+====================
+
+Generating...:  40%|████      | 40/100 [13:07<23:31, 23.53s/it]====================
+answer:  Para resolver este problema, vamos a analizarlo paso a paso:
+
+1. **Relación entre el iPhone de Brandon y el iPhone de Suzy:**
+   - El iPhone de Brandon es cuatro veces más viejo que el iPhone de Ben.
+   - El iPhone de Ben es dos veces más viejo que el iPhone de Suzy.
+
+2. **Relación entre el iPhone de Brandon y el iPhone de Suzy:**
+   - El iPhone de Brandon es cuatro veces más viejo que el iPhone de Ben.
+   - El iPhone de Ben es dos veces más viejo que el iPhone de Suzy.
+
+3. **Datos iniciales:**
+   - El iPhone de Suzy tiene 1 año.
+
+4. **Calculo para el iPhone de Ben:**
+   - El iPhone de Ben es dos veces más viejo que el iPhone de Suzy.
+   - Ya que el iPhone de Suzy tiene 1 año, el iPhone de Ben tiene \(2 \times 1 = 2\) años.
+
+5. **Calculo para el iPhone de Brandon:**
+   - El iPhone de Brandon es cuatro veces más viejo que el iPhone de Ben.
+   - Ya que el iPhone de Ben tiene 2 años, el iPhone de Brandon tiene \(4 \times 2 = 8\) años.
+
+Por tanto, el iPhone de Brandon tiene 8 años.
+nfe:  128
+avg nfe:  181.3170731707317
+====================
+
+Generating...:  41%|████      | 41/100 [13:22<20:37, 20.97s/it]====================
+answer:  Para resolver este problema, necesitamos encontrar la distancia fuera del alcance de las llamas del dragón que Polly puede pararse para poder golpear al dragón con la jabalina de oro teniendo la piedra preciosa de zafiro.
+
+1. **Distancia de la jabalina sin la piedra preciosa:**
+   - La jabalina de oro puede ser lanzada a una distancia de 400 pies.
+
+2. **Distancia de la jabalina con la piedra preciosa de zafiro:**
+   - Con la piedra preciosa de zafiro, la jabalina puede ser lanzada tres veces más lejos que sin la piedra.
+   - Entonces, la distancia de lanzada con la piedra preciosa es \( 3 \times 400 = 1200 \) pies.
+
+3. **Distancia fuera del alcance de las llamas del dragón:**
+   - El dragón está a una distancia de 1000 pies.
+   - La distancia fuera del alcance de las llamas del dragón es la diferencia entre la distancia de lanzada de la jabalina y la distancia del dragón.
+   - La distancia fuera del alcance de las llamas del dragón es \( 1200 - 1000 = 200 \) pies.
+
+Por tanto, la distancia fuera del alcance de las llamas del dragón que Polly puede pararse para poder golpear al dragón con la jabalina de oro teniendo la piedra preciosa de zafiro es 200 pies.
+nfe:  186
+avg nfe:  181.42857142857142
+====================
+
+Generating...:  42%|████▏     | 42/100 [13:43<20:22, 21.08s/it]====================
+answer:  Para determinar cuántas porciones de pastel sirvieron los invitados, seguir estos pasos:
+
+1. **Calcula el número de porciones iniciales:**
+   - La abuela Jones horneó 5 pasteles de manzana.
+   - Cada pastel se cortó en 8 porciones.
+   - Enton, el número de porciones iniciales es:
+     \[
+     5 \text{ pasteles} \times 8 \text{ porciones por pastel} = 40 \text{ porciones}
+     \]
+
+2. **Determina el número de porciones que quedaron:**
+   - Al final de la noche, quedaron 14 porciones.
+   - Entonces, el número de porciones que se sirvieron es:
+     \[
+     40 \text{ porciones} - 14 \text{ porciones} = 26 \text{ porciones}
+     \]
+
+Por tanto, los invitados sirviervieron 26 porciones de pastel.
+nfe:  114
+avg nfe:  179.86046511627907
+====================
+
+Generating...:  43%|████▎     | 43/100 [13:57<17:57, 18.91s/it]====================
+answer:  Para resolver este problema, vamos a dividirlo en pasos clave:
+
+1. **Determinar las calorías disponibles:**
+   - El objetivo diario de calorías es 2000 calorías.
+   - Ya han sido consumidas 1800 calorías.
+   - Enton, las calorías disponibles son:
+     \[
+     2000 - 1800 = 200 \text{ calorías}
+     \]
+
+2. **Calcular la cantidad de porciones necesarias:**
+   - Cada porción de papas fritas tiene 250 calorías.
+   - Para obtener 200 calorías, necesitamos:
+     \[
+     \frac{200}{250} = 0.8 \text{ porciones}
+     \]
+
+3. **Verificar la cantidad de porciones disponibles:**
+   - Una bolsa de 300 g tiene 5 porciones.
+   - Enton, una bolsa contiene 5 porciones.
+   - Para obtener 0.8 porciones, necesitamos:
+     \[
+     \frac{0.8}{5} = 0.16 \text{ bolsas}
+     \]
+
+4. **Calcular la cantidad de papas fritas necesaria:**
+   - Cada bolsa contiene 300 g.
+   - Enton, 0.16 bolsas tienen:
+     \[
+     0.16 \times 300 = 48 \text{ g}
+     \]
+
+En resumen, uno puede comer 48 gramos de papas fritas para alcanzar su objetivo diario de calorías de 2000 calorías, después de haber consumido 1800 calorías.
+nfe:  219
+avg nfe:  180.75
+====================
+
+Generating...:  44%|████▍     | 44/100 [14:21<18:52, 20.22s/it]====================
+answer:  Para calcular la ganancia neta de Charlie al elaborar y vender 20 velas de cera de abeja, debemos seguir estos pasos:
+
+1. **Determinar las libreras de cera de abeja necesarias:**
+   - Por cada libra de cera de abeja, Charlie puede elaborar 10 velas.
+   - Para elaborar 20 velas, necesita \( \frac{20}{10} = 2 \) libreras de cera de abeja.
+
+2. **Calcular el costo de las libreras de cera de abeja:**
+   - Cada libra de cera de abeja cuesta $10,00.
+   - El costo de 2 libreras es \( 2 \times 10,00 = \$20,00 \).
+
+3. **Calcular la ganancia de venta de las velas:**
+   - Cada vela se vende por $2,00.
+   - La ganancia de venta de 20 velas es \( 20 \times 2,00 = \$40,00 \).
+
+4. **Calcular la ganancia neta:**
+   - La ganancia neta es la diferencia entre la ganancia de venta y el costo de las libreras de cera de abeja.
+   - La ganancia neta es \( 40,00 - 20,00 = \$20,00 \).
+
+Por tanto, la ganancia neta de Charlie al elaborar y vender 20 velas de cera de abeja es $20,00.
+nfe:  156
+avg nfe:  180.2
+====================
+
+Generating...:  45%|████▌     | 45/100 [14:39<17:54, 19.54s/it]====================
+answer:  Para calcular la cantidad total de horas que Meredith dedicó a los artículos durante los tres días, seguiré los siguiente pasos:
+
+1. **Calcular el número de artículos escribidos el lunes:**
+   - Meredith escribió 5 artículos el lunes.
+
+2. **Calcular el número de artículos escribidos el martes:**
+   - Meredith escribió \( \frac{2}{5} \) veces más artículos el martes que el lunes.
+   - \( \frac{2}{5} \times 5 = 2 \) artículos.
+   - Así, Meredith escribió \( 5 + 2 = 7 \) artículos el martes.
+
+3. **Calcular el número de artículos escribidos el miércoles:**
+   - Meredith escribió el doble de los artículos que redactó el martes.
+   - \( 2 \times 7 = 14 \) artículos.
+   - Así, Meredith escribió 14 artículos el miércoles.
+
+4. **Calcular el número total de artículos escribidos durante los tres días:**
+   - \( 5 + 7 + 14 = 26 \) artículos.
+
+5. **Calcular la cantidad total de horas dedicadas a los artículos:**
+   - Cada artículo lleva un promedio de 4 horas entre la investigación y la elaboración.
+   - \( 26 \times 4 = 104 \) horas.
+
+Por tanto, Meredith dedicó un total de 104 horas a los artículos durante los tres días.
+nfe:  144
+avg nfe:  179.41304347826087
+====================
+
+Generating...:  46%|████▌     | 46/100 [14:55<16:39, 18.50s/it]====================
+answer:  Para resolver este problema paso a paso, vamos a utilizar la información disponible y realizar las calculaciones necesarias.
+
+1. **Notas adhesivas iniciales:**
+   Candice contaba con 80 notas adhesivas en su bolso antes de llegar al trabajo.
+
+2. **Notas adhesivas utilizadas:**
+   Candice colocó una nota adhesiva en cada una de las 220 tazas de café.
+
+3. **Notas adhesivas restantes:**
+   Le quedan 23 notas adhesivas en total.
+
+4. **Notas adhesivas utilizadas:**
+   Para calcular la cantidad de notas adhesivas utilizadas, restamos las notas adhesivas restantes de las notas adhesivas iniciales:
+   \[
+   \text{Notas adhesivas utilizadas} = \text{Notas adhesivas iniciales} - \text{Notas adhesivas restantes}
+   \]
+   \[
+   \text{Notas adhesivas utilizadas} = 80 - 23 = 57
+   \]
+
+5. **Notas adhesivas en el paquete:**
+   Para determinar cuántas notas adhesivas había en el paquete que compró, sumamos las notas adhesivas utilizadas a las notas adhesivas iniciales:
+   \[
+   \text{Notas adhesivas en el paquete} = \text{Notas adhesivas iniciales} + \text{Notas adhesivas utilizadas}
+   \]
+   \[
+   \text{Notas adhesivas en el paquete} = 80 + 57 = 137
+   \]
+
+Por tanto, Candice compró un paquete de 137 notas adhesivas.
+nfe:  175
+avg nfe:  179.31914893617022
+====================
+
+Generating...:  47%|████▋     | 47/100 [15:14<16:41, 18.90s/it]====================
+answer:  Para resolver este problema paso a paso, vamos a utilizar la información introducida y realizar las calculaciones necesarias.
+
+1. **Determinar el costo de una corbata azula:**
+   - John gastó $200 en corbatas azules.
+   - Cada corbata azula cuesta $40.
+   - Numero de corbatas azulas compradas: \( \frac{200}{40} = 5 \)
+
+2. **Determinar el costo de una corbata roja:**
+   - Las corbatas rojas cuestan un 50% más que las corbatas azulas.
+   - Costo de una corbata roja: \( 40 + 0.5 \times 40 = 40 + 20 = 60 \)
+
+3. **Determinar el número de corbatas rojas compradas:**
+   - John compra el doble de corbatas rojas que de corbatas azulas.
+   - Numero de corbatas rojas compradas: \( 2 \times 5 = 10 \)
+
+4. **Calcular el costo total de las corbatas rojas:**
+   - Costo de una corbata roja: $60
+   - Numero de corbatas rojas compradas: 10
+   - Costo total de las corbatas rojas: \( 60 \times 10 = 600 \)
+
+5. **Calcular el costo total de las corbatas azulas:**
+   - Costo de una corbata azula: $40
+   - Numero de corbatas azulas compradas: 5
+   - Costo total de las corbatas azulas: \( 40 \times 5 = 200 \)
+
+6. **Calcular el costo total de las corbatas:**
+   - Costo total de las corbatas rojas: $600
+   - Costo total de las corbatas azulas: $200
+   - Costo total de las corbatas: \( 600 + 200 = 800 \)
+
+Entonces, John gastó $800 en corbatas.
+nfe:  168
+avg nfe:  179.08333333333334
+====================
+
+Generating...:  48%|████▊     | 48/100 [15:33<16:17, 18.79s/it]====================
+answer:  Para determinar cuántos trozos de alambre obtuvo Tracy, debemos seguir estos pasos:
+
+1. **Convertir el largo del alambre de pies a pulgadas:**
+   - Se sabe que 1 pie es igual a 12 pulgadas.
+   - Tracy tiene un trozo de alambre de 4 pies de largo.
+   - Entonces, el largo del alambre en pulgadas es:
+     \[
+     4 \text{ pies} \times 12 \text{ pulgadas/pie} = 48 \text{ pulgadas}
+     \]
+
+2. **Determinar el número de trozos:**
+   - Tracy cortó el alambre en trozos de 6 pulgadas de largo.
+   - Para obtener el número de trozos, dividimos el largo total del alambre en pulgadas por el largo de cada trozo:
+     \[
+     \frac{48 \text{ pulgadas}}{6 \text{ pulgadas/trozo}} = 8 \text{ trozos}
+     \]
+
+Entonces, Tracy obtuvo 8 trozos de alambre.
+nfe:  129
+avg nfe:  178.0612244897959
+====================
+
+Generating...:  49%|████▉     | 49/100 [15:48<15:03, 17.71s/it]====================
+answer:  Para encontrar la cantidad total de unidades desocupadas en el edificio, seguir estos pasos:
+
+1. **Calcular la cantidad total de unidades en el edificio:**
+   - El edificio tiene 15 plantas.
+   - Cada planta tiene 8 unidades.
+   - Total de unidades = 15 plantas * 8 unidades/planta = 120 unidades.
+
+2. **Calcular la cantidad de unidades ocupadas:**
+   - Las 3/4 partes del edificio están ocupadas.
+   - Una planta tiene 8 unidades.
+   - Unidades ocupadas = (3/4) * 15 plantas * 8 unidades/planta = (3/4) * 120 unidades = 90 unidades.
+
+3. **Calcular la cantidad de unidades desocupadas:**
+   - Unidades desocupadas = Total de unidades - Unidades ocupadas.
+   - Unidades desocupadas = 120 unidades - 90 unidades = 30 unidades.
+
+Por tanto, la cantidad total de unidades desocupadas en el edificio es **30 unidades**.
+nfe:  131
+avg nfe:  177.12
+====================
+
+Generating...:  50%|█████     | 50/100 [16:04<14:09, 16.99s/it]====================
+answer:  Para determinar cuánto gana Lloyd por semana con la venta de huevos, debemos seguir los siguientes pasos:
+
+1. **Calcular el número de huevos producidos por día:**
+   - Las gallinas ponen 252 huevos por día.
+
+2. **Determinar el número de huevos vendidos por día:**
+   - Lloyd vende los huevos a $2 la docena.
+   - Una docena es igual a 10 huevos.
+   - Por tanto, el número de huevos vendidos por día es:
+     \[
+     \frac{252 \text{ huevos}}{10 \text{ huevos por docena}} = 25.2 \text{ docenas}
+     \]
+
+3. **Calcular el número de docenas vendidas por semana:**
+   - HAY 7 días en la semana.
+   - Por tanto, el número de docenas vendidas por semana es:
+     \[
+     25.2 \text{ docenas por día} \times 7 \text{ días} = 176.4 \text{ docenas}
+     \]
+
+4. **Calcular la ganancia por semana:**
+   - Lloyd vende cada docena por $2.
+   - Por tanto, la ganancia por semana es:
+     \[
+     176.4 \text{ docenas} \times 2 \text{ $ por docena} = 352.8 \text{ $
+     \]
+
+Por lo tanto, Lloyd gana $352.8 por semana con la venta de huevos.
+nfe:  169
+avg nfe:  176.9607843137255
+====================
+
+Generating...:  51%|█████     | 51/100 [16:22<14:21, 17.58s/it]====================
+answer:  Para resolver este problema, vamos a dividirlo en tres partes:
+
+1. **Calcular la distancia recorrida en el viaje:**
+   - Tom navega desde las 1 p.m. hasta las 4 p.m.
+   - La embarcación puede recorrer 10 millas por hora.
+   - El tiempo de viaje es 3 horas (de las 1 p.m. hasta las 4 p.m.).
+
+   - Distancia = Velocidad × Tiempo
+   - Distancia = 10 mph × 3 horas = 30 millas
+
+2. **Calcular el tiempo de regreso:**
+   - Tom navega a una velocidad de 6 millas por hora.
+   - La distancia de regreso también es 30 millas.
+
+   - Tiempo = Distancia / Velocidad
+   - Tiempo = 30 millas / 6 mph = 5 horas
+
+3. **Convertir el tiempo de regreso a minutos:**
+   - 1 hora = 60 minutos
+   - 5 horas = 5 × 60 minutos = 300 minutos
+
+Entonces, Tom tarda 300 minutos en regresar.
+nfe:  193
+avg nfe:  177.26923076923077
+====================
+
+Generating...:  52%|█████▏    | 52/100 [16:44<15:06, 18.89s/it]====================
+answer:  Para resolver este problema, vamos a dividirlo en pasos clave:
+
+1. **Calcular el peso total de las revistas de historietas:**
+   - Cada revista historical pesa \( \frac{1}{4} \) de una libra.
+   - Uriah saca 30 revistas de historietas.
+   - El peso total de las revistas de historietas es:
+     \[
+     30 \times \frac{1}{4} = \frac{30}{4} = 7.5 \text{ libras}
+     \]
+
+2. **Determinar el peso total deseado:**
+   - Uriah necesita sacar 15 libras de la bolsa.
+
+3. **Calcular el peso restante necesario:**
+   - El peso restante necesario es el peso total deseado menos el peso total de las revistas de historietas:
+     \[
+     15 - 7.5 = 7.5 \text{ libras}
+     \]
+
+4. **Determinar el peso de cada juguete:**
+   - Cada juguete pesa \( \frac{1}{2} \) de una libra.
+
+5. **Calcular el número de juguetes necesarios:**
+   - Para obtener el número de juguetes necesarios, dividimos el peso restante por el peso de cada juguete:
+     \[
+     \frac{7.5}{\frac{1}{2}} = 7.5 \times 2 = 15
+     \]
+
+Por tanto, Uriah deberá quitar **15 juguetes**.
+nfe:  196
+avg nfe:  177.62264150943398
+====================
+
+Generating...:  53%|█████▎    | 53/100 [17:06<15:25, 19.68s/it]====================
+answer:  Para determinar cuántos más ingresos obtuvo el mecánico el día con mayores ingresos, primero necesitamos calcular los ingresos para cada día y luego determinar la diferencia entre ellos.
+
+### Paso 1: Calcular los ingresos del jueves
+
+- **Neumáticos de camión en jueves**: 6
+- **Tarifa por neumático de camión en jueves**: $60
+- **Ingresos de camiones en jueves**: \( 6 \times 60 = 360 \)
+
+- **Neumáticos de automóvil en jueves**: 4
+- **Tarifa por neumático de automóvil en jueves**: $40
+- **Ingresos de automóviles en jueves**: \( 4 \times 40 = 160 \)
+
+- **Total de ingresos en jueves**: \( 360 + 160 = 520 \)
+
+### Paso 2: Calcular los ingresos del viernes
+
+- **Neumáticos de automóvil en viernes**: 12
+- **Tarifa por neumático de automóvil en viernes**: $40
+- **Ingresos de automóviles en viernes**: \( 12 \times 40 = 480 \)
+
+- **Total de ingresos en viernes**: \( 480 \)
+
+### Paso 3: Calcular la diferencia de ingresos entre jueves y viernes
+
+- **Ingresos en jueves**: $520
+- **Ingresos en viernes**: $480
+- **Diferencia de ingresos**: \( 520 - 480 = 40 \)
+
+### Respuesta
+
+El mecánico obtuvo $40 más de ingresos el jueves que que el viernes.
+nfe:  145
+avg nfe:  177.0185185185185
+====================
+
+Generating...:  54%|█████▍    | 54/100 [17:23<14:22, 18.75s/it]====================
+answer:  Para resolver este problema, vamos a analizarlo paso a paso:
+
+1. **Cantidad de gatitos adoptados por las hermanas Doubtfire:**
+   - Las hermanas Doubtfire adoptaron 7 gatitos en el refugio de animales local.
+
+2. **Cantidad de gatitos que ha tenido Patchy:**
+   - Patchy, la primera gata, ha tenido tres veces la cantidad de gatitos adoptados.
+   - Por tanto, Patchy ha tenido \(3 \times 7 = 21\) gatitos.
+
+3. **Cantidad de gatitos que ha tenido Trixie:**
+   - Trixie, la otra gata, ha tenido 12 gatitos.
+
+4. **Cantidad total de gatitos ahora en la familia:**
+   - Las hermanas Doubtfire adoptaron 7 gatitos.
+   - Patchy ha tenido 21 gatitos.
+   - Trixie ha tenido 12 gatitos.
+   - Por tanto, la cantidad total de gatitos ahora en la familia es:
+     \[
+     7 + 21 + 12 = 40
+     \]
+
+**Respuesta: La familia Doubtfire ahora tiene 40 gatitos.**
+nfe:  135
+avg nfe:  176.25454545454545
+====================
+
+Generating...:  55%|█████▌    | 55/100 [17:39<13:27, 17.93s/it]====================
+answer:  Para resolver este problema, vamos a seguir paso a paso:
+
+1. **Número de paletas iniciales:**
+   Jean comeza con 30 paletas.
+
+2. **Paletas comeridas:**
+   Jean come 2 paletas.
+
+3. **Paletas restantesantes:**
+   Substraemos las paletas comeridas del número total de paletas:
+   \[
+   30 - 2 = 28
+   \]
+   Ahora, Jean tiene 28 paletas restantes.
+
+4. **Paletas por bolsa:**
+   Jean quiere envasar 2 paletas en cada bolsa.
+
+5. **Número de bolsas:**
+   Para determinar cuántas bolsas puede llenar, dividimos el número de paletas restantes por el número de paletas por bolsa:
+   \[
+   \frac{28}{2} = 14
+   \]
+
+Por tanto, Jean puede llenar 14 bolsas.
+nfe:  139
+avg nfe:  175.58928571428572
+====================
+
+Generating...:  56%|█████▌    | 56/100 [17:55<12:49, 17.48s/it]====================
+answer:  Para determinar cuáantas veces Peter puede ir al cine, debemos seguir estos pasos:
+
+1. **Determinar el costo total de una visita al cine:**
+   - Costo de la entrada: $7
+   - Costo de las palomitas de maíz: $7
+   - Costo total de una visita: $7 + $7 = $14
+
+2. **Determinar cuáantas veces Peter puede ir al cine con su dinero:**
+   - Dinero disponible: $42
+   - Costo total de una visita: $14
+   - Número de visitas: $42 / $14
+
+3. **Realizar la división:**
+   - $42 / $14 = 3
+
+Por tanto, Peter puede ir al cine 3 veces.
+nfe:  129
+avg nfe:  174.7719298245614
+====================
+
+Generating...:  57%|█████▋    | 57/100 [18:10<12:04, 16.84s/it]====================
+answer:  Para determinar la cantidad máxima de cajas que se puede cargar en el camión sin exceder el límite de peso del puente, se debe considerar los siguientes pasos:
+
+1. **Determinar el peso total del camión vacío:**
+   - El peso combinado del conductor y el camión vacío es 3755 libras.
+   - El peso del conductor es asumido como 200 libras (por ejemplo, ya que no se proporciona el peso exacto del conductor).
+   - Enton, el peso del camión vacío es:
+     \[
+     3755 \text{ libras} - 200 \text{ libras} = 3555 \text{ libras}
+     \]
+
+2. **Determinar el peso máximo soportable por el puente:**
+   - El puente no puede soportar más de 5000 libras.
+
+3. **Calcular el peso máximo disponible para las cajas:**
+   - El peso del camión vacío es 3755 libras.
+   - El peso del conductor es 200 libras.
+   - Enton, el peso máximo disponible para las cajas es:
+     \[
+     5000 \text{ libras} - 3755 \text{ libras} = 1245 \text{ libras}
+     \]
+
+4. **Determinar la cantidad máxima de cajas que pueden cargar:**
+   - Cada caja pesa 15 libras.
+   - Enton, la cantidad máxima de cajas que pueden cargar es:
+     \[
+     \frac{1245 \text{ libras}}{15 \text{ libras/caja}} = 83 \text{ cajas}
+     \]
+
+En resumen, la cantidad máxima de cajas que se puede cargar en el camión sin exceder el límite de peso del puente es 83 cajas.
+nfe:  200
+avg nfe:  175.20689655172413
+====================
+
+Generating...:  58%|█████▊    | 58/100 [18:32<12:53, 18.42s/it]====================
+answer:  Para calcular el precio final de la compra de comestibles de Stephen, debemos considerar todos los factores involucrados en el pedido. Aquí hay un resumen de paso a paso:
+
+1. **Factura original**: La factura original fue de $40,00.
+
+2. **Tarifa del 25%**:
+   - La tarifa del 25% se calcula como:
+     \[
+     \text{Tarifa} = 0.25 \times 40,00 = 10,00
+     \]
+   - Añadimos la tarifa al total original:
+     \[
+     \text{Total con tarifa} = 40,00 + 10,00 = 50,00
+     \]
+
+3. **Gastos de envío**: Los gastos de envío fueron de $3,00.
+   - Añadimos los gastos de envío al total con tarifa:
+     \[
+     \text{Total con gastos de envío} = 50,00 + 3,00 = 53,00
+     \]
+
+4. **Propina**: Stephen agregó una propina de $4,00.
+   - Añadimos la propina al total con gastos de envío:
+     \[
+     \text{Total final} = 53,00 + 4,00 = 57,00
+     \]
+
+Por lo tanto, el precio final de la compra de comestibles de Stephen fue de $57,00.
+nfe:  154
+avg nfe:  174.84745762711864
+====================
+
+Generating...:  59%|█████▉    | 59/100 [18:51<12:33, 18.37s/it]====================
+answer:  Para determinar el número de frambuesas en total, debemos considerar las frutas en los racimos y las frutas individuales desparramadas por el arbusto. Vamos a hacerlo paso a paso:
+
+1. **Calculamos el número de frutas en los racimos:**
+   - Tienes 6 racimos.
+   - Cada racimo tiene 20 frutas.
+   - Así, el número de frutas en los racimos es:
+     \[
+     6 \text{ racimos} \times 20 \text{ frutas por racimo} = 120 \text{ frutas}
+     \]
+
+2. **Sumamos las frutas individuales:**
+   - Tienes 67 frutas individuales desparramadas por el arbusto.
+   - Así, el número total de frutas es:
+     \[
+     120 \text{ frutas} + 67 \text{ frutas} = 187 \text{ frutas}
+     \]
+
+En resumen, el número de frambuesas en total es 187.
+nfe:  125
+avg nfe:  174.01666666666668
+====================
+
+Generating...:  60%|██████    | 60/100 [19:05<11:29, 17.23s/it]====================
+answer:  Para determinar la cantidad de naranjas en buen estado, podemos seguir los pasos siguientes:
+
+1. **Cantidad total de naranjas**: La canasta contiene 25 naranjas.
+
+2. **Naranjas en mal estado**: Hay 1 naranja en mal estado.
+
+3. **Naranjas que no madurado**: El 20% de las naranjas no han madurado. Para calcular esto, tomamos 20% de 25:
+   \[
+   0.20 \times 25 = 5
+   \]
+   Entonces, hay 5 naranjas que no han madurado.
+
+4. **Naranjas agrias**: Hay 2 naranjas agrias.
+
+5. **Naranjas en buen estado**: El resto de las naranjas está en buen estado. Para calcular esto, restamos las naranjas en mal estado, las que no han madurado y las agrias de la cantidad total:
+   \[
+   25 - 1 - 5 - 2 = 17
+   \]
+   Entonces, hay 17 naranjas en buen estado.
+
+**Respuesta: 17**
+nfe:  152
+avg nfe:  173.65573770491804
+====================
+
+Generating...:  61%|██████    | 61/100 [19:23<11:12, 17.25s/it]====================
+answer:  Para determinar cuánto Janet pagó, debemos seguir los pasos siguientes:
+
+1. **Calcular el costo total del broche:**
+   - Costo del material: $500
+   - Costo del joyero: $800
+   - Costo total = $500 + $800 = $1300
+
+2. **Calcular el asegurado:**
+   - Asegurado = 10% del costo total
+   - Asegurado = 0.10 * $1300 = $130
+
+3. **Calcular el total a pagar:**
+   - Total a pagar = Costo total + Asegurado
+   - Total a pagar = $1300 + $130 = $1430
+
+Entonces, Janet pagó $1430.
+nfe:  113
+avg nfe:  172.67741935483872
+====================
+
+Generating...:  62%|██████▏   | 62/100 [19:36<10:13, 16.15s/it]====================
+answer:  Para determinar la pensión anual de Marcy al renunciar después de 30 años de trabajo, debemos considerar los siguientes pasos:
+
+1. **Identificar el tiempo de trabajo:**
+   - Marcy trabaja durante 40 años.
+   - Si renuncia después de 30 años, habrá trabajado durante 30 años.
+
+2. **Aplicar el porcentaje de pensión:**
+   - A partir de los 20 años, tiene derecho al 5% del valor de la pensión por año.
+   - La pensión anual es $50 000.
+
+3. **Calcular la pensión anual:**
+   - Pero, debemos determinar la pensión anual a partir de los 20 años.
+   - La pensión anual a partir de los 20 años es 5% de $50 000.
+   - 5% de $50 000 es 0.05 * $50 000 = $2,500.
+
+4. **Calcular la pensión anual inicial:**
+   - La pensión anual inicial es $50,000.
+   - A partir de los 20 años, la pensión anual es $2,500.
+   - La pensión anual a partir de los 20 años es $50,000 - $2,500 = $47,500.
+
+5. **Calcular la pensión anual cumplida:**
+   - Si renuncia después de 30 años, habría trabajado durante 30 años.
+   - A partir de los 20 años, habría trabajado durante 10 años.
+   - La pensión anual a partir de los 20 años es $47,500.
+   - La pensión anual a partir de los 20 años por 10 años es $47,500 * 10 = $475,000.
+
+6. **Calcular la pensión anual inicial:**
+   - La pensión anual inicial es $50,000.
+   - A partir de los 20 años, la pensión anual es $2,500.
+   - La pensión anual a partir de los 20 años es $50,000 - $2,500 = $47,500.
+
+7. **Calcular la pensión anual cumplida:**
+   - Si renuncia después de 30 años, habría trabajado durante 30 años.
+   - A partir de los 20 años, habría trabajado durante 10 años.
+   - La pensión anual a partir de los 20 años es $47,500.
+   - La pensión anual a partir de los 20 años por 10 años es $47,500 * 10 = $475,000.
+
+8. **Calcular la pensión anual inicial:**
+   - La pensión anual inicial es $50,000.
+   - A partir de los 20 años, la pensión anual es $2,500.
+   - La pensión anual a partir de los 20 años es $50,000 - $2,500 = $47,500.
+
+9. **Calcular la pensión anual cumplida:**
+   - La pensión anual cumplida es la suma de la pensión anual inicial y la pensión anual a partir de los 20 años.
+   - La pensión anual cumplida es $50,000 + $47,500 = $97,500.
+
+10. **Determinar la pensión anual:**
+    - Si Marcy renuncia después de 30 años de trabajo, recibirá una pensión anual de $97,500.
+nfe:  406
+avg nfe:  176.38095238095238
+====================
+
+Generating...:  63%|██████▎   | 63/100 [20:12<13:34, 22.00s/it]====================
+answer:  Para calcular el monto total que Aleena habrá pagado al final del año por el servicio de streaming, debemos dividir el año en dos partes: la primera mitad y la segunda mitad.
+
+1. **Primera mitad del año:**
+   - Aleena le cobra $140 por mes.
+   - La primera mitad del año consta de 6 meses.
+   - El monto pagado en la primera mitad es:
+     \[
+     140 \text{ dólares/mes} \times 6 \text{ meses} = 840 \text{ dólares}
+     \]
+
+2. **Segunda mitad del año:**
+   - La empresa le cobra un 10% menos de dinero en la segunda mitad del año.
+   - La segunda mitad del año también consta de 6 meses.
+   - El monto pagado en la segunda mitad es:
+     \[
+     140 \text{ dólares/mes} \times (1 - 0.10) = 140 \text{ dólares/mes} \times 0.90 = 126 \text{ dólares/mes}
+     \]
+   - El monto pagado en la segunda mitad es:
+     \[
+     126 \text{ dólares/mes} \times 6 \text{ meses} = 756 \text{ dólares}
+     \]
+
+3. **Monto total pagado:**
+   - El monto total pagado es la suma del monto pagado en la primera mitad y el monto pagado en la segunda mitad:
+     \[
+     840 \text{ dólares} + 756 \text{ dólares} = 1596 \text{ dólares}
+     \]
+
+Por lo tanto, el monto total que Aleena habrá pagado al final del año por el servicio de streaming es $1596.
+nfe:  187
+avg nfe:  176.546875
+====================
+
+Generating...:  64%|██████▍   | 64/100 [20:33<13:02, 21.75s/it]====================
+answer:  Para determinar cuánto millas Sophia puede hacer con un solo tanque de gasolina, debemos siguir estos pasos:
+
+1. **Identificar la distancia recorrida con el tanque lleno:**
+   - Sophia ha recorrido 100 millas desde que llenó el tanque por última vez.
+
+2. **Determinar la cantidad de gasolina utilizada:**
+   - Sophia usió 4 galones de gasolina para volver a llenar el tanque.
+
+3. **Calcular la distancia recorrida por galón de gasolina:**
+   - Sophia dió 100 millas con 4 galones de gasolina.
+   - La distancia recorrida por galón de gasolina es:
+     \[
+     \frac{100 \text{ millas}}{4 \text{ galones}} = 25 \text{ millas por galón}
+     \]
+
+4. **Calcular la distancia recorrida con un tanque lleno:**
+   - El manual del propietario indica que el tanque contiene 12 galones de gasolina.
+   - La distancia recorrida con un tanque lleno es:
+     \[
+     25 \text{ millas por galón} \times 12 \text{ galones} = 300 \text{ millas}
+     \]
+
+Por tanto, Sophia puede hacer 300 millas con un solo tanque de gasolina.
+nfe:  172
+avg nfe:  176.47692307692307
+====================
+
+Generating...:  65%|██████▌   | 65/100 [20:53<12:25, 21.29s/it]====================
+answer:  Para resolver este problema, vamos a dividirlo en pasos clave:
+
+1. **Calcular las horas pasadas mirando televisión y leyendo por día:**
+   - Jim pasa 2 horas mirando televisión.
+   - Luego, decide irse a la cama a leer durante la mitad de ese tiempo.
+   - La mitad de 2 horas es 1 hora.
+   - Por tanto, Jim pasa 1 hora leyendo por día.
+
+2. **Calcular las horas pasadas mirando televisión y leyendo por semana:**
+   - Jim hace esto 3 veces a la semana.
+   - Por día, pasa 2 horas mirando televisión y 1 hora leyendo.
+   - Por día, pasa 2 horas mirando televisión + 1 hora leyendo = 3 horas.
+   - Por semana, pasa 3 horas/día * 3 días = 9 horas.
+
+3. **Calcular las horas pasadas mirando televisión y leyendo en 4 semanas:**
+   - Por semana, pasa 9 horas.
+   - Por 4 semanas, pasa 9 horas/semana * 4 semanas = 36 horas.
+
+En resumen, Jim pasa 36 horas mirando televisión y leyendo al cabo de 4 semanas.
+nfe:  157
+avg nfe:  176.1818181818182
+====================
+
+Generating...:  66%|██████▌   | 66/100 [21:11<11:32, 20.36s/it]====================
+answer:  Para determinar el número total de personas enviadas por todas las escuelas, debemos considerar cada elemento de la composición del equipo.
+
+1. **Jugadores por equipo:**
+   - Cada equipo está formado por 5 jugadores.
+
+2. **Jugadores por escuela:**
+   - Cada escuela ha enviado un equipo de baloncesto femenino y un equipo de baloncesto masculino.
+   - Por tanto, cada escuela envía \(5 + 5 = 10\) jugadores.
+
+3. **Entrenadores por escuela:**
+   - Cada escuela ha enviado un entrenador para cada equipo.
+   - Por tanto, cada escuela envía \(1 + 1 = 2\) entrenadores.
+
+4. **Total de personas por escuela:**
+   - Cada escuela envía \(10\) jugadores + \(2\) entrenadores = \(12\) personas.
+
+5. **Total de personas para todas las escuelas:**
+   - Hay 4 escuelas.
+   - Por tanto, el total total de personas enviadas por todas las escuelas es \(4 \times 12 = 48\) personas.
+
+En resumen, el número total de personas enviadas por todas las escuelas es 48.
+nfe:  158
+avg nfe:  175.91044776119404
+====================
+
+Generating...:  67%|██████▋   | 67/100 [21:30<10:51, 19.76s/it]====================
+answer:  Para resolver este problema, vamos a analizarlo paso a paso:
+
+1. **Cantidad de Diamantes:**
+   - Se indica que había 175 diamantes.
+
+2. **Cantidad de Rubíes:**
+   - Se indica que había 35 rubíes menos que los diamantes.
+   - Por tanto, la cantidad de rubíes es:
+     \[
+     175 - 35 = 140
+     \]
+
+3. **Cantidad de Esmeraldas:**
+   - Se indica que había dos veces la cantidad de esmeraldas que de rubíes.
+   - Por tanto, la cantidad de esmeraldas es:
+     \[
+     2 \times 140 = 280
+     \]
+
+4. **Cantidad Total de Gemas:**
+   - Para obtener la cantidad total de gemas, sumamos la cantidad de diamantes, rubíes y esmeraldas:
+     \[
+     175 + 140 + 280 = 595
+     \]
+
+Por tanto, la cantidad total de gemas en el cofre es 595.
+nfe:  109
+avg nfe:  174.9264705882353
+====================
+
+Generating...:  68%|██████▊   | 68/100 [21:43<09:25, 17.68s/it]====================
+answer:  Para resolver este problema, vamos pasarlo paso a paso:
+
+1. **Determinar el número de niños:**
+   - Se sabe que hay el doble de niños que de niñas.
+   - Si hay 60 niñas, el número de niños es \( 2 \times 60 = 120 \).
+
+2. **Determinar el número total de estudiantes:**
+   - El número de niños es 120.
+   - El número de niñas es 60.
+   - El número total de estudiantes es \( 120 + 60 = 180 \).
+
+3. **Determinar el número de maestros:**
+   - Se sabe que cada maestro asigna 5 estudiantes.
+   - Para calcular el número de maestros, dividimos el número total de estudiantes por el número de estudiantes por maestro.
+   - El número de maestros es \( \frac{180}{5} = 36 \).
+
+Entonces, hay 36 maestros en la escuela del Dr. Wertz.
+nfe:  122
+avg nfe:  174.15942028985506
+====================
+
+Generating...:  69%|██████▉   | 69/100 [21:57<08:36, 16.65s/it]====================
+answer:  Para determinar con cuánto dinero comenzó Bailey, podemos seguir los siguientes pasos:
+
+1. **Identificar la cantidad de dinero inicial:**
+   - Denotemos la cantidad de dinero inicial que tiene Bailey como \( x \).
+
+2. **Calcular la cantidad de dinero recibido durante 8 semanas:**
+   - Bailey recibe una mesada semanal de $5 durante 8 semanas.
+   - Por tanto, la cantidad de dinero recibido es \( 5 \times 8 = 40 \) dólares.
+
+3. **Identificar la cantidad de dinero final:**
+   - Al final de las 8 semanas, Bailey tiene $100 en total.
+
+4. **Establecer la ecuación:**
+   - La cantidad de dinero final es la suma de la cantidad de dinero inicial y la cantidad de dinero recibido.
+   - Por tanto, la ecuación es: \( x + 40 = 100 \).
+
+5. **Resolver la ecuación:**
+   - Para encontrar \( x \), necesitamos isolarlo en un lado de la ecuación.
+   - Hacemos esto restando 40 de ambos lados de la ecuación:
+     \[
+     x + 40 - 40 = 100 - 40
+     \]
+   - Simplificamos ambos lados:
+     \[
+     x = 60
+     \]
+
+6. **Conclusión:**
+   - Bailey comenzó con $60.
+nfe:  197
+avg nfe:  174.4857142857143
+====================
+
+Generating...:  70%|███████   | 70/100 [22:18<09:04, 18.14s/it]====================
+answer:  Para determinar cuánto dinero Judy recauda en una semana, debemos dividir el proceso en pasos:
+
+1. **Calcular el número de clases en la semana:**
+   - En los días de la semana: 5 clases por día * 7 días = 35 clases
+   - En sábados: 8 clases
+   - Total de clases en la semana: 35 clases + 8 clases = 43 clases
+
+2. **Calcular el número de alumnos en la semana:**
+   - Cada clase hay 15 alumnos
+   - Total de alumnos en la semana: 43 clases * 15 alumnos por clase = 645 alumnos
+
+3. **Calcular la recaudación en la semana:**
+   - Cada alumno cobra $15.00
+   - Recaudación total en la semana: 645 alumnos * $15.00 por alumno = $9,675.00
+
+Por lo tanto, Judy recauda $9,675.00 en una semana.
+nfe:  128
+avg nfe:  173.83098591549296
+====================
+
+Generating...:  71%|███████   | 71/100 [22:34<08:20, 17.27s/it]====================
+answer:  Para determinar el total number de instrucciones que Kelian debe leer para preparar los dos platos, seguirás estos pasos:
+
+1. **Identifica el número de instrucciones de la primera receta:**
+   - La primera receta tiene 20 instrucciones.
+
+2. **Identifica el número de instrucciones de la segunda receta:**
+   - La segunda receta tiene el doble de instrucciones que la primera.
+   - Por tanto, la segunda receta tiene \(2 \times 20 = 40\) instrucciones.
+
+3. **Suma el número de instrucciones de ambas recetas:**
+   - Total instrucciones = Instrucciones de la primera receta + Instrucciones de la segunda receta
+   - Total instrucciones = 20 + 40
+   - Total instrucciones = 60
+
+Por tanto, Kelian debe leer un total de 60 instrucciones para preparar los dos platos.
+nfe:  106
+avg nfe:  172.88888888888889
+====================
+
+Generating...:  72%|███████▏  | 72/100 [22:46<07:25, 15.89s/it]====================
+answer:  Para encontrar cuánto dinero Tommy recauda, necesitamos calcular los recaudos de las brownies y las tartas de queso y luego los sumamos. Aquí hay la solución paso a paso:
+
+1. **Calcular los recaudos de las brownies:**
+   - Tommy vende 43 brownies.
+   - Cada brownie se vende por $3.
+   - Así, los recaudos de las brownies son:
+     \[
+     43 \text{ brownies} \times \$3 \text{ por brownie} = \$129
+     \]
+
+2. **Calcular los recaudos de las tartas de queso:**
+   - Tommy vende 23 porciones de tarta de queso.
+   - Cada tarta de queso se vende por $4.
+   - Así, los recaudos de las tartas de queso son:
+     \[
+     23 \text{ porciones} \times \$4 \text{ por tarta} = \$92
+     \]
+
+3. **Sumar los recaudos de las brownies y las tartas de queso:**
+   - Los recaudos de las brownies son \$129.
+   - Los recaudos de las tartas de queso son \$92.
+   - Así, los recaudos totales son:
+     \[
+     \$129 + \$92 = \$221
+     \]
+
+En total, Tommy recauda \$221.
+nfe:  147
+avg nfe:  172.53424657534248
+====================
+
+Generating...:  73%|███████▎  | 73/100 [23:03<07:18, 16.23s/it]====================
+answer:  Para determinar cuánto Shiela pagará cada mes durante 3 meses, debemos seguir estos pasos:
+
+1. **Calculo del costo total de los teléfonos:**
+   - Shiela compró 5 teléfonos, cada uno por $150.
+   - Costo total = 5 teléfonos * $150/teléfono = $750.
+
+2. **Calculo de la cuota mensual:**
+   - Shiela pagará la cuota en 3 meses.
+   - Cuota mensual = Costo total / 3 meses = $750 / 3 = $250.
+
+3. **Calculo del interés mensual:**
+   - El interés es del 2% a la cuota mensual.
+   - Interés mensual = 2% de $250 = 0.02 * $250 = $5.
+
+4. **Calculo de la cuota mensual con interés:**
+   - Cuota mensual con interés = Cuota mensual + Interés mensual = $250 + $5 = $255.
+
+Por tanto, Shiela pagará $255 cada mes durante 3 meses.
+nfe:  153
+avg nfe:  172.27027027027026
+====================
+
+Generating...:  74%|███████▍  | 74/100 [23:21<07:15, 16.74s/it]====================
+answer:  Para calcular el cantidad de dinero que obtendrá Artie, debemos redondar los precos de cada tipo de flores al dólar más cercano y luego multiplicarlos por el número de macetas vendidas. Vamos a paso paso:
+
+1. **Redondear los precios:**
+   - Caléndulas: $2.74 por maceta (redondeado al dólar más cercano)
+   - Petunias: $1.87 por maceta (redondeado al dólar más cercano)
+   - Begonias: $2.12 por maceta (redondeado al dólar más cercano)
+
+2. **Calcular el precio total de cada tipo de flores:**
+   - Caléndulas: Redondeado al dólar más cercano = $2.74
+   - Petunias: Redondeado al dólar más cercano = $1.87
+   - Begonias: Redondeado al dólar más cercano = $2.12
+
+3. **Multiplicar los precios por el número de macetas vendidas:**
+   - Caléndulas: $2.74/maceta * 12 macetas = $32.88
+   - Petunias: $1.87/maceta * 9 macetas = $16.83
+   - Begonias: $2.12/maceta * 17 macetas = $36.64
+
+4. **Sumar los precios totales:**
+   - Total = $32.88 (caléndulas) + $16.83 (petunias) + $36.64 (begonias)
+   - Total = $86.35
+
+Entonces, Artie obtendrá $86.35.
+nfe:  189
+avg nfe:  172.49333333333334
+====================
+
+Generating...:  75%|███████▌  | 75/100 [23:43<07:32, 18.10s/it]====================
+answer:  Para resolver este problema, necesitamos calcular la superficie de cada planta en el castillo de arena y luego determinar la superficie promedio de las plantas. Vamos a hacer paso a paso:
+
+1. **Determinar la superficie de la planta superior:**
+   - La planta superior tiene una superficie de 16 pies cuadrados.
+
+2. **Calcular la superficie de la planta inferior:**
+   - La planta inferior tendrá la mitad de la superficie de la planta superior.
+   - Entonces, la superficie de la planta inferior es \( \frac{16}{2} = 8 \) pies cuadrados.
+
+3. **Calcular la superficie de la planta tercera:**
+   - La planta tercera tendrá la mitad de la superficie de la planta inferior.
+   - Entonces, la superficie de la planta tercera es \( \frac{8}{2} = 4 \) pies cuadrados.
+
+4. **Calcular la superficie de la planta cuarto:**
+   - La planta cuarta tendrá la mitad de la superficie de la planta tercera.
+   - Entonces, la superficie de la planta cuarta es \( \frac{4}{2} = 2 \) pies cuadrados.
+
+5. **Calcular la superficie promedio de las plantas:**
+   - La superficie promedio es la suma de las superficies de todas las plantas dividida por el número de plantas.
+   - Suma de las superficies: \( 16 + 8 + 4 + 2 = 30 \) pies cuadrados.
+   - Número de plantas: 4.
+   - Superficie promedio: \( \frac{30}{4} = 7.5 \) pies cuadrados.
+
+Entonces, la superficie promedio de una planta es 7.5 pies cuadrados.
+nfe:  183
+avg nfe:  172.6315789473684
+====================
+
+Generating...:  76%|███████▌  | 76/100 [24:02<07:27, 18.63s/it]====================
+answer:  Para determinar cuántas bolsas de alimento para perros Cecilia usará durante el primer año, debemos dividir la calculación en dos partes: la primera para los primeros 180 días y la segunda para el resto del año.
+
+### Parte 1: Primeros 180 días
+
+1. **Número de tazas necesarias para los primeros 180 días:**
+   - Cada día, el cachorro necesita 1 taza.
+   - Durante los primeros 180 días, necesitará 180 tazas.
+
+2. **Número de bolsas necesarias para los primeros 180 días:**
+   - Cada bolsa contiene 110 tazas.
+   - Para obtener el número de bolsas necesarias, dividimos el número de tazas necesarias por el número de tazas por bolsa:
+     \[
+     \frac{180}{110} \approx 1.6364
+     \]
+   - Como no podemos usar una bola completa, necesitamos 2 bolsas.
+
+### Parte 2: Resto del año
+
+1. **Número de días restantes:**
+   - Un año tiene 365 días.
+   - Los primeros 180 días han sido utilizados.
+   - Los días restantes son \( 365 - 180 = 185 \) días.
+
+2. **Número de tazas necesarias para el resto del año:**
+   - Cada día, el cachorro necesita 2 tazas.
+   - Durante los 185 días restantes, necesitará \( 185 \times 2 = 370 \) tazas.
+
+3. **Número de bolsas necesarias para el resto del año:**
+   - Cada bolsa contiene 110 tazas.
+   - Para obtener el número de bolsas necesarias, dividimos el número de tazas necesarias por el número de tazas por bolsa:
+     \[
+     \frac{370}{110} \approx 3.3364
+     \]
+   - Como no podemos usar una bola completa, necesitamos 4 bolsas.
+
+### Cantidad total de bolsas necesarias
+
+- Para los primeros 180 días: 2 bolsas
+- Para el resto del año: 4 bolsas
+
+**Cantidad total de bolsas necesarias:**
+\[
+2 + 4 = 6
+\]
+
+Entonces, Cecilia usará 6 bolsas de alimento para perros durante el primer año.
+nfe:  259
+avg nfe:  173.75324675324674
+====================
+
+Generating...:  77%|███████▋  | 77/100 [24:29<08:00, 20.88s/it]====================
+answer:  Para calcular la diferencia en la cantidad de ropa que lavan Raymond y David, puede seguir estos pasos:
+
+1. **Determinar la cantidad de ropa que lava Sarah:**
+   - Sarah lava 400 libras de ropa.
+
+2. **Determinar la cantidad de ropa que lava Raymond:**
+   - Raymond lava la mitad de la ropa que Sarah.
+   - Entonces, la cantidad de ropa que lava Raymond es \( \frac{1}{2} \times 400 = 200 \) libras.
+
+3. **Determinar la cantidad de ropa que lava David:**
+   - Sarah lava 4 veces más de ropa que David.
+   - Sea \( D \) sea la cantidad de ropa que lava David.
+   - Entonces, \( 4D = 400 \).
+   - Soluendo \( D \), \( D = \frac{400}{4} = 100 \) libras.
+
+4. **Calcular la diferencia en la cantidad de ropa que lavan Raymond y David:**
+   - Raymond lava 200 libras de ropa.
+   - David lava 100 libras de ropa.
+   - La diferencia en la cantidad de ropa que lavan Raymond y David es \( 200 - 100 = 100 \) libras.
+
+En resumen, la diferencia en la cantidad de ropa que lavan Raymond y David es 100 libras.
+nfe:  110
+avg nfe:  172.93589743589743
+====================
+
+Generating...:  78%|███████▊  | 78/100 [24:41<06:45, 18.42s/it]====================
+answer:  Para determinar cuánto dinero ahorra si compra 18 flores al mejor precio, necesitamos comparar las opciones de comprar flores en ramos de 3 unidades y ramos de 2 unidades.
+
+### Ramos de 3 unidades:
+1. **Precio por ramo de 3 unidades**: $2.50
+2. **Cantidad de ramos de 3 unidades necesarios para 18 flores**: 
+   \[
+   \frac{18 \text{ flores}}{3 \text{ flores por ramo}} = 6 \text{ ramos}
+   \]
+3. **Costo total de 6 ramos de 3 unidades**:
+   \[
+   6 \text{ ramos} \times \$2.50 \text{ por ramo} = \$15.00
+   \]
+
+### Ramos de 2 unidades:
+1. **Precio por ramo de 2 unidades**: $1
+2. **Cantidad de ramos de 2 unidades necesarios para 18 flores**: 
+   \[
+   \frac{18 \text{ flores}}{2 \text{ flores por ramo}} = 9 \text{ ramos}
+   \]
+3. **Costo total de 9 ramos de 2 unidades**:
+   \[
+   9 \text{ ramos} \times \$1 \text{ por ramo} = \$9.00
+   \]
+
+### Comparación:
+- **Costo total de ramos de 3 unidades**: $15.00
+- **Costo total de ramos de 2 unidades**: $9.00
+
+### Ahorro:
+- **Ahorro**: 
+  \[
+  \$15.00 - \$9.00 = \$6.00
+  \]
+
+### Conclusión:
+Vincent ahorra $6.00 si compra 18 flores en ramos de 2 unidades.
+nfe:  167
+avg nfe:  172.86075949367088
+====================
+
+Generating...:  79%|███████▉  | 79/100 [24:59<06:25, 18.34s/it]====================
+answer:  Para determinar el costo final del servicio de peluquería, seguimos estos pasos:
+
+1. **Calcula el porcentaje del descuento:**
+   - El descuento es del 30%.
+   - Para calcular el porcentaje del descuento, multiplicamos el costo original por el porcentaje de descuento.
+   - Costo original: $100
+   - Porcentaje de descuento: 30% = 0.30
+   - Porcentaje del descuento: $100 * 0.30 = $30
+
+2. **Resta el porcentaje del descuento al costo original:**
+   - Costo final = Costo original - Porcentaje del descuento
+   - Costo final = $100 - $30 = $70
+
+Por lo tanto, el servicio de peluquería cuesta $70.
+nfe:  135
+avg nfe:  172.3875
+====================
+
+Generating...:  80%|████████  | 80/100 [25:16<05:53, 17.68s/it]====================
+answer:  Para resolver el problema paso a paso, vamos a seguir esto:
+
+1. **Calcular la cantidad de agua que recibió a cada niña:**
+   - Cada niña recibió \( \frac{1}{6} \) de los 24 litros de agua.
+   - \( \frac{1}{6} \times 24 = 4 \) litros.
+
+2. **Calcular la cantidad de agua que recibieron las dosas niñas:**
+   - Cada niña recibió 4 litros.
+   - Las dos niñas recibieron \( 2 \times 4 = 8 \) litros.
+
+3. **Calcular la cantidad de agua que recibió el niño:**
+   - El niño recibió 6 litros de agua.
+
+4. **Calcular la cantidad total de agua recibida por las niña y el niño:**
+   - Las dos niñas recibieron 8 litros.
+   - El niño recibió 6 litros.
+   - La cantidad total recibida por las niñas y el niño es \( 8 + 6 = 14 \) litros.
+
+5. **Calcular la cantidad de agua que sobra:**
+   - La cantidad total de agua disponible es 24 litros.
+   - La cantidad total recibida por las niñas y el niño es 14 litros.
+   - La cantidad de agua que sobra es \( 24 - 14 = 10 \) litros.
+
+Así, sobran 10 litros de agua.
+nfe:  183
+avg nfe:  172.5185185185185
+====================
+
+Generating...:  81%|████████  | 81/100 [25:36<05:49, 18.40s/it]====================
+answer:  Para determinar cuántas pegatinas le quedan a Charlie, seguiremos los pasos siguientes:
+
+1. **Cantidad inicial de pegatinas:**
+   Charlie comenzó con 10 pegatinas.
+
+2. **Pegatinas compradas:**
+   Charlie compró 21 pegatinas en la tienda.
+   \[
+   10 + 21 = 31
+   \]
+   Ahora, tiene 31 pegatinas.
+
+3. **Pegatinas regaladas:**
+   Le regalaron 23 pegatinas para su cumpleaños.
+   \[
+   31 + 23 = 54
+   \]
+   Ahora, tiene 54 pegatinas.
+
+4. **Pegatinas dadas a su hermana:**
+   Le dio 9 pegatinas a su hermana.
+   \[
+   54 - 9 = 45
+   \]
+   Ahora, tiene 45 pegatinas.
+
+5. **Pegatinas usadas:**
+   Usó 28 pegatinas para decorar una tarjeta de felicitación.
+   \[
+   45 - 28 = 17
+   \]
+   Ahora, tiene 17 pegatinas.
+
+Por tanto, Charlie queda con 17 pegatinas.
+nfe:  132
+avg nfe:  172.02439024390245
+====================
+
+Generating...:  82%|████████▏ | 82/100 [25:51<05:14, 17.48s/it]====================
+answer:  Para encontrar los pesos combinados de Grace y Alex, seguir estos pasos:
+
+1. **Identificar el peso de Grace:**
+   - Grace pesa 125 libras.
+
+2. **Calificar el peso de Alex:**
+   - Alex pesa 2 libras menos que 4 veces el peso de Grace.
+   - Primero, calcula 4 veces el peso de Grace:
+     \[
+     4 \times 125 = 500 \text{ libras}
+     \]
+   - Luego, le resta 2 libras a este resultado:
+     \[
+     500 - 2 = 478 \text{ libras}
+     \]
+
+3. **Calcular los pesos combinados:**
+   - Suma el peso de Grace y el peso de Alex:
+     \[
+     125 + 478 = 603 \text{ libras}
+     \]
+
+Entonces, los pesos combinados de Grace y Alex son 603 libras.
+nfe:  103
+avg nfe:  171.19277108433735
+====================
+
+Generating...:  83%|████████▎ | 83/100 [26:03<04:30, 15.89s/it]====================
+answer:  Para determinar el número de espinas en total, debemos seguir los pasos siguientes:
+
+1. **Calcular el número de rosas en rosales:**
+   - Dan planta 3 rosales.
+   - Cada rosal tiene 25 rosas.
+   - Multiplicamos el número de rosales por el número de rosas por rosal:
+     \[
+     3 \text{ rosales} \times 25 \text{ rosas/rosal} = 75 \text{ rosas}
+     \]
+
+2. **Calcular el número de espinas por rosa:**
+   - Cada rosa tiene 8 espinas.
+
+3. **Calcular el número de espinas en total:**
+   - Multiplicamos el número de rosas por el número de espinas por rosa:
+     \[
+     75 \text{ rosas} \times 8 \text{ espinas/rosa} = 600 \text{ espinas}
+     \]
+
+Entonces, hay 600 espinas en total.
+nfe:  110
+avg nfe:  170.46428571428572
+====================
+
+Generating...:  84%|████████▍ | 84/100 [26:16<03:59, 14.98s/it]====================
+answer:  Para resolver este problema, podemos siguir los siguientes pasos:
+
+1. **Definir las variables:**
+   - Llamemos \( G \) el número de partidos ganados.
+   - Llamemos \( P \) el número de partidos perdidos.
+
+2. **Establecer las relaciones:**
+   - Se sabe que el equipo jugó un total de 22 partidos.
+   - Se sabe que ganó 8 más partidos que perdió.
+
+   Entonces, podemos establecerse las siguientes ecuaciones:
+   \[
+   G + P = 22
+   \]
+   \[
+   G = P + 8
+   \]
+
+3. **Substituir la expresión de \( G \) en la primera ecuación:**
+   \[
+   (P + 8) + P = 22
+   \]
+
+4. **Simplific la ecuación:**
+   \[
+   2P + 8 = 22
+   \]
+
+5. **Soluñar para \( P \):**
+   \[
+   2P = 22 - 8
+   \]
+   \[
+   2P = 14
+   \]
+   \[
+   P = \frac{14}{2}
+   \]
+   \[
+   P = 7
+   \]
+
+6. **Encontrar \( G \) utilizando la relación \( G = P + 8 \):**
+   \[
+   G = 7 + 8
+   \]
+   \[
+   G = 15
+   \]
+
+Entonces, el equipo ganó 15 partidos.
+nfe:  168
+avg nfe:  170.43529411764706
+====================
+
+Generating...:  85%|████████▌ | 85/100 [26:35<04:00, 16.06s/it]====================
+answer:  Para determinar el número total de bloques del edredón, debemos seguir estos pasos:
+
+1. **Calcular el número de vacaciones que Gene ha hecho:**
+   - Gene va cuatro veces al año.
+   - Ha hacho vacaciones desde que tenía 23 años y ahora tiene 34 años.
+   - Primero, calculamos el número de años que han pasado desde que empezó vacaciones:
+     \[
+     34 - 23 = 11 \text{ años}
+     \]
+   - Ahora, calculamos el número de vacaciones que ha hecho en esos 11 años:
+     \[
+     11 \text{ años} \times 4 \text{ vacaciones/año} = 44 \text{ vacaciones}
+     \]
+
+2. **Determinar el número de bloques del edredón:**
+   - Cada camiseta es un bloque del edredón.
+   - Gene tiene 44 camisetas (una por una por vacación).
+
+3. **Verificar la estructura del edredón:**
+   - Cada fila está hecha de bloques de diferentes años de vacaciones.
+   - Gene ha hecho vacaciones desde 23 años y ahora tiene 34 años, lo que significa que cada fila contiene bloques de diferentes años.
+   - El número de filas es igual al número de años que han pasado desde que empezó las vacaciones:
+     \[
+     11 \text{ filas}
+     \]
+
+4. **Confirmar el número total de bloques:**
+   - Cada fila contiene 4 bloques (una por año).
+   - El número total de bloques es el número de filas multiplicado por el número de bloques por fila:
+     \[
+     11 \text{ filas} \times 4 \text{ bloques/fila} = 44 \text{ bloques}
+     \]
+
+Por lo tanto, Gene tiene 44 bloques en total en su edredón.
+nfe:  278
+avg nfe:  171.6860465116279
+====================
+
+Generating...:  86%|████████▌ | 86/100 [27:03<04:38, 19.88s/it]====================
+answer:  Para resolver este problema, vamos a dividirlo en tres partes:
+
+1. **Primera activación:**
+   - La alarma sonó 4 veces.
+
+2. **Segunda activación:**
+   - La alarma sonó 3 veces más que la primera vez.
+   - Entonces, sonó \(4 + 3 = 7\) veces.
+
+3. **Tercera activación:**
+   - La alarma sonó la mitad del tiempo de la segunda vez.
+   - Entonces, sonó \(\frac{7}{2} = 3.5\) veces.
+
+Ahora, sumamos todas las activaciones:
+
+- Primera activación: 4 veces
+- Segunda activación: 7 veces
+- Tercera activación: 3.5 veces
+
+Total:
+\[ 4 + 7 + 3.5 = 14.5 \]
+
+Por tanto, la alarma sonó un total de 14.5 veces.
+nfe:  121
+avg nfe:  171.10344827586206
+====================
+
+Generating...:  87%|████████▋ | 87/100 [27:18<03:58, 18.36s/it]====================
+answer:  Para calcular el salario anual de Sylvie después de tres años más de servicio, debemos seguir los siguientes pasos:
+
+1. **Determinar el salario inicial:**
+   - La empresa paga $600 por mes.
+   - El salario inicial es $600.
+
+2. **Calcular el salario inicial anual:**
+   - El salario inicial anual es el salario inicial mensual multiplicado por 12.
+   - Salario inicial anual = $600 * 12 = $7,200.
+
+3. **Calcular el aumento por año:**
+   - La empresa aumenta el salario un 10% cada año.
+   - El aumento por año es 10% del salario inicial.
+   - Aumento por año = 10% de $7,200 = 0.10 * $7,200 = $720.
+
+4. **Calcular el salario después de 5 años:**
+   - Sylvie ha trabajado en la empresa durante 5 años.
+   - El salario después de 5 años es el salario inicial anual más el aumento por año multiplicado por 5 años.
+   - Salario después de 5 años = $7,200 + (5 * $720) = $7,200 + $3,600 = $10,800.
+
+5. **Calcular el salario después de 8 años:**
+   - Sylvie ha trabajado en la empresa durante 8 años.
+   - El salario después de 8 años es el salario después de 5 años más el aumento por año multiplicado por 3 años.
+   - Salario después de 8 años = $10,800 + (3 * $720) = $10,800 + $2,160 = $12,960.
+
+6. **Calcular el salario después de 9 años:**
+   - Sylvie ha trabajado en la empresa durante 9 años.
+   - El salario después de 9 años es el salario después de 8 años más el aumento por año multiplicado por 1 año.
+   - Salario después de 9 años = $12,960 + (1 * $720) = $12,960 + $720 = $13,680.
+
+7. **Calcular el salario después de 10 años:**
+   - Sylvie ha trabajado en la empresa durante 10 años.
+   - El salario después de 10 años es el salario después de 9 años más el aumento por año multiplicado por 1 año.
+   - Salario después de 10 años = $13,680 + (1 * $720) = $13,680 + $720 = $14,400.
+
+8. **Calcular el salario después de 12 años:**
+   - Sylvie ha trabajado en la empresa durante 12 años.
+   - El salario después de 12 años es el salario después de 10 años más el aumento por año multiplicado por 2 años.
+   - Salario después de 12 años = $14,400 + (2 * $720) = $14,400 + $1,440 = $15,840.
+
+9. **Calcular el salario anual:**
+   - El salario anual es el salario después de 12 años multiplicado por 12.
+   - Salario anual = $15,840 * 12 = $190,080.
+
+Entonces, el salario anual de Sylvie después de tres años más de servicio es $190,080.
+nfe:  250
+avg nfe:  172.0
+====================
+
+Generating...:  88%|████████▊ | 88/100 [27:44<04:05, 20.50s/it]====================
+answer:  Para resolver este problema, podemos establecer una silla de ecuaciones basadas en la información dada.
+
+1. **Definir las variables:**
+   - Dé que \( H \) sea el número de copias vendidas por Harald.
+   - Dé que \( M \) sea el número de copias vendidas por Marilyn.
+
+2. **Establecer las relaciones:**
+   - Según el problema, Marilyn vendió 10 veces más copias que Harald. Entonces, \( M = 10H \).
+   - Juntos vendieron 88 000 copias. Entonces, \( H + M = 88,000 \).
+
+3. **Substituir la relación en la segunda ecuación:**
+   - Como \( M = 10H \), podemos sustituir \( M \) en la segunda ecuación por \( 10H \).
+   - Entonces, \( H + 10H = 88,000 \).
+
+4. **Simplificar la ecuación:**
+   - Combina las variables en la derecha: \( 11H = 88,000 \).
+
+5. **Resuelve \( H \):**
+   - Divide los lados de la ecuación por 11: \( H = \frac{88,000}{11} \).
+   - Calcule el valor: \( H = 8,000 \).
+
+Entonces, Harald vendió 8,000 copias.
+nfe:  186
+avg nfe:  172.1573033707865
+====================
+
+Generating...:  89%|████████▉ | 89/100 [28:04<03:45, 20.49s/it]====================
+answer:  Para determinar cuánto gastará en las bolsas de regalo, seguir estos pasos:
+
+1. **Calcular el número de asistentes que no llegan:**
+   - Invitó a 16 amigos.
+   - 1/4 de los asistentes no llegan.
+   - Número de asistentes que no llegan = \( \frac{1}{4} \times 16 = 4 \).
+
+2. **Calcular el número de asistentes que llegan:**
+   - Total de asistentes = 16.
+   - Asistentes que no llegan = 4.
+   - Asistentes que llegan = \( 16 - 4 = 12 \).
+
+3. **Calcular el número de bolsas de regalo necesari:**
+   - Necesita 0.75 bolsas de regalo por invitado.
+   - Asistentes que llegan = 12.
+   - Número de bolsas de regalo necesari = \( 0.75 \times 12 = 9 \).
+
+4. **Calcular el costo de las bolsas de regalo:**
+   - Cada bola de regalo cuesta $2.
+   - Número de bolsas de regalo necesari = 9.
+   - Costo total = \( 9 \times 2 = 18 \).
+
+Por tanto, Christina gastará $18 en las bolsas de regalo.
+nfe:  144
+avg nfe:  171.84444444444443
+====================
+
+Generating...:  90%|█████████ | 90/100 [28:20<03:12, 19.24s/it]====================
+answer:  Para resolver este problema, necesitamos calcular la cantidad de ensalada de papa necesaria para todos los dinosaurios del picnic. Vamos a hacerlo paso a paso:
+
+1. **Calcular la cantidad de ensalada de papa necesaria para los adultos:**
+   - Cada dinosaurio adulto comer 10 libras de ensalada de papa.
+   - Habrá 20 adultos en el picnic.
+   - Enton, la cantidad de ensalada de papa necesaria para los adultos es:
+     \[
+     20 \text{ adultos} \times 10 \text{ libras/adulto} = 200 \text{ libras}
+     \]
+
+2. **Calcular la cantidad de ensalada de papa necesaria para los niños:**
+   - Cada niño comerá la mitad de lo que comerá un adulto.
+   - Un adulto comer 10 libras de ensalada de papa, entonces un niño comerá:
+     \[
+     \frac{10 \text{ libras}}{2} = 5 \text{ libras}
+     \]
+   - Habrá 5 niños en el picnic.
+   - Enton, la cantidad de ensalada de papa necesaria para los niños es:
+     \[
+     5 \text{ niños} \times 5 \text{ libras/niño} = 25 \text{ libras}
+     \]
+
+3. **Calcular la cantidad total de ensalada de papa necesaria para todos los dinosaurios:**
+   - Suma la cantidad de ensalada de papa necesaria para los adultos y la cantidad necesaria para los niños:
+     \[
+     200 \text{ libras} + 25 \text{ libras} = 225 \text{ libras}
+     \]
+
+Por lo tanto, Ted debe llevar **225 libras de ensalada de papa** al picnic.
+nfe:  168
+avg nfe:  171.8021978021978
+====================
+
+Generating...:  91%|█████████ | 91/100 [28:40<02:52, 19.19s/it]====================
+answer:  Para resolver el problema paso a paso, vamos a identificar la información dada y calcular la cantidad de mascotas que tiene cada uno de los membres.
+
+1. **Marcia tiene dos mascotas más que Cindy:**
+   - Cindy tiene 4 mascotas.
+   - Marcia tiene 4 + 2 = 6 mascotas.
+
+2. **Jan tiene tres veces más mascotas que Marcia:**
+   - Marcia tiene 6 mascotas.
+   - Jan tiene 3 * 6 = 18 mascotas.
+
+3. **Sumamos la cantidad de mascotas de todos los tres:**
+   - Cindy tiene 4 mascotas.
+   - Marcia tiene 6 mascotas.
+   - Jan tiene 18 mascotas.
+   - Total = 4 + 6 + 18 = 28 mascotas.
+
+Por tanto, Cindy, Marcia y Jan tienen en total 28 mascotas.
+nfe:  125
+avg nfe:  171.29347826086956
+====================
+
+Generating...:  92%|█████████▏| 92/100 [28:54<02:23, 17.92s/it]====================
+answer:  Para resolver el problema, vamos paso a paso:
+
+1. **Identificar la edad de James:**
+   - James tiene 10 años.
+
+2. **Identificar la edad de Corey:**
+   - James es 1 año menor que Corey.
+   - Por tanto, Corey tiene \( 10 + 1 = 11 \) años.
+
+3. **Identificar la edad de Amy:**
+   - Amy es 2 años menor que Corey.
+   - Por lo tanto, Amy tiene \( 11 - 2 = 9 \) años.
+
+4. **Identificar la edad de Jackson:**
+   - Amy es 5 años mayor que Jackson.
+   - Por lo tanto, Jackson tiene \( 9 - 5 = 4 \) años.
+
+En resumen, Jackson tiene 4 años.
+nfe:  91
+avg nfe:  170.43010752688173
+====================
+
+Generating...:  93%|█████████▎| 93/100 [29:05<01:50, 15.83s/it]====================
+answer:  Para resolver este problema, vamos a pasarlo de paso a paso:
+
+1. **Determinar la velocidad inicial de Lee:**
+   - Lee corre la carrera de obstáculos de 400 metros en 38 segundos.
+   - La velocidad inicial de Lee es:
+     \[
+     \text{Velocidad inicial de Lee} = \frac{400 \text{ metros}}{38 \text{ segundos}} \approx 10.53 \text{ metros por segundo}
+     \]
+
+2. **Determinar la velocidad inicial de Gerald:**
+   - Lee corre dos segundos más rápido que Gerald.
+   - Lee corre la carrera de 400 metros en 38 segundos.
+   - Lee corre dos segundos más rápido que Gerald, entonces Gerald corre la carrera de obstáculos de 400 metros en:
+     \[
+     38 \text{ segundos} + 2 \text{ segundos} = 40 \text{ segundos}
+     \]
+   - La velocidad inicial de Gerald es:
+     \[
+     \text{Velocidad inicial de Gerald} = \frac{400 \text{ metros}}{40 \text{ segundos}} \approx 10.00 \text{ metros por segundo}
+     \]
+
+3. **Determinar la velocidad mejorada de Gerald:**
+   - Gerald mejoró su velocidad un 10%.
+   - La velocidad mejorada de Gerald es:
+     \[
+     \text{Velocidad mejorada de Gerald} = 10.00 \text{ metros por segundo} \times 1.10 = 11.00 \text{ metros por segundo}
+     \]
+
+4. **Calcular el tiempo de Lee para correr la carrera de obstáculos de 400 metros con su velocidad inicial:**
+   - Lee corre la carrera de 400 metros con una velocidad de 10.53 metros por segundo.
+   - El tiempo de Lee es:
+     \[
+     \text{Tiempo de Lee} = \frac{400 \text{ metros}}{10.53 \text{ metros por segundo}} \approx 38 \text{ segundos}
+     \]
+
+5. **Calcular el tiempo de Gerald para correr la carrera de obstáculos de 400 metros con su velocidad mejorada:**
+   - Gerald corre la carrera de 400 metros con una velocidad de 11.00 metros por segundo.
+   - El tiempo de Gerald es:
+     \[
+     \text{Tiempo de Gerald} = \frac{400 \text{ metros}}{11.00 \text{ metros por segundo}} \approx 36.36 \text{ segundos}
+     \]
+
+6. **Determinar cuántos segundos más rápido puede corre que Lee:**
+   - Lee corre la carrera de 400 metros en 38 segundos.
+   - Gerald corre la carrera de 400 metros en 36.36 segundos.
+   - La diferencia de tiempo es:
+     \[
+     \text{Diferencia de tiempo} = 38 \text{ segundos} - 36.36 \text{ segundos} \approx 1.64 \text{ segundos}
+     \]
+
+Por tanto, Gerald corre approximately 1.64 segundos más rápido que Lee gracias a su dieta mejorada.
+nfe:  240
+avg nfe:  171.17021276595744
+====================
+
+Generating...:  94%|█████████▍| 94/100 [29:28<01:46, 17.80s/it]====================
+answer:  Para resolver el problema paso a paso, vamos a utilizar la información dada y aplicarla separadamente.
+
+1. **Cantidad de perros:**
+   - Se indica que la cantidad de perros es 60.
+
+2. **Cantidad de gatos:**
+   - Se indica que hay 2 gatos por cada perro.
+   - Entonces, la cantidad de gatos es \(2 \times 60 = 120\).
+
+3. **Cantidad de conejos:**
+   - Se indica que la cantidad de conejos es doce menos que la cantidad combinada de perros y gatos.
+   - La cantidad combinada de perros y gatos es \(60 + 120 = 180\).
+   - Entonces, la cantidad de conejos es \(180 - 12 = 168\).
+
+4. **Total animales de animales domésticos:**
+   - El total total de animales domésticos es la suma de la cantidad de perros, gatos y conejos.
+   - Entonces, el total es \(60 + 120 + 168 = 348\).
+
+En resumen, hay 348 animales domésticos en total en el vecindario.
+nfe:  139
+avg nfe:  170.83157894736843
+====================
+
+Generating...:  95%|█████████▌| 95/100 [29:44<01:26, 17.28s/it]====================
+answer:  Para resolver el problema paso a paso, vamos a seguir esto:
+
+1. **Determinar el número de niños:**
+   - Tienes 200 alumnos en total.
+   - 2/5 de los alumnos son niños.
+   - El número de niños es:
+     \[
+     \frac{2}{5} \times 200 = 80
+     \]
+
+2. **Determinar el número de niñas:**
+   - Los restos son las niñas.
+   - El número de niñas es:
+     \[
+     200 - 80 = 120
+     \]
+
+3. **Determinar el número de niñas que pertenece al grupo de niñas exploradoras:**
+   - 2/3 de las niñas pertenecen al grupo de niñas exploradoras.
+   - El número de niñas que pertenece al grupo es:
+     \[
+     \frac{2}{3} \times 120 = 80
+     \]
+
+4. **Determinar el número de niñas que no están en el grupo de niñas exploradoras:**
+   - El número de niñas que no están en el grupo es el número total de niñas menos el de las que pertenecen al grupo:
+     \[
+     120 - 80 = 40
+     \]
+
+Por tanto, hay 40 niñas que no están en el grupo de niñas exploradoras.
+nfe:  140
+avg nfe:  170.51041666666666
+====================
+
+Generating...:  96%|█████████▌| 96/100 [30:00<01:07, 16.84s/it]====================
+answer:  Para determinar cuántas horas más que James durmió Harry, seguir estos pasos:
+
+1. **Determinar las horas que durmió James:**
+   - Harry durmió 9 horas.
+   - James durmió \( \frac{2}{3} \) de lo que durmió Harry.
+   - Para calcular las horas que durmió James, multiplicar las horas que durmió Harry por \( \frac{2}{3} \).
+
+   \[
+   \text{Horas de James} = 9 \times \frac{2}{3}
+   \]
+
+2. **Realizar la multiplicación:**
+   - Multiplicar 9 por \( \frac{2}{3} \):
+
+   \[
+   9 \times \frac{2}{3} = \frac{9 \times 2}{3} = \frac{18}{3} = 6
+   \]
+
+   Entonces, James durmió 6 horas.
+
+3. **Calcular cuántas horas más que James durmió Harry:**
+   - Harry durmió 9 horas.
+   - James durmió 6 horas.
+   - Para determinar cuántas horas más que James durmió Harry, restar las horas que durmió James de las horas que durmió Harry.
+
+   \[
+   \text{Diferencia} = 9 - 6
+   \]
+
+4. **Realizar la resta:**
+   - Restar 6 de 9:
+
+   \[
+   9 - 6 = 3
+   \]
+
+   Entonces, Harry durmió 3 horas más que James.
+
+**Respuesta: Harry durmió 3 horas más que James.**
+nfe:  158
+avg nfe:  170.38144329896906
+====================
+
+Generating...:  97%|█████████▋| 97/100 [30:17<00:51, 17.03s/it]====================
+answer:  Para resolver este problema, vamos a dividirlo en pasos clave:
+
+1. **Determinar el volumen de la salsa en onzas de tomate:**
+   - Freda preparó 32 onzas de salsa.
+   - Cuando los tomates están enlatados, pierden la mitad de su volumen. Por tanto, el volumen de la salsa en onzas de tomate es:
+     \[
+     \text{Volumen de salsa en onzas de tomate} = \frac{32 \text{ onzas de salsa}}{2} = 16 \text{ onzas de tomate}
+     \]
+
+2. **Determinar la cantidad de latas de tomates necesarias:**
+   - Cada lata de tomates contiene 16 onzas de tomate.
+   - Para encontrar cuántas latas están necesarias para obtener 16 onzas de tomate, dividimos 16 onzas de tomate por 16 onzas por lata:
+     \[
+     \text{Cantidad de latas} = \frac{16 \text{ onzas de tomate}}{16 \text{ onzas por lata}} = 1 \text{ lata}
+     \]
+
+3. **Determinar la cantidad de tomates utilizados:**
+   - Cada lata de tomates contiene 3 tomates.
+   - Como Freda usó 1 lata, el número de tomates utilizados es:
+     \[
+     \text{Cantidad de tomates} = 1 \text{ lata} \times 3 \text{ tomates por lata} = 3 \text{ tomates}
+     \]
+
+En resumen, Freda usó **3 tomates**.
+nfe:  207
+avg nfe:  170.75510204081633
+====================
+
+Generating...:  98%|█████████▊| 98/100 [30:40<00:37, 18.85s/it]====================
+answer:  Para encontrar cuántos autos atravesaron el embotellamiento en los primeros 15 minutos, podemos seguir los pasos siguientes:
+
+1. **Autos originales en la autopista**:
+   - Originalmente había 30 autos en la autopista.
+
+2. **Autos que toman una salida**:
+   - 5 autos toman una salida para no tener que atravesar el embotellamiento.
+   - Entonces, los autos que siguen en la autopista son \( 30 - 5 = 25 \).
+
+3. **Autos que pasan en los primeros 15 minutos**:
+   - Algunos autos pasan en los primeros 15 minutos del embotellamiento.
+   - Supongamos que el número de autos que pasan en los primeros 15 minutos es \( x \).
+
+4. **Autos que pasan en los 15 minutos restantes**:
+   - Luego de los primeros 15 minutos, pasan 20 autos más en los 15 minutos restantes.
+   - Entonces, el número de autos que pasan en los 15 minutos restantes es \( x + 20 \).
+
+5. **Autos que siguen en la autopista**:
+   - Los autos que siguen en la autopista son los que no han atravesado el embotellamiento.
+   - Entonces, el número de autos que siguen en la autopista es \( 25 - (x + 20) \).
+
+6. **Evaluación de la situación**:
+   - Sabemos que los autos que siguen en la autopista son los que no han atravesado el embotellamiento.
+   - Entonces, el número de autos que siguen en la autopista también es igual al número de autos que pasan en los primeros 15 minutos menos el número de autos que pasan en los 15 minutos restantes.
+   - Entonces, tenemos \( 25 - (x + 20) = x \).
+
+7. **Solución de la equación**:
+   - Simplificamos la equación:
+     \[
+     25 - x - 20 = x
+     \]
+     \[
+     5 = 2x
+     \]
+     \[
+     x = 5
+     \]
+
+Por tanto, 5 autos atravesaron el embotellamiento en los primeros 15 minutos.
+nfe:  286
+avg nfe:  171.91919191919192
+====================
+
+Generating...:  99%|█████████▉| 99/100 [31:09<00:21, 21.68s/it]====================
+answer:  Para determinar cuántas plantas de maceta le quedarán a Mary, debemos seguir los pasos siguientes:
+
+1. **Calcular la cantidad de plantas de maceta ya tiene:**
+   - Mary tiene 40 repisas de ventanas.
+   - Cada repisa tiene 2 plantas de maceta.
+   - Entonces, la cantidad de plantas ya tiene es:
+     \[
+     40 \text{ repisas} \times 2 \text{ plantas/repisa} = 80 \text{ plantas}
+     \]
+
+2. **Calcular la cantidad de plantas nuevas:**
+   - Mary recibió 18 nuevas plantas de maceta.
+   - Entonces, la cantidad total de plantas que tiene ahora es:
+     \[
+     80 \text{ plantas} + 18 \text{ plantas} = 98 \text{ plantas}
+     \]
+
+3. **Calcular la cantidad de plantas que dará a sus amigos y familiares:**
+   - Mary planea dar 1 planta de maceta de cada repisa.
+   - Mary tiene 40 repisas de ventanas.
+   - Entonces, la cantidad de plantas que dará es:
+     \[
+     40 \text{ repisas} \times 1 \text{ planta/repisa} = 40 \text{ plantas}
+     \]
+
+4. **Calcular la cantidad de plantas que quedarán:**
+   - Subtractir la cantidad de plantas que dará de la cantidad total de plantas que tiene:
+     \[
+     98 \text{ plantas} - 40 \text{ plantas} = 58 \text{ plantas}
+     \]
+
+Entonces, cuando Mary dará las plantas de maceta a sus amigos y familiares, le quedarán 58 plantas de maceta.
+nfe:  190
+avg nfe:  172.1
+====================
+
+Generating...: 100%|██████████| 100/100 [31:29<00:00, 21.38s/it]Generating...: 100%|██████████| 100/100 [31:29<00:00, 18.90s/it]
+Total number of tokens generated: 41968
+Total time taken: 1889.7471051216125 seconds
+Tokens per second: 22.208263397216797
+Total NFE is 17210
+2026-08-23:07:18:59,052 INFO     [lm_eval.loggers.evaluation_tracker:209] Saving results aggregated
+2026-08-23:07:18:59,054 INFO     [lm_eval.loggers.evaluation_tracker:290] Saving per-sample results for: mgsm_native_cot_es
+llada_dist (model_path=GSAI-ML/LLaDA-8B-Instruct,gen_length=1024,steps=1024,block_length=32,use_cache=True,threshold=0.9,show_speed=True,is_check_greedy=False), gen_kwargs: (None), limit: 100.0, num_fewshot: None, batch_size: 1
+|      Tasks       |Version|     Filter     |n-shot|  Metric   |   |Value|   |Stderr|
+|------------------|------:|----------------|-----:|-----------|---|----:|---|-----:|
+|mgsm_native_cot_es|      4|flexible-extract|     0|exact_match|↑  | 0.59|±  |0.0494|
+|                  |       |strict-match    |     0|exact_match|↑  | 0.00|±  |0.0000|
+

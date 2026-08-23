@@ -1,0 +1,74 @@
+===== 0. separate environment =====
+torch 2.5.1+cu121 | transformers 4.49.0 | lm_eval 0.4.8
+cuda available: True
+device: NVIDIA A100 80GB PCIe
+
+===== 0b. does their harness carry MGSM? (needed by P3, checked now) =====
+mgsm tasks available: 95
+  afrimgsm_direct_amh afrimgsm_direct_eng afrimgsm_direct_ewe afrimgsm_direct_fra afrimgsm_direct_hau afrimgsm_direct_ibo afrimgsm_direct_kin afrimgsm_direct_lin afrimgsm_direct_lug afrimgsm_direct_orm afrimgsm_direct_sna afrimgsm_direct_sot afrimgsm_direct_swa afrimgsm_direct_twi afrimgsm_direct_wol afrimgsm_direct_xho afrimgsm_direct_yor afrimgsm_direct_zul afrimgsm_en_cot_amh afrimgsm_en_cot_eng afrimgsm_en_cot_ewe afrimgsm_en_cot_fra afrimgsm_en_cot_hau afrimgsm_en_cot_ibo
+
+===== 1. Gate A: dual cache + parallel, GSM8K, 8-shot, gen_length 1024 =====
++ /root/fdllm-venv/bin/accelerate launch eval_llada.py --tasks gsm8k --num_fewshot 8 --limit 100 --confirm_run_unsafe_code --model llada_dist --batch_size 2 --model_args model_path=GSAI-ML/LLaDA-8B-Instruct,gen_length=1024,steps=1024,block_length=32,use_cache=True,dual_cache=True,threshold=0.9,show_speed=True,is_check_greedy=False
++ tail -60
+answer:  First, we need to determine how much sauce Freda made from the 32 ounces of tomatoes. Since the tomatoes lose half their volume when cooked, the original volume of the tomatoes must be twice the volume of the sauce.
+
+So, the original volume of the tomatoes is:
+\[ 32 \text{ ounces} \times 2 = 64 \text{ ounces} \]
+
+Next, we know that each 16-ounce can of tomatoes contains 3 tomatoes. To find out how many 16-ounce cans Freda used, we divide the total volume of the tomatoes by the volume of each can:
+\[ \frac{64 \text{ ounces}}{16 \text{ ounces/can}} = 4 \text{ cans} \]
+
+Since each can contains 3 tomatoes, the total number of tomatoes used is:
+\[ 4 \text{ cans} \times 3 \text{ tomatoes/can} = 12 \text{ tomatoes} \]
+
+Therefore, Freda used 12 tomatoes.
+nfe:  136
+avg nfe:  141.46938775510205
+====================
+
+Generating...:  98%|█████████▊| 49/50 [21:05<00:25, 25.39s/it]====================
+answer:  Let's denote the number of cars that drove through the traffic jam in the first 15 minutes as \( x \).
+
+Initially, there were 30 cars on the motorway. After the first 15 minutes, \( x \) cars drove through, so the number of cars left is:
+\[ 30 - x \]
+
+In the next 15 minutes, 20 more cars drove through, so the number of cars left is:
+\[ (30 - x) - 20 = 10 - x \]
+
+Then, 5 cars take an exit, so the number of cars left is:
+\[ (10 - x) - 5 = 5 - x \]
+
+We know that after these events, there are no cars left on the motorway, so:
+\[ 5 - x = 0 \]
+
+Solving for \( x \):
+\[ x = 5 \]
+
+Therefore, the number of cars that drove through the traffic jam in the first 15 minutes is 5.
+nfe:  144
+avg nfe:  141.52
+====================
+
+====================
+answer:  Mary received 18 new potted plants and already has 2 potted plants on each of the 40 window ledges. She received 18 new potted plants and has 80 potted plants already, so she has a total of 18 + 80 = 98 potted plants.
+She decides to give 1 potted plant from each ledge to friends and family, so she will give away 40 potted plants.
+After giving away 40 potted plants, Mary will have 98 - 40 = 58 potted plants remaining.
+#### 58
+nfe:  144
+avg nfe:  141.52
+====================
+
+Generating...: 100%|██████████| 50/50 [21:29<00:00, 24.86s/it]Generating...: 100%|██████████| 50/50 [21:29<00:00, 25.78s/it]
+Total number of tokens generated: 23894
+Total time taken: 1289.1371614933014 seconds
+Tokens per second: 18.53487777709961
+Total NFE is 14152
+2026-08-22:13:12:14,997 INFO     [lm_eval.loggers.evaluation_tracker:272] Output path not provided, skipping saving results aggregated
+llada_dist (model_path=GSAI-ML/LLaDA-8B-Instruct,gen_length=1024,steps=1024,block_length=32,use_cache=True,dual_cache=True,threshold=0.9,show_speed=True,is_check_greedy=False), gen_kwargs: (None), limit: 100.0, num_fewshot: 8, batch_size: 2
+|Tasks|Version|     Filter     |n-shot|  Metric   |   |Value|   |Stderr|
+|-----|------:|----------------|-----:|-----------|---|----:|---|-----:|
+|gsm8k|      3|flexible-extract|     8|exact_match|↑  | 0.81|±  |0.0394|
+|     |       |strict-match    |     8|exact_match|↑  | 0.27|±  |0.0446|
+
++ set +x
+===== Gate A complete =====

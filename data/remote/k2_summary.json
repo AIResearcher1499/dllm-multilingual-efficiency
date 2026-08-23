@@ -1,0 +1,24 @@
+{
+  "decision": "FLAT-NFE",
+  "scaling_exponent": 0.0392788300979527,
+  "threshold": 0.5,
+  "canvases": [
+    256,
+    512,
+    1024,
+    2048
+  ],
+  "mean_nfe": [
+    94.0,
+    107.6,
+    108.8,
+    102.0
+  ],
+  "mean_parallel_factor": [
+    1.8373491425376938,
+    2.015005052402191,
+    1.882322632896163,
+    1.9256747579554367
+  ],
+  "reads_as": "NFE ~ canvas^0.04: step count barely tracks the canvas. With early stopping this is the EXPECTED result, not a kill — step count is content/parallel_factor and content does not depend on canvas. Mechanism A acts through time-per-forward instead, which is measured directly (t = a + b*L). Confirm b > 0 before reading anything further into this."
+}

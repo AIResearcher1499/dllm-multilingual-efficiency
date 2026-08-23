@@ -1,0 +1,3082 @@
+The following values were not passed to `accelerate launch` and had defaults used instead:
+	`--num_processes` was set to a value of `1`
+	`--num_machines` was set to a value of `1`
+	`--mixed_precision` was set to a value of `'no'`
+	`--dynamo_backend` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+2026-08-23:07:52:17,438 WARNING  [lm_eval.__main__:316]  --limit SHOULD ONLY BE USED FOR TESTING.REAL METRICS SHOULD NOT BE COMPUTED USING LIMIT.
+2026-08-23:07:52:17,439 INFO     [lm_eval.__main__:379] Selected Tasks: ['mgsm_native_cot_de']
+2026-08-23:07:52:17,441 INFO     [lm_eval.evaluator:169] Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+2026-08-23:07:52:17,441 INFO     [lm_eval.evaluator:206] Initializing llada_dist model, with arguments: {'model_path': 'GSAI-ML/LLaDA-8B-Instruct', 'gen_length': 1024, 'steps': 1024, 'block_length': 32, 'use_cache': True, 'threshold': 0.9, 'show_speed': True, 'is_check_greedy': False}
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:03,  1.45it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:01<00:02,  1.33it/s]Loading checkpoint shards:  50%|█████     | 3/6 [00:02<00:02,  1.19it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:03<00:01,  1.15it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:04<00:00,  1.04it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.11it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.15it/s]
+2026-08-23:07:53:34,748 INFO     [lm_eval.api.task:420] Building contexts for mgsm_native_cot_de on rank 0...
+  0%|          | 0/100 [00:00<?, ?it/s]100%|██████████| 100/100 [00:00<00:00, 1308.97it/s]
+2026-08-23:07:53:34,828 INFO     [lm_eval.evaluator:517] Running generate_until requests
+Batching...:   0%|          | 0/100 [00:00<?, ?it/s]Batching...: 100%|██████████| 100/100 [00:00<00:00, 1777247.46it/s]
+Generating...:   0%|          | 0/100 [00:00<?, ?it/s]====================
+answer:  1. **Entnahmen von Eier zum Frühstück:**
+   - Janet isst 3 Eier pro Tag zum Frühstück.
+
+2. **Entnahmen von Eier für Muffins:**
+   - Janet backt 4 Eier pro Tag für ihre Freunde.
+
+3. ** Gesamte Eier genommen:**
+   - Gesamte Eier genommen = Eier zum Frühstück + Eier für Muffins
+   - Gesamte Eier genommen = 3 Eier + 4 Eier = 7 Eier
+
+4. **Eier, die verkauft werden:**
+   - Gesamte Eier pro Tag = 16 Eier
+   - Eier, die verkauft werden = Gesamte Eier pro Tag - Gesamte Eier genommen
+   - Eier, die verkauft werden = 16 Eier - 7 Eier = 9 Eier
+
+5. **Einkommung durch den Preis pro frischem Entenei:**
+   - Preis pro frischem Entenei = 2 US-Dollar
+   - Einkommung = Eier, die verkauft werden * Preis pro frischem Entenei
+   - Einkommung = 9 Eier * 2 US-Dollar/Entenei = 18 US-Dollar
+
+**Antwort:**
+Janet nmtmt täglich 18 US-Dollar auf dem Bauernmarkt ein.
+nfe:  163
+avg nfe:  163.0
+====================
+
+Generating...:   1%|          | 1/100 [00:20<33:14, 20.15s/it]====================
+answer:  Um die Anzahl der Knäuel für das Kleid zu berechnen, müssen wir die Anzahl der blaue Wolle und die Anzahl der weiße Wolle zusammen.
+
+1. **Anzahl der blaue Wolle**: 2 Knäuel
+2. **Anzahl der weiße Wolle**: Halb so viel wie die blaue Wolle, also \( \frac{2}{2} = 1 \) Knäuel
+
+Nun nehmen wir die Anzahl der blaue Wolle und die Anzahl der weiße Wolle zusammen:
+
+\[ 2 \text{ Knäuel} + 1 \text{ Knäuel} = 3 \text{ Knäuel} \]
+
+Daher braucht man insgesamt 3 Knäuel für das Kleid.
+nfe:  132
+avg nfe:  147.5
+====================
+
+Generating...:   2%|▏         | 2/100 [00:36<28:51, 17.66s/it]====================
+answer:  Um Joshs Gewinn zu berechnen, müssen wir uns einige Schritte durchgehen:
+
+1. **Kostanz vor Reparaturen:**
+   - Josh kauft das Haus für 80.000 US-Dollar.
+   - Er steckt 50.000 US-Dollar an Reparaturen hinein.
+   - Der Wert des Hauses steigt dadurch um 150 %.
+
+2. **Wert des Hauses nach den Reparaturen:**
+   - Der Wert des Hauses nach den Reparaturen ist der Wert vor Reparaturen plus die Kosten für die Reparaturen.
+   - Wert nach Reparaturen = 80.000 US-Dollar + 50.000 US-Dollar = 130.000 US-Dollar.
+
+3. **Wert des Hauses nach den Reparaturen:**
+   - Der Wert des Hauses steigt um 150 %.
+   - 150 % von 130.000 US-Dollar = 1,50 * 130.000 US-Dollar = 195.000 US-Dollar.
+
+4. **Wert des Hauses nach den Reparaturen:**
+   - Der Wert des Hauses nach den Reparaturen ist der Wert vor Reparaturen plus die Kosten für die Reparaturen.
+   - Wert nach Reparaturen = 195.000 US-Dollar + 50.000 US-Dollar = 245.000 US-Dollar.
+
+5. **Gewinn des Hauses:**
+   - Der Gewinn ist der Differenz vom Wert nach den Reparaturen und der Kostanz vor Reparaturen.
+   - Gewinn = 245.000 US-Dollar - 80.000 US-Dollar = 165.000 US-Dollar.
+
+Josh macht 165.000 US-Dollar Gewinn.
+nfe:  233
+avg nfe:  176.0
+====================
+
+Generating...:   3%|▎         | 3/100 [01:01<34:03, 21.07s/it]====================
+answer:  Um zu berechnen, wie viele Meter James insgesamt pro Woche läuft, teilen wir die Aufgabe in einzelne Schritte auf:
+
+1. **Kurzstreckenläufe pro Woche:**
+   - James läuft 3 Kurzstreckenläufe pro Woche.
+
+2. **Kurzstreckenläufe pro Woche:**
+   - James läuft 3 Kurzstreckenläufe pro Woche.
+
+3. **Länge pro Kurzstreckenlauf:**
+   - Pro Kurzstreckenlauf läuft er 60 Meter.
+
+4. ** Gesamtlänge pro Kurzstreckenlauf:**
+   - Gesamtlänge pro Kurzstreckenlauf = Anzahl der Kurzstreckenläufe * Länge pro Kurzstreckenlauf
+   - Gesamtlänge pro Kurzstreckenlauf = 3 Kurzstreckenläufe * 60 Meter/Kurzstreckenlauf
+   - Gesamtlänge pro Kurzstreckenlauf = 180 Meter
+
+5. ** Gesamtlänge pro Woche:**
+   - Gesamtlänge pro Woche = Anzahl der Kurzstreckenläufe pro Woche * Gesamtlänge pro Kurzstreckenlauf
+   - Gesamtlänge pro Woche = 3 Kurzstreckenläufe pro Woche * 180 Meter/Kurzstreckenlauf
+   - Gesamtlänge pro Woche = 540 Meter
+
+Daher läuft James insgesamt 540 Meter pro Woche.
+nfe:  171
+avg nfe:  174.75
+====================
+
+Generating...:   4%|▍         | 4/100 [01:20<32:36, 20.38s/it]====================
+answer:  Um wie viele Tassen Futter Wendi braucht, um den Hühnern die letzte Mahlzeit zu verfüllen, müssen wir die gesamte Menge an Futter, die ihre Hühnern täglich benötigen, berechnen und dann abgleichen.
+
+1. ** berechnen der gesamten Futtermenge pro Hühner:**
+   - Jeder Hühner benötigt 3 Tassen Futter täglich.
+
+2. ** berechnen der gesamten Futtermenge für alle Hühner:**
+   - Die Hühnerschar besteht aus 20 Hühnern.
+   - Die gesamte Futtermenge für alle Hühner ist 20 Hühner * 3 Tassen pro Hühner = 60 Tassen.
+
+3. ** berechnen der gesamten Futtermenge, die bereits gegeben wurde:**
+   - Morgens: 15 Tassen Futter.
+   - Nachmittags: 25 Tassen Futter.
+   - Die gesamte Futtermenge, die bereits gegeben wurde, ist 15 Tassen + 25 Tassen = 40 Tassen.
+
+4. ** berechnen der übrigen Futtermenge:**
+   - Die übrige Futtermenge ist die gesamte Futtermenge für alle Hühner minus die gesamte Futtermenge, die bereits gegeben wurde.
+   - Die übrige Futtermenge ist 60 Tassen - 40 Tassen = 20 Tassen.
+
+Wendi braucht 20 Tassen Futter, um den Hühnern die letzte Mahlzeit des Tages zu verfüllen.
+nfe:  223
+avg nfe:  184.4
+====================
+
+Generating...:   5%|▌         | 5/100 [01:46<35:22, 22.35s/it]====================
+answer:  Um berechnen, wie Kylar dafür ausgeben muss, wir können es Schritt für Schritt durchgehen:
+
+1. **Erstes Glas**: Der erste Glas kostet 5 US-Dollar.
+2. **Zweites Glas**: Der zweite Glas kostet 60% des ersten Glases, also 0.6 * 5 = 3 US-Dollar.
+3. **Drittes Glas**: Der dritte Glas kostet 60% des zweiten Glases, also 0.6 * 3 = 1.8 US-Dollar.
+4. **Drittes Glas**: Der dritte Glas kostet 60% des dritten Glases, also 0.6 * 1.8 = 1.08 US-Dollar.
+5. **Fünftes Glas**: Der fünfte Glas kostet 60% des vierten Glases, also 0.6 * 1.08 = 0.648 US-Dollar.
+6. **Sechstes Glas**: Der sechste Glas kostet 60% des fünften Glases, also 0.6 * 0.648 = 0.3888 US-Dollar.
+7. **Siebtes Glas**: Der siebte Glas kostet 60% des sechsten Glases, also 0.6 * 0.3888 = 0.23328 US-Dollar.
+8. **Achttes Glas**: Der achte Glas kostet 60% des siebten Glases, also 0.6 * 0.23328 = 0.139968 US-Dollar.
+9. **Neuntes Glas**: Der neuntes Glas kostet 60% des achten Glases, also 0.6 * 0.139968 = 0.0839808 US-Dollar.
+10. **Zehntes Glas**: Der zehntes Glas kostet 60% des neunten Glases, also 0.6 * 0.0839808 = 0.05038848 US-Dollar.
+11. **Zünftes Glas**: Der zwünfte Glas kostet 60% des zehnten Glases, also 0.6 * 0.05038848 = 0.030233088 US-Dollar.
+12. **Zwerftes Glas**: Der zwirfte Glas kostet 60% des zwünften Glases, also 0.6 * 0.030233088 = 0.0181398528 US-Dollar.
+13. **Sechstes Glas**: Der sechteste Glas kostet 60% des zwirften Glases, also 0.6 * 0.0181398528 = 0.01088391368 US-Dollar.
+14. **Fünftes Glas**: Der fünfte Glas kostet 60% des sechtesten Glases, also 0.6 * 0.01088391368 = 0.006530348208 US-Dollar.
+15. **Sechstes Glas**: Der sechteste Glas kostet 60% des fünften Glases, also 0.6 * 0.006530348208 = 0.0039182089648 US-Dollar.
+
+Setzen wir alle Preise zusammen:
+
+- Erster Glas: 5 US-Dollar
+- Zweites Glas: 3 US-Dollar
+- Drittes Glas: 1.8 US-Dollar
+- Drittes Glas: 1.08 US-Dollar
+- Fünftes Glas: 0.648 US-Dollar
+- Sechstes Glas: 0.3888 US-Dollar
+- Siebentes Glas: 0.
+nfe:  292
+avg nfe:  202.33333333333334
+====================
+
+Generating...:   6%|▌         | 6/100 [02:10<35:54, 22.92s/it]====================
+answer:  Um finden, wie viele Schafe Toulouse, Charleston und Seattle zusammen haben, müssen wir viele Schafe jeder Stadt berechnen.
+
+1. Zunächst berechnen, wie viele Schafe Charleston hat.
+   - Charleston hat 4-mal so viele Schafe wie Seattle.
+   - Seattle hat 20 Schafe.
+   - Charleston hat \( 4 \times 20 = 80 \) Schafe.
+
+2. Jetzt berechnen, wie viele Schafe Toulouse hat.
+   - Toulouse hat zweimal so viele Schafe wie Charleston.
+   - Charleston hat 80 Schafe.
+   - Toulouse hat \( 2 \times 80 = 160 \) Schafe.
+
+3. Jetzt nehmen wir die Schafe aller Stätten zusammen.
+   - Seattle hat 20 Schafe.
+   - Charleston hat 80 Schafe.
+   - Toulouse hat 160 Schafe.
+   - Zusammen haben sie \( 20 + 80 + 160 = 260 \) Schafe.
+
+Daher haben Toulouse, Charleston und Seattle zusammen 260 Schafe.
+nfe:  125
+avg nfe:  191.28571428571428
+====================
+
+Generating...:   7%|▋         | 7/100 [02:25<31:24, 20.26s/it]====================
+answer:  Um genauen schauen zu können, wie lange das Herunterladen der Datei dauert, müssen wir die Zeit in die Bestandteilte aufbauen:
+
+1. **Normaler Download:**
+   - Carla lädt eine Datei mit 200 GB herunter.
+   - Sie kann normalerweise 2 GB/Minute herunterladen.
+   - Die Zeit für den normalen Download ist:
+     \[
+     \frac{200 \text{ GB}}{2 \text{ GB/Minute}} = 100 \text{ Minuten}
+     \]
+
+2. **Neustart für Updates:**
+   - Nachdem 40% des Downloads abgeschlossen sind, erzwingt Windows einen Neustart.
+   - Der Neustart dauert 20 Minuten.
+
+3. **Download nach Neustart:**
+   - Nach dem Neustart muss Carla den Download noch einmal neu starten.
+   - Die Datei ist 200 GB groß, und sie hat bereits 40% heruntergeladen.
+   - Die übrige Datei ist 60% von 200 GB groß:
+     \[
+     0.6 \times 200 \text{ GB} = 120 \text{ GB}
+     \]
+   - Die Zeit für den neuen Download ist:
+     \[
+     \frac{120 \text{ GB}}{2 \text{ GB/Minute}} = 60 \text{ Minuten}
+     \]
+
+4. ** Gesamtzahl:**
+   - Die Gesamtzahl der Zeit ist die Summe der Zeit für den normalen Download, den Neustart für Updates und den neuen Download:
+     \[
+     100 \text{ Minuten} + 20 \text{ Minuten} + 60 \text{ Minuten} = 180 \text{ Minuten}
+     \]
+
+Insgesamt dauert das Herunterladen der Datei 180 Minuten.
+nfe:  237
+avg nfe:  197.0
+====================
+
+Generating...:   8%|▊         | 8/100 [02:51<33:58, 22.15s/it]====================
+answer:  Um weit weg von zu Hause John am Ende dieser 4 Stunden ist zu bestimmen, müssen wir seine Entfernung in jedem Zeitschritt berechnen und diese zusammen.
+
+1. Schritt für Schritt:
+   - 1. Stunde: John fährt mit einer Geschwindigkeit von 60 Meilen/Stunde.
+   - 2. Stunde: John fährt mit einer Geschwindigkeit von 60 Meilen/Stunde.
+   - 3. Stunde: John fährt mit einer Geschwindigkeit von 60 Meilen/Stunde.
+   - 4. Stunde: John fährt mit einer Geschwindigkeit von 30 Meilen/Stunde.
+   - 5. Stunde: John fährt mit einer Geschwindigkeit von 80 Meilen/Stunde.
+   - 6. Stunde: John fährt mit einer Geschwindigkeit von 80 Meilen/Stunde.
+   - 7. Stunde: John fährt mit einer Geschwindigkeit von 80 Meilen/Stunde.
+
+2. Berechnung der Entfernung:
+   - 1. Stunde: 60 Meilen/Stunde * 1 Stunde = 60 Meilen
+   - 2. Stunde: 60 Meilen/Stunde * 1 Stunde = 60 Meilen
+   - 3. Stunde: 60 Meilen/Stunde * 1 Stunde = 60 Meilen
+   - 4. Stunde: 30 Meilen/Stunde * 0.5 Stunde = 15 Meilen
+   - 5. Stunde: 80 Meilen/Stunde * 1 Stunde = 80 Meilen
+   - 6. Stunde: 80 Meilen/Stunde * 1 Stunde = 80 Meilen
+   - 7. Stunde: 80 Meilen/Stunde * 1 Stunde = 80 Meilen
+
+3. Zusammenfassung der Entfernung:
+   - 1. Stunde: 60 Meilen
+   - 2. Stunde: 60 Meilen
+   - 3. Stunde: 60 Meilen
+   - 4. Stunde: 15 Meilen
+   - 5. Stunde: 80 Meilen
+   - 6. Stunde: 80 Meilen
+   - 7. Stunde: 80 Meilen
+
+4. Gesamte Entfernung:
+   - 60 Meilen + 60 Meilen + 60 Meilen + 15 Meilen + 80 Meilen + 80 Meilen + 80 Meilen = 435 Meilen
+
+John ist also am Ende dieser 4 Stunden 435 Meilen weg von zu Hause.
+nfe:  204
+avg nfe:  197.77777777777777
+====================
+
+Generating...:   9%|▉         | 9/100 [03:13<33:28, 22.07s/it]====================
+answer:  Um wie viel Eliza verdient, wenn sie diese Woche 45 Stunden arbeitet zu berechnen, müssen wir die Lohnen für die ersten 40 Stunden und die Überstunden errechnen und dann zusammenlegen.
+
+1. **Lohn für die ersten 40 Stunden:**
+   - Die Lohn für die ersten 40 Stunden beträgt 10 US-Dollar.
+
+2. **Lohn für die Überstunden:**
+   - Die Lohn für die Überstunden ist das 1,2-Fachen des normalen Stundensatzes.
+   - Wenn der normale Stundensatz \( S \) ist, so ist der Lohn für die Überstunden \( 1,2S \).
+
+3. **Anzahl der Überstunden:**
+   - Wenn Eliza hier insgesamt 45 Stunden arbeitet, und 40 Stunden sind die ersten 40 Stunden, sind die Überstunden \( 45 - 40 = 5 \) Stunden.
+
+4. **Lohn für die Überstunden:**
+   - Die Lohn für die Überstunden ist \( 5 \times 1,2S \).
+
+5. ** Gesamter Lohn:**
+   - Der Gesamte Lohn ist die Summe der Lohn für die ersten 40 Stunden und der Lohn für die Überstunden.
+   - Der Gesamte Lohn ist also \( 10 + 5 \times 1,2S \).
+
+Wenn wir den normen Stundensatz \( S \) nicht bekannt haben, können wir den Gesamten Lohn nur in Form von \( S \) ausdrücken:
+
+\[ \text{Gesamter Lohn} = 10 + 5 \times 1,2S \]
+
+Wenn wir den normen Stundensatz \( S \) bekannt haben, können wir den Gesamten Lohn auch ausrechnen:
+
+\[ \text{Gesamter Lohn} = 10 + 5 \times 1,2S \]
+
+Wenn wir den normen Stundensatz \( S \) bekannt haben, können wir den Gesamten Lohn auch ausrechnen:
+
+\[ \text{Gesamter Lohn} = 10 + 5 \times 1,2S \]
+
+Wenn wir den normen Stundensatz \( S \) bekannt haben, können wir den Gesamten Lohn auch ausrechnen:
+
+\[ \text{Gesamter Lohn} = 10 + 5 \times 1,2S \]
+
+Wenn wir den normen Stundensatz \( S \) bekannt haben, können wir den Gesamten Lohn auch ausrechnen:
+
+\[ \text{Gesamter Lohn} = 10 + 5 \times 1,2S \]
+
+Wenn wir den normen Stundensatz \( S \) bekannt haben, können wir den Gesamten Lohn auch ausrechnen:
+
+\[ \text{Gesamter Lohn} = 10 + 5 \times 1,2S \]
+
+Wenn wir den normen Stundensatz \( S \) bekannt haben, können wir den Gesamten Lohn auch ausrechnen:
+
+\[ \text{Gesamter Lohn} = 10 + 5 \times 1,2S \]
+
+Wenn wir den normen Stundensatz \( S \) bekannt haben, können wir den Gesamten Lohn auch ausrechnen:
+
+\[ \text{Gesamter Lohn} = 10 + 5 \times 1,2S \]
+
+Wenn wir den normen Stundensatz \( S \) bekannt haben, können wir den Gesamten Lohn auch ausrechnen:
+
+\[ \text{Gesamter Lohn} = 10 + 5 \times 1,2S \]
+
+Wenn wir den normen Stundensatz \( S \) bekannt haben, können wir den Gesamten Lohn auch ausrechnen:
+
+\[ \text{Gesamter Lohn} = 10 + 5 \times 1,2S \]
+
+Wenn wir den normen Stundensatz \( S \) bekannt haben, können wir den Gesamten
+nfe:  310
+avg nfe:  209.0
+====================
+
+Generating...:  10%|█         | 10/100 [03:43<37:03, 24.71s/it]====================
+answer:  Um die Gesamtanzahl der Downloads während dieser drei Monate zu berechnen, müssen wir die Anzahl der Downloads für jeden Monat berechnen und dann sie zusammenieren. Schritt für Schritt:
+
+1. **Erster Monat:**
+   - Das Programm wurde 60 Mal heruntergeladen.
+
+2. **Zweiter Monat:**
+   - Die Anzahl der Downloads lag dreimal so hoch wie die Anzahl der Downloads im ersten Monat.
+   - Daher wurden im zweiten Monat \(3 \times 60 = 180\) Mal heruntergeladen.
+
+3. **Dritter Monat:**
+   - Die Anzahl der Downloads brach um 30 % compared zum zweiten Monat ein.
+   - 30 % von 180 ist \(0.30 \times 180 = 54\).
+   - Daher wurden im dritten Monat \(180 - 54 = 226\) Mal heruntergeladen.
+
+4. **Gesamtanzahl der Downloads:**
+   - Die Gesamtanzahl der Downloads ist die Summe der Downloads aus allen drei Monaten.
+   - Daher wurden das Programm insgesamt \(60 + 180 + 226 = 466\) Mal heruntergeladen.
+
+Insgesamt wurde das Programm während dieser drei Monate 466 Mal heruntergeladen.
+nfe:  173
+avg nfe:  205.72727272727272
+====================
+
+Generating...:  11%|█         | 11/100 [04:03<34:23, 23.19s/it]====================
+answer:  Um die Gesamtkosten zu berechnen, müssen wir die Kosten für jede Art von Gebäck berechnen und dann sie zusammenlegen.
+
+1. **Donuts:**
+   - Toula kaufte 3 Dutzend Donuts.
+   - 1 Dutzend Donuts kostet 68 US-Dollar.
+   - Kosten für Donuts: \( 3 \times 68 = 204 \) US-Dollar.
+
+2. **Mini-Cupcakes:**
+   - Toula kaufte 2 Dutzend Mini-Cupcakes.
+   - 1 Dutzend Mini-Cupcakes kostet 80 US-Dollar.
+   - Kosten für Mini-Cupcakes: \( 2 \times 80 = 160 \) US-Dollar.
+
+3. **Mini-Cheesecakes:**
+   - Toula kaufte 6 Dutzend Mini-Cheesecakes.
+   - 1 Dutzend Mini-Cheesecakes kostet 55 US-Dollar.
+   - Kosten für Mini-Cheesecakes: \( 6 \times 55 = 330 \) US-Dollar.
+
+Nun adden wir alle Kosten zusammen:
+
+- Kosten für Donuts: 204 US-Dollar
+- Kosten für Mini-Cupcakes: 160 US-Dollar
+- Kosten für Mini-Cheesecakes: 330 US-Dollar
+
+Gesamtkosten: \( 204 + 160 + 330 = 694 \) US-Dollar.
+
+Die Gesamtkosten waren 694 US-Dollar.
+nfe:  126
+avg nfe:  199.08333333333334
+====================
+
+Generating...:  12%|█▏        | 12/100 [04:18<30:11, 20.59s/it]====================
+answer:  Um finden wie lange es dauert, bis Carlos mit dem Zitronenbaum Geld verdient, müssen wir die Kosten und die Einnahmen pro Jahr berechnen und dann wie viele Jahre es dauert, bis die Einnahmen übersteigen die Kosten.
+
+1. **Kosten pro Jahr:**
+   - Pflanzen des Baumes: 90 US-Dollar
+   - Baumhaltung und Düngung: 3 US-Dollar
+
+   Gesamte Kosten pro Jahr: 90 US-Dollar + 3 US-Dollar = 93 US-Dollar
+
+2. **Einnahmen pro Jahr:**
+   - Zitronen pro Jahr: 7
+   - Preis pro Zitronen: 1.50 US-Dollar
+
+   Gesamte Einnahmen pro Jahr: 7 Zitronen * 1,50 US-Dollar/Zitronen = 10,50 US-Dollar
+
+3. **Einnahmen pro Jahr:**
+   - Einnahmen pro Jahr = Gesamte Einnahmen pro Jahr - Gesamte Kosten pro Jahr
+   - Einnahmen pro Jahr = 10,50 US-Dollar - 93 US-Dollar = 7,50 US-Dollar
+
+4. **Jahre bis Geldverdient:**
+   - Gesamte Kosten: 90 US-Dollar
+   - Einnahmen pro Jahr: 7,50 US-Dollar
+
+   Jahre bis Geldverdient = Gesamte Kosten / Einnahmen pro Jahr
+   - Jahre bis Geldverdient = 90 US-Dollar / 7,50 US-Dollar = 12 Jahre
+
+Es dauert Carlos 12 Jahre, bis er mit dem Zitronenbaum Geld verdient.
+nfe:  209
+avg nfe:  199.84615384615384
+====================
+
+Generating...:  13%|█▎        | 13/100 [04:41<31:10, 21.50s/it]====================
+answer:  Um berechnen zu können, wie viele Staubsauger Melanie angefangen hat, müssen wir die Informationen zurücklaufen.
+
+1. **Grünen Haus:**
+   - Melanie hat ein Drittel ihrer Staubsauger im grünen Haus verkauft.
+   - Wenn sie \( x \) Staubsauger angefangen hat, hat sie \( \frac{x}{3} \) Staubsauger im grünen Haus verkauft.
+
+2. **Rote Haus:**
+   - Melanie hat 2 Staubsauger im roten Haus verkauft.
+
+3. **Orangene Haus:**
+   - Die Hälfte der übriggebliebenen Staubsauger hat im orangenen Haus verkauft.
+   - Die übriggebliebenen Staubsauger sind \( x - \frac{x}{3} - 2 \).
+   - Die Hälfte dieser Übriggebliebenen ist \( \frac{1}{2} \left( x - \frac{x}{3} - 2 \right) \).
+
+4. **Überhafte Staubsauger:**
+   - Melanie hat 5 Staubsauger übrig.
+   - Die überhaften Staubsauger sind die übriggebliebenen Staubsauger, die nicht verkauft wurden.
+   - Die übriggebliebenen Staubsauger sind \( x - \frac{x}{3} - 2 \).
+   - Die überhaften Staubsauger sind \( x - \frac{x}{3} - 2 - \frac{1}{2} \left( x - \frac{x}{3} - 2 \right) \).
+
+5. ** Gleichung:**
+   - Die überhaften Staubsauger sind 5.
+   - Also ist \( x - \frac{x}{3} - 2 - \frac{1}{2} \left( x - \frac{x}{3} - 2 \right) = 5 \).
+
+6. **Gleichung lösen:**
+   - Simplifieren wir die Gleichung:
+     \[
+     x - \frac{x}{3} - 2 - \frac{1}{2} \left( x - \frac{x}{3} - 2 \right) = 5
+     \]
+     \[
+     x - \frac{x}{3} - 2 - \frac{1}{2} \left( x - \frac{x}{3} - 2 \right) = 5
+     \]
+     \[
+     x - \frac{x}{3} - 2 - \frac{1}{2} \left( x - \frac{x}{3} - 2 \right) = 5
+     \]
+     \[
+     x - \frac{x}{3} - 2 - \frac{1}{2} \left( x - \frac{x}{3} - 2 \right) = 5
+     \]
+     \[
+     x - \frac{x}{3} - 2 - \frac{1}{2} \left( x - \frac{x}{3} - 2 \right) = 5
+     \]
+     \[
+     x - \frac{x}{3} - 2 - \frac{1}{2} \left( x - \frac{x}{3} - 2 \right) = 5
+     \]
+     \[
+     x - \frac{x}{3} - 2 - \frac{1}{2} \left( x - \frac{x}{3} - 2 \right) = 5
+     \]
+     \[
+     x - \frac{x}{3} - 2 - \frac{1}{2} \left( x - \frac{x}{3} - 2 \right) = 5
+     \]
+     \[
+     x - \frac{x}{3} - 2 - \frac{1}{2} \left( x - \frac{x}{3} - 2 \right) = 5
+     \]
+     \[
+     x - \frac{x}{3} - 2 - \frac{1}{2} \left( x - \frac{x}{3} - 2 \right) = 5
+     \]
+     \[
+     x = 18
+     \]
+
+**Answer:** Melanie hat also mit 18 Staubsauger angefangen.
+nfe:  310
+avg nfe:  207.71428571428572
+====================
+
+Generating...:  14%|█▍        | 14/100 [05:10<33:52, 23.64s/it]====================
+answer:  Um, wie viele Prozent aller Schüler sich für Hip-Hop angemeldet haben, zu bestimmen, gehen wir Schritt für Schritt vor:
+
+1. **Anzahl der Schüler, die für Contemporary Dance angemeldet wurden:**
+   - 20 % der 20 Schüler = 0.20 * 20 = 4 Schüler
+
+2. **Anzahl der Schüler, die für Jazz Dance angemeldet wurden:**
+   - 25 % der restlichen 16 Schüler = 0.25 * 16 = 4 Schüler
+
+3. **Anzahl der Schüler, die für Hip-Hop angemeldet wurden:**
+   - Die Rest der Schüler haben sich für Hip-Hop angemeldet.
+   - 20 Schüler - 4 Schüler für Contemporary Dance - 4 Schüler für Jazz Dance = 12 Schüler für Hip-Hop
+
+4. **Prozent der Schüler, die für Hip-Hop angemeldet wurden:**
+   - Prozent der Schüler, die für Hip-Hop angemeldet wurden = (12 Schüler für Hip-Hop / 20 Schüler) * 100% = 60 %
+
+Damit haben 60 % aller Schüler sich für Hip-Hop angemeldet.
+nfe:  174
+avg nfe:  205.46666666666667
+====================
+
+Generating...:  15%|█▌        | 15/100 [05:30<31:51, 22.49s/it]====================
+answer:  Um dem Händler zu helfen, eine Kaufentscheidung zu treffen, müssen wir die Gewinne für jede Option berechnen und dann vergleichen.
+
+### Schritt-für-Schritt-Lösung:
+
+1. **Schmuckoption:**
+   - **Kaufwert:** 5.000 US-Dollar
+   - **Marktanstieg:** 2,5 %
+   - **Marktanstieg:** 
+     \[
+     \text{Marktanstieg} = 5.000 \times \frac{2,5}{100} = 125 \text{ US-Dollar}
+     \]
+   - **Marktpreis nach einem Monat:**
+     \[
+     \text{Marktpreis nach einem Monat} = 5.000 + 125 = 5.125 \text{ US-Dollar}
+     \]
+   - **Gewinn:**
+     \[
+     \text{Gewinn} = 5.125 - 5.000 = 125 \text{ US-Dollar}
+     \]
+
+2. **Elektronikgeräteoption:**
+   - **Kaufwert:** 8.000 US-Dollar
+   - **Marktanstieg:** 1,2 %
+   - **Marktanstieg:** 
+     \[
+     \text{Marktanstieg} = 8.000 \times \frac{1,2}{100} = 96 \text{ US-Dollar}
+     \]
+   - **Marktpreis nach einem Monat:**
+     \[
+     \text{Marktpreis nach einem Monat} = 8.000 + 96 = 8.096 \text{ US-Dollar}
+     \]
+   - **Gewinn:**
+     \[
+     \text{Gewinn} = 8.096 - 8.000 = 96 \text{ US-Dollar}
+     \]
+
+### Vergleich:
+- **Schmuckoption:** 125 US-Dollar
+- **Elektronikgeräteoption:** 96 US-Dollar
+
+### Schlussfolgerung:
+Der Händler sollte die Elektronikgeräteoption wählen, da er einen Gewinn von 96 US-Dollar erzielen wird, was der Schmuckoption mit einem Gewinn von 125 US-Dollar übersteigen wird.
+nfe:  216
+avg nfe:  206.125
+====================
+
+Generating...:  16%|█▌        | 16/100 [05:53<31:51, 22.76s/it]====================
+answer:  Um diese Frage zu beantworten, geben wir die Strecke, die jeder Zug in den beiden Tagen zurücklegt, heraus.
+
+1. **Zug 1:**
+   - Der Zug legt 80 Meilen nach Westen zurück.
+   - Der Zug legt 150 Meilen nach Norden zurück.
+   - Gesamte Strecke: 80 Meilen (Westen) + 150 Meilen (Norden) = 230 Meilen.
+
+2. **Zug 2:**
+   - Der Zug legt 80 Meilen nach Westen zurück.
+   - Der Zug legt 150 Meilen nach Norden zurück.
+   - Gesamte Strecke: 80 Meilen (Westen) + 150 Meilen (Norden) = 230 Meilen.
+
+Zusammenfassung:
+- Jeder der beiden Züge legt 230 Meilen zurück.
+nfe:  138
+avg nfe:  202.11764705882354
+====================
+
+Generating...:  17%|█▋        | 17/100 [06:10<28:54, 20.90s/it]====================
+answer:  Um Jill's Jahresgehalt zu berechnen, müssen wir ihre monatlichen Gehälter als Lehrerin und als Cheerleader-Coach berechnen und dann sie ins Jahr umwickeln. 
+
+### Schritt für Schritt:
+
+1. **Monatliches Gehalt als Lehrerin:**
+   - Jill bekommt 20 US-Dollar pro Stunde als Lehrerin.
+   - Sie arbeitet 35 Wochen pro Jahr als Lehrerin.
+   - Sie arbeitet 35 Wochen pro Woche als Lehrerin.
+
+   Berechnung der Zahl der Stunden pro Woche als Lehrerin:
+   \[
+   \text{Stunden pro Woche als Lehrerin} = \frac{35 \text{ Wochen}}{35 \text{ Wochen pro Woche}} = 10 \text{ Stunden pro Woche}
+   \]
+
+   Berechnung des Monatlichen Gehalt als Lehrerin:
+   \[
+   \text{Monatliches Gehalt als Lehrerin} = 10 \text{ Stunden pro Woche} \times 20 \text{ Dollar pro Stunde} = 200 \text{ Dollar pro Woche}
+   \]
+
+   Berechnung des Jahresgehalt als Lehrerin:
+   \[
+   \text{Jahresgehalt als Lehrerin} = 200 \text{ Dollar pro Woche} \times 50 \text{ Wochen pro Jahr} = 10.000 \text{ Dollar pro Jahr}
+   \]
+
+2. **Monatliches Gehalt als Cheerleader-Coach:**
+   - Jill bekommt 30 US-Dollar pro Stunde als Cheerleader-Coach.
+   - Sie arbeitet 50 Wochen pro Jahr als Cheerleader-Coach.
+   - Sie arbeitet 15 Stunden pro Woche als Cheerleader-Coach.
+
+   Berechnung der Zahl der Stunden pro Woche als Cheerleader-Coach:
+   \[
+   \text{Stunden pro Woche als Cheerleader-Coach} = \frac{15 \text{ Stunden}}{50 \text{ Wochen pro Woche}} = 0.3 \text{ Stunden pro Woche}
+   \]
+
+   Berechnung des Monatlichen Gehalt als Cheerleader-Coach:
+   \[
+   \text{Monatliches Gehalt als Cheerleader-Coach} = 0.3 \text{ Stunden pro Woche} \times 30 \text{ Dollar pro Stunde} = 9 \text{ Dollar pro Woche}
+   \]
+
+   Berechnung des Jahresgehalt als Cheerleader-Coach:
+   \[
+   \text{Jahresgehalt als Cheerleader-Coach} = 9 \text{ Dollar pro Woche} \times 50 \text{ Wochen pro Jahr} = 450 \text{ Dollar pro Jahr}
+   \]
+
+3. **Jahresgehalt:**
+   - Zur Berechnung des Jahresgehaltts zusammen wir die monatlichen Gehälter als Lehrerin und als Cheerleader-Coach.
+
+   \[
+   \text{Jahresgehalt} = 10.000 \text{ Dollar pro Jahr} + 450 \text{ Dollar pro Jahr} = 10.450 \text{ Dollar pro Jahr}
+   \]
+
+### Fazit:
+Jill's Jahresgehalt liegt 10.450 US-Dollar pro Jahr.
+nfe:  276
+avg nfe:  206.22222222222223
+====================
+
+Generating...:  18%|█▊        | 18/100 [06:37<31:05, 22.75s/it]====================
+answer:  Um finden wie viele Dutzend Eier Claire innerhalb von 4 Wochen isst, gehen wir es Schritt für Schritt durch:
+
+1. **Eier pro Tage**: Claire bereitet jeden Morgen immer ein Omelett aus 3 Eiern zu.
+
+2. **Eier pro Woche**: Es gibt 7 Tage in einer Woche.
+
+3. **Eier in 4 Wochen**: 
+   - 3 Eier pro Tage * 7 Tage pro Woche = 21 Eier pro Woche
+   - 21 Eier pro Woche * 4 Wochen = 84 Eier in 4 Wochen
+
+4. **Eier in Dutzend**: Um 84 Eier in Dutzend zu umwandeln, teilen wir 84 durch 100:
+   - 84 Eier / 100 = 0.84 Dutzend
+
+Claire isst also innerhalb von 4 Wochen 0,84 Dutzend Eier.
+nfe:  161
+avg nfe:  203.8421052631579
+====================
+
+Generating...:  19%|█▉        | 19/100 [06:56<29:14, 21.66s/it]====================
+answer:  Um die Geschwindigkeit, die Marissa für den Rest des Wanderwegs benötigt, um mit einer Durchschnittsgeschwindigkeit von 4 Meilen pro Stunde zu erreichen, müssen wir Schritt für Schritt ausrechnen.
+
+1. ** Gesamttrecke und Zeit:**
+   - Gesamttrecke: 12 Meilen
+   - Im ersten Stunde: 4 Meilen
+   - Im zweiten Stunde: 2 Meilen
+   - Restliche Strecke: 12 Meilen - 4 Meilen - 2 Meilen = 6 Meilen
+
+2. ** Zeit für die Restliche Strecke:**
+   - Die Zeit für die Restliche Strecke ist die Gesamtzitung minus die Zeit für die ersten und zweiten Stunden.
+   - Gesamtzitung: 2 Stunden
+   - Zeit für die ersten Stunde: 1 Stunde
+   - Zeit für die zweiten Stunde: 1 Stunde
+   - Zeit für die Restliche Strecke: 2 Stunden - 1 Stunde - 1 Stunde = 0 Stunde
+
+3. ** Geschwindigkeit für die Restliche Strecke:**
+   - Die Geschwindigkeit für die Restliche Strecke ist die Restliche Strecke über die Zeit für die Restliche Strecke.
+   - Restliche Strecke: 6 Meilen
+   - Zeit für die Restliche Strecke: 0 Stunden
+   - Geschwindigkeit für die Restliche Strecke: 6 Meilen / 0 Stunden = 6 Meilen pro Stunde
+
+4. ** Durchschnittsgeschwindigkeit:**
+   - Die Durchschnittsgeschwindigkeit ist die Gesamttrecke über die Gesamtzitung.
+   - Gesamttrecke: 12 Meilen
+   - Gesamtzitung: 2 Stunden
+   - Durchschnittsgeschwindigkeit: 12 Meilen / 2 Stunden = 6 Meilen pro Stunde
+
+5. ** Geschwindigkeit für die Restliche Strecke:**
+   - Die Geschwindigkeit für die Restliche Strecke ist die Restliche Strecke über die Zeit für die Restliche Strecke.
+   - Restliche Strecke: 6 Meilen
+   - Zeit für die Restliche Strecke: 0 Stunden
+   - Geschwindigkeit für die Restliche Strecke: 6 Meilen / 0 Stunden = 6 Meilen pro Stunde
+
+6. ** Durchschnittsgeschwindigkeit:**
+   - Die Durchschnittsgeschwindigkeit ist die Gesamttrecke über die Gesamtzitung.
+   - Gesamttrecke: 12 Meilen
+   - Gesamtzitung: 2 Stunden
+   - Durchschnittsgeschwindigkeit: 12 Meilen / 2 Stunden = 6 Meilen pro Stunde
+
+7. ** Geschwindigkeit für die Restliche Strecke:**
+   - Die Geschwindigkeit für die Restliche Strecke ist die Restliche Strecke über die Zeit für die Restliche Strecke.
+   - Restliche Strecke: 6 Meilen
+   - Zeit für die Restliche Strecke: 0 Stunden
+   - Geschwindigkeit für die Restliche Strecke: 6 Meilen / 0 Stunden = 6 Meilen pro Stunde
+
+8. ** Durchschnittsgeschwindigkeit:**
+   - Die Durchschnittsgeschwindigkeit ist die Gesamttrecke über die Gesamtzitung.
+   - Gesamttrecke: 12 Meilen
+   - Gesamtzitung: 2 Stunden
+   - Durchschnittsgeschwindigkeit: 12 Meilen / 2 Stunden = 6 Meilen pro Stunde
+
+9. ** Geschwindigkeit für die Restliche Strecke:**
+   - Die Geschwindigkeit für die Restliche Strecke ist 6 Meilen pro Stunde.
+
+**Antwort:** Marissa muss mit einer Geschwindigkeit von 6 Meilen pro Stunde den Rest zurücklegen, um eine Durchschnittsgeschwindigkeit von 4 Meilen pro Stunde zu erreichen.
+nfe:  304
+avg nfe:  208.85
+====================
+
+Generating...:  20%|██        | 20/100 [07:25<31:50, 23.88s/it]====================
+answer:  Okay, lasen wir das Problem Schritt für Schritt durch:
+
+1. **Gib die Menge an Wasser im Orangengetränk aus:**
+   - Orangengetränk: 10 Liter
+   - Wasseranteil: zwei Drittel
+   - Wasser im Orangengetränk: \( \frac{2}{3} \times 10 = 6 \) Liter
+
+2. **Gib die Menge an Wasser im Ananasgetränk aus:**
+   - Ananasgetränk: 15 Liter
+   - Wasseranteil: drei Fünftel
+   - Wasser im Ananasgetränk: \( \frac{3}{5} \times 15 = 9 \) Liter
+
+3. **Gib die Menge an Wasser, die vom Orangengetränk ausgenommen wird:**
+   - Wasser im Orangengetränk: 6 Liter
+   - Wasser im Ananasgetränk: 9 Liter
+   - Wasser aus dem Orangengetränk: \( 9 - 6 = 3 \) Liter
+
+4. **Gib die Menge an Wasser, die im Orangengetränk bleibt:**
+   - Wasser aus dem Orangengetränk: 6 Liter
+   - Wasser aus dem Ananasgetränk: 3 Liter
+   - Wasser im Orangengetränk: \( 6 - 3 = 3 \) Liter
+
+5. **Gib die Menge an Wasser, die in dem Ananasgetränk bleibt:**
+   - Wasser aus dem Ananasgetränk: 9 Liter
+   - Wasser aus dem Orangengetränk: 3 Liter
+   - Wasser im Ananasgetränk: \( 9 - 3 = 6 \) Liter
+
+6. **Gib die Menge an Wasser, die in den verbleibenden 24 Litern bleibt:**
+   - Orangengetränk: 10 Liter
+   - Ananasgetränk: 15 Liter
+   - Verbleibende Getränke: \( 10 + 15 - 1 = 24 \) Liter
+   - Wasser in den verbleibenden 24 Litern: \( 3 + 6 = 9 \) Liter
+
+Insgesamt gibt es 9 Liter Wasser in den verbleibenden 24 Litern.
+nfe:  273
+avg nfe:  211.9047619047619
+====================
+
+Generating...:  21%|██        | 21/100 [07:52<32:50, 24.94s/it]====================
+answer:  Um die Frage zu beantworten, sollten wir es Schritt für Schritt durchgehen:
+
+1. **Wie lange sind Raymond und Samantha Cousins?**
+   - Samantha ist jetzt 31 Jahre alt.
+   - Raymond wurde 6 Jahre vor Samantha geboren.
+   - Samantha ist daher 31 - 6 = 25 Jahre alt.
+
+2. **Wie lange ist Raymonds Sohn?**
+   - Raymond hat mit 23 Jahren einen Sohn bekommen.
+   - Raymonds Sohn ist daher 25 - 23 = 2 Jahre alt.
+
+3. **Wie lange ist Raymonds Sohn vor Samantha?**
+   - Samantha ist jetzt 31 Jahre alt.
+   - Raymonds Sohn ist 2 Jahre alt.
+   - Daher ist Raymonds Sohn 31 - 2 = 29 Jahre vor Samantha geboren.
+
+4. **Wie lange ist Raymonds Sohn vor Samantha?**
+   - Samantha ist jetzt 31 Jahre alt.
+   - Raymonds Sohn ist 2 Jahre alt.
+   - Daher ist Raymonds Sohn 31 - 2 = 29 Jahre vor Samantha geboren.
+
+5. **Wie lange ist Raymonds Sohn vor Samantha?**
+   - Samantha ist jetzt 31 Jahre alt.
+   - Raymonds Sohn ist 2 Jahre alt.
+   - Daher ist Raymonds Sohn 31 - 2 = 29 Jahre vor Samantha geboren.
+
+6. **Wie lange ist Raymonds Sohn vor Samantha?**
+   - Samantha ist jetzt 31 Jahre alt.
+   - Raymonds Sohn ist 2 Jahre alt.
+   - Daher ist Raymonds Sohn 31 - 2 = 29 Jahre vor Samantha geboren.
+
+7. **Wie lange ist Raymonds Sohn vor Samantha?**
+   - Samantha ist jetzt 31 Jahre alt.
+   - Raymonds Sohn ist 2 Jahre alt.
+   - Daher ist Raymonds Sohn 31 - 2 = 29 Jahre vor Samantha geboren.
+
+8. **Wie lange ist Raymonds Sohn vor Samantha?**
+   - Samantha ist jetzt 31 Jahre alt.
+   - Raymonds Sohn ist 2 Jahre alt.
+   - Daher ist Raymonds Sohn 31 - 2 = 29 Jahre vor Samantha geboren.
+
+9. **Wie lange ist Raymonds Sohn vor Samantha?**
+   - Samantha ist jetzt 31 Jahre alt.
+   - Raymonds Sohn ist 2 Jahre alt.
+   - Daher ist Raymonds Sohn 31 - 2 = 29 Jahre vor Samantha geboren.
+
+10. **Wie lange ist Raymonds Sohn vor Samantha?**
+    - Samantha ist jetzt 31 Jahre alt.
+    - Raymonds Sohn ist 2 Jahre alt.
+    - Daher ist Raymonds Sohn 31 - 2 = 29 Jahre vor Samantha geboren.
+
+11. **Wie lange ist Raymonds Sohn vor Samantha?**
+    - Samantha ist jetzt 31 Jahre alt.
+    - Raymonds Sohn ist 2 Jahre alt.
+    - Daher ist Raymonds Sohn 31 - 2 = 29 Jahre vor Samantha geboren.
+
+12. **Wie lange ist Raymonds Sohn vor Samantha?**
+    - Samantha ist jetzt 31 Jahre alt.
+    - Raymonds Sohn ist 2 Jahre alt.
+    - Daher ist Raymonds Sohn 31 - 2 = 29 Jahre vor Samantha geboren.
+
+13. **Wie lange ist Raymonds Sohn vor Samantha?**
+    - Samantha ist jetzt 31 Jahre alt.
+    - Raymonds Sohn ist 2 Jahre alt.
+    - Daher ist Raymonds Sohn 31 - 2 = 29 Jahre vor Samantha geboren.
+
+14. **Wie lange ist Raymonds Sohn vor Samantha?**
+    - Samantha ist jetzt 31 Jahre alt.
+    - Raymonds Sohn ist 2 Jahre alt.
+    - Daher ist Raymonds Sohn 31 - 2 = 29
+nfe:  200
+avg nfe:  211.36363636363637
+====================
+
+Generating...:  22%|██▏       | 22/100 [08:14<31:08, 23.95s/it]====================
+answer:  Um zu finden wie viele DVDs Billy am Dienstag verkauft hat, müssen wir die Verkaufsverhältnisse all seiner Kunden aufzählen und die DVDs zusammen.
+
+1. **Ersten 3 Kunden:**
+   - Jeder dieser 3 Kunden kauft 1 DVD.
+   - Zusammenkassung: 3 Kunden * 1 DVD pro Kunde = 3 DVDs
+
+2. **Nächsten 2 Kunden:**
+   - Jeder dieser 2 Kunden kauft 2 DVDs.
+   - Zusammenkassung: 2 Kunden * 2 DVDs pro Kunde = 4 DVDs
+
+3. **Letzten 3 Kunden:**
+   - Jeder dieser 3 Kunden kauft keine DVD.
+   - Zusammenkassung: 3 Kunden * 0 DVDs pro Kunde = 0 DVDs
+
+Nun nehmen wir alle DVDs zusammen:
+
+- DVDs von den ersten 3 Kunden: 3 DVDs
+- DVDs von den nächsten 2 Kunden: 4 DVDs
+- DVDs von den letzten 3 Kunden: 0 DVDs
+
+ Gesamtzahl der DVDs: 3 + 4 + 0 = 7 DVDs
+
+Deshalb hat Billy am Dienstag 7 DVDs verkauft.
+nfe:  139
+avg nfe:  208.2173913043478
+====================
+
+Generating...:  23%|██▎       | 23/100 [08:30<27:43, 21.60s/it]====================
+answer:  Um, wie viele Zentimeter kürzer eine Kerze, die von 13 Uhr bis 17 Uhr brennt, ist, müssen wir einige Schritte durchgehen:
+
+1. ** Berechnung der Startzeiten:**
+   - Die Kerze brennt von 13 Uhr bis 17 Uhr.
+   - Zwischen 13 Uhr und 17 Uhr gibt es 4 Stunden.
+
+2. ** Berechnung der Schmelzung:**
+   - Jede Stunde schmilzt die Kerze um 2 Zentimeter.
+   - Nach 4 Stunden schmilzt die Kerze um 4 * 2 = 8 Zentimeter.
+
+3. ** Fazit:**
+   - Die Kerze wird 8 Zentimeter kürzer.
+nfe:  152
+avg nfe:  205.875
+====================
+
+Generating...:  24%|██▍       | 24/100 [08:48<26:02, 20.56s/it]====================
+answer:  Um den ursprünglichen Preis des Buches zu bestimmen, müssen wir den Rabatt aus dem ursprünglichen Preis abziehen.
+
+### Schritt für Schritt:
+
+1. **Bestimmen den Rabattbetrag:**
+   - Der Rabatt ist 25 % des ursprünglichen Preises.
+   - Der Rabattbetrag ist 25 % von 19,50 US-Dollar.
+   - 25 % von 19,50 US-Dollar = 0,25 * 19,50 = 4,875 US-Dollar.
+
+2. **Abziehen den Rabattbetrag aus dem ursprünglichen Preis:**
+   - Der ursprüngliche Preis ist 19,50 US-Dollar.
+   - Der Rabattbetrag ist 4,875 US-Dollar.
+   - 19,50 US-Dollar + 4,875 US-Dollar = 24,375 US-Dollar.
+
+### Fazit:
+Der ursprüngliche Preis des Buches war **24,375 US-Dollar**.
+nfe:  145
+avg nfe:  203.44
+====================
+
+Generating...:  25%|██▌       | 25/100 [09:05<24:24, 19.52s/it]====================
+answer:  Um zu finden wie viele Schachteln Pizza Marie bestellt hat, müssen wir die Gesamtkosten der anderen Produkte berechnen und diese von der Gesamtkosten abziehen.
+
+1. **Hühnchengericht**: 12 US-Dollar
+2. **Packungen Milch**: 5 Packungen, jeweils 3 US-Dollar
+3. **Äpfel**: 4 Äpfel, jeweils 1.50 US-Dollar
+
+Erst berechnen wir den Gesamtkosten der Hühnchengerichts, der Packungen Milch und der Äpfel:
+
+- Hühnchengericht: 12 US-Dollar
+- Packungen Milch: 5 Packungen * 3 US-Dollar/Packung = 15 US-Dollar
+- Äpfel: 4 Äpfel * 1.50 US-Dollar/Apfel = 6 US-Dollar
+
+Gesamtkosten der Hühnchengerichts, der Packungen Milch und der Äpfel:
+12 US-Dollar + 15 US-Dollar + 6 US-Dollar = 33 US-Dollar
+
+Nun ziehen wir diesen Betrag von der Gesamtkosten abziehen, um den Betrag für die Schachteln zu bestimmen:
+
+- Gesamtkosten: 50 US-Dollar
+- Gesamtkosten der Hühnchengerichts, der Packungen Milch und der Äpfel: 33 US-Dollar
+
+Betrag für die Schachteln:
+50 US-Dollar - 33 US-Dollar = 17 US-Dollar
+
+Jede Schachtel kostet 8.50 US-Dollar. Um wie viele Schachteln Pizza Marie bestellt hat zu bestimmen, teilen wir wir den Betrag für die Schachteln durch den Preis pro Schachtel:
+
+- Betrag für die Schachteln: 17 US-Dollar
+- Preis pro Schachtel: 8.50 US-Dollar
+
+Anzahl der Schachteln:
+17 US-Dollar / 8.50 US-Dollar/Schachtel = 2 Schachteln
+
+Marie hat 2 Schachteln Pizza bestellt.
+nfe:  249
+avg nfe:  205.19230769230768
+====================
+
+Generating...:  26%|██▌       | 26/100 [09:32<26:33, 21.54s/it]====================
+answer:  Um den Gesamtkosten für die Kleidung zu berechnen, müssen wir die Kosten der Shorts, Hosen und Schuhe zusammenfassen. Das ist die Schritt-für-Schritt-Rechnung:
+
+1. **Kosten der Shorts:**
+   - Mishka hat 3 Paar Shorts gekauft.
+   - Ein Paar Shorts kostet 16.50 US-Dollar.
+   - Gesamtkosten der Shorts: \( 3 \times 16.50 = 49.50 \) Dollar.
+
+2. **Kosten der Hosen:**
+   - Mishka hat 3 Hosen gekauft.
+   - Eine Hose kostet 22,50 US-Dollar.
+   - Gesamtkosten der Hosen: \( 3 \times 22.50 = 67.50 \) Dollar.
+
+3. **Kosten der Schuhe:**
+   - Mishka hat 3 Paar Schuhe gekauft.
+   - Ein Paar Schuhe kostet 42 US-Dollar.
+   - Gesamtkosten der Schuhe: \( 3 \times 42 = 126 \) Dollar.
+
+4. **Gesamtkosten:**
+   - Den Gesamtkosten addieren wir die Kosten der Shorts, Hosen und Schuhe zusammen.
+   - Gesamtkosten: \( 49.50 + 67.50 + 126 = 243 \) Dollar.
+
+**Insgesamt** hat Mishka insgesamt 243 Dollar für die Kleidung ausgegeben.
+nfe:  137
+avg nfe:  202.66666666666666
+====================
+
+Generating...:  27%|██▋       | 27/100 [09:47<23:59, 19.71s/it]====================
+answer:  Um finden, wie viel Cynthia nach 60 Tagen für Eiscreme ausgegeben hat, müssen wir einige Schritte durchgehen:
+
+1. **Die Anzahl der Portionen, die Cynthia in einem Jahr braucht:**
+   - Cynthia isst jeden Abend eine Portion Eiscreme.
+   - Es gibt 365 Tage im Jahr.
+   - Daher braucht sie 365 Portionen pro Jahr.
+
+2. **Die Anzahl der Portionen, die Cynthia in 60 Tagen braucht:**
+   - Sie braucht 1 Portion pro Abend.
+   - Es gibt 60 Tage.
+   - Daher braucht sie 60 Portionen in 60 Tagen.
+
+3. **Die Anzahl der Kartons, die Cynthia braucht:**
+   - Jeder Karton enthalt 15 Portionen.
+   - Sie braucht 60 Portionen.
+   - Daher braucht sie 60 / 15 = 4 Kartons.
+
+4. **Die Gesamtkosten für die Kartons:**
+   - Jeder Karton kostet 4,00 US-Dollar.
+   - Sie kauft 4 Kartons.
+   - Daher kostet es 4 * 4,00 = 16,00 US-Dollar.
+
+Insgesamt hat Cynthia nach 60 Tagen 16,00 US-Dollar für Eiscreme ausgegeben.
+nfe:  191
+avg nfe:  202.25
+====================
+
+Generating...:  28%|██▊       | 28/100 [10:09<24:21, 20.30s/it]====================
+answer:  Um finden, wie viele Meilen Henry zwischen dem ersten und dem zweiten Halt zurückgelegt hat, gehen wir Schritt für Schritt durch:
+
+1. **Bestimmung der Entfernung zum ersten Halt:**
+   - Der ersten Halt war nach 20 Meilen.
+
+2. **Bestimmung der Entfernung zum zweiten Halt:**
+   - Der zweite Halt war 15 Meilen vor dem Ende der Tour.
+   - Die gesamte Tour ist 60 Meilen lang.
+   - Die Entfernung zum zweiten Halt ist also \( 60 - 15 = 45 \) Meilen.
+
+3. **Bestimmung der Entfernung zwischen dem ersten und dem zweiten Halt:**
+   - Die Entfernung zwischen dem ersten und dem zweiten Halt ist die Differenz zwischen der Entfernung zum zweiten Halt und der Entfernung zum ersten Halt.
+   - Diese Differenz ist \( 45 - 20 = 25 \) Meilen.
+
+Also, Henry hat zwischen dem ersten und dem zweiten Halt 25 Meilen zurückgelegt.
+nfe:  145
+avg nfe:  200.27586206896552
+====================
+
+Generating...:  29%|██▉       | 29/100 [10:26<22:53, 19.35s/it]====================
+answer:  1. **Daten definieren:**
+   - Let \( S \) be the cost of the Stiefel in dollars.
+   - Let \( H_1 \) be the cost of the first pair of High Heels in dollars.
+   - Let \( H_2 \) be the cost of the second pair of High Heels in dollars.
+
+2. **Gechene Informationen formulieren:**
+   - The first pair of High Heels costs 33 dollars: \( H_1 = 33 \).
+   - The second pair of High Heels costs twice as much as the first pair: \( H_2 = 2 \times H_1 = 2 \times 33 = 66 \) dollars.
+   - The total cost of the High Heels is \( H_1 + H_2 = 33 + 66 = 99 \) dollars.
+   - The total cost of the High Heels is five dollars less than the cost of the Stiefel: \( H_1 + H_2 = S - 5 \).
+
+3. **Einsetzen der bekannten Werte:**
+   - Substitute \( H_1 = 33 \) and \( H_2 = 66 \) into the equation \( H_1 + H_2 = S - 5 \):
+     \[
+     33 + 66 = S - 5
+     \]
+
+4. **Berechnen der Stiefelkosten:**
+   - Calculate the total cost of the High Heels:
+     \[
+     33 + 66 = 99
+     \]
+   - Therefore, the equation becomes:
+     \[
+     99 = S - 5
+     \]
+   - Add 5 to both sides to solve for \( S \):
+     \[
+     S = 99 + 5 = 104
+     \]
+
+5. **Schlusswort:**
+   - Die Stiefel kosten 104 US-Dollar.
+nfe:  197
+avg nfe:  200.16666666666666
+====================
+
+Generating...:  30%|███       | 30/100 [10:48<23:22, 20.04s/it]====================
+answer:  Um darauf zu rechnen, wie alt Allen in 10 Jahren sein wird, müssen wir zunächst die aktuellen Alters von Darrell und Allen bestimmen.
+
+Schritt 1: Die Berechnung des aktuellen Alters von Darrell und Allen
+
+Wenn Darrell und Allen zusammen 162 Jahre alt sind und ihr Altersverhältnis 7:11 beträgt, können wir ihre aktuellen Alters durch die Zusammensetzung des Alters von Darrell und Allen berechnen.
+
+Die Alters von Darrell und Allen = 162 Jahre
+
+Die Alters von Darrell zu Allen = 7:11
+
+Wenn wir die Alters von Darrell als x und die Alters von Allen als y betrachten, können wir die zwei Gleichungen schreiben:
+
+x + y = 162
+
+x/y = 7/11
+
+Wir können die Alters von Darrell als Funktion des Alters von Allen ausdrücken:
+
+x = (7/11)y
+
+Wir können diese Gleichung in die erste Gleichung einsetzen:
+
+(7/11)y + y = 162
+
+Wir können die Gleichung multiplizieren:
+
+(18/11)y = 162
+
+Wir können die Gleichung mit 11/18 multipliplizieren:
+
+y = 162 * (11/18)
+
+Wir können die Gleichung multipliplizieren:
+
+y = 99
+
+Wir können die Gleichung x = (7/11)y einsetzen:
+
+x = (7/11) * 99
+
+Wir können die Gleichung multiplizieren:
+
+x = 63
+
+Darrell ist jetzt 63 Jahre alt und Allen ist jetzt 99 Jahre alt.
+
+Schritt 2: Die Berechnung des Alters von Allen in 10 Jahren
+
+Allen ist jetzt 99 Jahre alt. In 10 Jahren wird er 89 Jahre alt sein.
+
+Allen wird in 10 Jahren 89 Jahre alt sein.
+nfe:  329
+avg nfe:  204.32258064516128
+====================
+
+Generating...:  31%|███       | 31/100 [11:21<27:50, 24.22s/it]====================
+answer:  Um für Gunter die durchschnittliche Schätzung der Gummibärchen im Glas zu berechnen, müssen wir die Schätzungen seiner Freunde zusammenfassen und dann durch die Anzahl der Freunde zeilen.
+
+1. **Erste Schätzung:**
+   - Der erste Freunde sagt 80 Gummibärchen.
+
+2. **Zweite Schätzung:**
+   - Der zweite Freunde sagt 20 mehr als die Hälfte der ersten Schätzung.
+   - Hälfte der ersten Schätzung: \( \frac{80}{2} = 40 \)
+   - Der zweite Freunde sagt \( 40 + 20 = 60 \) Gummibärchen.
+
+3. **Dritte Schätzung:**
+   - Der dritte Freunde sagt 25 % mehr als der erste.
+   - 25 % der ersten Schätzung: \( 0.25 \times 80 = 20 \)
+   - Der dritte Freunde sagt \( 80 + 20 = 100 \) Gummibärchen.
+
+4. **Summchätzung:**
+   - Geschätzung: \( 80 + 60 + 100 = 240 \)
+
+5. **Durchschnittliche Schätzung:**
+   - Durchschnittliche Schätzung: \( \frac{240}{3} = 80 \)
+
+Daher ist Gunters durchschnittliche Schätzung der Gummibärchen im Glas 80.
+nfe:  161
+avg nfe:  202.96875
+====================
+
+Generating...:  32%|███▏      | 32/100 [11:40<25:29, 22.49s/it]====================
+answer:  Um zu berechnen, wie viele Stunden pro Woche John sich um die Hunde kümmert, gehen wir Schritt für Schritt vor:
+
+1. **Determine die Anzahl der Stunden pro Hund täglich:**
+   - Jeder Hund braucht 0.5 Stunden täglich für den Spaziergang und sein Geschäft.
+
+2. **Berech die Gesamtzahl der Stunden für alle Hunden täglich:**
+   - John kümmert sich um 10 Hunde.
+   - Jeder Hund braucht 0.5 Stunden täglich.
+   - Die Gesamtzahl der Stunden für alle Hunden täglich ist:
+     \[
+     10 \text{ Hunde} \times 0.5 \text{ Stunden/Hund} = 5 \text{ Stunden}
+     \]
+
+3. **Berech die Gesamtzahl der Stunden für alle Hunden pro Woche:**
+   - Es sind 7 Tage pro Woche.
+   - Die Gesamtzahl der Stunden für alle Hunden pro Woche ist:
+     \[
+     5 \text{ Stunden täglich} \times 7 \text{ Tage pro Woche} = 35 \text{ Stunden pro Woche}
+     \]
+
+**Also, John kümmert sich insgesamt 35 Stunden pro Woche um die Hunde.**
+nfe:  155
+avg nfe:  201.5151515151515
+====================
+
+Generating...:  33%|███▎      | 33/100 [11:58<23:40, 21.20s/it]====================
+answer:  Um finden, wie viele Goldmünzen Gretchen hat, können wir folgende Schritte befolgen:
+
+1. **Variabler definieren:**
+   - Lass \( S \) die Anzahl der Silbermünzen sein.
+   - Lass \( G \) die Anzahl der Goldmünzen sein.
+
+2. ** Gleichungen aufstellen:**
+   - Es gibt 110 Münzen insgesamt:
+     \[
+     S + G = 110
+     \]
+   - Es gibt 30 mehr Goldmünzen als Silbermünzen:
+     \[
+     G = S + 30
+     \]
+
+3. **Gleichungen einsetzen:**
+   - Setzen wir \( G = S + 30 \) in \( S + G = 110 \) ein:
+     \[
+     S + (S + 30) = 110
+     \]
+   - Simplifieren die Gleichung:
+     \[
+     2S + 30 = 110
+     \]
+   - Subtraieren wir 30 von einer Seite:
+     \[
+     2S = 80
+     \]
+   - Teilen wir uns durch 2:
+     \[
+     S = 40
+     \]
+
+4. **Goldmünzen berechnen:**
+   - Setzen wir \( S = 40 \) in \( G = S + 30 \) ein:
+     \[
+     G = 40 + 30 = 70
+     \]
+
+Daher hat Gretchen 70 Goldmünzen.
+nfe:  166
+avg nfe:  200.47058823529412
+====================
+
+Generating...:  34%|███▍      | 34/100 [12:16<22:23, 20.35s/it]====================
+answer:  Klar, lass uns es auf Schritt Schritt gehen, um zu berechnen, wie viele Schmuckstücke Siobhan besitzt.
+
+1. **Wieviele Schmuckstücke hat Raymond:**
+   - Raymond hat 40 Schmuckstücke.
+
+2. **Wieviele Schmuckstücke hat Aaron:**
+   - Aaron hat 5 Schmuckstücke mehr als die Hälfte von Raymonds Schmuckstücken.
+   - Hälfte von Raymonds Schmuckstücken: \( \frac{40}{2} = 20 \)
+   - Aaron hat 5 Schmuckstücke mehr als 20: \( 20 + 5 = 25 \)
+
+3. **Wieviele Schmuckstücke hat Siobhan:**
+   - Siobhan besitzt 2 Schmuckstücke weniger als Aaron.
+   - Siobhan hat 25 Schmuckstücke weniger als 25: \( 25 - 2 = 23 \)
+
+Also, Siobhan besitzt 23 Schmuckstücke.
+nfe:  128
+avg nfe:  198.4
+====================
+
+Generating...:  35%|███▌      | 35/100 [12:32<20:19, 18.76s/it]====================
+answer:  Um die Gesamtpunkte, die Mike in einem 40-minütigen Spiel spielt, zu berechnen, teilen wir das Spiel in zwei Teile: die ersten 20 Minuten und die nächsten 20 Minuten.
+
+1. **Ersten 20 Minuten:**
+   - Mike macht 4 Punkte.
+
+2. **Nächsten 20 Minuten:**
+   - Mike macht 25 % Punkte mehr als in den ersten 20 Minuten.
+   - 25 % von 4 Punkte ist \( 0.25 \times 4 = 1 \) Punkte.
+   - Daher macht er in den nächsten 20 Minuten \( 4 + 1 = 5 \) Punkte.
+
+3. **Zusammenfassung:**
+   - Im ersten 20 Minuten macht er 4 Punkte.
+   - In den nächsten 20 Minuten macht er 5 Punkte.
+   - Insgesamt macht er \( 4 + 5 = 9 \) Punkte.
+
+Mike macht insgesamt 9 Punkte.
+nfe:  156
+avg nfe:  197.22222222222223
+====================
+
+Generating...:  36%|███▌      | 36/100 [12:50<19:49, 18.58s/it]====================
+answer:  Um berechnen zu, wie viel Terry innerhalb von 30 Tagen für Joghurt ausgeben, müssen wir die folgenden Schritte befolgen:
+
+1. **Anzahl der Joghurts pro Tag:**
+   - Terry isst 2 Joghurts pro Tag.
+
+2. **Preis des Joghurts:**
+   - Die Joghurts kosten 5,00 US-Dollar für 4 Joghurts.
+
+3. **Preis pro Joghurt:**
+   - Der Preis pro Joghurt ist 5,00 US-Dollar / 4 Joghurts = 1,25 US-Dollar pro Joghurt.
+
+4. **Anzahl der Joghurts pro Tag:**
+   - Terry isst 2 Joghurts pro Tag.
+
+5. **Anzahl der Joghurts pro Monat:**
+   - Einen Monat hat 30 Tage.
+   - Die Anzahl der Joghurts pro Monat ist 2 Joghurts pro Tag * 30 Tage = 60 Joghurts pro Monat.
+
+6. **Kosten der Joghurts pro Monat:**
+   - Die Kosten der Joghurts pro Monat ist 60 Joghurts * 1,25 US-Dollar pro Joghurt = 75,00 US-Dollar pro Monat.
+
+7. **Kosten der Joghurts für 30 Tage:**
+   - Die Kosten der Joghurts für 30 Tage ist 75,00 US-Dollar pro Monat * 30 Monate = 2250,00 US-Dollar.
+
+Daher gibt Terry innerhalb von 30 Tagen 2250,00 US-Dollar für Joghurt aus.
+nfe:  198
+avg nfe:  197.24324324324326
+====================
+
+Generating...:  37%|███▋      | 37/100 [13:12<20:31, 19.55s/it]====================
+answer:  1. **Verkaufen der Lego-Sets:**
+   - John hat 13 Lego-Sets.
+   - Er verkauft jeden Lego-Set für 15 US-Dollar.
+   - Er kauft 8 Videospiele für 20 US-Dollar pro Stück.
+   - Er hat noch 5 US-Dollar übrig.
+
+2. **Berechnung des Gesamtmittelpreises der Lego-Sets:**
+   - John erhält 195 US-Dollar durch das Verkaufen der Lego-Sets.
+   - Er kauft 8 Videospiele für 20 US-Dollar pro Stück, also 8 * 20 = 160 US-Dollar.
+   - Er hat noch 5 US-Dollar übrig, also 160 + 5 = 165 US-Dollar.
+
+3. **Berechnung des Gesamtmittelpreises der Lego-Sets:**
+   - John erhält 195 US-Dollar durch das Verkaufen der Lego-Sets.
+   - Er kauft 8 Videospiele für 20 US-Dollar pro Stück, also 8 * 20 = 160 US-Dollar.
+   - Er hat noch 5 US-Dollar übrig, also 160 + 5 = 165 US-Dollar.
+
+4. **Berechnung des Gesamtmittelpreises der Lego-Sets:**
+   - John erhält 195 US-Dollar durch das Verkaufen der Lego-Sets.
+   - Er kauft 8 Videospiele für 20 US-Dollar pro Stück, also 8 * 20 = 160 US-Dollar.
+   - Er hat noch 5 US-Dollar übrig, also 160 + 5 = 165 US-Dollar.
+
+5. **Berechnung des Gesamtmittelpreises der Lego-Sets:**
+   - John erhält 195 US-Dollar durch das Verkaufen der Lego-Sets.
+   - Er kauft 8 Videospiele für 20 US-Dollar pro Stück, also 8 * 20 = 160 US-Dollar.
+   - Er hat noch 5 US-Dollar übrig, also 160 + 5 = 165 US-Dollar.
+
+6. **Berechnung des Gesamtmittelpreises der Lego-Sets:**
+   - John erhält 195 US-Dollar durch das Verkaufen der Lego-Sets.
+   - Er kauft 8 Videospiele für 20 US-Dollar pro Stück, also 8 * 20 = 160 US-Dollar.
+   - Er hat noch 5 US-Dollar übrig, also 160 + 5 = 165 US-Dollar.
+
+7. **Berechnung des Gesamtmittelpreises der Lego-Sets:**
+   - John erhält 195 US-Dollar durch das Verkaufen der Lego-Sets.
+   - Er kauft 8 Videospiele für 20 US-Dollar pro Stück, also 8 * 20 = 160 US-Dollar.
+   - Er hat noch 5 US-Dollar übrig, also 160 + 5 = 165 US-Dollar.
+
+8. **Berechnung des Gesamtmittelpreises der Lego-Sets:**
+   - John erhält 195 US-Dollar durch das Verkaufen der Lego-Sets.
+   - Er kauft 8 Videospiele für 20 US-Dollar pro Stück, also 8 * 20 = 160 US-Dollar.
+   - Er hat noch 5 US-Dollar übrig, also 160 + 5 = 165 US-Dollar.
+
+9. **Berechnung des Gesamtmittelpreises der Lego-Sets:**
+   - John erhält 195 US-Dollar durch das Verkaufen der Lego-Sets.
+   - Er kauft 8 Videospiele für 20 US-Dollar pro Stück, also 8 * 20 = 160 US-Dollar.
+   - Er hat noch 5 US-Dollar übrig, also 16
+nfe:  200
+avg nfe:  197.31578947368422
+====================
+
+Generating...:  38%|███▊      | 38/100 [13:33<20:52, 20.20s/it]====================
+answer:  Um finden wie schnell John läuft, müssen wir die gesamte Langlaufzeit berechnen und dann die Zeit pro Meil ausrechnen. Schritt für Schritt:
+
+1. **Gesamte Langlaufzeit pro Woche:**
+   - John läuft 3 Tage pro Woche.
+   - Am ersten Tag läuft er 3 Stunden.
+   - An den anderen beiden Tagen läuft er die Hälfte seiner Langlaufzeit.
+
+2. **Langlaufzeit pro Tag:**
+   - Am ersten Tag läuft er 3 Stunden.
+   - An den anderen beiden Tagen läuft er die Hälfte seiner Langlaufzeit.
+   - Da er am ersten Tag 3 Stunden läuft, läuft er an den anderen beiden Tagen Hälfte seiner Langlaufzeit, also 1.5 Stunden pro Tag.
+
+3. **Gesamte Langlaufzeit pro Woche:**
+   - Am ersten Tag läuft er 3 Stunden.
+   - An den anderen beiden Tagen läuft er 1.5 Stunden pro Tag.
+   - Gesamte Langlaufzeit pro Woche = 3 Stunden + 1.5 Stunden + 1.5 Stunden = 6 Stunden.
+
+4. **Zeit pro Meil:**
+   - John läuft 60 Meilen pro Woche.
+   - Gesamte Langlaufzeit pro Woche = 6 Stunden.
+   - Zeit pro Meil = 6 Stunden / 60 Meilen = 0.1 Stunden pro Meil.
+
+5. **Zeit pro Meil in Minuten:**
+   - 1 Stunde = 60 Minuten.
+   - 0.1 Stunden = 0.1 * 60 = 6 Minuten pro Meil.
+
+John läuft 6 Minuten pro Meil.
+nfe:  242
+avg nfe:  198.46153846153845
+====================
+
+Generating...:  39%|███▉      | 39/100 [13:59<22:17, 21.93s/it]====================
+answer:  Um dieses Problem nicht zu lösen, müssen wir einige Voraussetzungen nehmen:
+
+1. **Laufgeschwindigkeit**: Dana kann viermal so schnell laufen wie sie geht.
+   - Wenn sie mit 3 Meilen pro Stunde hüpfen kann, geht sie mit 3 Meilen pro Stunde.
+
+2. **Laufgeschwindigkeit**: Dana kann nur mit der Hälfte ihrer Laufgeschwindigkeit hüpfen.
+   - Wenn sie mit 3 Meilen pro Stunde hüpfen kann, lauft sie mit 1.5 Meilen pro Stunde.
+
+3. **Laufzeit**: Dana läuft ein Drittel der Zeit.
+   - Sie läuft 1 Stunde.
+
+4. **Gehenzeit**: Dana geht zwei Drittel der Zeit.
+   - Sie geht 2 Stunden.
+
+5. **Laufgeschwindigkeit**: Dana läuft mit 1.5 Meilen pro Stunde.
+   - Sie läuft 1.5 Meilen in 1 Stunde.
+
+6. **Gehengeschwindigkeit**: Dana geht mit 3 Meilen pro Stunde.
+   - Sie geht 6 Meilen in 2 Stunden.
+
+7. **Hüftungsgeschwindigkeit**: Dana hüftet mit 3 Meilen pro Stunde.
+   - Sie hüftet 3 Meilen in 2 Stunden.
+
+8. ** Gesamtziel**: Wir möchten schauen, wie viele Meilen sie innerhalb von sechs Stunden zurücklegen kann.
+
+9. ** Gesamtziel**:
+   - Sie läuft 1.5 Meilen in 1 Stunde.
+   - Sie geht 6 Meilen in 2 Stunden.
+   - Sie hüftet 3 Meilen in 2 Stunden.
+
+10. ** Gesamtziel**:
+    - 1.5 Meilen + 6 Meilen + 3 Meilen = 10.5 Meilen.
+
+Dana kann also 10.5 Meilen innerhalb von sechs Stunden zurücklegen.
+nfe:  279
+avg nfe:  200.475
+====================
+
+Generating...:  40%|████      | 40/100 [14:29<24:12, 24.21s/it]====================
+answer:  Zur Antwortung der Frage gehen wir es nun Schritt für Schritt durch:
+
+1. **Altersetzung von Suzys iPhone:**
+   - Suzys iPhone ist 1 Jahr alt.
+
+2. **Altersetzung von Bens iPhone:**
+   - Bens iPhone ist doppelt so alt wie Suzys iPhone.
+   - Daher ist Bens iPhone \(2 \times 1 = 2\) Jahre alt.
+
+3. **Altersetzung von Brandons iPhone:**
+   - Brandons iPhone ist viermal so alt wie Bens iPhone.
+   - Daher ist Brandons iPhone \(4 \times 2 = 8\) Jahre alt.
+
+Brandons iPhone ist 8 Jahre alt.
+nfe:  88
+avg nfe:  197.73170731707316
+====================
+
+Generating...:  41%|████      | 41/100 [14:39<19:49, 20.16s/it]====================
+answer:  1. **Reichweite der Flammen des Drachen:**
+   - Der Drachen bergab die Flammen in einem Umfang von 1000 Fuß.
+
+2. **Reichweite des Goldenen Speers ohne den Saphir-Edelstein:**
+   - Polly konnte den goldenen Speer 400 Fuß weit werfen ohne den Saphir-Edelstein.
+
+3. **Reichweite des Goldenen Speers mit dem Saphir-Edelstein:**
+   - Mit dem Saphir-Edelstein konnte sie den Speer dreimal so weit werfen wie ohne den Edelstein.
+   - Also konnte sie mit dem Saphir-Edelstein den Speer \(3 \times 400 = 1200\) Fuß weit werfen.
+
+4. **Reichweite der Flammen des Drachen:**
+   - Die Flammen des Drachen erreichten einen Umfang von 1000 Fuß.
+
+5. **Reichweite der Flammen des Drachen mit dem Saphir-Edelstein:**
+   - Mit dem Saphir-Edelstein konnte sie den Speer 1200 Fuß weit werfen, was mehr als die Reichweite der Flammen des Drachen (1000 Fuß) ist.
+
+6. **Wie weit weiter könnte sie mit dem Saphir-Edelstein stehen als ohne ihn:**
+   - Mit dem Saphir-Edelstein konnte sie 1200 Fuß weit werfen.
+   - Ohne den Saphir-Edelstein konnte sie 400 Fuß weit werfen.
+   - Also konnte sie mit dem Saphir-Edelstein \(1200 - 400 = 800\) Fuß weiter stehen als ohne ihn.
+
+7. **Wie weit außerhalb der Reichweite der Flammen des Drachen könnte sie stehen:**
+   - Die Flammen des Drachen erreichen bis 1000 Fuß.
+   - Mit dem Saphir-Edelstein konnte sie 1200 Fuß weit werfen.
+   - Also könnte sie \(1200 - 1000 = 200\) Fuß außerhalb der Reichweite der Flammen des Drachen stehen.
+
+8. **Wie weit außerhalb der Reichweite der Flammen des Drachen könnte sie stehen und den Drachen trotzdem mit dem goldenen Speer treffen:**
+   - Mit dem Saphir-Edelstein konnte sie 1200 Fuß weit werfen.
+   - Die Flammen des Drachen erreichen bis 1000 Fuß.
+   - Also könnte sie \(1200 - 1000 = 200\) Fuß außerhalb der Reichweite der Flammen des Drachen stehen und den Drachen trotzdem mit dem goldenen Speer treffen.
+
+**Fazit:**
+Wenn Polly den Saphir-Edelstein in den Händen hielt, könnte sie 200 Fuß außerhalb der Reichweite der Flammen des Drachen stehen und den Drachen trotzdem mit dem goldenen Speer treffen.
+nfe:  340
+avg nfe:  201.11904761904762
+====================
+
+Generating...:  42%|████▏     | 42/100 [15:12<23:05, 23.89s/it]====================
+answer:  1. ** Gesamtanzahl der Kuchenstücke:**
+   - Großmama Jones hat 5 Apfelkuchen geschnitten.
+   - Jeder Kuchen wurde in 8 Stücke geschnitten.
+   - Die Gesamtanzahl der Stücke ist also \(5 \times 8 = 40\) Stücke.
+
+2. ** Anzahl der Stücke, die die Gäste genommen haben:**
+   - Nachdem die Gäste die Kuchen genommen haben, waren noch 14 Stücke übrig.
+   -  Die Anzahl der Stücke, die die Gäste genommen haben, ist also \(40 - 14 = 26\) Stücke.
+
+3. ** Anzahl der Stücke pro Kuchen:**
+   - Jeder Kuchen wurde in 8 Stücke geschnitten.
+   - Die Gäste genommen 26 Stücke.
+   - Die Anzahl der Stücke, die die Gäste genommen haben, ist also \(26 \div 8 = 3.25\) Stücke.
+
+4. ** Anzahl der Stücke pro Kuchen:**
+   - Die Gäste genommen 26 Stücke insgesamt.
+   - Jeder Kuchen wurde in 8 Stücke geschnitten.
+   - Die Anzahl der Stücke, die die Gäste genommen haben, ist also \(26 \div 8 = 3.25\) Stücke.
+
+5. ** Anzahl der Stücke pro Kuchen:**
+   - Die Gäste genommen 26 Stücke insgesamt.
+   - Jeder Kuchen wurde in 8 Stücke geschnitten.
+   - Die Anzahl der Stücke, die die Gäste genommen haben, ist also \(26 \div 8 = 3.25\) Stücke.
+
+6. ** Anzahl der Stücke pro Kuchen:**
+   - Die Gäste genommen 26 Stücke insgesamt.
+   - Jeder Kuchen wurde in 8 Stücke geschnitten.
+   - Die Anzahl der Stücke, die die Gäste genommen haben, ist also \(26 \div 8 = 3.25\) Stücke.
+
+7. ** Anzahl der Stücke pro Kuchen:**
+   - Die Gäste genommen 26 Stücke insgesamt.
+   - Jeder Kuchen wurde in 8 Stücke geschnitten.
+   - Die Anzahl der Stücke, die die Gäste genommen haben, ist also \(26 \div 8 = 3.25\) Stücke.
+
+8. ** Anzahl der Stücke pro Kuchen:**
+   - Die Gäste genommen 26 Stücke insgesamt.
+   - Jeder Kuchen wurde in 8 Stücke geschnitten.
+   - Die Anzahl der Stücke, die die Gäste genommen haben, ist also \(26 \div 8 = 3.25\) Stücke.
+
+9. ** Anzahl der Stücke pro Kuchen:**
+   - Die Gäste genommen 26 Stücke insgesamt.
+   - Jeder Kuchen wurde in 8 Stücke geschnitten.
+   - Die Anzahl der Stücke, die die Gäste genommen haben, ist also \(26 \div 8 = 3.25\) Stücke.
+
+10. ** Anzahl der Stücke pro Kuchen:**
+    - Die Gäste genommen 26 Stücke insgesamt.
+    - Jeder Kuchen wurde in 8 Stücke geschnitten.
+    - Die Anzahl der Stücke, die die Gäste genommen haben, ist also \(26 \div 8 = 3.25\) Stücke.
+
+Die Gäste genommen 26 Stücke insgesamt, und jeder Kuchen wurde in 8 Stücke geschnitten.
+
+Die Anzahl der Stücke, die die Gäste genommen haben, ist \(26 \div 8 = 3.25
+nfe:  288
+avg nfe:  203.13953488372093
+====================
+
+Generating...:  43%|████▎     | 43/100 [15:40<23:50, 25.10s/it]====================
+answer:  Um diese Frage zu beantworten, müssen wir einige Schritte durchgehen:
+
+1. **Kalorien pro Portion:**
+   Eine Portion der Tüte Chips hat 250 Kalorien.
+
+2. **Kalorien pro Gramm:**
+   Eine 300 g-Tüte enthält 5 Portionen.
+   - Kalorien pro Portion = 250 Kalorien
+   - Kalorien pro Portion = 250 Kalorien / 5 Portionen = 50 Kalorien pro Portion
+
+3. **Kalorien pro Gramm:**
+   - Kalorien pro Gramm = 50 Kalorien pro Portion / 5 Portionen = 10 Kalorien pro Gramm
+
+4. **Tägliches Kalorienziel:**
+   Dein tägliches Kalorienziel ist 2000 Kalorien.
+
+5. **Kalorien gekommen:**
+   Du hast bereits 1800 Kalorien gekommen.
+
+6. **Kalorien übrig:**
+   - Kalorien übrig = Tägliches Kalorienziel - Kalorien gekommen
+   - Kalorien übrig = 2000 Kalorien - 1800 Kalorien = 200 Kalorien
+
+7. **Grammenge der Tüte Chips:**
+   - Grammenge der Tüte Chips = Kalorien übrig / Kalorien pro Gramm
+   - Grammenge der Tüte Chips = 200 Kalorien / 10 Kalorien pro Gramm = 20 Gramm
+
+8. **Tüte Chips pro Portion:**
+   Eine 300 g-Tüte enthält 5 Portionen.
+   - Gramm pro Portion = 300 Gramm / 5 Portionen = 60 Gramm pro Portion
+
+9. **Tüte Chips pro Portion:**
+   - Gramm pro Portion = 60 Gramm pro Portion / 5 Portionen = 12 Gramm pro Portion
+
+10. **Grammenge der Tüte Chips:**
+    - Grammenge der Tüte Chips = Grammenge der Tüte Chips / Gramm pro Portion
+    - Grammenge der Tüte Chips = 20 Gramm / 12 Gramm pro Portion = 1.67 Portionen
+
+11. **Grammenge der Tüte Chips:**
+    - Grammenge der Tüte Chips = Grammenge der Tüte Chips * Gramm pro Portion
+    - Grammenge der Tüte Chips = 1.67 Portionen * 12 Gramm pro Portion = 20.04 Gramm
+
+**Die Antwort:**
+Du kannst 20.04 Gramm von Tüte Chips essen.
+nfe:  278
+avg nfe:  204.8409090909091
+====================
+
+Generating...:  44%|████▍     | 44/100 [16:07<24:02, 25.76s/it]====================
+answer:  Um zu berechnen, wie viel Nettogewinn Charlie macht, wenn er 20 Kerzen herstellt und verkauft, müssen wir uns einige Schritte durchgehen:
+
+1. ** Berechnung der Kerzen:**
+   - Charlie herstellt 20 Kerzen.
+   - Jeder Kerzen kostet 2,00 US-Dollar.
+   - Die Gesamtkosten der Kerzen ist daher \( 20 \times 2,00 = 40,00 \) US-Dollar.
+
+2. ** Berechnung des Kostens des Bienenwachs:**
+   - Aus jedem Pfund Bienenwachs kann er 10 Kegelkerzen herstellen.
+   - Das Zubehör aus einem Pfund Bienenwachs plus Dochte kostet 10,00 US-Dollar.
+   - Da er 20 Kerzen herstellt, benötigt er \( \frac{20}{10} = 2 \) Pfunde Bienenwachs.
+   - Die Kosten für 2 Pfunde Bienenwachs ist daher \( 2 \times 10,00 = 20,00 \) US-Dollar.
+
+3. ** Berechnung des Nettogewinn:**
+   - Die Gesamtkosten der Kerzen ist 40,00 US-Dollar.
+   - Die Gesamtkosten des Bienenwachs ist 20,00 US-Dollar.
+   - Die Gesamtkosten der Kerzen ist daher \( 40,00 - 20,00 = 20,00 \) US-Dollar.
+   - Die Gesamtkosten der Kerzen ist 40,00 US-Dollar.
+   - Die Gesamtkosten des Bienenwachs ist 20,00 US-Dollar.
+   - Die Gesamtkosten der Kerzen ist daher \( 40,00 - 20,00 = 20,00 \) US-Dollar.
+   - Die Gesamtkosten der Kerzen ist 40,00 US-Dollar.
+   - Die Gesamtkosten des Bienenwachs ist 20,00 US-Dollar.
+   - Die Gesamtkosten der Kerzen ist daher \( 40,00 - 20,00 = 20,00 \) US-Dollar.
+   - Die Gesamtkosten der Kerzen ist 40,00 US-Dollar.
+   - Die Gesamtkosten des Bienenwachs ist 20,00 US-Dollar.
+   - Die Gesamtkosten der Kerzen ist daher \( 40,00 - 20,00 = 20,00 \) US-Dollar.
+   - Die Gesamtkosten der Kerzen ist 40,00 US-Dollar.
+   - Die Gesamtkosten des Bienenwachs ist 20,00 US-Dollar.
+   - Die Gesamtkosten der Kerzen ist daher \( 40,00 - 20,00 = 20,00 \) US-Dollar.
+   - Die Gesamtkosten der Kerzen ist 40,00 US-Dollar.
+   - Die Gesamtkosten des Bienenwachs ist 20,00 US-Dollar.
+   - Die Gesamtkosten der Kerzen ist daher \( 40,00 - 20,00 = 20,00 \) US-Dollar.
+   - Die Gesamtkosten der Kerzen ist 40,00 US-Dollar.
+   - Die Gesamtkosten des Bienenwachs ist 20,00 US-Dollar.
+   - Die Gesamtkosten der Kerzen ist daher \( 40,00 - 20,00 = 20,00 \) US-Dollar.
+   - Die Gesamtkosten der Kerzen ist 40,00 US-Dollar.
+   - Die Gesamtkosten des Bienenwachs ist 20,00 US-Dollar.
+   - Die Gesamtkosten der Kerzen ist daher \( 40,00 - 20,00 = 20,00 \) US-Dollar.
+
+Der Nettogewinn ist daher 20,00 US-Dollar.
+nfe:  267
+avg nfe:  206.22222222222223
+====================
+
+Generating...:  45%|████▌     | 45/100 [16:35<24:05, 26.29s/it]====================
+answer:  Damit ich die Gesamtzahl der Stunden, die Meredith an den drei Tagen für das Schreiben von Blog-Artikeln aufgewendet hat, berechnen kann, muss ich einige Schritte durchgehen:
+
+1. **Anzahl der Artikel pro Tag berechnen:**
+   - Am Montag: 5 Artikel
+   - Am Dienstag: 2/5 mehr Artikel als am Montag = 5 + (2/5 * 5) = 5 + 2 = 7 Artikel
+   - Am Mittwoch: Zweimal so viele Artikel wie am Dienstag = 2 * 7 = 14 Artikel
+
+2. **Gesamtzahl der Artikel berechnen:**
+   - Gesamtzahl der Artikel = 5 + 7 + 14 = 26 Artikel
+
+3. **Gesamtzahl der Stunden berechnen:**
+   - Jeder Artikel nimmt im Durchschnitt 4 Stunden in Anspruch.
+   - Gesamtzahl der Stunden = 26 Artikel * 4 Stunden/Artikel = 104 Stunden
+
+Also, die Gesamtzahl der Stunden, die Meredith an den drei Tagen für das Schreiben von Blog-Artikeln aufgewendet hat, ist 104 Stunden.
+nfe:  153
+avg nfe:  205.06521739130434
+====================
+
+Generating...:  46%|████▌     | 46/100 [16:53<21:32, 23.94s/it]====================
+answer:  Um finden, wie viele Post-it-Notizzettel in der Packung sind, die Candice gekauft hat, gehen wir Schritt für Schritt durch:
+
+1. **Startanzahl der Post-it-Notizzettel:**
+   - Candice hat 80 Post-it-Notizzettel in ihre Handtasche gepackt.
+
+2. **Post-it-Notizzettel gekauft:**
+   - Candice hat eine Packung Post-it-Notizettel gekauft.
+
+3. **Post-it-Notizettel geklebt:**
+   - Candice hat an 220 verschiedene Tassen Kaffee jeweils einen Post-it-Notizettel geklebt.
+
+4. **Post-it-Notizettel übrig:**
+   - Candice hat insgesamt 23 Post-it-Notizettel übrig.
+
+5. **Anzahl der Post-it-Notizettel in der Packung:**
+   - Um zu finden, wie viele Post-it-Notizettel in der Packung waren, nehmen wir die Anzahl der Post-it-Notizettel, die Candice gekauft hat, die Anzahl der Post-it-Notizettel, die sie geklebt hat, und die Anzahl der Post-it-Notizettel, die sie übrig hat, aus der Gesamtanzahl der Post-it-Notizettel zurück.
+
+   - Die Gesamtanzahl der Post-it-Notizettel ist 80.
+   - Die Anzahl der Post-it-Notizettel, die Candice gekauft hat, ist 1.
+   - Die Anzahl der Post-it-Notizettel, die Candice geklebt hat, ist 220.
+   - Die Anzahl der Post-it-Notizettel, die Candice übrig hat, ist 23.
+
+   - Die Anzahl der Post-it-Notizettel in der Packung ist also:
+     \[
+     80 - (1 + 220 + 23) = 80 - 244 = 56
+     \]
+
+Also, Candice hat 56 Post-it-Notizettel in der Packung, die sie gekauft hat.
+nfe:  257
+avg nfe:  206.17021276595744
+====================
+
+Generating...:  47%|████▋     | 47/100 [17:20<21:57, 24.85s/it]====================
+answer:  1. **Anzahl der blauen Krawatten:**
+   - John hat 200 US-Dollar für blaue Krawatten ausgegeben.
+   - Jede blaue Krawatte kostet 40 US-Dollar.
+   - Die Anzahl der blauen Krawatten ist also \( \frac{200}{40} = 5 \).
+
+2. **Anzahl der roten Krawatten:**
+   - John kauft zweimal so viele roten Krawatten wie blaue Krawatten.
+   - Die Anzahl der roten Krawatten ist also \( 2 \times 5 = 10 \).
+
+3. **Kosten der roten Krawatten:**
+   - Die roten Krawatten kosten 50 % mehr als die blauen Krawatten.
+   - Jede blaue Krawatte kostet 40 US-Dollar.
+   - Die Kosten der roten Krawatten ist also \( 40 \times 1.5 = 60 \) US-Dollar.
+
+4. ** Gesamtkosten der roten Krawatten:**
+   - Die Gesamtkosten der roten Krawatten ist \( 10 \times 60 = 600 \) US-Dollar.
+
+5. ** Gesamtkosten der blauen Krawatten:**
+   - Die Gesamtkosten der blauen Krawatten ist \( 5 \times 40 = 200 \) US-Dollar.
+
+6. ** Gesamtkosten für alle Krawatten:**
+   - Die Gesamtkosten für alle Krawatten ist \( 600 + 200 = 800 \) US-Dollar.
+
+Also, John hat 800 US-Dollar für Krawatten ausgegeben.
+nfe:  135
+avg nfe:  204.6875
+====================
+
+Generating...:  48%|████▊     | 48/100 [17:35<19:00, 21.93s/it]====================
+answer:  Um, wie viele 6 Inch lange Stücke von Draht aus einem 4 Fuß langen Stück geschnitten werden können, müssen wir die Länge des Draht in Inch umwandeln und dann die Länge des Stücks durch die Länge eines der Stücks teilen.
+
+1. **Umwandeln der Länge von Fuß in Inch:**
+   - 1 Fuß = 12 Inch
+   - 4 Fuß = 4 * 12 Inch = 48 Inch
+
+2. **Zählen der Stücke:**
+   - Jeder Stück ist 6 Inch lang.
+   - Wir teilen die Länge des Stücks durch die Länge eines Stücks: 48 Inch / 6 Inch pro Stück = 8 Stücke
+
+Tracy hatte 8 Stücke von Draht.
+nfe:  168
+avg nfe:  203.9387755102041
+====================
+
+Generating...:  49%|████▉     | 49/100 [17:55<18:11, 21.40s/it]====================
+answer:  Um wie viele Wohnungen in dem Wohnhaus insgesamt unbewohnt sind zu bestimmen, müssen wir einige Schritte durchgehen:
+
+1. **Anzahl der Wohnungen im Wohnhaus:**
+   - Das Wohnhaus hat 15 Etagen.
+   - Auf jeder Etage gibt es 8 Wohnungen.
+   - Die Gesamtanzahl der Wohnungen ist also:
+     \[
+     15 \text{ Etagen} \times 8 \text{ Wohnungen pro Etage} = 120 \text{ Wohnungen}
+     \]
+
+2. **Anzahl der bewohnten Wohnungen:**
+   - 3/4 des Gebäudes ist bewohnt.
+   - Die Gesamtanzahl der bewohnten Wohnungen ist also:
+     \[
+     \frac{3}{4} \times 120 \text{ Wohnungen} = 90 \text{ Wohnungen}
+     \]
+
+3. **Anzahl der unbewohnten Wohnungen:**
+   - Die Anzahl der unbewohnten Wohnungen ist die Gesamtanzahl der Wohnungen minus die Anzahl der bewohnten Wohnungen:
+     \[
+     120 \text{ Wohnungen} - 90 \text{ Wohnungen} = 30 \text{ Wohnungen}
+     \]
+
+Insgesamt sind in dem Wohnhaus 30 Wohnungen unbewohnt.
+nfe:  136
+avg nfe:  202.58
+====================
+
+Generating...:  50%|█████     | 50/100 [18:11<16:25, 19.71s/it]====================
+answer:  Um zu finden, wie viel Lloyd pro Woche an den Eiern verdient, müssen wir einige Schritte durchführen:
+
+1. **Die Anzahl der Eier pro Tag:**
+   - Seine Hühner legen 252 Eier pro Tag.
+
+2. **Die Anzahl der Eier pro Dutzend:**
+   - Da 1 Dutzend (100) Eier besteht, berechnen wir die Anzahl der Dutzenden pro Tag.
+   - 252 Eier / 100 Eier pro Dutzend = 2.52 Dutzenden pro Tag.
+
+3. **Die Verdienung pro Tag:**
+   - Lloyd verkauft die Eier für 2 US-Dollar pro Dutzend.
+   - 2.52 Dutzenden pro Tag * 2 US-Dollar pro Dutzend = 5.04 US-Dollar pro Tag.
+
+4. **Die Verdienung pro Woche:**
+   - Eine Woche hat 7 Tage.
+   - 5.04 US-Dollar pro Tag * 7 Tage = 35.28 US-Dollar pro Woche.
+
+Also, Lloyd verdient 35.28 US-Dollar pro Woche an den Eiern.
+nfe:  163
+avg nfe:  201.80392156862746
+====================
+
+Generating...:  51%|█████     | 51/100 [18:30<15:56, 19.52s/it]====================
+answer:  Um diese Frage zu beantworten, müssen wir in einige Schritte unterteilen und sie Schritt für Schritt berechnen.
+
+1. **Berechnung der abgelegten Distanz:**
+   - Tom segelt von 13 Uhr bis 16 Uhr.
+   - Die Dauer ist 16 Uhr - 13 Uhr = 3 Stunden.
+   - Die Geschwindigkeit des Schiffs ist 10 Meilen pro Stunde.
+   - Die abgelegte Distanz ist 3 Stunden * 10 Meilen/Stunde = 30 Meilen.
+
+2. **Berechnung der Rückwegsdistanz:**
+   - Die Rückwegsdistanz ist gleich der abgelegten Distanz, also 30 Meilen.
+
+3. **Berechnung der Rückwegsdauer:**
+   - Die Geschwindigkeit im Rückweg ist 6 Meilen pro Stunde.
+   - Die Rückwegsdauer ist 30 Meilen / 6 Meilen/Stunde = 5 Stunden.
+
+Daher braucht Tom 5 Stunden für den Rückweg.
+nfe:  173
+avg nfe:  201.25
+====================
+
+Generating...:  52%|█████▏    | 52/100 [18:51<15:47, 19.73s/it]====================
+answer:  Um schauen wie viele Spielzeuge Uriah noch rausnehmen muss, können wir es Schritt für Schritt durchgehen:
+
+1. **Rechn das Gewicht der Comicbücher aus:**
+   - Eine Comicbüche wiegt 1/4 Pfund.
+   - Er nimmt 30 Comicbücher raus.
+   - Gewicht der Comicbücher = 30 * (1/4) = 7.5 Pfund.
+
+2. **Rechn das Restewicht der Spielzeuge aus:**
+   - Die Gesamtmewicht der Büchertasche ist 15 Pfund.
+   - Das Gewicht der Comicbücher ist 7.5 Pfund.
+   - Restewicht der Spielzeuge = 15 - 7.5 = 7.5 Pfund.
+
+3. **Rechn das Gewicht einer Spielzeuge aus:**
+   - Eine Spielzeuge wiegt 1/2 Pfund.
+
+4. **Rechn wie viele Spielzeuge er noch rausnehmen muss:**
+   - Anzahl der Spielzeuge = Restewicht der Spielzeuge / Gewicht einer Spielzeuge
+   - Anzahl der Spielzeuge = 7.5 / (1/2) = 15
+
+Uriah muss 15 Spielzeuge noch rausnehmen.
+nfe:  178
+avg nfe:  200.81132075471697
+====================
+
+Generating...:  53%|█████▎    | 53/100 [19:11<15:37, 19.96s/it]====================
+answer:  Um den Umsatz an dem Tag mit dem höheren Umsatz zu berechnen, müssen wir den Umsatz für Donnerstag und Freitag berechnen und dann sie vergleichen.
+
+### Schritt 1: Berechnung des Umsatzes für Donnerstag
+
+1. **Lastwagenreifen:**
+   - Der Mechaniker repariert 6 Lastwagenreifen.
+   - Der Tarife für einen Lastwagenreifen ist 60 US-Dollar.
+   - Umsatz für Lastwagenreifen: \( 6 \times 60 = 360 \) Dollar.
+
+2. **Autoreifen:**
+   - Der Mechaniker repariert 4 Autoreifen.
+   - Der Tarife für einen Autoreifen ist 40 US-Dollar.
+   - Umsatz für Autoreifen: \( 4 \times 40 = 160 \) Dollar.
+
+3. **Gesamtumsatz für Donnerstag:**
+   - Umsatz für Donnerstag = Umsatz für Lastwagenreifen + Umsatz für Autoreifen
+   - Umsatz für Donnerstag = \( 360 + 160 = 520 \) Dollar.
+
+### Schritt 2: Berechnung des Umsatzes für Freitag
+
+1. **Autoreifen:**
+   - Der Mechaniker repariert 12 Autoreifen.
+   - Der Tarife für einen Autoreifen ist 40 US-Dollar.
+   - Umsatz für Autoreifen: \( 12 \times 40 = 480 \) Dollar.
+
+2. **Gesamtumsatz für Freitag:**
+   - Umsatz für Freitag = Umsatz für Autoreifen
+   - Umsatz für Freitag = \( 480 \) Dollar.
+
+### Schritt 3: Vergleich der Umsätze
+
+- Umsatz für Donnerstag: 520 Dollar
+- Umsatz für Freitag: 480 Dollar
+
+Der Umsatz am Freitag ist höher als der Umsatz am Donnerstag.
+
+### Antwort:
+
+Der Mechaniker hat am Freitag 480 Dollar mehr Umsatz gemacht als am Donnerstag.
+nfe:  186
+avg nfe:  200.53703703703704
+====================
+
+Generating...:  54%|█████▍    | 54/100 [19:31<15:18, 19.97s/it]====================
+answer:  1. **Kätzchen adoptiert haben**: Die Schwestern Doubtfire haben 7 Kätzchen adoptiert.
+
+2. **Kätzchen von Patchy**: Patchy hat dreimal so viele Kätzchen wie die adoptierten. Daher hat Patchy \(3 \times 7 = 21\) Kätzchen.
+
+3. **Kätzchen von Trixie**: Trixie hat 12 Kätzchen zur Welt gebracht.
+
+4. ** Gesamte Kätzchen**: Die gesamten Kätzchen, die die Doubtfires jetzt haben, sind die Kätzchen, die sie adoptiert haben, die Kätzchen, die Patchy hat, und die Kätzchen, die Trixie hat.
+
+   \[
+   7 + 21 + 12 = 40
+   \]
+
+Insgesamt haben die Doubtfires jetzt 40 Kätzchen.
+nfe:  128
+avg nfe:  199.21818181818182
+====================
+
+Generating...:  55%|█████▌    | 55/100 [19:47<14:02, 18.73s/it]====================
+answer:  1. Jean hat 30 Lutscher.
+2. Jean isst 2 Lutscher.
+3. Die verbleibenden Lutscher möchte Jean in eine Tüte mit jeweils 2 Lutschern stecken.
+
+Zunächst berechnen wir, wie viele Lutscher es bleibt, nachdem Jean 2 Lutscher isst:
+\[ 30 - 2 = 28 \]
+
+Also es bleibt 28 Lutscher.
+
+Nun müssen wir schauen, wie viele Tüten mit 2 Lutschern kann Jean füllen. Dazu teilen wir die verbleibenden Lutscher durch 2:
+\[ 28 \div 2 = 14 \]
+
+So kann Jean 14 Tüten mit 2 Lutschern füllen.
+nfe:  131
+avg nfe:  198.0
+====================
+
+Generating...:  56%|█████▌    | 56/100 [20:03<13:04, 17.84s/it]====================
+answer:  Um zu finden, wie oft Peter ins Kino gehen kann, müssen wir die Kosten pro Besuch berechnen und dann mit dem Budget zur Verfügung vergleichen.
+
+1. **Kosten pro Besuch:**
+   - Eintrittskarte: 7 US-Dollar
+   - Popcorn: 7 US-Dollar
+   - Gesamtkosten pro Besuch: 7 US-Dollar + 7 US-Dollar = 14 US-Dollar
+
+2. **Kosten zur Verfügung:**
+   - Peter hat 42 US-Dollar zur Verfügung.
+
+3. **Berechnung der Anzahl der Besuche:**
+   - Anzahl der Besuche = Gesamtkosten zur Verfügung / Kosten pro Besuch
+   - Anzahl der Besuche = 42 US-Dollar / 14 US-Dollar
+
+4. **Berechnung:**
+   - 42 US-Dollar / 14 US-Dollar = 3
+
+**Antwort:**
+Peter kann 3 mal Mal ins Kino gehen.
+nfe:  148
+avg nfe:  197.12280701754386
+====================
+
+Generating...:  57%|█████▋    | 57/100 [20:20<12:44, 17.79s/it]====================
+answer:  Um die maximale Anzahl an Kisten, die der Lieferwagen geladen kann, ohne die Gewichtsgrenze der Brücke zu überschreiten, zu bestimmen, müssen wir die folgenden Schritte befolgen:
+
+1. **Gesamtgewicht des Lieferwagenes berechneren:**
+   - Das Gesamtgewicht des Lieferwagenes ist die Summe des Fahrers und des leeren Lastwagenes.
+   - Fahrer: 3755 Pfund
+   - Leerer Lastwagen: 0 Pfund
+   - Gesamtgewicht des Lieferwagenes: 3755 Pfund
+
+2. **Gewicht der Kisten festlegen:**
+   - Jede Kiste wiegt 15 Pfund.
+
+3. **Gesamtgewicht der Kisten berechnen:**
+   - Sei \( n \) die Anzahl der Kisten.
+   - Das Gesamtgewicht der Kisten ist \( 15n \) Pfund.
+
+4. **Gesamtgewicht des Lieferwagenes mit Kisten berechnen:**
+   - Das Gesamtgewicht des Lieferwagenes mit Kisten ist die Summe des Fahrers und des Gesamtgewichts der Kisten.
+   - Fahrer: 3755 Pfund
+   - Gesamtgewicht der Kisten: \( 15n \) Pfund
+   - Gesamtgewicht des Lieferwagenes mit Kisten: \( 3755 + 15n \) Pfund
+
+5. **Gewichtsgrenze der Brücke festlegen:**
+   - Die Brücke kann nicht mehr als 5000 Pfund tragen.
+
+6. **Gleichung aufbauen:**
+   - Das Gesamtgewicht des Lieferwagenes mit Kisten muss die Gewichtsgrenze der Brücke nicht überschreiten.
+   - \( 3755 + 15n \leq 5000 \)
+
+7. **Gleichung lösen:**
+   - Subtrahiere 3755 von 5000:
+     \[
+     5000 - 3755 \leq 15n
+     \]
+     \[
+     1245 \leq 15n
+     \]
+   - Teile alle Seiten durch 15:
+     \[
+     \frac{1245}{15} \leq n
+     \]
+     \[
+     83 \leq n
+     \]
+
+8. **Ergebnis:**
+   - Die maximale Anzahl an Kisten, die der Lieferwagen geladen kann, ohne die Gewichtsgrenze der Brücke zu überschreiten, ist 83.
+nfe:  288
+avg nfe:  198.68965517241378
+====================
+
+Generating...:  58%|█████▊    | 58/100 [20:50<14:57, 21.36s/it]====================
+answer:  Um den Endpreis für Stephen's Lebensmittel zu berechnen, müssen wir die nächsten Schritte befolgen:
+
+1. **Endabrechnung**: Die Endabrechnung ist 40,00 US-Dollar.
+2. **Liefergebühr**: Die Liefergebühr ist 25 % über die Endabrechnung.
+3. **Liefergebühr**: Die Liefergebühr ist auch noch 3,00 US-Dollar.
+4. **Trinkgeld**: Stephen hat zusätzlich 4,00 US-Dollar Trinkgeld gegeben.
+
+Schritt für Schritt:
+
+1. **Endabrechnung**: 40,00 US-Dollar
+2. **Liefergebühr**:
+   - 25 % von 40,00 US-Dollar = 0,25 * 40,00 = 10,00 US-Dollar
+   - Liefergebühr: 3,00 US-Dollar
+   - Gesamte Liefergebühr: 10,00 US-Dollar + 3,00 US-Dollar = 13,00 US-Dollar
+3. **Trinkgeld**: 4,00 US-Dollar
+   - Gesamte Trinkgeld: 4,00 US-Dollar
+
+Nun addieren wir alle diese Kosten zusammen:
+
+- Endabrechnung: 40,00 US-Dollar
+- Liefergebühr: 13,00 US-Dollar
+- Trinkgeld: 4,00 US-Dollar
+
+Endpreis = 40,00 US-Dollar + 13,00 US-Dollar + 4,00 US-Dollar = 57,00 US-Dollar
+
+**Der Endpreis für Stephen's Lebensmittel ist 57,00 US-Dollar.**
+nfe:  208
+avg nfe:  198.84745762711864
+====================
+
+Generating...:  59%|█████▉    | 59/100 [21:13<15:00, 21.95s/it]====================
+answer:  Um die Gesamtzahl an Himbeeren zu berechnen, müssen wir die Anzahl der Trauben, die Anzahl der Früchte pro Traube und die Anzahl der einzelnen Früchte zusammenaddieren.
+
+1. **Anzahl der Trauben**: Es gibt 6 Trauben.
+2. **Anzahl der Früchte pro Traube**: Jede Traube hat 20 Früchte.
+3. **Anzahl der einzelnen Früchte**: Es gibt 67 einzelne Früchte.
+
+Zunächst berechnen wir die Gesamtzahl der Früchte in den Trauben:
+\[ 6 \text{ Trauben} \times 20 \text{ Früchte pro Traube} = 120 \text{ Früchte} \]
+
+Danach addieren wir wir die Anzahl der einzelnen Früchte zu der Gesamtzahl der Früchten in den Trauben:
+\[ 120 \text{ Früchte} + 67 \text{ Früchte} = 187 \text{ Früchte} \]
+
+Es gibt also insgesamt 187 Himbeeren.
+nfe:  149
+avg nfe:  198.01666666666668
+====================
+
+Generating...:  60%|██████    | 60/100 [21:31<13:44, 20.62s/it]====================
+answer:  Um finden, wie viele Orangen gut sind, können wir folgende Schritte befolgen:
+
+1. **Anzahl der gesamten Orangen**: Der Korb enthält 25 Orangen.
+
+2. **Anzahl der schlechteren Orangen**: Es gibt 1 schlechteren Orang.
+
+3. **Anzahl der unreiferen Orangen**: 
+   - 20% der gesamten Orangen sind unreif.
+   - 20% von 25 Orangen ist \( 0.20 \times 25 = 5 \) Orangen.
+
+4. **Anzahl der sauersten Orangen**: Es gibt 2 sauersten Orangen.
+
+5. **Anzahl der guten Orangen**:
+   - Der Rest der Orangen sind gut.
+   - Subtraen wir die Anzahl der schlechteren, unreiferen und sauersten Orangen von der gesamten Anzahl.
+   - \( 25 - 1 - 5 - 2 = 17 \) Orangen.
+
+Es gibt 17 guten Orangen.
+nfe:  191
+avg nfe:  197.9016393442623
+====================
+
+Generating...:  61%|██████    | 61/100 [21:53<13:43, 21.11s/it]====================
+answer:  1. **Kosten für das Material:**
+   - Janet zahlt 500 US-Dollar für das Material.
+
+2. **Kosten für den Juwelier:**
+   - Janet zahlt 800 US-Dollar für den Juwelier.
+
+3. **Versicherungskosten:**
+   - Janet zahlt 10 % des Gesamtkosten als Versicherung.
+   - 10 % von 1300 US-Dollar (500 + 800) = 0.10 * 1300 = 130 US-Dollar.
+
+4. **Gesamtkosten:**
+   - Gesamtkosten = Kosten für das Material + Kosten für den Juwelier + Versicherungskosten
+   - Gesamtkosten = 500 US-Dollar + 800 US-Dollar + 130 US-Dollar
+   - Gesamtkosten = 1430 US-Dollar
+
+Janet musste insgesamt 1430 US-Dollar bezahlen.
+nfe:  125
+avg nfe:  196.7258064516129
+====================
+
+Generating...:  62%|██████▏   | 62/100 [22:08<12:13, 19.31s/it]====================
+answer:  Um die jährliche Rente von Marcy nach 30 Jahren zu berechnen, müssen wir die Rente in die Mitte der 20 Jahre und die nächsten 20 Jahre unterteilen und dann die jeweiligen Renten für jeden Zeitraum berechnen.
+
+1. **Mitte der 20 Jahre:**
+   - Die Rente nach 20 Jahren wird 5 % des jährlichen Rente pro Jahr zugestandet.
+   - Die jährliche Rente nach 20 Jahren ist 5 % von 50.000 US-Dollar, also 2.500 US-Dollar pro Jahr.
+
+2. **Nächsten 20 Jahre:**
+   - Die Rente nach 20 Jahren bleibt gleich bei 50.000 US-Dollar pro Jahr.
+
+3. **Zusammenfassung:**
+   - Die jährliche Rente nach 30 Jahren ist 2.500 US-Dollar pro Jahr.
+   - Die Rente nach 20 Jahren bleibt gleich bei 50.000 US-Dollar pro Jahr.
+
+**Zusammenfassung:**
+Die jährliche Rente von Marcy nach 30 Jahren ist 2.500 US-Dollar pro Jahr.
+nfe:  229
+avg nfe:  197.23809523809524
+====================
+
+Generating...:  63%|██████▎   | 63/100 [22:35<13:16, 21.52s/it]====================
+answer:  Um zu berechnen den Gesamtbetrag, den Aleena bis Ende des Jahres für den Streaming-Dienst bezahlen wird, müssen wir die Beträge für die erste und die zweite Jahreshälfte berechnen und dann zusammenfügen.
+
+1. **Erste Jahreshälfte:**
+   - Die erste Jahreshälfte besteht aus 6 Monaten.
+   - Der Monatliche Betrag ist 140 US-Dollar.
+   - Der Gesamtbetrag für die erste Jahreshälfte ist:
+     \[
+     6 \text{ Monate} \times 140 \text{ Dollar/Monat} = 840 \text{ Dollar}
+     \]
+
+2. **Zweite Jahreshälfte:**
+   - Die zweite Jahreshälfte besteht aus 6 Monaten.
+   - Der Monatliche Betrag ist 140 US-Dollar, aber mit 10 % weniger als die erste Jahreshälfte.
+   - 10 % von 140 US-Dollar = 140 US-Dollar = 0.10 * 140 US-Dollar = 14 US-Dollar
+   - Der neue Monatliche Betrag ist:
+     \[
+     140 US-Dollar - 14 US-Dollar = 126 US-Dollar
+     \]
+   - Der Gesamtbetrag für die zweite Jahreshälfte ist:
+     \[
+     6 \text{ Monate} \times 126 \text{ Dollar/Monat} = 756 \text{ Dollar}
+     \]
+
+3. **Gesamtbetrag:**
+   - Der Gesamtbetrag ist die Summe der Beträge für die erste und die zweite Jahreshälfte:
+     \[
+     840 \text{ Dollar} + 756 \text{ Dollar} = 1596 \text{ Dollar}
+     \]
+
+Der Gesamtbetrag, den Aleena bis Ende des Jahres für den Streaming-Dienst bezahlen wird, ist 1596 US-Dollar.
+nfe:  200
+avg nfe:  197.28125
+====================
+
+Generating...:  64%|██████▍   | 64/100 [22:57<13:04, 21.78s/it]====================
+answer:  Um zu bestimmen, wie viele Meilen Sophia mit einer einzigen Tankfüllung fahren kann, müssen wir einige Schritte durchgehen:
+
+1. **Benzinverbrauch berechnen:**
+   - Sophia hat 12 Gallonen im Tank.
+   - Seit der letzten Tankfüllung ist sie 100 Meilen gefahren.
+   - Sie musste 4 Gallonen nachfüllen, um den Tank wiederzufüllen.
+   - Die Benzinverbrauch pro Meil ist also \( \frac{4 \text{ Gallonen}}{100 \text{ Meilen}} = 0.04 \text{ Gallonen pro Meil} \).
+
+2. ** Gesamtsbenzinverbrauch berechnen:**
+   - Sophia hat 12 Gallonen im Tank.
+   - Die Benzinverbrauch pro Meil ist 0.04 Gallonen.
+   - Der Gesamtsbenzinverbrauch ist also \( 12 \text{ Gallonen} \times 0.04 \text{ Gallonen pro Meil} = 0.48 \text{ Gallonen pro Meil} \).
+
+3. **Meilen pro Gallon berechnen:**
+   - Sophia hat 12 Gallonen im Tank.
+   - Der Gesamtsbenzinverbrauch ist 0.48 Gallonen pro Meil.
+   - Die Meilen pro Gallon sind also \( \frac{12 \text{ Gallonen}}{0.48 \text{ Gallonen pro Meil}} = 25 \text{ Meilen pro Gallon} \).
+
+4. **Meilen pro Tank berechnen:**
+   - Sophia hat 12 Gallonen im Tank.
+   - Die Meilen pro Gallon sind 25 Meilen.
+   - Die Meilen pro Tank sind also \( 12 \text{ Gallonen} \times 25 \text{ Meilen pro Gallon} = 300 \text{ Meilen} \).
+
+Daher kann Sophia mit einer einzigen Tankfüllung 300 Meilen fahren.
+nfe:  220
+avg nfe:  197.63076923076923
+====================
+
+Generating...:  65%|██████▌   | 65/100 [23:22<13:11, 22.61s/it]====================
+answer:  Um berechnen, wie viele Stunden Jim in 4 Wochen mit Fernsehschauen und Lesen verbringt, müssen wir die Gesamtzeit pro Woche berechnen und dann mit 4 Wochen multipliplizieren.
+
+1. **Gesamtzeit pro Woche:**
+   - Jim schaut 2 Stunden TV.
+   - Er lesst halb so lange, also 1 Stunde.
+   - Er macht dies 3-mal pro Woche.
+
+   Die Gesamtzeit pro Woche ist:
+   - 2 Stunden TV
+   - 1 Stunde Lesen
+   - 3 Stunden pro Woche
+
+2. **Gesamtzeit in 4 Wochen:**
+   - Es gibt es 4 Wochen.
+   - Die Gesamtzeit in 4 Wochen ist:
+   - 3 Stunden pro Wochen * 4 Wochen
+   - 12 Stunden in 4 Wochen
+
+Daher verbringt Jim in 4 Wochen 12 Stunden mit Fernsehschauen und Lesen.
+nfe:  179
+avg nfe:  197.34848484848484
+====================
+
+Generating...:  66%|██████▌   | 66/100 [23:43<12:35, 22.21s/it]====================
+answer:  Um die Gesamtzahl der Personen, die die Schulen geschickt haben, zu berechnen, müssen wir es Schritt für Schritt durchzugehen:
+
+1. **Anzahl der Spieler- und Trainer-Positionen pro Schule:**
+   - Jede Schule hat ein Mädchenbasketballteam und ein Jungenbasketballteam.
+   - Jedes Team hat 5 Spieler.
+   - Jede Schule hat auch einen Trainer für jedes Team.
+
+2. **Anzahl der Spieler-Positionen pro Schule:**
+   - Jede Schule hat 2 Teams (Mädchenbasketball und Jungenbasketball).
+   - Jedes Team hat 5 Spieler.
+   - Also, die Anzahl der Spieler-Positionen pro Schule ist:
+     \[
+     2 \text{ Teams} \times 5 \text{ Spieler/Team} = 10 \text{ Spieler}
+     \]
+
+3. **Anzahl der Trainer-Positionen pro Schule:**
+   - Jede Schule hat 2 Teams (Mädchenbasketball und Jungenbasketball).
+   - Jedes Team hat 1 Trainer.
+   - Also, die Anzahl der Trainer-Positionen pro Schule ist:
+     \[
+     2 \text{ Teams} \times 1 \text{ Trainer/Team} = 2 \text{ Trainer}
+     \]
+
+4. **Gesamtzahl der Personen pro Schule:**
+   - Die Gesamtzahl der Personen pro Schule ist die Summe der Spieler-Positionen und der Trainer-Positionen:
+     \[
+     10 \text{ Spieler} + 2 \text{ Trainer} = 12 \text{ Personen}
+     \]
+
+5. **Gesamtzahl der Personen in allen Schulen:**
+   - Es gibt 4 Schulen.
+   - Jede Schule hat 12 Personen.
+   - Also, die Gesamtzahl der Personen in allen Schulen ist:
+     \[
+     4 \text{ Schulen} \times 12 \text{ Personen/Schule} = 48 \text{ Personen}
+     \]
+
+Die Gesamtzahl der Personen, die die Schulen geschickt haben, ist **48 Personen**.
+nfe:  214
+avg nfe:  197.59701492537314
+====================
+
+Generating...:  67%|██████▋   | 67/100 [24:06<12:22, 22.51s/it]====================
+answer:  Um die Gesamtzzahl der Edelsteine in der Schatzkiste zu bestimmen, müssen wir die Anzahl der Diamanten, Rubine und Smaragde zusammenadden.
+
+1. **Diamanten**: Es waren 175 Diamanten.
+2. **Rubine**: Es waren 35 weniger Rubine als Diamanten. Damit waren es:
+   \[
+   175 - 35 = 140 \text{ Rubine}
+   \]
+3. **Smaragde**: Es waren zweimal so viele Smaragde wie Rubine. Damit waren es:
+   \[
+   2 \times 140 = 280 \text{ Smaragde}
+   \]
+
+Nun addieren wir die Anzahl der Diamanten, Rubine und Smaragde zusammen:
+\[
+175 + 140 + 280 = 595
+\]
+
+Daher ist die Gesamtzzahl der Edelsteine in der Schatzkiste 595.
+nfe:  113
+avg nfe:  196.35294117647058
+====================
+
+Generating...:  68%|██████▊   | 68/100 [24:20<10:33, 19.81s/it]====================
+answer:  Um zu berechnen, wie viele Lehrer in der Schule von Dr. Wertz gibt, müssen wir in einige Schritte z unterteilen:
+
+1. **Die Anzahl der Jungen berechnen:**
+   - Es gibt es zweimal so viele Jungen wie Mädchen.
+   - Es gibt 60 Mädchen.
+   - Also gibt es \(2 \times 60 = 120\) Jungen.
+
+2. **Die Anzahl der Schüler berechnen:**
+   - Es gibt 5 Schüler pro Lehrer.
+   - Es gibt 60 Mädchen und 120 Jungen.
+   - Also gibt es \(60 + 120 = 180\) Schüler.
+
+3. **Die Anzahl der Lehrer berechnen:**
+   - Es gibt 5 Schüler pro Lehrer.
+   - Es gibt 180 Schüler.
+   - Also gibt es \(\frac{180}{5} = 36\) Lehrer.
+
+Es gibt 36 Lehrer in der Schule von Dr. Wertz.
+nfe:  129
+avg nfe:  195.3768115942029
+====================
+
+Generating...:  69%|██████▉   | 69/100 [24:35<09:32, 18.45s/it]====================
+answer:  Um wie viel Geld Bailey am Anfang hatte zu bestimmen, sollten wir die folgenden Schritte befolgen:
+
+1. **Die wöchentliche Vergütung:**
+   - Bailey erhält eine wöchentliche Vergütung von 5 US-Dollar.
+
+2. **Die Gesamtmergütung über 8 Wochen:**
+   - Um die Gesamtmergütung über 8 Wochen zu berechnen, multiplizieren wir die wöchentliche Vergütung mit 8.
+   - Gesamtmergütung = 5 US-Dollar/Woche * 8 Wochen = 40 US-Dollar.
+
+3. **Die Gesamtsumme am Ende der 8 Wochen:**
+   - Bailey hat am Ende der 8 Wochen eine Gesamtsumme von 100 US-Dollar.
+
+4. **Die Anfangsgeldbetrag Bailey:**
+   - Um den Anfangsgeldbetrag Bailey zu berechnen, entziehen wir die Gesamtmergütung von der Gesamtsumme am Ende der 8 Wochen.
+   - Anfangsgeldbetrag = 100 US-Dollar - 40 US-Dollar = 60 US-Dollar.
+
+Deshalb hatte Bailey am Anfang 60 US-Dollar.
+nfe:  158
+avg nfe:  194.84285714285716
+====================
+
+Generating...:  70%|███████   | 70/100 [24:54<09:13, 18.45s/it]====================
+answer:  Um berechnen, wie viel Geld Judy innerhalb eines Woche macht, müssen wir in einige Schritte zusammenführen:
+
+1. **Anzahl der Tanzkurse pro Woche:**
+   - Judy unterrichtet 5 Tanzkurse täglich bis an dem Wochenende.
+   - Sie unterrichtet sogar 8 Tanzkurse am Samstag.
+   - Gesamte Tanzkurse pro Woche: \(5 + 8 = 13\)
+
+2. **Anzahl der Schüler pro Kurs:**
+   - Jeder Kurs besteht aus 15 Schülern.
+
+3. **Anzahl der Schüler pro Woche:**
+   - Gesamte Schüler pro Woche: \(13 \times 15 = 195\)
+
+4. **Geldvergütung pro Schüler:**
+   - Judy verlangt 15,00 US-Dollar pro Schüler.
+
+5. ** Gesamte Geldvergütung pro Woche:**
+   - Gesamte Geldvergütung pro Woche: \(195 \times 15,00 = 2,925\) US-Dollar
+
+**Insgesamt macht Judy innerhalb eines Woche 2.925 US-Dollar.**
+nfe:  183
+avg nfe:  194.67605633802816
+====================
+
+Generating...:  71%|███████   | 71/100 [25:15<09:17, 19.24s/it]====================
+answer:  Um finden, wie viele Anweisungen Kelian lesen muss, um beide Rezepte vorzubereiten, können wir es wie folgt umgehen:
+
+1. **Leg die Anzahl der Anweisungen für jedes Rezept fest:**
+   - Das erste Rezept umfasst 20 Anweisungen.
+   - Das zweite Rezept umfasst zweimal so viele Anweisungen wie das erste.
+
+2. **Reiche die Anzahl der Anweisungen für das zweite Rezept aus:**
+   - Da das zweite Rezept zweimal so viele Anweisungen wie das erste umfasst, enthält das zweite Rezept \(2 \times 20 = 40\) Anweisungen.
+
+3. **Addiere die Anzahl der Anweisungen für beide Rezepte auf:**
+   - Das erste Rezept hat 20 Anweisungen.
+   - Das zweite Rezept hat 40 Anweisungen.
+   - Die gesamte Anzahl der Anweisungen ist \(20 + 40 = 60\).
+
+Kelian muss 60 Anweisungen lesen, um beide Rezepte vorzubereiten.
+nfe:  156
+avg nfe:  194.13888888888889
+====================
+
+Generating...:  72%|███████▏  | 72/100 [25:33<08:48, 18.88s/it]====================
+answer:  Um zu finden wie viel Geld Tommy sammelt, müssen wir die Gesumme der Brownies und der Käsekuchenstücke berechnen und dann zusammenlegen.
+
+1. **Berechnung der Gesamtsumme der Brownies:**
+   - Tommy verkauft 43 Brownies.
+   - Jede Brownie kostet 3 US-Dollar.
+   - Die Gesamtsumme der Brownies ist:
+     \[
+     43 \times 3 = 129 \text{ US-Dollar}
+     \]
+
+2. **Berechnung der Gesamtsumme der Käsekuchenstücke:**
+   - Tommy verkauft 23 Käsekuchenstücke.
+   - Jede Käsekuchenstücke kostet 4 US-Dollar.
+   - Die Gesamtsumme der Käsekuchenstücke ist:
+     \[
+     23 \times 4 = 92 \text{ US-Dollar}
+     \]
+
+3. **Gesamtsumme:**
+   - Die Gesamtsumme der Brownies ist 129 US-Dollar.
+   - Die Gesamtsumme der Käsekuchenstücke ist 92 US-Dollar.
+   - Die Gesamtsumme ist:
+     \[
+     129 + 92 = 221 \text{ US-Dollar}
+     \]
+
+Tommy sammelt insgesamt 221 US-Dollar.
+nfe:  137
+avg nfe:  193.35616438356163
+====================
+
+Generating...:  73%|███████▎  | 73/100 [25:48<08:04, 17.95s/it]====================
+answer:  Wie viel zielielt Shiela jeden Monat 3 Monate lang?
+
+Um fest, wie viel zielt Shiela jeden Monat 3 Monate lang, müssen wir die Zinsen für jeden Monat berechnen und dann die Ratenzahlung berechnen.
+
+Schritt 1: Berechnung des Gesamtkostes der Handys
+
+Shiela Kauft fünf Handys für 150 US-Dollar pro Stück.
+
+Gesamtkost der Handys = 5 Handys * 150 US-Dollar pro Stück = 750 US-Dollar
+
+Schritt 2: Berechnung der Zinsen für jeden Monat
+
+Shiela zahlt 2 % Zinsen pro Stück.
+
+Zinsen pro Stück = 2 % von 150 US-Dollar = 0.02 * 150 US-Dollar = 3 US-Dollar
+
+Zinsen pro Monat = 5 Handys * 3 US-Dollar pro Stück = 15 US-Dollar
+
+Schritt 3: Berechnung der Ratenzahlung
+
+Shiela zahlt die Ratenzahlung in 3 Monaten.
+
+Ratenzahlung pro Monat = Gesamtkost der Handys + Zinsen pro Monat
+
+Ratenzahlung pro Monat = 750 US-Dollar + 15 US-Dollar = 765 US-Dollar
+
+Also, Shiela zahlt jeden Monat 765 US-Dollar.
+nfe:  232
+avg nfe:  193.8783783783784
+====================
+
+Generating...:  74%|███████▍  | 74/100 [26:15<08:51, 20.45s/it]====================
+answer:  Um die Gesammeinneile von Artie zu berechnen, müssen wir die Preise auf den nächsten Dollarbetrag aufrounden und dann die Gesamten-Einneile berechnen. Hier geht es Schritt für Schritt:
+
+1. **Ringelblumen:**
+   - Preis pro Topf: 2,74 US-Dollar
+   - Anzahl der Töpfe: 12
+   - Gesammeinneile für Ringelblumen: \( 12 \times 2.74 = 32.88 \) US-Dollar
+   - Auf den nächsten Dollarbetrag aufrounden: \( 32.88 \approx 33 \) US-Dollar
+
+2. **Petunien:**
+   - Preis pro Topf: 1,87 US-Dollar
+   - Anzahl der Töpfe: 9
+   - Gesammeinneile für Petunien: \( 9 \times 1.87 = 16.83 \) US-Dollar
+   - Auf den nächsten Dollarbetrag aufrounden: \( 16.83 \approx 17 \) US-Dollar
+
+3. **Begonien:**
+   - Preis pro Topf: 2,12 US-Dollar
+   - Anzahl der Töpfe: 17
+   - Gesammeinneile für Begonien: \( 17 \times 2.12 = 36.04 \) US-Dollar
+   - Auf den nächsten Dollarbetrag aufrounden: \( 36.04 \approx 36 \) US-Dollar
+
+Nun addieren wir die Gesammeinneile aller Blumensarten:
+
+- Ringelblumen: 33 US-Dollar
+- Petunien: 17 US-Dollar
+- Begonien: 36 US-Dollar
+
+Gesammeinneile: \( 33 + 17 + 36 = 86 \) US-Dollar
+
+Artie verdient damit 86 US-Dollar.
+nfe:  184
+avg nfe:  193.74666666666667
+====================
+
+Generating...:  75%|███████▌  | 75/100 [26:36<08:35, 20.63s/it]====================
+answer:  Um zu berechnen, wie viele Quadratmeter jede Ebene in eine 4-stöckige Sandburg hat, mit einer oberen Ebene von 16 Quadratmetern, müssen wir die Bedingung berücksichtigen, dass jede Ebene nur halb so viele Quadratmeter hat wie die darunterliegende Ebene.
+
+1. **Obere Ebene (1. Ebene):**
+   - Die obere Ebene hat 16 Quadratmeter.
+
+2. **Untere Ebene (2. Ebene):**
+   - Die untere Ebene hat halb so viele Quadratmeter wie die obere Ebene.
+   - Daher hat die untere Ebene \( \frac{16}{2} = 8 \) Quadratmeter.
+
+3. **Unternere Ebene (3. Ebene):**
+   - Die unternere Ebene hat halb so viele Quadratmeter wie die untere Ebene.
+   - Daher hat die unternere Ebene \( \frac{8}{2} = 4 \) Quadratmeter.
+
+4. **Unteruntere Ebene (4. Ebene):**
+   - Die unteruntere Ebene hat halb so viele Quadratmeter wie die unternere Ebene.
+   - Daher hat die unteruntere Ebene \( \frac{4}{2} = 2 \) Quadratmeter.
+
+Durchschnittliche Quadratmeterzahl einer Ebene:
+   - Um die durchschnittliche Quadratmeterzahl einer Ebene zu berechnen, versammen wir die Quadratmeter aller Ebene und teilen sie durch die Anzahl der Ebene.
+   - Gesamte Quadratmeter = Quadratmeter der oberen Ebene + Quadratmeter der unteren Ebene + Quadratmeter der unterneren Ebene + Quadratmeter der unterunteren Ebene
+   - Gesamte Quadratmeter = 16 + 8 + 4 + 2 = 30 Quadratmeter
+   - Anzahl der Ebene = 4
+   - Durchschnittliche Quadratmeterzahl einer Ebene = \(\frac{30}{4} = 7.5\) Quadratmeter
+
+Daher ist die durchschnittliche Quadratmeterzahl einer Ebene \(7.5\) Quadratmeter.
+nfe:  224
+avg nfe:  194.14473684210526
+====================
+
+Generating...:  76%|███████▌  | 76/100 [26:59<08:33, 21.42s/it]====================
+answer:  Um wie viele Tüten Hundefutter Cecilia im ersten Jahr verbraucht, müssen wir die Verbrauchung in zwei Teile unterteilen:
+
+1. **Ersten 180 Tagen:**
+   - Cecilia füllt den Welpen mit 1 Tasse Hundefutter täglich.
+   - Die Anzahl der Tagen in den ersten 180 Tagen ist 180.
+   - Die Anzahl der Tassen in den ersten 180 Tagen ist 180.
+   - Eine Tüte Hundefutter enthält 110 Tassenportionen.
+   - Die Anzahl der Tüten in den ersten 180 Tagen ist \( \frac{180}{110} = 1.6364 \) Tüten.
+
+2. **Rest des Lebens:**
+   - Cecilia füllt den Welpen mit 2 Tassen Hundefutter täglich.
+   - Die Anzahl der Tagen für den Rest des Lebens ist 365 - 180 = 185.
+   - Die Anzahl der Tassen für den Rest des Lebens ist 185.
+   - Eine Tüte Hundefutter enthält 110 Tassenportionen.
+   - Die Anzahl der Tüten für den Rest des Lebens ist \( \frac{185}{110} = 1.6818 \) Tüten.
+
+3. ** Gesamteverbrauch:**
+   - Die Gesamteverbrauch ist die Summe der Tüten aus den ersten 180 Tagen und den Rest des Lebens.
+   - Die Gesamteverbrauch ist \( 1.6364 + 1.6818 = 3.3182 \) Tüten.
+
+Also, Cecilia verbraucht **3.3182** Tüten Hundefutter im ersten Jahr.
+nfe:  221
+avg nfe:  194.4935064935065
+====================
+
+Generating...:  77%|███████▋  | 77/100 [27:24<08:33, 22.34s/it]====================
+answer:  Sure, um den Unterschied in der Wäschemenge, die Raymond und David waschen, zu berechnen, müssen wir zunächst, wieviel Wäsche jeder von uns waschen kennen.
+
+1. **Wieviel Wäsche wascht David?**
+   - Sarah wascht 400 Pfund Wäsche.
+   - Sarah wascht 4-mal so viel Wäsche wie David.
+   - Daher wascht David \( \frac{400}{4} = 100 \) Pfund Wäsche.
+
+2. **Wieviel Wäsche wascht Raymond?**
+   - Raymond wascht halb so viel Wäsche wie Sarah.
+   - Daher wascht Raymond \( \frac{400}{2} = 200 \) Pfund Wäsche.
+
+3. **Das Unterschied in der Wäschemenge, die Raymond und David waschen:**
+   - David wascht 100 Pfund Wäsche.
+   - Raymond wascht 200 Pfund Wäsche.
+   - Der Unterschied in der Wäschemenge ist daher \( 200 - 100 = 100 \) Pfund.
+
+Also, das Unterschied in der Wäschemenge, die Raymond und David waschen, ist 100 Pfund.
+nfe:  147
+avg nfe:  193.8846153846154
+====================
+
+Generating...:  78%|███████▊  | 78/100 [27:41<07:37, 20.78s/it]====================
+answer:  Um diesen Schritt zu lösen, müssen wir zunächst die Kosten für 18 Blumen in beiden Möglichkeiten berechnen und dann die Unterschiede berechnen.
+
+### Möglichkeit 1: Blumen in 3-er-Packungen
+
+1. **Preis pro Blumen in 3-er-Packungen**: 2.50 US-Dollar
+2. **Anzahl Blumen in 3-er-Packung**: 3
+3. **Anzahl Blumen in 18 Blumen**: 18
+
+Wir berechnen die Anzahl der 3-er-Packungen, die 18 Blumen umfassen:
+\[ \text{Anzahl 3-er-Packungen} = \frac{\text{Anzahl Blumen}}{\text{Blumen pro 3-er-Packung}} = \frac{18}{3} = 6 \]
+
+Wir berechnen den Kosten für 18 Blumen in 3-er-Packungen:
+\[ \text{Kosten 3-er-Packungen} = \text{Anzahl 3-er-Packungen} \times \text{Preis pro Blumen} = 6 \times 2.50 = 15 \text{ US-Dollar} \]
+
+### Möglichkeit 2: Blumen in 2-er-Packungen
+
+1. **Preis pro Blumen in 2-er-Packungen**: 1 US-Dollar
+2. **Anzahl Blumen in 2-er-Packung**: 2
+3. **Anzahl Blumen in 18 Blumen**: 18
+
+Wir berechnen die Anzahl der 2-er-Packungen, die 18 Blumen umfassen:
+\[ \text{Anzahl 2-er-Packungen} = \frac{\text{Anzahl Blumen}}{\text{Blumen pro 2-er-Packung}} = \frac{18}{2} = 9 \]
+
+Wir berechnen den Kosten für 18 Blumen in 2-er-Packungen:
+\[ \text{Kosten 2-er-Packungen} = \text{Anzahl 2-er-Packungen} \times \text{Preis pro Blumen} = 9 \times 1 = 9 \text{ US-Dollar} \]
+
+### Unterschiede zwischen den beiden Möglichkeiten
+
+Wir berechnen die Unterschiede zwischen den beiden Möglichkeiten:
+\[ \text{Unterschiede} = \text{Kosten 3-er-Packungen} - \text{Kosten 2-er-Packungen} \]
+\[ \text{Unterschiede} = 15 \text{ US-Dollar} - 9 \text{ US-Dollar} \]
+\[ \text{Unterschiede} = 6 \text{ US-Dollar} \]
+
+### Fazit
+
+Vincent spart 6 US-Dollar, wenn er 18 Blumen in 2-er-Packungen kauft, anstatt Blumen in 3-er-Packungen.
+nfe:  248
+avg nfe:  194.56962025316454
+====================
+
+Generating...:  79%|███████▉  | 79/100 [28:07<07:48, 22.33s/it]====================
+answer:  1. **Bestimmen des Rabattwertes:**
+   - Der Hundefrisör bietet einen Rabatt von 30%.
+   - Der Rabattwert ist 30% von 100 US-Dollar.
+   - 30% von 100 US-Dollar = 0.30 * 100 = 30 US-Dollar.
+
+2. **Bezahlung nach dem Rabatt:**
+   - Der Rabattwert ist 30 US-Dollar.
+   - Der Endpreis nach dem Rabatt ist 100 US-Dollar - 30 US-Dollar = 70 US-Dollar.
+
+**Antwort:**
+Die Sitzung beim Hundefrisör kostet 70 US-Dollar.
+nfe:  121
+avg nfe:  193.65
+====================
+
+Generating...:  80%|████████  | 80/100 [28:21<06:40, 20.03s/it]====================
+answer:  Ja, lass uns das Problem Schritt für Schritt durchgehen:
+
+1. **Zusammenhaltung der Wasser für die zwei Mädchen:**
+   - Jedes Mädchen bekam \( \frac{1}{6} \) der 24 Liter Wasser.
+   - Zusammen bekam die zwei Mädchen \( 2 \times \frac{1}{6} = 4 \) Liter Wasser.
+
+2. **Zusammenhaltung der Wasser für den Junge:**
+   - Der Junge bekam 6 Liter Wasser.
+
+3. **Zusammenhaltung der gesamten Wasser:**
+   - Zusammen bekamen die zwei Mädchen und der Junge \( 4 + 6 = 10 \) Liter Wasser.
+
+4. **Zusammenhaltung des übrigen Wasser:**
+   - Die gesamte Menge an Wasser war 24 Liter.
+   - Die übrige Wasser ist daher \( 24 - 10 = 14 \) Liter.
+
+Somit bleiben 14 Liter Wasser übrig.
+nfe:  165
+avg nfe:  193.2962962962963
+====================
+
+Generating...:  81%|████████  | 81/100 [28:41<06:16, 19.80s/it]====================
+answer:  1. Charlie hatte 10 Sticker.
+2. Er kauft 21 Sticker in einem Laden:
+   \[
+   10 + 21 = 31
+   \]
+3. Er bekommt 23 Sticker zum Geburtstag geschenkt:
+   \[
+   31 + 23 = 54
+   \]
+4. Er gibt seiner Schwester 9 Sticker ab:
+   \[
+   54 - 9 = 45
+   \]
+5. Er benutzt 28 Sticker zum Dekorieren einer Grußkarte:
+   \[
+   45 - 28 = 17
+   \]
+
+Charlie hat 17 Sticker übrig.
+nfe:  85
+avg nfe:  191.97560975609755
+====================
+
+Generating...:  82%|████████▏ | 82/100 [28:51<05:05, 16.98s/it]====================
+answer:  Um zu finden, wie vieviel Pfund Grace und Alex zusammen wiegen, müssen wir uns einige Schritte durchführen:
+
+1. **Gewicht von Alex:**
+   - Grace wiegt 125 Pfund.
+   - Alex wiegt 2 Pfund weniger als das 4-fache des Gewichts von Grace.
+   - 4-fache des Gewichts von Grace ist \( 4 \times 125 = 500 \) Pfund.
+   - Alex wiegt 2 Pfund weniger als 500 Pfund, also \( 500 - 2 = 498 \) Pfund.
+
+2. **Gewicht zusammen:**
+   - Grace wiegt 125 Pfund.
+   - Alex wiegt 498 Pfund.
+   - Zusammen wiegen sie \( 125 + 498 = 623 \) Pfund.
+
+Also wiegen Grace und Alex zusammen 623 Pfund.
+nfe:  125
+avg nfe:  191.16867469879517
+====================
+
+Generating...:  83%|████████▎ | 83/100 [29:06<04:38, 16.37s/it]====================
+answer:  1. Dan pflanzt 3 Rosenbüsche.
+2. Jeder Rosenbusch trägt 25 Rosen.
+3. Jede Rose hat 8 Dornen.
+
+Zum ersten berechnen wir die Gesamtenzahl der Rosen:
+\[ 3 \text{ Rosenbüsche} \times 25 \text{ Rosen/Rosenbusch} = 75 \text{ Rosen} \]
+
+Danach berechnen wir die Gesamtenzahl der Dornen:
+\[ 75 \text{ Rosen} \times 8 \text{ Dornen/Rose} = 600 \text{ Dornen} \]
+
+Es sind insgesamt 600 Dornen.
+nfe:  71
+avg nfe:  189.73809523809524
+====================
+
+Generating...:  84%|████████▍ | 84/100 [29:15<03:44, 14.06s/it]====================
+answer:  Ja, wie viele Spiele hat das Fußballteam gewonnen?
+
+1. **Legen wir an, wie viele Spiele das Team gewonnen hat:**
+   - G, wie viele Spiele das Team gewonnen hat, und V, wie viele Spiele das Team verloren hat.
+
+2. **Schreiben wir an, wie viele Spiele das Team verloren hat:**
+   - V, wie viele Spiele das Team verloren hat.
+
+3. **Bauen wir an, wie viele Spiele das Team gewonnen hat:**
+   - G, wie viele Spiele das Team gewonnen hat.
+
+4. **Schreiben wir an, wie viele Spiele das Team gewonnen hat:**
+   - G, wie viele Spiele das Team gewonnen hat.
+
+5. **Addieren wir an, wie viele Spiele das Team gewonnen hat und wie viele Spiele das Team verloren hat:**
+   - G, wie viele Spiele das Team gewonnen hat, und V, wie viele Spiele das Team verloren hat.
+
+6. **Bauen wir an, wie viele Spiele das Team gewonnen hat und wie viele Spiele das Team verloren hat:**
+   - G, wie viele Spiele das Team gewonnen hat, und V, wie viele Spiele das Team verloren hat.
+
+7. **Addieren wir an, wie viele Spiele das Team gewonnen hat und wie viele Spiele das Team verloren hat:**
+   - G, wie viele Spiele das Team gewonnen hat, und V, wie viele Spiele das Team verloren hat.
+
+8. **Bauen wir an, wie viele das Team gewonnen hat und wie viele das Team verloren hat:**
+   - G, wie viele Spiele das Team gewonnen hat, und V, wie viele Spiele das Team verloren hat.
+
+9. **Addieren wir an, wie viele das Team gewonnen hat und wie viele das Team verloren hat:**
+   - G, wie viele Spiele das Team gewonnen hat, und V, wie viele Spiele das Team verloren hat.
+
+10. **Bauen wir an, wie viele das Team gewonnen hat und wie viele das Team verloren hat:**
+    - G, wie viele Spiele das Team gewonnen hat, und V, wie viele Spiele das Team verloren hat.
+
+11. **Addieren wir an, wie viele das Team gewonnen hat und wie viele das Team verloren hat:**
+    - G, wie viele Spiele das Team gewonnen hat, und V, wie viele Spiele das Team verloren hat.
+
+12. **Bauen wir an, wie viele das Team gewonnen hat und wie viele das Team verloren hat:**
+    - G, wie viele Spiele das Team gewonnen hat, und V, wie viele Spiele das Team verloren hat.
+
+13. **Addieren wir an, wie viele das Team gewonnen hat und wie viele das Team verloren hat:**
+    - G, wie viele Spiele das Team gewonnen hat, und V, wie viele Spiele das Team verloren hat.
+
+14. **Bauen wir an, wie viele das Team gewonnen hat und wie viele das Team verloren hat:**
+    - G, wie viele Spiele das Team gewonnen hat, und V, wie viele Spiele das Team verloren hat.
+
+15. **Addieren wir an, wie viele das Team gewonnen hat und wie viele das Team verloren hat:**
+    - G, wie viele Spiele das Team gewonnen hat, und V, wie viele Spiele das Team verloren hat.
+
+16. **Bauen wir an, wie viele das Team gewonnen hat und wie viele das Team verloren hat:**
+    - G, wie viele Spiele das Team gewonnen hat, und V, wie viele Spiele das Team verloren hat.
+
+17. **Addieren wir an, wie viele das Team gewonnen hat und wie viele das Team verloren hat:**
+    - G, wie viele Spiele das Team gewonnen hat, und V, wie viele Spiele das Team verl
+nfe:  234
+avg nfe:  190.25882352941176
+====================
+
+Generating...:  85%|████████▌ | 85/100 [29:39<04:15, 17.05s/it]====================
+answer:  Um zu finden, wie viele Deckenabschnitte Gene hat, müssen wir einige Schritte durchgehen:
+
+1. **Anzahl der Urlaubsjahre:**
+   - Gene macht viermal im Jahr Urlaub.
+   - Er verreist seit er 23 Jahre alt ist.
+   - Jetzt ist er 34 Jahre alt.
+   - Jetzt ist er 34 Jahre alt, also war er 23 Jahre alt, als er ersten Urlaub machte.
+   - Da er macht viermal im Jahr Urlaub, macht er 4 Urlaubsjahre pro Jahr.
+   - Da er verreist seit er 23 Jahre alt ist, macht er den ersten Urlaub 23 Jahre alt.
+   - Daher macht er den ersten Urlaub 23 Jahre alt, und er macht den letzten Urlaub 34 Jahre alt.
+   - Insgesamt also hat er 34 - 23 + 1 = 12 Urlaubsjahre.
+
+2. **Anzahl der Deckenabschnitte:**
+   - Jeder T-Shirt bildet einen Deckenabschnitt.
+   - Da er 12 Urlaubsjahre hat, bildet er 12 Deckenabschnitte.
+
+Insgesamt hat Gene also 12 Deckenabschnitte.
+nfe:  238
+avg nfe:  190.8139534883721
+====================
+
+Generating...:  86%|████████▌ | 86/100 [30:06<04:42, 20.16s/it]====================
+answer:  1. **Erster Mal:**
+   - Der Wecker klingelt viermal.
+   - Also hat er 4 Mal geklingelt.
+
+2. **Zweites Mal:**
+   - Der Wecker klingelt dreimal so lange wie beim ersten Mal.
+   - Also hat er 3 \times 4 = 12 Mal geklingelt.
+
+3. **Drittes Mal:**
+   - Der Wecker klingelt halb so lange wie beim zweiten Mal.
+   - Also hat er \(\frac{12}{2} = 6\) Mal klingelt.
+
+4. ** Gesamtzahl der Klinge:**
+   - Erster Mal: 4 Mal
+   - Zweites Mal: 12 Mal
+   - Drittes Mal: 6 Mal
+   - Gesamtzahl der Klinge: \(4 + 12 + 6 = 22\)
+
+Also, der Wecker hat insgesamt 22 Mal geklingelt.
+nfe:  118
+avg nfe:  189.97701149425288
+====================
+
+Generating...:  87%|████████▋ | 87/100 [30:21<04:00, 18.49s/it]====================
+answer:  Um Sylvie's Gehalt nach weiteren drei Jahren zu berechnen, gehen wir es Schritt für Schritt durch:
+
+1. **Ursprünglich Gehalt**:
+   - Sylvie gehält 600 US-Dollar pro Monat.
+
+2. **Erste Jahr**:
+   - Im ersten Jahr bleibt ihr Gehalt gleich, da sie noch nicht seit fünf Jahren im Unternehmen ist.
+
+3. **Zweites Jahr**:
+   - Im zweiten Jahr wird ihr Gehalt um 10 % angehoben, da sie seit fünf Jahren im Unternehmen ist.
+   - Gehalt im zweiten Jahr = 600 US-Dollar + 10 % von 600 US-Dollar = 600 US-Dollar + 60 US-Dollar = 660 US-Dollar.
+
+4. **Drittes Jahr**:
+   - Im dritten Jahr wird ihr Gehalt um 10 % angehoben, da sie seit fünf Jahren im Unternehmen ist.
+   - Gehalt im dritten Jahr = 660 US-Dollar + 10 % von 660 US-Dollar = 660 US-Dollar + 66 US-Dollar = 726 US-Dollar.
+
+5. **Viertes Jahr**:
+   - Im vierten Jahr wird ihr Gehalt um 10 % angehoben, da sie seit fünf Jahren im Unternehmen ist.
+   - Gehalt im vierten Jahr = 726 US-Dollar + 10 % von 726 US-Dollar = 726 US-Dollar + 72.6 US-Dollar = 798.6 US-Dollar.
+
+6. **Fünftes Jahr**:
+   - Im fünften Jahr wird ihr Gehalt um 10 % angehoben, da sie seit fünf Jahren im Unternehmen ist.
+   - Gehalt im fünften Jahr = 798.6 US-Dollar + 10 % von 798.6 US-Dollar = 798.6 US-Dollar + 79.86 US-Dollar = 878.46 US-Dollar.
+
+7. **Sechtes Jahr**:
+   - Im sechsten Jahr wird ihr Gehalt um 10 % angehoben, da sie seit fünf Jahren im Unternehmen ist.
+   - Gehalt im sechsten Jahr = 878.46 US-Dollar + 10 % von 878.46 US-Dollar = 878.46 US-Dollar + 87.846 US-Dollar = 966.306 US-Dollar.
+
+8. **Sechtes Jahr**:
+   - Im siebten Jahr wird ihr Gehalt um 10 % angehoben, da sie seit fünf Jahren im Unternehmen ist.
+   - Gehalt im siebten Jahr = 966.306 US-Dollar + 10 % von 966.306 US-Dollar = 966.306 US-Dollar + 96.6306 US-Dollar = 1062.9306 US-Dollar.
+
+9. **A achtes Jahr**:
+   - Im a achten Jahr wird ihr Gehalt um 10 % angehoben, da sie seit fünf Jahren im Unternehmen ist.
+   - Gehalt im a achten Jahr = 1062.9306 US-Dollar + 10 % von 1062.9306 US-Dollar = 1062.9306 US-Dollar + 106.29306 US-Dollar = 1169.22366 US-Dollar.
+
+**Fazit**:
+Sylvie's Gehalt nach drei Jahren seit fünf Jahren im Unternehmen ist **1169.22366 US-Dollar**.
+nfe:  249
+avg nfe:  190.64772727272728
+====================
+
+Generating...:  88%|████████▊ | 88/100 [30:46<04:04, 20.42s/it]====================
+answer:  1. **Definition der Variablen:**
+   - Sei \( H \) die Anzahl der Exemplare, die Harald verkauft hat.
+   - Sei \( M \) die Anzahl der Exemplare, die Marilyns erste Platte verkauft hat.
+
+2. **Gegebenbedingungen:**
+   - Marilyns erste Platte wurde 10-mal so häufig verkauft wie Haralds.
+   - Zusammen wurden sie 88.000 Exemplare verkauft.
+
+3. **Formulierung der Gleichungen:**
+   - Da Marilyns erste Platte wurde 10-mal so häufig verkauft wurde als Haralds, so können wir schreiben:
+     \[
+     M = 10H
+     \]
+   - Da zusammen 88.000 Exemplare verkauft wurden, so können wir schreiben:
+     \[
+     H + M = 88.000
+     \]
+
+4. **Einsetzung der Gleichungen:**
+   - Setzen wir \( M = 10H \) in die Gleichung \( H + M = 88.000 \) ein:
+     \[
+     H + 10H = 88.000
+     \]
+   - Simplifieren wir das System:
+     \[
+     11H = 88.000
+     \]
+
+5. **Lösung:**
+   - Berechnen wir \( H \) durch die Teilung von 88.000 durch 11:
+     \[
+     H = \frac{88.000}{11}
+     \]
+   - Erledigen wir die Division:
+     \[
+     H = 8.000
+     \]
+
+6. **Fazit:**
+   - Harald verkauft 8.000 Exemplare.
+nfe:  205
+avg nfe:  190.80898876404495
+====================
+
+Generating...:  89%|████████▉ | 89/100 [31:07<03:48, 20.81s/it]====================
+answer:  1. **Anzahl der eingeladenen Freunde:**
+   - Christina hat 16 Freunde eingeladen.
+
+2. **Anzahl der Freunde, die nicht erscheinen:**
+   - 1/4 der Freunde nicht erscheint.
+   - \( \frac{1}{4} \times 16 = 4 \)
+
+3. **Anzahl der Freunde, die erscheinen:**
+   - Die übrigen Freunde erscheinen.
+   - \( 16 - 4 = 12 \)
+
+4. **Anzahl der Geschenktüten benötigt:**
+   - Jeder Gast benötigt 0.75 Geschenktüten.
+   - \( 12 \times 0.75 = 9 \)
+
+5. **Kosten der Geschenktüten:**
+   - Jede Geschenktüte kostet 2 US-Dollar.
+   - \( 9 \times 2 = 18 \) US-Dollar
+
+Also, Christina gibt 18 US-Dollar aus.
+nfe:  128
+avg nfe:  190.11111111111111
+====================
+
+Generating...:  90%|█████████ | 90/100 [31:23<03:11, 19.18s/it]====================
+answer:  Um also, wie viel Kartoffelsalat Ted mitbringen muss, berechnen wir Schritt für Schritt:
+
+1. **Erwachsene Dinosaurier:**
+   - Ein Erwachsener Dinosaurier isst 10 Pfund Kartoffelsalat.
+   - Es gibt 20 Erwachsene Dinosaurier.
+   - Die Gesamtmenge für die Erwachsene Dinosaurier ist: \( 20 \times 10 = 200 \) Pfund.
+
+2. **Junge Dinosaurier:**
+   - Ein Junges Dinosaurier isst halb so viel Kartoffelsalat wie ein Erwachsener Dinosaurier.
+   - Es gibt 5 Jung Dinosaurier.
+   - Die Gesamtmenge für die Jung Dinosaurier ist: \( 5 \times \frac{10}{2} = 25 \) Pfund.
+
+3. **Gesamtmenge an Kartoffelsalat:**
+   - Die Gesamtmenge an Kartoffelsalat ist die Summe der Menge für die Erwachsene Dinosaurier und der Menge für die Jung Dinosaurier.
+   - Die Gesamtmenge ist: \( 200 + 25 = 225 \) Pfund.
+
+Also, Ted muss **225 Pfund** Kartoffelsalat mitbringen.
+nfe:  183
+avg nfe:  190.03296703296704
+====================
+
+Generating...:  91%|█████████ | 91/100 [31:44<02:58, 19.79s/it]====================
+answer:  1. Cindy hat vier Haustiere.
+2. Marcia hat zwei Haustiere mehr als Cindy. Also, Marcia hat \(4 + 2 = 6\) Haustiere.
+3. Jan hat dreimal so viele Haustiere wie Marcia. Also, Jan hat \(3 \times 6 = 18\) Haustiere.
+4. Zusammen haben alle drei \(4 + 6 + 18 = 28\) Haustiere.
+nfe:  56
+avg nfe:  188.57608695652175
+====================
+
+Generating...:  92%|█████████▏| 92/100 [31:51<02:07, 15.93s/it]====================
+answer:  Um die Alters von Jackson zu bestimmen, müssen wir die gegebenen Beziehungen und die Alterswerte der anderen Kinder verwerten.
+
+1. **James ist 10 Jahre alt.**
+2. **Corey ist 1 Jahr jünger als James.**
+   - Corey ist 10 + 1 = 11 Jahre alt.
+3. **Amy ist 2 Jahre jünger als Corey.**
+   - Amy ist 11 - 2 = 9 Jahre alt.
+4. **Amy ist 5 Jahre älter als Jackson.**
+   - Jackson ist 9 - 5 = 4 Jahre alt.
+
+Jackson ist 4 Jahre alt.
+nfe:  106
+avg nfe:  187.68817204301075
+====================
+
+Generating...:  93%|█████████▎| 93/100 [32:04<01:45, 15.03s/it]====================
+answer:  Um zu berechnen, wie schnell Gerald mit seiner verbesserten Ernährungsweise die 400 Meter Hürden laufen kann, müssen wir einige Schritte durchgehen:
+
+1. **Legen Lee's Geschwindigkeit fest:**
+   - Lee läuft die 400 Meter Hürden in 38 Sekunden.
+   - Gerald läuft zwei Sekunden schneller als Lee, d.h., Gerald läuft in 38 - 2 = 36 Sekunden.
+
+2. **Berechnen Lee's Geschwindigkeit:**
+   - Lee's Geschwindigkeit (V_Lee) = 400 Meter / 38 Sekunden = 10 Meter pro Sekunde.
+
+3. **Berechnen Gerald's Geschwindigkeit nach der Verbesserung:**
+   - Gerald's Geschwindigkeit ist verbessert um 10%.
+   - Gerald's Geschwindigkeit (V_Gerald) = V_Lee + 10% von V_Lee.
+   - V_Gerald = 10 Meter pro Sekunde + 10% von 10 Meter pro Sekunde.
+   - V_Gerald = 10 Meter pro Sekunde + 0.10 * 10 Meter pro Sekunde.
+   - V_Gerald = 10 Meter pro Sekunde + 1 Meter pro Sekunde.
+   - V_Gerald = 11 Meter pro Sekunde.
+
+4. **Berechnen Gerald's Zeit für die 400 Meter Hürden:**
+   - Gerald's Zeit (T_Gerald) = 400 Meter / 11 Meter pro Sekunde.
+   - T_Gerald ≈ 36.36 Sekunden.
+
+So, Gerald mit seiner verbesserten Ernährungsweise kann die 400 Meter Hürden in etwa 36.36 Sekunden laufen.
+nfe:  225
+avg nfe:  188.08510638297872
+====================
+
+Generating...:  94%|█████████▍| 94/100 [32:29<01:48, 18.07s/it]====================
+answer:  1. **Bestimmung der Anzahl an Katzen:**
+   - Es gibt 60 Hunden.
+   - Jeder Hund hat zwei Katzen.
+   - Daher ist die Anzahl an Katzen: \(60 Hunden * 2\) Katzen pro Hund = 120 Katzen.
+
+2. **Bestimmung der Anzahl an Hunden und Katzen zusammen:**
+   - Die Anzahl an Hunden ist 60.
+   - Die Anzahl an Katzen ist 120.
+   - Daher ist die Anzahl an Hunden und Katzen zusammen: \(60 Hunden + 120 Katzen = 180\) Haustiere.
+
+3. **Bestimmung der Anzahl an Kaninchen:**
+   - Die Anzahl an Kaninchen ist zwölf Mal geringer als die Anzahl an Hunden und Katzen zusammen.
+   - Daher ist die Anzahl an Kaninchen: \(\frac{180 Haustiere}{12} = 15\) Kaninchen.
+
+4. **Bestimmung der Gesamtanzahl der Haustiere:**
+   - Die Anzahl an Hunden ist 60.
+   - Die Anzahl an Katzen ist 120.
+   - Die Anzahl an Kaninchen ist 15.
+   - Daher ist die Gesamtanzahl der Haustiere: \(60 Hunden + 120 Katzen + 15 Kaninchen = 195\) Haustiere.
+
+Es gibt insgesamt 195 Haustiere in dem Wohnviertel.
+nfe:  139
+avg nfe:  187.56842105263158
+====================
+
+Generating...:  95%|█████████▌| 95/100 [32:45<01:27, 17.43s/it]====================
+answer:  Um zu finden, wie viele Mädchen bei den Pfadfinderinnen sind, gehen wir Schritt für Schritt vor:
+
+1. **Bestimme die Anzahl der Jungen:**
+   - Die Anzahl der Schüler insgesamt ist 200.
+   - Von diesen sind 2/5 Jungen.
+   - Die Anzahl der Jungen ist also \( \frac{2}{5} \times 200 = 80 \).
+
+2. **Bestimme die Anzahl der Mädchen:**
+   - Die Anzahl der Jungen ist 80.
+   - Von diesen sind 100% Mädchen (da es keine Mädchen gesagt sind).
+   - Die Anzahl der Mädchen ist also 80.
+
+3. **Bestimme die Anzahl der Mädchen bei den Pfadfinderinnen:**
+   - Von den Mädchen sind 2/3 bei den Pfadfinderinnen.
+   - Die Anzahl der Mädchen bei den Pfadfinderinnen ist also \( \frac{2}{3} \times 80 = 53 \).
+
+Es sind 53 Mädchen bei den Pfadfinderinnen.
+nfe:  152
+avg nfe:  187.19791666666666
+====================
+
+Generating...:  96%|█████████▌| 96/100 [33:03<01:10, 17.59s/it]====================
+answer:  1. **Was geschlafen hat Harry**: Harry hat 9 Stunden geschlafen.
+2. **Was geschlafen hat James**: James schlief nur 2/3 der Zeit, die Harry geschlafen hat.
+3. **Verschiede der geschlaften Zeit**: Wir berechnen, wie viele Stunden James geschlafen hat und dann wie viele Stunden Harry noch mehr geschlafen hat als James.
+
+Wir berechnen was James geschlafen hat:
+- James schlief nur 2/3 der Zeit, die Harry geschlafen hat.
+- Harry hat 9 Stunden geschlafen.
+- James schlief 2/3 von 9 Stunden.
+
+Wir berechnen:
+\[ \frac{2}{3} \times 9 = \frac{18}{3} = 6 \text{ Stunden} \]
+
+James hat 6 Stunden geschlafen.
+
+Wir berechnen, wie viele Stunden Harry noch mehr geschlafen hat als James:
+- Harry hat 9 Stunden geschlafen.
+- James hat 6 Stunden geschlafen.
+- Die Verschiede ist:
+\[ 9 - 6 = 3 \text{ Stunden} \]
+
+Harry hat 3 Stunden mehr geschlafen als James.
+nfe:  180
+avg nfe:  187.1237113402062
+====================
+
+Generating...:  97%|█████████▋| 97/100 [33:24<00:55, 18.56s/it]====================
+answer:  Um finden, wie viele Tomaten Freda verbraucht hat, gehen wir Schritt für Schritt vor:
+
+1. **Zufteilung der Tomaten:**
+   - Jede Dose von Tomaten enthält drei Tomaten.
+   - Jede Dose ist 16 Unzen groß.
+   - Die letzte Portion der Tomatensoße ist 32 Unzen groß.
+
+2. **Anzahl der Tomaten in einer Dose:**
+   - Jede Dose enthält drei Tomaten.
+
+3. **Anzahl der Dosen in 32 Unzen:**
+   - Jede Dose ist 16 Unzen groß.
+   - Für die Anzahl der Dosen in 32 Unzen, teilen wir 32 Unzen durch 16 Unzen pro Dose:
+     \[
+     \frac{32 \text{ Unzen}}{16 \text{ Unzen/Dose}} = 2 \text{ Dosen}
+     \]
+
+4. **Anzahl der Tomaten in 2 Dosen:**
+   - Jede Dose enthält drei Tomaten.
+   - Für 2 Dosen enthält jede Dose drei Tomaten:
+     \[
+     3 \text{ Tomaten/Dose} \times 2 \text{ Dosen} = 6 \text{ Tomaten}
+     \]
+
+Also, Freda verbrauchte 6 Tomaten.
+nfe:  206
+avg nfe:  187.31632653061226
+====================
+
+Generating...:  98%|█████████▊| 98/100 [33:47<00:40, 20.09s/it]====================
+answer:  Um finden wie viele Autos in den ersten 15 Minuten durch den Stau gefahren haben, müssen wir die folgenden Schritte befolgen:
+
+1. **Eigentliche Anzahl der Autos**: Ursprünglich stehen 30 Autos auf der Autobahn.
+
+2. **Autos, die aus der Reihe ausgehen**: 5 Autos scheren aus der Reihe aus, sodass sie nicht durch den Stau fahren müssen.
+
+3. **Autos, die in den ersten 15 Minuten durch den Stau fahren**: Wir müssen festlegen wie viele Autos in den ersten 15 Minuten durch den Stau fahren.
+
+4. **Autos, die in den verbleibenden 15 Minuten durch den Stau fahren**: Nach den ersten 15 Minuten fahren noch 20 weitere Autos durch den Stau.
+
+5. **Autos, die in der Reihe bleiben**: Die Autos, die nicht in den ersten 15 Minuten oder in den verbleibenden 15 Minuten durch den Stau fahren, bleiben in der Reihe.
+
+6. **Autos, die in den ersten 15 Minuten durch den Stau fahren**: Wir wissen, dass 20 Autos in den verbleibenden 15 Minuten durch den Stau fahren und 5 Autos aus der Reihe ausgehen. Da die Anzahl der Autos, die in den ersten 15 Minuten durch den Stau fahren, ist nicht bekannt ist, setzen wir sie auf \( x \).
+
+7. **Anzahl der Autos, die in den ersten 15 Minuten durch den Stau fahren**: Die Anzahl der Autos, die in den ersten 15 Minuten durch den Stau fahren, ist die Anzahl der Autos, die in den ersten 15 Minuten durch den Stau fahren, plus die Anzahl der Autos, die in den verbleibenden 15 Minuten durch den Stau fahren.
+
+8. **Anzahl der Autos, die in den ersten 15 Minuten durch den Stau fahren**: Die Anzahl der Autos, die in den ersten 15 Minuten durch den Stau fahren, ist die Anzahl der Autos, die in den ersten 15 Minuten durch den Stau fahren, plus die Anzahl der Autos, die in den verbleibenden 15 Minuten durch den Stau fahren.
+
+9. **Anzahl der Autos, die in den ersten 15 Minuten durch den Stau fahren**: Die Anzahl der Autos, die in den ersten 15 Minuten durch den Stau fahren, ist die Anzahl der Autos, die in den ersten 15 Minuten durch den Stau fahren, plus die Anzahl der Autos, die in den verbleibenden 15 Minuten durch den Stau fahren.
+
+10. **Anzahl der Autos, die in den ersten 15 Minuten durch den Stau fahren**: Die Anzahl der Autos, die in den ersten 15 Minuten durch den Stau fahren, ist die Anzahl der Autos, die in den ersten 15 Minuten durch den Stau fahren, plus die Anzahl der Autos, die in den verbleibenden 15 Minuten durch den Stau fahren.
+
+11. **Anzahl der Autos, die in den ersten 15 Minuten durch den Stau fahren**: Die Anzahl der Autos, die in den ersten 15 Minuten durch den Stau fahren, ist die Anzahl der Autos, die in den ersten 15 Minuten durch den Stau fahren, plus die Anzahl der Autos, die in den verbleibenden 15 Minuten durch den Stau fahren.
+
+12. **Anzahl der Autos, die in den ersten 15 Minuten durch den Stau fahren**: Die Anzahl der Autos, die in den ersten 15 Minuten durch den Stau fahren, ist die Anzahl der Autos, die in den ersten 15 Minuten durch den Stau fahren, plus die Anzahl
+nfe:  333
+avg nfe:  188.78787878787878
+====================
+
+Generating...:  99%|█████████▉| 99/100 [34:20<00:23, 23.84s/it]====================
+answer:  1. **Anzahl der neue Topfpflanzen:**
+   Mary hat 18 neue Topfpflanzen bekommen.
+
+2. **Anzahl der Topfpflanzen auf den Fenstersimmen:**
+   Mary hat bereits 2 Topfpflanzen auf jedem der 40 Fenstersimse stehen.
+   \[
+   2 \text{ Topfpflanzen pro Fenster} \times 40 \text{ Fenstersimse} = 80 \text{ Topfpflanzen}
+   \]
+
+3. **Anzahl der Topfpflanzen, die Mary verschenken möchte:**
+   Mary möchte 1 Topfpflanze von jedem Fenstersims verschenken.
+   \[
+   1 \text{ Topfpflanze pro Fenster} \times 40 \text{ Fenstersimse} = 40 \text{ Topfpflanzen}
+   \]
+
+4. **Anzahl der Topfpflanzen, die Mary übrig hat:**
+   Setze die Anzahl der neuen Topfpflanzen, die Anzahl der Topfpflanzen auf den Fenstersimmen und die Anzahl der Topfpflanzen, die sie verschenken möchte, raus.
+   \[
+   18 \text{ Topfpflanzen} - 80 \text{ Topfpflanzen} - 40 \text{ Topfpflanzen} = -62 \text{ Topfpflanzen}
+   \]
+
+Mary hat **- 62** Topfpflanzen übrig.
+nfe:  162
+avg nfe:  188.52
+====================
+
+Generating...: 100%|██████████| 100/100 [34:38<00:00, 22.26s/it]Generating...: 100%|██████████| 100/100 [34:38<00:00, 20.79s/it]
+Total number of tokens generated: 44875
+Total time taken: 2078.867740392685 seconds
+Tokens per second: 21.586271286010742
+Total NFE is 18852
+2026-08-23:08:28:14,211 INFO     [lm_eval.loggers.evaluation_tracker:209] Saving results aggregated
+2026-08-23:08:28:14,213 INFO     [lm_eval.loggers.evaluation_tracker:290] Saving per-sample results for: mgsm_native_cot_de
+llada_dist (model_path=GSAI-ML/LLaDA-8B-Instruct,gen_length=1024,steps=1024,block_length=32,use_cache=True,threshold=0.9,show_speed=True,is_check_greedy=False), gen_kwargs: (None), limit: 100.0, num_fewshot: None, batch_size: 1
+|      Tasks       |Version|     Filter     |n-shot|  Metric   |   |Value|   |Stderr|
+|------------------|------:|----------------|-----:|-----------|---|----:|---|-----:|
+|mgsm_native_cot_de|      4|flexible-extract|     0|exact_match|↑  | 0.54|±  |0.0501|
+|                  |       |strict-match    |     0|exact_match|↑  | 0.00|±  |0.0000|
+

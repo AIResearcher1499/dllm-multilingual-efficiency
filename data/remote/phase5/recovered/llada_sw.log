@@ -1,0 +1,4473 @@
+The following values were not passed to `accelerate launch` and had defaults used instead:
+	`--num_processes` was set to a value of `1`
+	`--num_machines` was set to a value of `1`
+	`--mixed_precision` was set to a value of `'no'`
+	`--dynamo_backend` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+2026-08-23:09:03:12,354 WARNING  [lm_eval.__main__:316]  --limit SHOULD ONLY BE USED FOR TESTING.REAL METRICS SHOULD NOT BE COMPUTED USING LIMIT.
+2026-08-23:09:03:12,355 INFO     [lm_eval.__main__:379] Selected Tasks: ['mgsm_native_cot_sw']
+2026-08-23:09:03:12,357 INFO     [lm_eval.evaluator:169] Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+2026-08-23:09:03:12,357 INFO     [lm_eval.evaluator:206] Initializing llada_dist model, with arguments: {'model_path': 'GSAI-ML/LLaDA-8B-Instruct', 'gen_length': 1024, 'steps': 1024, 'block_length': 32, 'use_cache': True, 'threshold': 0.9, 'show_speed': True, 'is_check_greedy': False}
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:03,  1.47it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:01<00:03,  1.33it/s]Loading checkpoint shards:  50%|█████     | 3/6 [00:02<00:02,  1.17it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:03<00:01,  1.09it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:04<00:00,  1.11it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:04<00:00,  1.22it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:04<00:00,  1.20it/s]
+2026-08-23:09:04:26,649 INFO     [lm_eval.api.task:420] Building contexts for mgsm_native_cot_sw on rank 0...
+  0%|          | 0/100 [00:00<?, ?it/s]100%|██████████| 100/100 [00:00<00:00, 1062.38it/s]
+2026-08-23:09:04:26,746 INFO     [lm_eval.evaluator:517] Running generate_until requests
+Batching...:   0%|          | 0/100 [00:00<?, ?it/s]Batching...: 100%|██████████| 100/100 [00:00<00:00, 1064544.16it/s]
+Generating...:   0%|          | 0/100 [00:00<?, ?it/s]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+1. Huwa anakula mato siku: 16 kila siku.
+2. Huwa anakula matatu wakati wa stafta kila asubuhi: 16 kila siku.
+3. Huwa anakula matatu wakati wa stafta kila asubuhi: 16 kila siku.
+4. Huwa anakula matatu wakati wa stafta kila asubuhi: 16 kila siku.
+5. Huwa anakula matatu wakati wa stafta kila asubuhi: 16 kila siku.
+6. Huwa anakula matatu wakati wa stafta kila asubuhi: 16 kila siku.
+7. Huwa anakula matatu wakati wa stafta kila asubuhi: 16 kila siku.
+8. Huwa anakula matatu wakati wa stafta kila asubuhi: 16 kila siku.
+9. Huwa anakula matatu wakati wa stafta kila asubuhi: 16 kila siku.
+10. Huwa anakula matatu wakati wa stafta kila asubuhi: 16 kila siku.
+11. Huwa anakula matatu wakati wa stafta kila asubuhi: 16 kila siku.
+12. Huwa anakula matatu wakati wa stafta kila asubuhi: 16 kila siku.
+13. Huwa anakula matatu wakati wa stafta kila asubuhi: 16 kila siku.
+14. Huwa anakula matatu wakati wa stafta kila asubuhi: 16 kila siku.
+15. Huwa anakula matatu wakati wa stafta kila asubuhi: 16 kila siku.
+16. Huwa anakula matatu wakati wa stafta kila asubuhi: 16 kila siku.
+17. Huwa anakula matatu wakati wa stafta kila asubuhi: 16 kila siku.
+18. Huwa anakula matatu wakati wa stafta kila asubuhi: 16 kila siku.
+19. Huwa anakula matatu wakati wa stafta kila asubuhi: 16 kila siku.
+20. Huwa anakula matatu wakati wa stafta kila asubuhi: 16 kila siku.
+21. Huwa anakula matatu wakati wa stafta kila asubuhi: 16 kila siku.
+22. Huwa anakula matatu wakati wa stafta kila asubuhi: 16 kila siku.
+23. Huwa anakula matatu wakati wa stafta kila asubuhi: 16 kila siku.
+24. Huwa anakula matatu wakati wa stafta kila asubuhi: 16 kila siku.
+25. Huwa anakula matatu wakati wa stafta kila asubuhi: 16 kila siku.
+26. Huwa anakula matatu wakati wa stafta kila asubuhi: 16 kila siku.
+27. Huwa anakula matatu wakati wa stafta kila asubuhi: 16 kila siku.
+28. Huwa anakula matatu wakati wa stafta kila asubuhi: 16 kila siku.
+29. Huwa anakula matatu wakati wa stafta kila asubuhi: 16 kila siku.
+30. Huwa anakula matatu wakati wa stafta kila asubuhi: 16 kila siku.
+
+Huwa anatengeneza pesa ngapi katika dola kila siku katika soko la wakulima: $ = 32 kila siku.
+nfe:  145
+avg nfe:  145.0
+====================
+
+Generating...:   1%|          | 1/100 [00:16<27:14, 16.51s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu
+nfe:  89
+avg nfe:  117.0
+====================
+
+Generating...:   2%|▏         | 2/100 [00:25<19:40, 12.04s/it]====================
+answer:  Jibu la Hatua:
+
+Kunjua kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa kutubwa kwa
+nfe:  89
+avg nfe:  107.66666666666667
+====================
+
+Generating...:   3%|▎         | 3/100 [00:35<17:50, 11.03s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+James anaamua kukumbia mbio 3 fupi mara 3 kwa wiki. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi. Anakimbia mita 60 kwa kila mbio fupi
+nfe:  120
+avg nfe:  110.75
+====================
+
+Generating...:   4%|▍         | 4/100 [00:48<19:12, 12.00s/it]====================
+answer:  Kupendo, huwapa kuku wake vikombe vingine 25 vya chakula katika mlo ya mwisho wa siku iwapo idadi ya kuku wa Wendi ni kuku 20.
+nfe:  59
+avg nfe:  100.4
+====================
+
+Generating...:   5%|▌         | 5/100 [00:56<16:33, 10.45s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Kylar aliwa kwa vioo 16, lakini kila vioo 16 x 60% = 9.6. Kila vioo 16 - 9.6 = 6.4, kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32. Kila vioo 6.4 x $5 = $32
+nfe:  125
+avg nfe:  104.5
+====================
+
+Generating...:   6%|▌         | 6/100 [01:11<18:48, 12.01s/it]====================
+answer:  Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu la kondoo ya Charleston katika Charleston. Jibu
+nfe:  94
+avg nfe:  103.0
+====================
+
+Generating...:   7%|▋         | 7/100 [01:21<17:25, 11.24s/it]====================
+answer:  Kibu la kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchukua kuchuk
+nfe:  87
+avg nfe:  101.0
+====================
+
+Generating...:   8%|▊         | 8/100 [01:30<16:20, 10.65s/it]====================
+answer:  Jibu la Hatua:
+
+John huendesha kwa saa 3 kwa kasi ya maili 60 kwa kila saa na kisha kugeuka kwa sababu anagundua kuwa amesahau kitu muhimu sana nyumbani. Anajaribu kurudi nyumbani kwa saa 4 lakini anatumia saa 2 za kwanza katika trafiki isiyosonga. Anatumia nusu saa inayofuata akiendesha kwa kasi ya maili 30 kwa kila saa, kabla ya kuweza kuendesha muda unaosalia kwa saa 4 katika kasi ya maili 80 kwa saa.
+
+Kutoka, kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka.
+nfe:  102
+avg nfe:  101.11111111111111
+====================
+
+Generating...:   9%|▉         | 9/100 [01:42<16:49, 11.10s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Eliza kila saa kwa saa 40 wiki na kila saa kwa saa 45 wiki. Kutokea kwa saa 45 wiki, kila saa kwa saa 45 wiki ni $10 x 45 = $450.
+
+Eliza alifanya kazi kila saa kwa saa 45 wiki, kila saa kwa saa 45 wiki ni $450.
+
+Eliza alifanya kazi kila saa kwa saa 45 wiki, kila saa kwa saa 45 wiki ni $450.
+
+Eliza alifanya kazi kila saa kwa saa 45 wiki, kila saa kwa saa 45 wiki ni $450.
+
+Eliza alifanya kazi kila saa kwa saa 45 wiki, kila saa kwa saa 45 wiki ni $450.
+
+Eliza alifanya kazi kila saa kwa saa 45 wiki, kila saa kwa saa 45 wiki ni $450.
+
+Eliza alifanya kazi kila saa kwa saa 45 wiki, kila saa kwa saa 45 wiki ni $450.
+
+Eliza alifanya kazi kila saa kwa saa 45 wiki, kila saa kwa saa 45 wiki ni $450.
+
+Eliza alifanya kazi kila saa kwa saa 45 wiki, kila saa kwa saa 45 wiki ni $450.
+
+Eliza alifanya kazi kila saa kwa saa 45 wiki, kila saa kwa saa 45 wiki ni $450.
+
+Eliza alifanya kazi kila saa kwa saa 45 wiki, kila saa kwa saa 45 wiki ni $450.
+
+Eliza alifanya kazi kila saa kwa saa 45 wiki, kila saa kwa saa 45 wiki ni $450.
+
+Eliza alifanya kazi kila saa kwa saa 45 wiki, kila saa kwa saa 45 wiki ni $450.
+
+Eliza alifanya kazi kila saa kwa saa 45 wiki, kila saa kwa saa 45 wiki ni $450.
+
+Eliza alifanya kazi kila saa kwa saa 45 wiki, kila saa kwa saa 45 wiki ni $450.
+
+Eliza alifanya kazi kila saa kwa saa 45 wiki, kila saa kwa saa 45 wiki ni $450.
+
+Eliza alifanya kazi kila saa kwa saa 45 wiki, kila saa kwa saa 45 wiki ni $450.
+
+Eliza alifanya kazi kila saa kwa saa 45 wiki, kila saa kwa saa 45 wiki ni $450.
+
+Eliza alifanya kazi kila saa kwa saa 45 wiki, kila saa kwa saa 45 wiki ni $450.
+
+Eliza alifanya kazi kila saa kwa saa 45 wiki, kila saa kwa saa 45 wiki ni $450.
+
+Eliza alifanya kazi kila saa kwa saa 45 wiki, kila saa kwa saa 45 wiki ni $450.
+
+Eliza alifanya kazi kila saa kwa saa 45 wiki, kila saa kwa saa 45 wiki ni $450.
+
+Eliza alifanya kazi kila saa kwa saa 45 wiki, kila saa kwa saa 45 wiki ni $450.
+
+Eliza alifanya kazi kila saa kwa saa 45 wiki, kila saa kwa saa 45 wiki ni $450.
+
+Nato, kila saa kwa saa 45 wiki ni $450.
+nfe:  190
+avg nfe:  110.0
+====================
+
+Generating...:  10%|█         | 10/100 [02:03<21:05, 14.06s/it]====================
+answer:  Programu mpya ilipakuliwa mara 60 mwezi wa kwanza. Idadi ya upakuaji katika mwezi wa pili ulikuwa mara tatu ya idadi ya upakuaji katika mwezi wa kwanza, lakini ikapungua kwa 30% katika mwezi wa tatu. Programu hiyo ilipakuliwa mara ngapi kwa jumla katika miezi hiyo mitatu?
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Programu mpya ilipakuliwa mara 60 mwezi wa kwanza. Idadi ya upakuaji katika mwezi wa pili ulikuwa mara tatu ya idadi ya upakuaji katika mwezi wa kwanza, lakini ikapungua kwa 30% katika mwezi wa tatu. Programu hiyo ilipakuliwa mara ngapi kwa jumla katika miezi hiyo mitatu?
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Programu mpya ilipakuliwa mara 60 mwezi wa kwanza. Idadi ya upakuaji katika mwezi wa pili ulikuwa mara tatu ya idadi ya upakuaji katika mwezi wa kwanza, lakini ikapungua kwa 30% katika mwezi wa tatu. Programu hiyo ilipakuliwa mara ngapi kwa jumla katika miezi hiyo mitatu?
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Programu mpya ilipakuliwa mara 60 mwezi wa kwanza. Idadi ya upakuaji katika mwezi wa pili ulikuwa mara tatu ya idadi ya upakuaji katika mwezi wa kwanza, lakini ikapungua kwa 30% katika mwezi wa tatu. Programu hiyo ilipakuliwa mara ngapi kwa jumla katika miezi hiyo mitatu?
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Programu mpya ilipakuliwa mara 60 mwezi wa kwanza. Idadi ya upakuaji katika mwezi wa pili ulikuwa mara tatu ya idadi ya upakuaji katika mwezi wa kwanza, lakini ikapungua kwa 30% katika mwezi wa tatu. Programu hiyo ilipakuliwa mara ngapi kwa jumla katika miezi hiyo mitatu?
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Programu mpya ilipakuliwa mara 60 mwezi wa kwanza. Idadi ya upakuaji katika mwezi wa pili ulikuwa mara tatu ya idadi ya upakuaji katika mwezi wa kwanza, lakini ikapungua kwa 30% katika mwezi wa tatu. Programu hiyo ilipakuliwa mara ngapi kwa jumla katika miezi hiyo mitatu?
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Programu mpya ilipakuliwa mara 60 mwezi wa kwanza. Idadi ya upakuaji katika mwezi wa pili ulikuwa mara tatu ya idadi ya upakuaji katika mwezi wa kwanza, lakini ikapungua kwa 30% katika mwezi wa tatu. Programu hiyo ilipakuliwa mara ngapi kwa jumla katika miezi hiyo mitatu?
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Programu mpya ilipakuliwa mara 60 mwezi wa kwanza. Idadi ya upakuaji katika mwezi wa pili ulikuwa mara tatu ya idadi ya upakuaji katika mwezi
+nfe:  113
+avg nfe:  110.27272727272727
+====================
+
+Generating...:  11%|█         | 11/100 [02:15<19:58, 13.46s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Jumla ya gharama ilikuwa kwa 3 dazeni za donati zinazogharimu $68 kwa kila dazeni:
+3 dazeni * $68/dazeni = $204
+
+Jumla ya gharama ilikuwa kwa 2 dazeni za keki ndogo zinazogharimu $80 kwa kila dazeni:
+2 dazeni * $80/dazeni = $160
+
+Jumla ya gharama ilikuwa kwa 6 dazeni za keki ndogo za jibini kwa $55 kwa kila dazeni:
+6 dazeni * $55/dazeni = $330
+
+Jumla ya gharama ilikuwa ngapi:
+$204 + $160 + $330 = $694
+nfe:  86
+avg nfe:  108.25
+====================
+
+Generating...:  12%|█▏        | 12/100 [02:26<18:34, 12.66s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+1. **Kila mwaka utagidza kwa mlimau:**
+   - Kila mwaka utazaa limau 7.
+   - Kila mwaka utagidza kwa mlimau = 7.
+
+2. **Kila mwaka utagidza kwa mlimau:**
+   - Kila mwaka utagidza kwa mlimau = Kila mwaka utagidza kwa mlimau * Kila mwaka utagidza kwa mlimau
+   - Kila mwaka utagidza kwa mlimau = 7 * $1.5 = $10.50.
+
+3. **Kila mwaka utagidza kila mwaka:**
+   - Kila mwaka utagidza kila mwaka = Kila mwaka utagidza kwa mlimau * Kila mwaka utagidza kila mwaka
+   - Kila mwaka utagidza kila mwaka = 7 * $3 = $21.
+
+4. **Kila mwaka utagidza kila mwaka:**
+   - Kila mwaka utagidza kila mwaka = Kila mwaka utagidza kwa mlimau + Kila mwaka utagidza kila mwaka
+   - Kila mwaka utagidza kila mwaka = $10.50 + $21 = $31.50.
+
+5. **Kila mwaka utagidza kila mwaka:**
+   - Kila mwaka utagidza kila mwaka = Kila mwaka utagidza kila mwaka - Kila mwaka utagidza kila mwaka
+   - Kila mwaka utagidza kila mwaka = $90 - $31.50 = $58.50.
+
+Ituamini, Kila mwaka utagidza kila mwaka ni $58.50.
+nfe:  245
+avg nfe:  118.76923076923077
+====================
+
+Generating...:  13%|█▎        | 13/100 [02:53<24:48, 17.10s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Melanie amesalia na visafishaji 5 vya kuvuta uchafu katika nyumba ya kijani.
+nfe:  61
+avg nfe:  114.64285714285714
+====================
+
+Generating...:  14%|█▍        | 14/100 [03:01<20:31, 14.31s/it]====================
+answer:  Kunjua ngapi ya wanafunzi wote walijisajili katika densi ya muziki wa kufoka, hivu kwa kutu mafikari:
+
+1. **Njua ngapi ya wanafunzi wote walijisajili katika densi ya kisasa:**
+   - 20% ya wanafunzi walijisajili katika densi ya kisasa.
+   - Ngapi ya wanafunzi wote walijisajili katika densi ya kisasa = 20% ya 20 = 0.20 * 20 = 4.
+
+2. **Njua ngapi ya wanafunzi wote walijisajili katika densi ya jazi:**
+   - 25% ya wanafilia walijisajili katika densi ya jazi.
+   - Ngapi ya wanafunzi wote walijisajili katika densi ya jazi = 25% ya 20 = 0.25 * 20 = 5.
+
+3. **Njua ngapi ya wanafunzi wote walijisajili katika densi ya muziki wa kufoka:**
+   - Wengine waliosalia wakajisajili katika densi ya muziki wa kufoka.
+   - Ngapi ya wanafunzi wote walijisajili katika densi ya muziki wa kufoka = 1.
+
+Kini, ngapi ya wanafunzi wote walijisajili katika densi ya muziki wa kufoka ni 1.
+nfe:  139
+avg nfe:  116.26666666666667
+====================
+
+Generating...:  15%|█▌        | 15/100 [03:17<21:06, 14.90s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+1. **Mapambo ya Kito:**
+   - Thamani: $5,000
+   - Mshauri ya kifedha: 2.5%
+   - Mshauri ya kifedha ya mapambo ya kito: $5,000 * 2.5% = $125
+   - Thamani ya mapambo ya kito kulika kifedha: $5,000 + $125 = $5,125
+
+2. **Vifaa vya Elektroniki:**
+   - Thamani: $8,000
+   - Mshauri ya kifedha: 1.2%
+   - Mshauri ya kifedha ya vifaa vya elektroniki: $8,000 * 1.2% = $96
+   - Thamani ya vifaa vya elektroniki kulika kifedha: $8,000 + $96 = $8,096
+
+3. **Faida ya Kiasi:**
+   - Faida ya kiasi: $5,125 + $8,096 = $13,221
+
+Hini, faida ya kiasi ni $13,221.
+nfe:  142
+avg nfe:  117.875
+====================
+
+Generating...:  16%|█▌        | 16/100 [03:34<21:37, 15.45s/it]====================
+answer:  Treni hizo mbili zilienda kwa siku hizo mbili ni 130.
+nfe:  51
+avg nfe:  113.94117647058823
+====================
+
+Generating...:  17%|█▋        | 17/100 [03:41<17:42, 12.81s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+1. Jill analipua $20 kila saa kufunza na $30 kuwa kocha wa mashabiki.
+2. Iwapo huwa anafanya kazi wiki 50 kwa mwaka, saa 35 kwa wiki kama mwalimu na saa 15 kama kocha.
+3. Jibuwa wake na mshahara wake wa kila mwaka ni $50.
+
+Mshahara wake wa kila mwaka ni $50.
+nfe:  101
+avg nfe:  113.22222222222223
+====================
+
+Generating...:  18%|█▊        | 18/100 [03:53<17:18, 12.66s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua: Claire huwa kwa kila 3 kila asubuhi wakati wa staftahi. Ni nini, kwa kila 4, Claire huwa kwa kila 4 asubuhi wakati wa staftahi.
+nfe:  94
+avg nfe:  112.21052631578948
+====================
+
+Generating...:  19%|█▉        | 19/100 [04:04<16:35, 12.30s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua: 12.
+nfe:  84
+avg nfe:  110.8
+====================
+
+Generating...:  20%|██        | 20/100 [04:13<14:54, 11.18s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Kita cha maji kwenye lita 24 zinazosha ni 10.
+nfe:  62
+avg nfe:  108.47619047619048
+====================
+
+Generating...:  21%|██        | 21/100 [04:21<13:27, 10.22s/it]====================
+answer:  Jibu la Hatua:
+
+1. Raymond alizaliwa miaka 6 kabla ya Samantha.
+2. Raymond alipata umri wa miaka 23.
+3. Samantha sasa ana umri wa miaka 31.
+
+Jibu la Hatua:
+
+1. Raymond alipata umri wa miaka 23.
+2. Samantha sasa ana umri wa miaka 31.
+
+Jibu la Hatua:
+
+1. Raymond alizaliwa miaka 6 kabla ya Samantha.
+2. Raymond alipata umri wa miaka 23.
+3. Samantha sasa ana umri wa miaka 31.
+
+Jibu la Hatua:
+
+1. Raymond alipata umri wa miaka 23.
+2. Samantha sasa ana umri wa miaka 31.
+
+Jibu la Hatua:
+
+1. Raymond alizaliwa miaka 6 kabla ya Samantha.
+2. Raymond alipata umri wa miaka 23.
+3. Samantha sasa ana umri wa miaka 31.
+
+Jibu la Hatua:
+
+1. Raymond alipata umri wa miaka 23.
+2. Samantha sasa ana umri wa miaka 31.
+
+Jibu la Hatua:
+
+1. Raymond alizaliwa miaka 6 kabla ya Samantha.
+2. Raymond alipata umri wa miaka 23.
+3. Samantha sasa ana umri wa miaka 31.
+
+Jibu la Hatua:
+
+1. Raymond alipata umri wa miaka 23.
+2. Samantha sasa ana umri wa miaka 31.
+
+Jibu la Hatua:
+
+1. Raymond alizaliwa miaka 6 kabla ya Samantha.
+2. Raymond alipata umri wa miaka 23.
+3. Samantha sasa ana umri wa miaka 31.
+
+Jibu la Hatua:
+
+1. Raymond alipata umri wa miaka 23.
+2. Samantha sasa ana umri wa miaka 31.
+
+Jibu la Hatua:
+
+1. Raymond alizaliwa miaka 6 kabla ya Samantha.
+2. Raymond alipata umri wa miaka 23.
+3. Samantha sasa ana umri wa miaka 31.
+
+Jibu la Hatua:
+
+1. Raymond alipata umri wa miaka 23.
+2. Samantha sasa ana umri wa miaka 31.
+
+Jibu la Hatua:
+
+1. Raymond alizaliwa miaka 6 kabla ya Samantha.
+2. Raymond alipata umri wa miaka 23.
+3. Samantha sasa ana umri wa miaka 31.
+
+Jibu la Hatua:
+
+1. Raymond alipata umri wa miaka 23.
+2. Samantha sasa ana umri wa miaka 31.
+
+Jibu la Hatua:
+
+1. Raymond alizaliwa miaka 6 kabla ya Samantha.
+2. Raymond alipata umri wa miaka 23.
+3. Samantha sasa ana umri wa miaka 31.
+
+Jibu la Hatua:
+
+1. Raymond alipata umri wa miaka 23.
+2. Samantha sasa ana umri wa miaka 31.
+
+Jibu la Hatua:
+
+1. Raymond alizaliwa miaka 6 kabla ya Samantha.
+2. Raymond alipata umri wa miaka 23.
+3. Samantha sasa ana umri wa miaka 31.
+
+Jibu la Hatua:
+
+1. Raymond alipata umri wa miaka 23.
+2. Samantha sasa ana umri wa miaka 31.
+
+Jibu la Hatua:
+
+1. Raymond alizaliwa miaka 6 kabla ya Samantha.
+2. Raymond alipata umri wa miaka 23.
+3. Samantha sasa ana umri wa miaka 31.
+
+Jibu la Hatua:
+
+1. Raymond alipata umri wa miaka 23.
+2. Samantha sasa ana umri wa miaka 31.
+
+Jibu la Hatua:
+
+1. Raymond alizaliwa miaka 6 kabla ya Samantha.
+2. Raymond alipata um
+nfe:  190
+avg nfe:  112.18181818181819
+====================
+
+Generating...:  22%|██▏       | 22/100 [04:40<16:39, 12.82s/it]====================
+answer:  Billy aliuza DVD kwa 5 Jumanne.
+nfe:  50
+avg nfe:  109.47826086956522
+====================
+
+Generating...:  23%|██▎       | 23/100 [04:46<13:55, 10.85s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Mshumaa utapotewa kwa sentimita 2 kila. Mshumaa utapungua kwa sentimita ngapi baada ya kuwaka kuanzia saa 7:00 mchana hadi saa 11:00 jioni.
+nfe:  82
+avg nfe:  108.33333333333333
+====================
+
+Generating...:  24%|██▍       | 24/100 [04:56<13:26, 10.61s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Bei asili ya kitabu hicho ilikuwa $14.63.
+nfe:  66
+avg nfe:  106.64
+====================
+
+Generating...:  25%|██▌       | 25/100 [05:04<12:20,  9.87s/it]====================
+answer:  Marie aliagiza maboksi mangapi ya pizza ikiwa kila boksi linagharimu $8.50.
+
+Jibu la Hatua kwa Hatua:
+
+1. **Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula, Chakula
+nfe:  105
+avg nfe:  106.57692307692308
+====================
+
+Generating...:  26%|██▌       | 26/100 [05:17<13:06, 10.63s/it]====================
+answer:  Mishka alinunua jozi 3 za kaptura, jozi 3 za suruali, na jozi 3 za viatu. Jozi moja ya kaptura ni $16.50, jozi moja ya suruali ni $22.50, na jozi moja ya viatu ni $42.
+
+Kunote alinunua, zote zote alinunua zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote zote
+nfe:  110
+avg nfe:  106.70370370370371
+====================
+
+Generating...:  27%|██▋       | 27/100 [05:29<13:31, 11.12s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+1. Hapunua kipande ya siku ya aiskrimu kwa kila katoni:
+   - Kipande ya siku ya aiskrimu kwa kila katoni = 15
+   - Bei ya siku kwa kila katoni = $4.00
+   - Kipande ya siku ya aiskrimu kwa kila katoni * Bei ya siku kwa kila katoni = 15 * $4.00 = $60.00
+
+2. Hapunua baada ya siku:
+   - Baada ya siku = 60
+
+3. Hapunua siku ya siku:
+   - Siku ya siku / Baada ya siku = $60.00 / 60 = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.00
+
+Siku ya siku = $1.
+nfe:  188
+avg nfe:  109.60714285714286
+====================
+
+Generating...:  28%|██▊       | 28/100 [05:50<17:00, 14.18s/it]====================
+answer:  Na maili ya kusimama mara ya kwanza na ya pili, Henry alisafiri maili ya kusimama mara ya kwanza baada ya maili 20 na kusimama mara ya pili baada ya maili 15.
+nfe:  81
+avg nfe:  108.62068965517241
+====================
+
+Generating...:  29%|██▉       | 29/100 [06:00<15:23, 13.00s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua: $11.
+nfe:  86
+avg nfe:  107.86666666666666
+====================
+
+Generating...:  30%|███       | 30/100 [06:09<13:43, 11.77s/it]====================
+answer:  Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua: 
+
+Jibu la Hatua kwa Hatua:
+Jibu la Hatua kwa Hatua:
+nfe:  100
+avg nfe:  107.61290322580645
+====================
+
+Generating...:  31%|███       | 31/100 [06:19<12:51, 11.18s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+1.  Mmoja anasema 80 zaidi.
+2.  Mwingine anasema 20 zaidi ya nusu ya ile wa kwanza alisema.
+3.  Wa tatu anasema 25% zaidi ya wa kwanza.
+
+Kubu: Mmoja anasema 80 zaidi, Mwingine anasema 20 zaidi, Wa tatu anasema 25% nema zaidi ya wa kwanza.
+
+Kubwa: Mmoja anasema 80 zaidi, Mwingine anasema 20 zaidi, Wa tatu anasema 25% nema zaidi ya wa kwanza.
+
+Kubwa: Mmoja anasema 80 zaidi, Mwingine anasema 20 zaidi, Wa tatu anasema 25% nema zaidi ya wa kwanza.
+
+Kubwa: Mmoja anasema 80 zaidi, Mwingine anasema 20 zaidi, Wa tatu anasema 25% nema zaidi ya wa kwanza.
+
+Kubwa: Mmoja anasema 80 zaidi, Mwingine anasema 20 zaidi, Wa tatu anasema 25% nema zaidi ya wa kwanza.
+
+Kubwa: Mmoja anasema 80 zaidi, Mwingine anasema 20 zaidi, Wa tatu anasema 25% nema zaidi ya wa kwanza.
+
+Kubwa: Mmoja anasema 80 zaidi, Mwingine anasema 20 zaidi, Wa tatu anasema 25% nema zaidi ya wa kwanza.
+
+Kubwa: Mmoja anasema 80 zaidi, Mwingine anasema 20 zaidi, Wa tatu anasema 25% nema zaidi ya wa kwanza.
+
+Kubwa: Mmoja anasema 80 zaidi, Mwingine anasema 20 zaidi, Wa tatu anasema 25% nema zaidi ya wa kwanza.
+
+Kubwa: Mmoja anasema 80 zaidi, Mwingine anasema 20 zaidi, Wa tatu anasema 25% nema zaidi ya wa kwanza.
+
+Kubwa: Mmoja anasema 80 zaidi, Mwingine anasema 20 zaidi, Wa tatu anasema 25% nema zaidi ya wa kwanza.
+
+Kubwa: Mmoja anasema 80 zaidi, Mwingine anasema 20 zaidi, Wa tatu anasema 25% nema zaidi ya wa kwanza.
+
+Kubwa: Mmoja anasema 80 zaidi, Mwingine anasema 20 zaidi, Wa tatu anasema 25% nema zaidi ya wa kwanza.
+
+Kubwa: Mmoja anasema 80 zaidi, Mwingine anasema 20 zaidi, Wa tatu anasema 25% nema zaidi ya wa kwanza.
+
+Kubwa: Mmoja anasema 80 zaidi, Mwingine anasema 20 zaidi, Wa tatu anasema 25% nema zaidi ya wa kwanza.
+
+Kubwa: Mmoja anasema 80 zaidi, Mwingine anasema 20 zaidi, Wa tatu anasema 25% nema zaidi ya wa kwanza.
+
+Kubwa: Mmoja anasema 80 zaidi, Mwingine anasema 20 zaidi, Wa tatu anasema 25% nema zaidi ya wa kwanza.
+
+Kubwa: Mmoja anasema 80 zaidi, Mwingine anasema 20 zaidi, Wa tatu anasema 2
+nfe:  148
+avg nfe:  108.875
+====================
+
+Generating...:  32%|███▏      | 32/100 [06:36<14:33, 12.85s/it]====================
+answer:  Jibu la Hatua kwa Hatua: 
+
+John hutunza mbwa 10. Saiku kila kila saiku kila saiku .5 kwa .5 kwa siku kutembeza na kushughulikia. Saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila saiku kila
+nfe:  102
+avg nfe:  108.66666666666667
+====================
+
+Generating...:  33%|███▎      | 33/100 [06:48<14:05, 12.61s/it]====================
+answer:  Gretchen ana sarafu 110. Kuna sarafu 30 za dhahabu zaidi ya sarafu za fedha. Gretchen ana sarafu ngapi za dhahabu?
+
+Jibu la Hatua:
+Gretchen ana sarafu 110 za dhahabu.
+nfe:  67
+avg nfe:  107.44117647058823
+====================
+
+Generating...:  34%|███▍      | 34/100 [06:56<12:25, 11.29s/it]====================
+answer:  Jibu la Hatua: Siobhan ana vito 2 chache zaidi ya vya Aaron. Aaron ana vito 5 zaidi ya nusu ya vito vya Raymond. Ikiwa Raymond ana vito 40, kuma Aaron ana vito 40 - 5 = 35. Siobhan ana vito 2 chache zaidi ya vya Aaron, kubwa Siobhan ana vito 35 x 2 = 70.
+nfe:  88
+avg nfe:  106.88571428571429
+====================
+
+Generating...:  35%|███▌      | 35/100 [07:07<12:03, 11.13s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua: 14.
+nfe:  89
+avg nfe:  106.38888888888889
+====================
+
+Generating...:  36%|███▌      | 36/100 [07:16<11:09, 10.46s/it]====================
+answer:  Kununua pesa kwa kununua maziwa ya mtindi kwa kipindi cha siku 30, hupuwa kwa mwisho kwa kuna ofa ya maziwa 4 ya mtindi kwa $5.00. Hupo Terry hukunywa maziwa 2 ya mtindi, kupuwa kwa kuna ofa ya maziwa 4 ya mtindi kwa $5.00. Hupo Terry hukunywa maziwa 2 ya mtindi, kupuwa kwa kuna ofa ya maziwa 4 ya mtindi kwa $5.00. Hupo Terry hukunywa maziwa 2 ya mtindi, kupuwa kwa kuna ofa ya maziwa 4 ya mtindi kwa $5.00. Hupo Terry hukunywa maziwa 2 ya mtindi, kupuwa kwa kuna ofa ya maziwa 4 ya mtindi kwa $5.00. Hupo Terry hukunywa maziwa 2 ya mtindi, kupuwa kwa kuna ofa ya maziwa 4 ya mtindi kwa $5.00. Hupo Terry hukunywa maziwa 2 ya mtindi, kupuwa kwa kuna ofa ya maziwa 4 ya mtindi kwa $5.00. Hupo Terry hukunywa maziwa 2 ya mtindi, kupuwa kwa kuna ofa ya maziwa 4 ya mtindi kwa $5.00. Hupo Terry hukunywa maziwa 2 ya mtindi, kupuwa kwa kuna ofa ya maziwa 4 ya mtindi kwa $5.00. Hupo Terry hukunywa maziwa 2 ya mtindi, kupuwa kwa kuna ofa ya maziwa 4 ya mtindi kwa $5.00. Hupo Terry hukunywa maziwa 2 ya mtindi, kupuwa kwa kuna ofa ya maziwa 4 ya mtindi kwa $5.00. Hupo Terry hukunywa maziwa 2 ya mtindi, kupuwa kwa kuna ofa ya maziwa 4 ya mtindi kwa $5.00. Hupo Terry hukunywa maziwa 2 ya mtindi, kupuwa kwa kuna ofa ya maziwa 4 ya mtindi kwa $5.00. Hupo Terry hukunywa maziwa 2 ya mtindi, kupuwa kwa kuna ofa ya maziwa 4 ya mtindi kwa $5.00. Hupo Terry hukunywa maziwa 2 ya mtindi, kupuwa kwa kuna ofa ya maziwa 4 ya mtindi kwa $5.00. Hupo Terry hukunywa maziwa 2 ya mtindi, kupuwa kwa kuna ofa ya maziwa 4 ya mtindi kwa $5.00. Hupo Terry hukunywa maziwa 2 ya mtindi, kupuwa kwa kuna ofa ya maziwa 4 ya mtindi kwa $5.00. Hupo Terry hukunywa maziwa 2 ya mtindi, kupuwa kwa kuna ofa ya maziwa 4 ya mtindi kwa $5.00. Hupo Terry hukunywa maziwa 2 ya mtindi, kupuwa kwa kuna ofa ya maziwa 4 ya mtindi kwa $5.00. Hupo Terry hukunywa maziwa 2 ya mtindi, kupuwa kwa kuna ofa ya maziwa 4 ya mtindi kwa $5.00. Hupo Terry hukunywa maziwa 2 ya mtindi, kupuwa kwa kuna ofa ya maziwa 4 ya mtindi kwa $5.00. Hupo Terry hukunywa maziwa 2 ya mtindi, kupuwa kwa kuna ofa ya maziwa 4 ya mtindi kwa $5.00. Hupo Terry hukunywa maziwa 2 ya mt
+nfe:  169
+avg nfe:  108.08108108108108
+====================
+
+Generating...:  37%|███▋      | 37/100 [07:35<13:35, 12.95s/it]====================
+answer:  Jibu la Hatua:
+
+John ana seti 13 za lego na ana kutubwa kwa $15 kwa kila seti. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusia na $5. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusia na $5. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusia na $5. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusia na $5. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusia na $5. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusia na $5. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusia na $5. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusia na $5. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusia na $5. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusia na $5. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusia na $5. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusia na $5. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusia na $5. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusia na $5. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusia na $5. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusia na $5. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusia na $5. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusia na $5. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusia na $5. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusia na $5. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusia na $5. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusia na $5. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusia na $5. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusia na $5. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusia na $5. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusia na $5. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusia na $5. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusia na $5. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusia na $5. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusia na $5. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na $
+nfe:  157
+avg nfe:  109.36842105263158
+====================
+
+Generating...:  38%|███▊      | 38/100 [07:52<14:39, 14.19s/it]====================
+answer:  Huwa anakimbia kwa 3 wiki.
+nfe:  48
+avg nfe:  107.7948717948718
+====================
+
+Generating...:  39%|███▉      | 39/100 [07:58<11:55, 11.73s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Kututhi kwa kututhi, anaweza kukimbia kwa kiwango cha kasi ambayo ni mara nne zaidi ya anavyoweza kutembea, lakini anaweza kuruka kwa kiwango cha kasi ambayo ni nusu ya kasi yake ya kukimbia. Iwapo anaweza kuruka maili 3 kwa saa, anaweza kusafiri maili ngapi kwa saa sita iwapo anatumia theluthi moja ya saa kukimbia na theluthi mbili ya saa kutembea.
+nfe:  92
+avg nfe:  107.4
+====================
+
+Generating...:  40%|████      | 40/100 [08:09<11:41, 11.70s/it]====================
+answer:  iPhone ya Brandon imekaa kwa mwaka 2. Jibu:
+
+1. iPhone ya Suzy imekaa kwa mwaka 1.
+2. iPhone ya Brandon ni ya zamani mara nne zaidi ya iPhone ya Ben.
+3. iPhone ya Ben ni ya zamani mara mbili zaidi ya iPhone ya Suzy.
+
+Nihuso, kwa kisho kwa kisho iPhone ya Suzy imekaa kwa mwaka 1, iPhone ya Ben imekaa kwa mwaka 2. Iwapo iPhone ya Brandon ni ya zamani mara nne zaidi ya iPhone ya Ben, iPhone ya Brandon imekaa kwa mwaka 2.
+nfe:  112
+avg nfe:  107.51219512195122
+====================
+
+Generating...:  41%|████      | 41/100 [08:23<12:02, 12.25s/it]====================
+answer:  Polly alimeza kutupa mkuki wa dhahabu kwa umbali wa futi 400.
+nfe:  56
+avg nfe:  106.28571428571429
+====================
+
+Generating...:  42%|████▏     | 42/100 [08:31<10:31, 10.88s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Bibiye Jones alioka keki 5 za kufaha kwa ajini ya chamcha ya afisa wa kuzima moto. Alikata kila keki kwa vipande 8 na kupanga keki tano kwenye meza ya chakula cha kujipakulia ili wageni waweze kujipakulia. Mwishoni mwa jioni, baada ya wageni kuchukua na kula vipande vyao vya keki, kulikuwa na vipande 14 vya keki ambavyo vilikuwa vimesalia.
+
+Wageni walikula vipande vingapi.
+nfe:  88
+avg nfe:  105.86046511627907
+====================
+
+Generating...:  43%|████▎     | 43/100 [08:42<10:24, 10.95s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+1. **Kilimo ya mfuko ya chipsi:**
+   - MFuko ya chipsi una kalori 250 kwa kila sehemu iliyopakuliwa.
+   - Iwapo mfuko wa gramu 300 una sehemu 5 za kupakuliwa.
+
+2. **Kilimo ya mfuko ya chipsi:**
+   - Kilimo ya mfuko ya chipsi = 250 kalori / 5 kilo = 50 kalori / kilo.
+
+3. **Kilimo ya mfuko ya chipsi na iwapo:**
+   - Kilimo ya mfuko ya chipsi = 50 kalori / kilo.
+   - Kilimo ya mfuko ya chipsi = 50 kalori / kilo.
+
+4. **Kilimo ya mfuko ya chipsi na iwapo:**
+   - Kilimo ya mfuko ya chipsi na iwapo = 50 kalori / kilo + 50 kalori / kilo = 100 kalori / kilo.
+
+5. **Kilimo ya mfuko ya chipsi na iwapo:**
+   - Kilimo ya mfuko ya chipsi na iwapo = 100 kalori / kilo.
+
+6. **Kilimo ya mfuko ya chipsi na iwapo:**
+   - Kilimo ya mfuko ya chipsi na iwapo = 100 kalori / kilo.
+
+7. **Kilimo ya mfuko ya chipsi na iwapo:**
+   - Kilimo ya mfuko ya chipsi na iwapo = 100 kalori / kilo.
+
+8. **Kilimo ya mfuko ya chipsi na iwapo:**
+   - Kilimo ya mfuko ya chipsi na iwapo = 100 kalori / kilo.
+
+9. **Kilimo ya mfuko ya chipsi na iwapo:**
+   - Kilimo ya mfuko ya chipsi na iwapo = 100 kalori / kilo.
+
+10. **Kilimo ya mfuko ya chipsi na iwapo:**
+    - Kilimo ya mfuko ya chipsi na iwapo = 100 kalori / kilo.
+
+11. **Kilimo ya mfuko ya chipsi na iwapo:**
+    - Kilimo ya mfuko ya chipsi na iwapo = 100 kalori / kilo.
+
+12. **Kilimo ya mfuko ya chipsi na iwapo:**
+    - Kilimo ya mfuko ya chipsi na iwapo = 100 kalori / kilo.
+
+13. **Kilimo ya mfuko ya chipsi na iwapo:**
+    - Kilimo ya mfuko ya chipsi na iwapo = 100 kalori / kilo.
+
+14. **Kilimo ya mfuko ya chipsi na iwapo:**
+    - Kilimo ya mfuko ya chipsi na iwapo = 100 kalori / kilo.
+
+15. **Kilimo ya mfuko ya chipsi na iwapo:**
+    - Kilimo ya mfuko ya chipsi na iwapo = 100 kalori / kilo.
+
+16. **Kilimo ya mfuko ya chipsi na iwapo:**
+    - Kilimo ya mfuko ya chipsi na iwapo = 100 kalori / kilo.
+
+17. **Kilimo ya mfuko ya chipsi na iwapo:**
+    - Kilimo ya mfuko ya chipsi na iwapo = 100 kalori / kilo.
+
+18. **Kilimo ya mfuko ya chipsi na iwapo:**
+    - Kilimo ya mfuko ya chipsi na iwapo = 100 kalori / kilo.
+
+19. **Kilimo ya mfuko ya chipsi na iwapo:**
+    - Kilimo ya mfuko ya chipsi na iwapo = 100 kalori / kilo.
+
+20. **Kilimo ya mfuko ya chipsi na iwapo:**
+    - Kilimo ya mfuko ya chipsi na iwapo = 100 kalori / kilo.
+
+21. **Kilimo ya mfuko ya chipsi na iwapo:**
+    - Kilimo ya mfuko ya chipsi na iwapo =
+nfe:  251
+avg nfe:  109.1590909090909
+====================
+
+Generating...:  44%|████▍     | 44/100 [09:08<14:38, 15.69s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua: 10.
+nfe:  85
+avg nfe:  108.62222222222222
+====================
+
+Generating...:  45%|████▌     | 45/100 [09:17<12:31, 13.66s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+1. Aliandika makala 5 Jumatatu.
+2. Aliandika makala mara 2/5 zaidi siku ya Jumatatu.
+3. Aliandika makala mara mbili ya zaidi ya aliyoandika Jumanne.
+
+Aliandika makala mara 2/5 zaidi siku ya Jumatatu, kini aliandika makala 2/5 * 5 = 2 Jumatatu.
+
+Aliandika makala mara mbili ya zaidi ya aliyoandika Jumanne, kini aliandika makala 5 - 2 = 3 Jumatatu.
+
+Aliandika makala 3 Jumatatu katika siku hizo tatu.
+nfe:  134
+avg nfe:  109.17391304347827
+====================
+
+Generating...:  46%|████▌     | 46/100 [09:34<13:05, 14.55s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua: 57.
+nfe:  85
+avg nfe:  108.65957446808511
+====================
+
+Generating...:  47%|████▋     | 47/100 [09:43<11:20, 12.84s/it]====================
+answer:  Alitumia $200 kununua tai za buluu. Bei ya tai nyekundu ni 50% zaidi ya bei ya tai za buluu, nini, bei ya tai nyekundu ni 50% ya $200, jina $100. Alitumia $100 kununua tai nyekundu. Amba, alitumia $40 kila moja, nini, alitumia $100 + $40 = $140 kununua tai.
+nfe:  108
+avg nfe:  108.64583333333333
+====================
+
+Generating...:  48%|████▊     | 48/100 [09:56<11:12, 12.93s/it]====================
+answer:  Jibu la Hatua kwa Hatua: 
+
+Alipata vipande vingapi.
+nfe:  56
+avg nfe:  107.57142857142857
+====================
+
+Generating...:  49%|████▉     | 49/100 [10:03<09:27, 11.14s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Jumini, idini ya hilo kwa jumini ya idini ya jengo la ghorofa ni 15. Idini ya hilo ni 3/4 ya idini ya ghorofa, idini ya hilo ni 3/4 * 15 = 11.25. Idini ya hilo ni 1/4 ya idini ya ghorofa, idini ya hilo ni 1/4 * 15 = 3.75. Idini ya hilo ni 1/4 ya idini ya ghorofa, idini ya hilo ni 1/4 * 15 = 3.75. Idini ya hilo ni 1/4 ya idini ya ghorofa, idini ya hilo ni 1/4 * 15 = 3.75. Idini ya hilo ni 1/4 ya idini ya ghorofa, idini ya hilo ni 1/4 * 15 = 3.75. Idini ya hilo ni 1/4 ya idini ya ghorofa, idini ya hilo ni 1/4 * 15 = 3.75. Idini ya hilo ni 1/4 ya idini ya ghorofa, idini ya hilo ni 1/4 * 15 = 3.75. Idini ya hilo ni 1/4 ya idini ya ghorofa, idini ya hilo ni 1/4 * 15 = 3.75. Idini ya hilo ni 1/4 ya idini ya ghorofa, idini ya hilo ni 1/4 * 15 = 3.75. Idini ya hilo ni 1/4 ya idini ya ghorofa, idini ya hilo ni 1/4 * 15 = 3.75. Idini ya hilo ni 1/4 ya idini ya ghorofa, idini ya hilo ni 1/4 * 15 = 3.75. Idini ya hilo ni 1/4 ya idini ya ghorofa, idini ya hilo ni 1/4 * 15 = 3.75. Idini ya hilo ni 1/4 ya idini ya ghorofa, idini ya hilo ni 1/4 * 15 = 3.75. Idini ya hilo ni 1/4 ya idini ya ghorofa, idini ya hilo ni 1/4 * 15 = 3.75. Idini ya hilo ni 1/4 ya idini ya ghorofa, idini ya hilo ni 1/4 * 15 = 3.75. Idini ya hilo ni 1/4 ya idini ya ghorofa, idini ya hilo ni 1/4 * 15 = 3.75. Idini ya hilo ni 1/4 ya idini ya ghorofa, idini ya hilo ni 1/4 * 15 = 3.75. Idini ya hilo ni 1/4 ya idini ya ghorofa, idini ya hilo ni 1/4 * 15 = 3.75. Idini ya hilo ni 1/4 ya idini ya ghorofa, idini ya hilo ni 1/4 * 15 = 3.75. Idini ya hilo ni 1/4 ya idini ya ghorofa, idini ya hilo ni 1/4 * 15 = 3.75. Idini ya hilo ni 1/4 ya idini ya ghorofa, idini ya hilo ni 1/4 * 15 = 3.75. Idini ya hilo ni 1/4 ya idini ya ghorofa, idini ya hilo ni 1/4 * 15 = 3.75. Idini ya hilo ni 1/4 ya idini ya ghorofa, idini ya hilo ni 1/4 * 15 = 3.75. Idini ya hilo ni 1/4 ya idini ya ghorofa, idini ya hilo ni 1/4 * 15 = 3.75. Idini ya hilo ni 1/4 ya idini ya ghorofa,
+nfe:  159
+avg nfe:  108.6
+====================
+
+Generating...:  50%|█████     | 50/100 [10:21<11:02, 13.24s/it]====================
+answer:  Lloyd hupata pesa kwa mayai siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku siku.
+nfe:  75
+avg nfe:  107.94117647058823
+====================
+
+Generating...:  51%|█████     | 51/100 [10:30<09:42, 11.88s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+1. Anasafiri kuanzia kwa kasi ya maili 10 kwa saa:
+   - Anasafiri kuanzia saa 7 mchana hadi saa 10 jioni.
+   - Anasafiri kuanzia kwa kasi ya maili 10 kwa saa = 10 jioni - 7 mchana = 3 jioni.
+
+2. Anasafiri akirudi kwa kasi ya maili 6 kwa saa:
+   - Anasafiri akirudi kwa kasi ya maili 6 kwa saa = 3 jioni - 0 mchana = 3 jioni.
+
+Kiswa: 3 jioni.
+nfe:  137
+avg nfe:  108.5
+====================
+
+Generating...:  52%|█████▏    | 52/100 [10:46<10:36, 13.27s/it]====================
+answer:  Anahitaji kuondoa wanasesere wangapi.
+nfe:  51
+avg nfe:  107.41509433962264
+====================
+
+Generating...:  53%|█████▎    | 53/100 [10:53<08:50, 11.29s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Makanika huyo alikarabati tairin 6 za lori na tairi 4 za gari. Ijumaa, makanika huyo alikarabati tairi 12 za gari na hakukarabati tairi zozote za lori.
+
+1. **Kila ya Tairi za Lori:**
+   - Makanika huyo alikarabati tairin 6 za lori.
+   - Kila tairi za lori ambayo imekarabatiwa, makanika atatoza $60.
+   - Kila tairi za lori ambayo imekarabatiwa, makanika atatoza $60 * 6 = $360.
+
+2. **Kila ya Tairi za Gari:**
+   - Makanika huyo alikarabati tairin 4 za gari.
+   - Kila tairi ya gari ambayo imekarabatiwa, makanika atatoza $40.
+   - Kila tairi ya gari ambayo imekarabatiwa, makanika atatoza $40 * 4 = $160.
+
+3. **Kila ya Tairi za Gari:**
+   - Makanika huyo alikarabati tairin 12 za gari.
+   - Kila tairi ya gari ambayo imekarabatiwa, makanika atatoza $40.
+   - Kila tairi ya gari ambayo imekarabatiwa, makanika atatoza $40 * 12 = $480.
+
+4. **Kila ya Tairi za Lori:**
+   - Makanika huyo alikarabati tairin zozote za lori.
+   - Kila tairi za lori ambayo imekarabatiwa, makanika atatoza $60.
+   - Kila tairi za lori ambayo imekarabatiwa, makanika atatoza $60 * zozote = $60 * zozote.
+
+Makanika huyo alipata siku ambayo alipata mapato zaidi ambayo alipata siku ambayo alipata mapato mengi zaidi ni $360 + $160 + $480 + $60 * zozote.
+
+Jibu la Hatua:
+Makanika huyo alipata siku ambayo alipata mapato zaidi ni $1000 + $60 * zozote.
+nfe:  220
+avg nfe:  109.5
+====================
+
+Generating...:  54%|█████▍    | 54/100 [11:16<11:17, 14.73s/it]====================
+answer:  Familia ya Doubtfire sasa na watoto wangapi wa paka, kutoka na watoto wa paka, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza, watoto wa kwanza
+nfe:  107
+avg nfe:  109.45454545454545
+====================
+
+Generating...:  55%|█████▌    | 55/100 [11:28<10:33, 14.07s/it]====================
+answer:  Jibu la Hatua: 
+
+1. Jean ana pipi 30.
+2. Jean anakula pipi 2 kati ya pipi hizo.
+3. Jean anataka kuweka pipi 2 kwenye mfuko moja.
+
+Kwa pipi zilizosalia, Jean ana pipi 30 - 2 = 28.
+
+Kwa pipi zilizosalia, Jean anataka kuweka pipi 2 kwenye mfuko moja, wakini Jean ana pipi 28 - 2 = 26.
+
+Jean anaweza 26 mifuko mingapi.
+nfe:  112
+avg nfe:  109.5
+====================
+
+Generating...:  56%|█████▌    | 56/100 [11:42<10:11, 13.91s/it]====================
+answer:  Jibu la Hatua kwa Hatua: Pete anapanga kwenda kwenye filamu. Kila mara huwa anapata tikiti ya $7 na bisi ya $7. Iwapo ana dola 42 za kutumia kwa wiki, Pete anapanga kwenda kwenye filamu.
+nfe:  87
+avg nfe:  109.10526315789474
+====================
+
+Generating...:  57%|█████▋    | 57/100 [11:52<09:15, 12.93s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+1. Daraja la mbao lilina kubu pauni 5000.
+2. Lori la uwasilishaji lililojaa na maboksi yanayofanana, kila boksi likiwa na uzani wa pauni 15, litapita juu ya daraja hilo.
+3. Jumla ya uzani wa dereva na lori tupu ni pauni 3755.
+
+Hadi ya juu zaidi ya maboksi yanayoweza kupakiwa kwenye lori bila kuzidi kikomo cha uzani wa daraja hilo ni pauni 3755.
+nfe:  102
+avg nfe:  108.98275862068965
+====================
+
+Generating...:  58%|█████▊    | 58/100 [12:05<09:01, 12.88s/it]====================
+answer:  Bei ya mwisho ya mboga ya Stephen ilikuwa $40.00.
+
+Kupunza kuhusubisha kuwasilisha muzaji wa kuwasilisha bidhaa, walitoza ada ya 25% kwenye jumla ya mwisho na kumtoza $3.00 kama ada ya uwasilishaji.
+
+Jumla ya mwisho ya mboga na ada ya uwasilishaji = $40.00 - $3.00 = $37.00
+
+Jumla ya mwisho ya mboga na ada ya uwasilishaji = $37.00 * 25/100 = $9.25
+
+Jumla ya mwisho ya mboga na ada ya uwasilishaji = $37.00 - $9.25 = $27.75
+
+Kupunjisha kubioza $4.00 ya bahshishi.
+
+Jumla ya mwisho ya mboga na bahshishi = $27.75 - $4.00 = $23.75
+
+Baada ya ada za baada, bei ya mwisho ya mboga ya Stephen ilikuwa $23.75.
+nfe:  191
+avg nfe:  110.37288135593221
+====================
+
+Generating...:  59%|█████▉    | 59/100 [12:28<10:48, 15.82s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Kichaka cha rasiberi kina matunda 6 yenye matunda 20 kwa kila kundi na matunda 67 yametapakaa moja moja kwenye kichaka hicho. Kichaka hicho kwa matunda 67, matunda 6 kwa matunda 20, na matunda 6 kwa matunda 20.
+
+Kichaka hicho kina matunda 67, matunda 6 kwa matunda 20, na matunda 6 kwa matunda 20.
+
+Kichaka hicho kina matunda 67, matunda 6 kwa matunda 20, na matunda 6 kwa matunda 20.
+
+Kichaka hicho kina matunda 67, matunda 6 kwa matunda 20, na matunda 6 kwa matunda 20.
+
+Kichaka hicho kina matunda 67, matunda 6 kwa matunda 20, na matunda 6 kwa matunda 20.
+
+Kichaka hicho kina matunda 67, matunda 6 kwa matunda 20, na matunda 6 kwa matunda 20.
+
+Kichaka hicho kina matunda 67, matunda 6 kwa matunda 20, na matunda 6 kwa matunda 20.
+
+Kichaka hicho kina matunda 67, matunda 6 kwa matunda 20, na matunda 6 kwa matunda 20.
+
+Kichaka hicho kina matunda 67, matunda 6 kwa matunda 20, na matunda 6 kwa matunda 20.
+
+Kichaka hicho kina matunda 67, matunda 6 kwa matunda 20, na matunda 6 kwa matunda 20.
+
+Kichaka hicho kina matunda 67, matunda 6 kwa matunda 20, na matunda 6 kwa matunda 20.
+
+Kichaka hicho kina matunda 67, matunda 6 kwa matunda 20, na matunda 6 kwa matunda 20.
+
+Kichaka hicho kina matunda 67, matunda 6 kwa matunda 20, na matunda 6 kwa matunda 20.
+
+Kichaka hicho kina matunda 67, matunda 6 kwa matunda 20, na matunda 6 kwa matunda 20.
+
+Kichaka hicho kina matunda 67, matunda 6 kwa matunda 20, na matunda 6 kwa matunda 20.
+
+Kichaka hicho kina matunda 67, matunda 6 kwa matunda 20, na matunda 6 kwa matunda 20.
+
+Kichaka hicho kina matunda 67, matunda 6 kwa matunda 20, na matunda 6 kwa matunda 20.
+
+Kichaka hicho kina matunda 67, matunda 6 kwa matunda 20, na matunda 6 kwa matunda 20.
+
+Kichaka hicho kina matunda 67, matunda 6 kwa matunda 20, na matunda 6 kwa matunda 20.
+
+Kichaka hicho kina matunda 67, matunda 6 kwa matunda 20, na matunda 6 kwa matunda 20.
+
+Kichaka hicho kina matunda 67, matunda 6 kwa matunda 20, na matunda 6 kwa matunda 20.
+
+Kichaka hicho kina matunda 67, matunda 6 kwa matunda 20, na matunda 6 kwa matunda 20.
+
+Kichaka hicho kina matunda 67, matunda 6 kwa matunda 20, na matunda 6 kwa matunda 20.
+
+Kichaka hicho kina matunda 67, matunda 6 kwa matunda 20, na matunda 6 kwa matunda 20.
+nfe:  168
+avg nfe:  111.33333333333333
+====================
+
+Generating...:  60%|██████    | 60/100 [12:47<11:09, 16.74s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+12
+nfe:  91
+avg nfe:  111.0
+====================
+
+Generating...:  61%|██████    | 61/100 [12:56<09:25, 14.50s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+1. Hapua kitu ya kitu ya mtengeneza:
+   - Kitambaa cha kuitengeneza: $500
+   - Nyingine ya mtengeneza vito wa kuitengeneza: $800
+   - Kitu ya kitu ya mtengeneza: $500 + $800 = $1300
+
+2. Hapua kitu ya kitu ya mtengeneza:
+   - Kitu ya kitu ya mtengeneza: $1300
+   - Hapua 10% ya kitu ya kitu ya mtengeneza: 10% of $1300 = 0.10 * $1300 = $130
+
+3. Hapua kitu ya kitu ya mtengeneza:
+   - Kitu ya kitu ya mtengeneza: $1300
+   - Hapua 10% ya kitu ya kitu ya mtengeneza: $130
+   - Kitu ya kitu ya mtengeneza: $1300 - $130 = $1170
+
+Jibu: Janet analipa $1170 kwa jumla.
+nfe:  145
+avg nfe:  111.54838709677419
+====================
+
+Generating...:  62%|██████▏   | 62/100 [13:13<09:38, 15.22s/it]====================
+answer:  Akifikia malipo yake ya uzeeni ya kila mwaka akifikia akifikia malipo ya uzeeni ya kila mwaka akifikia haki ya kupata ya kupata, akifikia haki ya kupata ya kupata akifikia malipo ya uzeeni ya kila mwaka akifikia haki ya kupata ya kupata, akifikia haki ya kupata ya kupata akifikia malipo ya uzeeni ya kila mwaka akifikia haki ya kupata ya kupata, akifikia haki ya kupata ya kupata akifikia malipo ya uzeeni ya kila mwaka akifikia haki ya kupata ya kupata, akifikia haki ya kupata ya kupata akifikia malipo ya uzeeni ya kila mwaka akifikia haki ya kupata ya kupata, akifikia haki ya kupata ya kupata akifikia malipo ya uzeeni ya kila mwaka akifikia haki ya kupata ya kupata, akifikia haki ya kupata ya kupata akifikia malipo ya uzeeni ya kila mwaka akifikia haki ya kupata ya kupata, akifikia haki ya kupata ya kupata akifikia malipo ya uzeeni ya kila mwaka akifikia haki ya kupata ya kupata, akifikia haki ya kupata ya kupata akifikia malipo ya uzeeni ya kila mwaka akifikia haki ya kupata ya kupata, akifikia haki ya kupata ya kupata akifikia malipo ya uzeeni ya kila mwaka akifikia haki ya kupata ya kupata, akifikia haki ya kupata ya kupata akifikia malipo ya uzeeni ya kila mwaka akifikia haki ya kupata ya kupata, akifikia haki ya kupata ya kupata akifikia malipo ya uzeeni ya kila mwaka akifikia haki ya kupata ya kupata, akifikia haki ya kupata ya kupata akifikia malipo ya uzeeni ya kila mwaka akifikia haki ya kupata ya kupata, akifikia haki ya kupata ya kupata akifikia malipo ya uzeeni ya kila mwaka akifikia haki ya kupata ya kupata, akifikia haki ya kupata ya kupata akifikia malipo ya uzeeni ya kila mwaka akifikia haki ya kupata ya kupata, akifikia haki ya kupata ya kupata akifikia malipo ya uzeeni ya kila mwaka akifikia haki ya kupata ya kupata, akifikia haki ya kupata ya kupata akifikia malipo ya uzeeni ya kila mwaka akifikia haki ya kupata ya kupata, akifikia haki ya kupata ya kupata akifikia malipo ya uzeeni ya kila mwaka akifikia haki ya kupata ya kupata, akifikia haki ya kupata ya kupata akifikia malipo ya uzeeni ya kila mwaka akifikia haki ya kupata ya kupata, akifikia haki ya kupata ya kupata akifikia malipo ya uzeeni ya kila mwaka akifikia haki ya kupata ya kupata, akifikia haki ya kupata ya kupata akifikia malipo ya uzeeni ya kila mwaka akifikia haki ya kupata ya kupata, akifikia haki ya kupata ya kupata akifikia malipo ya uzeeni ya kila mwaka akifikia haki ya kupata ya kupata, akifikia haki ya kupata ya kupata akifikia malipo ya uzeeni ya kila mwaka akifikia haki ya kupata ya kupata akifikia
+nfe:  169
+avg nfe:  112.46031746031746
+====================
+
+Generating...:  63%|██████▎   | 63/100 [13:31<09:59, 16.19s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Aleena alijisajili kwenye huduma ya utiririshaji ambayo humtoza $140 kila mwezi. Iwapo kampuni ya utiririshaji ilimtoza kiwango hicho cha awali kwa nusu ya kwanza ya mwaka na kisha kumtoza kiwango kidogo kwa 10% kwa nusu nyingine ya mwaka huo, piga hesabu ya jumla ya kiwango ambacho alikuwa amelipia huduma ya utiririshaji mwishoni mwa mwaka huo.
+
+Jibu la Hatua kwa Hatua:
+
+Aleena alijisajili kwenye huduma ya utiririshaji ambayo humtoza $140 kila mwezi. Iwapo kampuni ya utiririshaji ilimtoza kiwango hicho cha awali kwa nusu ya kwanza ya mwaka na kisha kumtoza kiwango kidogo kwa 10% kwa nusu nyingine ya mwaka huo, piga hesabu ya jumla ya kiwango ambacho alikuwa amelipia huduma ya utiririshaji mwishoni mwa mwaka huo.
+nfe:  78
+avg nfe:  111.921875
+====================
+
+Generating...:  64%|██████▍   | 64/100 [13:41<08:33, 14.27s/it]====================
+answer:  Sophia anaweza kuendesha maili kwa kutumia tangi moja ya mafuta ya gari. Anafafiri maili 100 tangu mara ya mwisho alipojaza tangi yake, na alihitaji kuongeza galoni 4 za mafuta ya gari ili kujaza tangi yake tena. Kitabu cha mwongozo cha gari lake kinasema kuwa tangi yake inabeba galoni 12 za mafuta ya gari. Anafikini kujua kutumia tangi moja ya mafuta ya gari, anafikiri kujua kujua kutumia gari lake.
+nfe:  123
+avg nfe:  112.0923076923077
+====================
+
+Generating...:  65%|██████▌   | 65/100 [13:56<08:29, 14.57s/it]====================
+answer:  Jibu la Hatua kwa Hatua: Jim hutumia saa 2 kutazama televisheni na kusoma kitabu kwa wiki 4.
+nfe:  60
+avg nfe:  111.3030303030303
+====================
+
+Generating...:  66%|██████▌   | 66/100 [14:04<07:02, 12.43s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua: Wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote wote
+nfe:  86
+avg nfe:  110.92537313432835
+====================
+
+Generating...:  67%|██████▋   | 67/100 [14:13<06:20, 11.54s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Kulikuwa na jumla ya vito vingi katika hazina hiyo.
+nfe:  63
+avg nfe:  110.22058823529412
+====================
+
+Generating...:  68%|██████▊   | 68/100 [14:21<05:36, 10.50s/it]====================
+answer:  Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+nfe:  79
+avg nfe:  109.76811594202898
+====================
+
+Generating...:  69%|██████▉   | 69/100 [14:30<05:06,  9.89s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Bailey alianza na pesa.
+nfe:  50
+avg nfe:  108.91428571428571
+====================
+
+Generating...:  70%|███████   | 70/100 [14:36<04:23,  8.79s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+1. **Kila darasa ya siku:**
+   - La darasa ya siku ya wiki, Judy hufunza madarasa 5 ya densi.
+   - La darasa ya siku, Judy hufunza madarasa 8 Jumamosi.
+
+2. **Kila darasa ya siku:**
+   - La darasa ya siku ya wiki, Judy hufunza madarasa 5 ya densi.
+   - La darasa ya siku, Judy hufunza madarasa 8 Jumamosi.
+
+3. **Kila darasa ya siku:**
+   - La darasa ya siku ya wiki, Judy hufunza madarasa 5 ya densi.
+   - La darasa ya siku, Judy hufunza madarasa 8 Jumamosi.
+
+4. **Kila darasa ya siku:**
+   - La darasa ya siku ya wiki, Judy hufunza madarasa 5 ya densi.
+   - La darasa ya siku, Judy hufunza madarasa 8 Jumamosi.
+
+5. **Kila darasa ya siku:**
+   - La darasa ya siku ya wiki, Judy hufunza madarasa 5 ya densi.
+   - La darasa ya siku, Judy hufunza madarasa 8 Jumamosi.
+
+6. **Kila darasa ya siku:**
+   - La darasa ya siku ya wiki, Judy hufunza madarasa 5 ya densi.
+   - La darasa ya siku, Judy hufunza madarasa 8 Jumamosi.
+
+7. **Kila darasa ya siku:**
+   - La darasa ya siku ya wiki, Judy hufunza madarasa 5 ya densi.
+   - La darasa ya siku, Judy hufunza madarasa 8 Jumamosi.
+
+8. **Kila darasa ya siku:**
+   - La darasa ya siku ya wiki, Judy hufunza madarasa 5 ya densi.
+   - La darasa ya siku, Judy hufunza madarasa 8 Jumamosi.
+
+9. **Kila darasa ya siku:**
+   - La darasa ya siku ya wiki, Judy hufunza madarasa 5 ya densi.
+   - La darasa ya siku, Judy hufunza madarasa 8 Jumamosi.
+
+10. **Kila darasa ya siku:**
+    - La darasa ya siku ya wiki, Judy hufunza madarasa 5 ya densi.
+    - La darasa ya siku, Judy hufunza madarasa 8 Jumamosi.
+
+11. **Kila darasa ya siku:**
+    - La darasa ya siku ya wiki, Judy hufunza madarasa 5 ya densi.
+    - La darasa ya siku, Judy hufunza madarasa 8 Jumamosi.
+
+12. **Kila darasa ya siku:**
+    - La darasa ya siku ya wiki, Judy hufunza madarasa 5 ya densi.
+    - La darasa ya siku, Judy hufunza madarasa 8 Jumamosi.
+
+13. **Kila darasa ya siku:**
+    - La darasa ya siku ya wiki, Judy hufunza madarasa 5 ya densi.
+    - La darasa ya siku, Judy hufunza madarasa 8 Jumamosi.
+
+14. **Kila darasa ya siku:**
+    - La darasa ya siku ya wiki, Judy hufunza madarasa 5 ya densi.
+    - La darasa ya siku, Judy hufunza madarasa 8 Jumamosi.
+
+15. **Kila darasa ya siku:**
+    - La darasa ya siku ya wiki, Judy hufunza madarasa 5 ya densi.
+    - La darasa ya siku, Judy hufunza madarasa 8 Jumamosi.
+
+Ikiwa kila darasa ya siku, Judy hufunza madarasa 8 Jumamosi, sikwa anatengeneza pesa ngapi kwa wiki 1.
+nfe:  178
+avg nfe:  109.88732394366197
+====================
+
+Generating...:  71%|███████   | 71/100 [14:54<05:32, 11.45s/it]====================
+answer:  Jibu la Hatua: 
+
+Kelian anahitajibu kusoma maelekezo 20 na kuandaa milo miwili.
+nfe:  61
+avg nfe:  109.20833333333333
+====================
+
+Generating...:  72%|███████▏  | 72/100 [15:01<04:47, 10.28s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Tommy aliuza slesi 43 za keki za kahawia na slesi 23 za keki ya jibini. Kwa kila slesi, keki za kahawia kwa $3 na keki ya jibini kwa $4.
+
+Kwa kupo ya kila ya kila ya kila, Tommy aliuza slesi 43 za keki za kahawia na slesi 23 za keki ya jibini. Kwa kila slesi, keki za kahawia kwa $3 na keki ya jibini kwa $4.
+
+Kwa kupo ya kila ya kila ya kila, Tommy aliuza slesi 43 za keki za kahawia na slesi 23 za keki ya jibini. Kwa kila slesi, keki za kahawia kwa $3 na keki ya jibini kwa $4.
+
+Kwa kupo ya kila ya kila ya kila, Tommy aliuza slesi 43 za keki za kahawia na slesi 23 za keki ya jibini. Kwa kila slesi, keki za kahawia kwa $3 na keki ya jibini kwa $4.
+
+Kwa kupo ya kila ya kila ya kila, Tommy aliuza slesi 43 za keki za kahawia na slesi 23 za keki ya jibini. Kwa kila slesi, keki za kahawia kwa $3 na keki ya jibini kwa $4.
+
+Kwa kupo ya kila ya kila ya kila, Tommy aliuza slesi 43 za keki za kahawia na slesi 23 za keki ya jibini. Kwa kila slesi, keki za kahawia kwa $3 na keki ya jibini kwa $4.
+
+Kwa kupo ya kila ya kila ya kila, Tommy aliuza slesi 43 za keki za kahawia na slesi 23 za keki ya jibini. Kwa kila slesi, keki za kahawia kwa $3 na keki ya jibini kwa $4.
+
+Kwa kupo ya kila ya kila ya kila, Tommy aliuza slesi 43 za keki za kahawia na slesi 23 za keki ya jibini. Kwa kila slesi, keki za kahawia kwa $3 na keki ya jibini kwa $4.
+
+Kwa kupo ya kila ya kila ya kila, Tommy aliuza slesi 43 za keki za kahawia na slesi 23 za keki ya jibini. Kwa kila slesi, keki za kahawia kwa $3 na keki ya jibini kwa $4.
+
+Kwa kupo ya kila ya kila ya kila, Tommy aliuza slesi 43 za keki za kahawia na slesi 23 za keki ya jibini. Kwa kila slesi, keki za kahawia kwa $3 na keki ya jibini kwa $4.
+
+Kwa kupo ya kila ya kila ya kila, Tommy aliuza slesi 43 za keki za kahawia na slesi 23 za keki ya jibini. Kwa kila slesi, keki za kahawia kwa $3 na keki ya jibini kwa $4.
+
+Kwa kupo ya kila ya kila ya kila, Tommy aliuza slesi 43 za keki za kahawia na slesi 23 za keki ya jibini. Kwa kila slesi, keki za kahawia kwa $3 na keki ya jibini kwa $4.
+
+Kwa kupo ya kila ya kila ya kila, Tommy aliuza slesi 43 za keki za kahawia na slesi 23 za keki ya jibini. Kwa kila
+nfe:  171
+avg nfe:  110.05479452054794
+====================
+
+Generating...:  73%|███████▎  | 73/100 [15:20<05:45, 12.80s/it]====================
+answer:  Jibu la Shiela alinziwa kwa kila simu kwa miezi 3 kwa riba ya 2% itatozwa kwa kila simu, alinziwa kwa kila simu kwa malo ya 3. Jibu la Shiela alinziwa kwa kila simu kwa miezi 3 kwa $150 alinziwa kwa kila simu kwa malo ya 3. Jibu la riba alinziwa kwa kila simu kwa malo ya 3 kwa riba alinziwa kwa kila simu kwa malo ya 3, na alinziwa kwa kila simu kwa malo ya 3 kwa alinziwa kwa kila simu kwa malo ya 3. Jibu la riba alinziwa kwa kila simu kwa malo ya 3 kwa alinziwa kwa kila simu kwa malo ya 3 alinziwa kwa kila simu kwa malo ya 3, alinziwa kwa kila simu kwa malo ya 3 alinziwa kwa kila simu kwa malo ya 3, alinziwa kwa kila simu kwa malo ya 3 kwa kwa alinziwa kwa kila simu kwa malo ya 3, alinziwa kwa kila simu kwa malo ya 3 kwa kwa alinziwa kwa kila simu kwa malo ya 3, alinziwa kwa kila simu kwa malo ya 3 kwa kwa alinziwa kwa kila simu kwa malo ya 3, alinziwa kwa kila simu kwa malo ya 3 kwa kwa alinziwa kwa kila simu kwa malo ya 3, alinziwa kwa kila simu kwa malo ya 3 kwa kwa alinziwa kwa kila simu kwa malo ya 3, alinziwa kwa kila simu kwa malo ya 3 kwa kwa alinziwa kwa kila simu kwa malo ya 3, alinziwa kwa kila simu kwa malo ya 3 kwa kwa alinziwa kwa kila simu kwa malo ya 3, alinziwa kwa kila simu kwa malo ya 3 kwa kwa alinziwa kwa kila simu kwa malo ya 3, alinziwa kwa kila simu kwa malo ya 3 kwa kwa alinziwa kwa kila simu kwa malo ya 3, alinziwa kwa kila simu kwa malo ya 3 kwa kwa alinziwa kwa kila simu kwa malo ya 3, alinziwa kwa kila simu kwa malo ya 3 kwa kwa alinziwa kwa kila simu kwa malo ya 3, alinziwa kwa kila simu kwa malo ya 3 kwa kwa alinziwa kwa kila simu kwa malo ya 3, alinziwa kwa kila simu kwa malo ya 3 kwa kwa alinziwa kwa kila simu kwa malo ya 3, alinziwa kwa kila simu kwa malo ya 3 kwa kwa alinziwa kwa kila simu kwa malo ya 3, alinziwa kwa kila simu kwa malo ya 3 kwa kwa alinziwa kwa kila simu kwa malo ya 3, alinziwa kwa kila simu kwa malo ya 3 kwa kwa alinziwa kwa kila simu kwa malo ya 3, alinziwa kwa kila simu kwa malo ya 3 kwa kwa alinziwa kwa kila simu kwa malo ya 3, alinziwa kwa kila simu kwa malo ya 3 kwa kwa alinziwa kwa kila simu kwa malo ya 3, alinziwa kwa kila simu kwa malo ya 3 kwa kwa alinziwa kwa kila simu kwa malo ya.
+nfe:  265
+avg nfe:  112.14864864864865
+====================
+
+Generating...:  74%|███████▍  | 74/100 [15:49<07:37, 17.61s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Na hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, hote, h
+nfe:  78
+avg nfe:  111.69333333333333
+====================
+
+Generating...:  75%|███████▌  | 75/100 [15:58<06:15, 15.02s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua: 16.
+nfe:  85
+avg nfe:  111.34210526315789
+====================
+
+Generating...:  76%|███████▌  | 76/100 [16:07<05:15, 13.17s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Cecilia amini kumlisha mtoto mdogo wa mbwa kikombe 1 cha chakula cha mbwa kila siku kwa siku 180 za kwanza. Kisha anahitaji kumlisha mtoto huyo wa mbwa vikombe 2 vya chakula cha mbwa kila siku kwa maisha yake yote. Iwapo mfuko moja wa chakula cha mbwa una vikombe 110, Cecilia atatumia mifuko mingapi ya chakula cha mbwa kwa mwaka wa kwanza.
+nfe:  90
+avg nfe:  111.06493506493507
+====================
+
+Generating...:  77%|███████▋  | 77/100 [16:18<04:50, 12.65s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+1. Raymond hufua nguo mara 4 zaidi ya David, kini Sarah hufua nguo mara 4 zaidi ya David.
+2. Sarah hufua nguo mara 4 zaidi ya David, kini Sarah hufua nguo mara 4 zaidi ya David.
+3. Sarah hufua nguo mara 4 zaidi ya David, kini Sarah hufua nguo mara 4 zaidi ya David.
+4. Sarah hufua nguo mara 4 zaidi ya David, kini Sarah hufua nguo mara 4 zaidi ya David.
+5. Sarah hufua nguo mara 4 zaidi ya David, kini Sarah hufua nguo mara 4 zaidi ya David.
+6. Sarah hufua nguo mara 4 zaidi ya David, kini Sarah hufua nguo mara 4 zaidi ya David.
+7. Sarah hufua nguo mara 4 zaidi ya David, kini Sarah hufua nguo mara 4 zaidi ya David.
+8. Sarah hufua nguo mara 4 zaidi ya David, kini Sarah hufua nguo mara 4 zaidi ya David.
+9. Sarah hufua nguo mara 4 zaidi ya David, kini Sarah hufua nguo mara 4 zaidi ya David.
+10. Sarah hufua nguo mara 4 zaidi ya David, kini Sarah hufua nguo mara 4 zaidi ya David.
+11. Sarah hufua nguo mara 4 zaidi ya David, kini Sarah hufua nguo mara 4 zaidi ya David.
+12. Sarah hufua nguo mara 4 zaidi ya David, kini Sarah hufua nguo mara 4 zaidi ya David.
+13. Sarah hufua nguo mara 4 zaidi ya David, kini Sarah hufua nguo mara 4 zaidi ya David.
+14. Sarah hufua nguo mara 4 zaidi ya David, kini Sarah hufua nguo mara 4 zaidi ya David.
+15. Sarah hufua nguo mara 4 zaidi ya David, kini Sarah hufua nguo mara 4 zaidi ya David.
+16. Sarah hufua nguo mara 4 zaidi ya David, kini Sarah hufua nguo mara 4 zaidi ya David.
+17. Sarah hufua nguo mara 4 zaidi ya David, kini Sarah hufua nguo mara 4 zaidi ya David.
+18. Sarah hufua nguo mara 4 zaidi ya David, kini Sarah hufua nguo mara 4 zaidi ya David.
+19. Sarah hufua nguo mara 4 zaidi ya David, kini Sarah hufua nguo mara 4 zaidi ya David.
+20. Sarah hufua nguo mara 4 zaidi ya David, kini Sarah hufua nguo mara 4 zaidi ya David.
+21. Sarah hufua nguo mara 4 zaidi ya David, kini Sarah hufua nguo mara 4 zaidi ya David.
+22. Sarah hufua nguo mara 4 zaidi ya David, kini Sarah hufua nguo mara 4 zaidi ya David.
+23. Sarah hufua nguo mara 4 zaidi ya David, kini Sarah hufua nguo mara 4 zaidi ya David.
+24. Sarah hufua nguo mara 4 zaidi ya David, kini Sarah hufua nguo mara 4 zaidi ya David.
+25. Sarah hufua nguo mara 4 zaidi ya David, kini Sarah hufua nguo mara 4 zaidi ya David, na kini Sarah hufua nguo mara 4 zaidi ya David.
+nfe:  153
+avg nfe:  111.6025641025641
+====================
+
+Generating...:  78%|███████▊  | 78/100 [16:34<04:57, 13.51s/it]====================
+answer:  Jibu: Vincent anaweza kununua maua katika vifurushi ya 3 kwa $2.50 au katika vifurushi ya 2 kwa $1. Huwa anaokoa pesa ngapi kwa kununua maua 18 kwa bei bora?
+
+Jibu la Hatua: Vincent anaweza kununua maua katika vifurushi ya 3 kwa $2.50 au katika vifurushi ya 2 kwa $1. Huwa anaokoa pesa ngapi kwa kununua maua 18 kwa bei bora?
+
+Jibu la Hatua: Vincent anaweza kununua maua katika vifurushi ya 3 kwa $2.50 au katika vifurushi ya 2 kwa $1. Huwa anaokoa pesa ngapi kwa kununua maua 18 kwa bei bora?
+
+Jibu la Hatua: Vincent anaweza kununua maua katika vifurushi ya 3 kwa $2.50 au katika vifurushi ya 2 kwa $1. Huwa anaokoa pesa ngapi kwa kununua maua 18 kwa bei bora?
+
+Jibu la Hatua: Vincent anaweza kununua maua katika vifurushi ya 3 kwa $2.50 au katika vifurushi ya 2 kwa $1. Huwa anaokoa pesa ngapi kwa kununua maua 18 kwa bei bora?
+
+Jibu la Hatua: Vincent anaweza kununua maua katika vifurushi ya 3 kwa $2.50 au katika vifurushi ya 2 kwa $1. Huwa anaokoa pesa ngapi kwa kununua maua 18 kwa bei bora?
+
+Jibu la Hatua: Vincent anaweza kununua maua katika vifurushi ya 3 kwa $2.50 au katika vifurushi ya 2 kwa $1. Huwa anaokoa pesa ngapi kwa kununua maua 18 kwa bei bora?
+
+Jibu la Hatua: Vincent anaweza kununua maua katika vifurushi ya 3 kwa $2.50 au katika vifurushi ya 2 kwa $1. Huwa anaokoa pesa ngapi kwa kununua maua 18 kwa bei bora?
+
+Jibu la Hatua: Vincent anaweza kununua maua katika vifurushi ya 3 kwa $2.50 au katika vifurushi ya 2 kwa $1. Huwa anaokoa pesa ngapi kwa kununua maua 18 kwa bei bora?
+
+Jibu la Hatua: Vincent anaweza kununua maua katika vifurushi ya 3 kwa $2.50 au katika vifurushi ya 2 kwa $1. Huwa anaokoa pesa ngapi kwa kununua maua 18 kwa bei bora?
+
+Jibu la Hatua: Vincent anaweza kununua maua katika vifurushi ya 3 kwa $2.50 au katika vifurushi ya 2 kwa $1. Huwa anaokoa pesa ngapi kwa kununua maua 18 kwa bei bora?
+
+Jibu la Hatua: Vincent anaweza kununua maua katika vifurushi ya 3 kwa $2.50 au katika vifurushi ya 2 kwa $1. Huwa anaokoa pesa ngapi kwa kununua maua 18 kwa bei bora?
+
+Jibu la Hatua: Vincent anaweza kununua maua katika vifurushi ya 3 kwa $2.50 au katika vifurushi ya 2 kwa $1. Huwa anaokoa pesa ngapi kwa kununua maua 18 kwa bei bora?
+
+Jibu la Hatua: Vincent anaweza kununua maua katika vifurushi ya 3 kwa $2.50 au katika vifurushi ya 2 kwa $1. Huwa ana
+nfe:  123
+avg nfe:  111.74683544303798
+====================
+
+Generating...:  79%|███████▉  | 79/100 [16:47<04:42, 13.45s/it]====================
+answer:  Unadhifishaji huo utamgharikwa $70.
+nfe:  54
+avg nfe:  111.025
+====================
+
+Generating...:  80%|████████  | 80/100 [16:54<03:48, 11.43s/it]====================
+answer:  Jibu la Hatua:
+
+Kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila kila
+nfe:  75
+avg nfe:  110.58024691358025
+====================
+
+Generating...:  81%|████████  | 81/100 [17:02<03:20, 10.55s/it]====================
+answer:  Charlie alikuwa na vibandiko 10. Alinunua vibandiko 21 kwenye duka katika jengo la maduka na kupata vibandiko 23 vya siku yake ya kuzaliwa. Kisha Charlie alimpa dadake vibandiko 9 na akatumia 28 kupamba kadi ya salamu. Charlie amesalia na vibandiko 54.
+
+Jibu la Hatua kwa Hatua:
+Charlie alikuwa na vibandiko 10. Alinunua vibandiko 21 kwenye duka katika jengo la maduka na kupata vibandiko 23 vya siku yake ya kuzaliwa. Kisha Charlie alimpa dadake vibandiko 9 na akatumia 28 kupamba kadi ya salamu. Charlie amesalia na vibandiko 54.
+nfe:  71
+avg nfe:  110.09756097560975
+====================
+
+Generating...:  82%|████████▏ | 82/100 [17:11<03:01, 10.08s/it]====================
+answer:  Jibu la Hatua:
+
+1. Grace ana uzani wa pauni 125.
+2. Uzani wa Alex ni pauni 2 kiasi kwa mara 4 ya uzani wa Grace.
+3. Jumla ya uzani wao kwa pauni ni ngapi?
+
+Jibu la Hatua:
+
+1. Jumini uzani wa Grace ni 125.
+2. Jumini uzani wa Alex ni 2 kiasi kwa mara 4 ya uzani wa Grace.
+3. Jumini uzani wao kwa pauni ni 125 + 2 * 125 = 125 + 250 = 375.
+
+Jumla ya uzani wao kwa pauni ni 375.
+nfe:  140
+avg nfe:  110.4578313253012
+====================
+
+Generating...:  83%|████████▎ | 83/100 [17:28<03:25, 12.09s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+17
+nfe:  90
+avg nfe:  110.21428571428571
+====================
+
+Generating...:  84%|████████▍ | 84/100 [17:37<02:58, 11.15s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua: 14.
+nfe:  90
+avg nfe:  109.97647058823529
+====================
+
+Generating...:  85%|████████▌ | 85/100 [17:46<02:37, 10.48s/it]====================
+answer:  Pande kubwa za mfarishi wake ni pande kubwa za mfarishi wake. Pande kubwa za mfarishi wake.
+nfe:  69
+avg nfe:  109.5
+====================
+
+Generating...:  86%|████████▌ | 86/100 [17:55<02:20, 10.01s/it]====================
+answer:  King'ora kilia mara ngapi kwa jumla.
+nfe:  52
+avg nfe:  108.83908045977012
+====================
+
+Generating...:  87%|████████▋ | 87/100 [18:01<01:57,  9.05s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+1. **Mishahara ya kila mmoja:**
+   - Kampuni hulipa kila mmoja wa wafanyakazi wake $600 kwa mwezi.
+
+2. **Mishahara ya kila mfanyakazi:**
+   - Kampuni hiyo ina sera ya kuongeza mishahara ya kila mfanyakazi kwa 10% ya mshahara wa awali kila mwaka kwa wale ambao wamekaa kwenye kampuni hiyo kwa miaka mitano.
+   - Mshahara ya kila mfanyakazi = 10% ya mshahara ya kila mmoja
+   - Mshahara ya kila mfanyakazi = 0.10 * $600
+   - Mshahara ya kila mfanyakazi = $60
+
+3. **Mishahara ya kila mwaka baada:**
+   - Mshahara ya kila mwaka baada = Mshahara ya kila mmoja + Mshahara ya kila mfanyakazi
+   - Mshahara ya kila mwaka baada = $600 + $60
+   - Mshahara ya kila mwaka baada = $660
+
+4. **Mishahara ya kila mwaka baada ya miaka tatu zaidi:**
+   - Sylvie alifikisha miaka 5 katika kampuni hiyo Desemba iliyopita.
+   - Mshahara ya kila mwaka baada ya miaka tatu zaidi = Mshahara ya kila mwaka baada - Mshahara ya kila mfanyakazi
+   - Mshahara ya kila mwaka baada ya miaka tatu zaidi = $660 - $60
+   - Mshahara ya kila mwaka baada ya miaka tatu zaidi = $600
+
+Hakini, mshahara wake wa kila mwaka baada ya miaka mitatu zaidi ya kuhudumia kampuni hiyo ni $600.
+nfe:  182
+avg nfe:  109.67045454545455
+====================
+
+Generating...:  88%|████████▊ | 88/100 [18:21<02:27, 12.30s/it]====================
+answer:  Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+nfe:  81
+avg nfe:  109.34831460674157
+====================
+
+Generating...:  89%|████████▉ | 89/100 [18:30<02:03, 11.19s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+1. **Mikoba ya zawadi ya aliali:**
+   - Mikoba ya zawadi ni $2 kila moja.
+   - Mikoba ya zawadi ya aliali = $2 kila moja.
+
+2. **Mikoba ya zawadi ya aliali kwa kila:**
+   - Mikoba ya zawadi = $2 kila moja.
+   - Mikoba ya zawadi ya aliali kwa kila = $2 kila moja / 16 = $1.25 / kila.
+
+3. **Mikoba ya zawadi ya aliali kwa kila kwa kila:**
+   - Mikoba ya zawadi ya aliali kwa kila = $1.25 / kila.
+   - Mikoba ya zawadi ya aliali kwa kila kwa kila = $1.25 / kila * 16 = $20 / kila.
+
+4. **Mikoba ya zawadi ya aliali kwa kila kwa kila kwa kila:**
+   - Mikoba ya zawadi ya aliali kwa kila kwa kila = $20 / kila.
+   - Mikoba ya zawadi ya aliali kwa kila kwa kila kwa kila = $20 / kila * 16 = $320 / kila.
+
+5. **Mikoba ya zawadi ya aliali kwa kila kwa kila kwa kila kwa kila:**
+   - Mikoba ya zawadi ya aliali kwa kila kwa kila kwa kila kwa kila = $320 / kila.
+   - Mikoba ya zawadi ya aliali kwa kila kwa kila kwa kila kwa kila = $320 / kila * 16 = $5120 / kila.
+
+6. **Mikoba ya zawadi ya aliali kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila:**
+   - Mikoba ya zawadi ya aliali kwa kila kwa kila kwa kila kwa kila kwa kila = $5120 / kila.
+   - Mikoba ya zawadi ya aliali kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila = $5120 / kila * 16 = $81920 / kila.
+
+7. **Mikoba ya zawadi ya aliali kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila:**
+   - Mikoba ya zawadi ya aliali kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila = $81920 / kila.
+   - Mikoba ya zawadi ya aliali kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila = $81920 / kila * 16 = $1310720 / kila.
+
+8. **Mikoba ya zawadi ya aliali kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila:**
+   - Mikoba ya zawadi ya aliali kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila = $1310720 / kila.
+   - Mikoba ya zawadi ya aliali kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila kwa kila / kila = $1310720 / kila.
+nfe:  279
+avg nfe:  111.23333333333333
+====================
+
+Generating...:  90%|█████████ | 90/100 [18:58<02:41, 16.12s/it]====================
+answer:  Ted anahitaji kuleta kuni ngali ya kachumbari ya viazi kwenye mandari ikiwa anatarifa kulisha kila dinosaria.
+nfe:  65
+avg nfe:  110.72527472527473
+====================
+
+Generating...:  91%|█████████ | 91/100 [19:06<02:04, 13.81s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua:
+
+Marcia
+nfe:  96
+avg nfe:  110.56521739130434
+====================
+
+Generating...:  92%|█████████▏| 92/100 [19:15<01:40, 12.52s/it]====================
+answer:  Jibu la waka Jackson miaka 8.
+nfe:  51
+avg nfe:  109.9247311827957
+====================
+
+Generating...:  93%|█████████▎| 93/100 [19:22<01:14, 10.67s/it]====================
+answer:  Jibu kwa Hatua kwa Hatua: Gerald anaweza kukimbia viunzi vya mita 400 kwa sekunde 38.
+nfe:  61
+avg nfe:  109.40425531914893
+====================
+
+Generating...:  94%|█████████▍| 94/100 [19:30<00:59,  9.85s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua: Katika mtaa, idadi ya sungura ni kidogo na kumi na mbili kwa jumla ya idadi ya mbwa na paka. Ikiwa kuna paka wawili kwa kila mbwa, na idadi ya mbwa ni 60, kuna wanyama vipenzi wangapi kwa jumla katika mtaa huo?
+
+Jibu la Hatua kwa Hatua: Jibu la Hatua kwa Hatua: Katika mtaa, idadi ya sungura ni Kidogo ya kwa kwa na mbili kwa jumla ya idadi ya mbwa na paka. Ikiwa kuna paka wawili kwa kila mbwa, na idadi ya mbwa ni 60, kuna wanyama vipenzi wangapi kwa jumla katika mtaa huo?
+
+Jibu la Hatua kwa Hatua: Jibu la Hatua kwa Hatua: Katika mtaa, idadi ya sungura ni Kidogo ya kwa kwa na mbili kwa jumla ya idadi ya mbwa na paka. Ikiwa kuna paka wawili kwa kila mbwa, na idadi ya mbwa ni 60, kuna wanyama vipenzi wangapi kwa jumla katika mtaa huo?
+
+Jibu la Hatua kwa Hatua: Jibu la Hatua kwa Hatua: Katika mtaa, idadi ya sungura ni Kidogo ya kwa kwa na mbili kwa jumla ya idadi ya mbwa na paka. Ikiwa kuna paka wawili kwa kila mbwa, na idadi ya mbwa ni 60, kuna wanyama vipenzi wangapi kwa jumla katika mtaa huo?
+
+Jibu la Hatua kwa Hatua: Jibu la Hatua kwa Hatua: Katika mtaa, idadi ya sungura ni Kidogo ya kwa kwa na mbili kwa jumla ya idadi ya mbwa na paka. Ikiwa kuna paka wawili kwa kila mbwa, na idadi ya mbwa ni 60, kuna wanyama vipenzi wangapi kwa jumla katika mtaa huo?
+
+Jibu la Hatua kwa Hatua: Jibu la Hatua kwa Hatua: Katika mtaa, idadi ya sungura ni Kidogo ya kwa kwa na mbili kwa jumla ya idadi ya mbwa na paka. Ikiwa kuna paka wawili kwa kila mbwa, na idadi ya mbwa ni 60, kuna wanyama vipenzi wangapi kwa jumla katika mtaa huo?
+
+Jibu la Hatua kwa Hatua: Jibu la Hatua kwa Hatua: Katika mtaa, idadi ya sungura ni Kidogo ya kwa kwa na mbili kwa jumla ya idadi ya mbwa na paka. Ikiwa kuna paka wawili kwa kila mbwa, na idadi ya mbwa ni 60, kuna wanyama vipenzi wangapi kwa jumla katika mtaa huo?
+
+Jibu la Hatua kwa Hatua: Jibu la Hatua kwa Hatua: Katika mtaa, idadi ya sungura ni Kidogo ya kwa kwa na mbili kwa jumla ya idadi ya mbwa na paka. Ikiwa kuna paka wawili kwa kila mbwa, na idadi ya mbwa ni 60, kuna wanyama vipenzi wangapi kwa jumla katika mtaa huo?
+
+Jibu la Hatua kwa Hatua: Jibu la Hatua kwa Hatua: Katika mtaa, idadi ya sungura ni Kidogo ya kwa kwa na mbili kwa jumla ya idadi ya mbwa na paka. Ikiwa kuna paka wawili kwa kila mbwa, na idadi ya mbwa ni 60, kuna wanyama vipenzi wangapi kwa jumla katika mtaa huo?
+
+Jibu la Hatua kwa Hatua: 60.
+nfe:  171
+avg nfe:  110.05263157894737
+====================
+
+Generating...:  95%|█████████▌| 95/100 [19:47<01:00, 12.17s/it]====================
+answer:  Jibu la Hatua:
+
+1. **Kila wasichana ya wavulana:**
+   - 2/5 ya 200 ni wavulana.
+   - Kila wasichana ya wavulana = 2/5 * 200 = 80.
+
+2. **Kila wasichana ya wavulana:**
+   - 2/5 ya 200 ni wavulana.
+   - Kila wasichana ya wavulana = 2/5 * 200 = 80.
+
+3. **Kila wasichana wapo katika skauti ya wasichana:**
+   - 2/3 ya wasichana wapo katika skauti ya wasichana.
+   - Kila wasichana wapo katika skauti ya wasichana = 2/3 * 200 = 160.
+
+4. **Kila wasichana wangapi hawako kwenye skauti ya wasichana:**
+   - Kila wasichana wangapi hawako kwenye skauti ya wasichana = Kila wasichana wapo katika skauti ya wasichana - Kila wasichana wapo katika skauti ya wasichana
+   - Kila wasichana wangapi hawako kwenye skauti ya wasichana = 160 - 80 = 80.
+
+Nini, kila wasichana wangapi hawako kwenye skauti ya wasichana ni 80.
+nfe:  154
+avg nfe:  110.51041666666667
+====================
+
+Generating...:  96%|█████████▌| 96/100 [20:05<00:55, 13.81s/it]====================
+answer:  Harry alilala kwa saa 9 usiku uliopita. Rafiki yake James alilala 2/3 pekee ya saa ambazo Harry alilala. Harry alilala saa ngapi zaidi ya James?
+
+Jibu la Hatua kwa Hatua:
+
+Harry alilala kwa saa 9 usiku uliopita. Rafiki yake James alilala 2/3 pekee ya saa ambazo Harry alilala. Harry alilala saa ngapi zaidi ya James?
+
+Jibu la Hatua kwa Hatua:
+
+Harry alilala kwa saa 9 usiku uliopita. Rafiki yake James alilala 2/3 pekee ya saa ambazo Harry alilala. Harry alilala saa ngapi zaidi ya James?
+
+Jibu la Hatua kwa Hatua:
+
+Harry alilala kwa saa 9 usiku uliopita. Rafiki yake James alilala 2/3 pekee ya saa ambazo Harry alilala. Harry alilala saa ngapi zaidi ya James?
+
+Jibu la Hatua kwa Hatua:
+
+Harry alilala kwa saa 9 usiku uliopita. Rafiki yake James alilala 2/3 pekee ya saa ambazo Harry alilala. Harry alilala saa ngapi zaidi ya James?
+
+Jibu la Hatua kwa Hatua:
+
+Harry alilala kwa saa 9 usiku uliopita. Rafiki yake James alilala 2/3 pekee ya saa ambazo Harry alilala. Harry alilala saa ngapi zaidi ya James?
+
+Jibu la Hatua kwa Hatua:
+
+Harry alilala kwa saa 9 usiku uliopita. Rafiki yake James alilala 2/3 pekee ya saa ambazo Harry alilala. Harry alilala saa ngapi zaidi ya James?
+
+Jibu la Hatua kwa Hatua:
+
+Harry alilala kwa saa 9 usiku uliopita. Rafiki yake James alilala 2/3 pekee ya saa ambazo Harry alilala. Harry alilala saa ngapi zaidi ya James?
+
+Jibu la Hatua kwa Hatua:
+
+Harry alilala kwa saa 9 usiku uliopita. Rafiki yake James alilala 2/3 pekee ya saa ambazo Harry alilala. Harry alilala saa ngapi zaidi ya James?
+
+Jibu la Hatua kwa Hatua:
+
+Harry alilala kwa saa 9 usiku uliopita. Rafiki yake James alilala 2/3 pekee ya saa ambazo Harry alilala. Harry alilala saa ngapi zaidi ya James?
+
+Jibu la Hatua kwa Hatua:
+
+Harry alilala kwa saa 9 usiku uliopita. Rafiki yake James alilala 2/3 pekee ya saa ambazo Harry alilala. Harry alilala saa ngapi zaidi ya James?
+
+Jibu la Hatua kwa Hatua:
+
+Harry alilala kwa saa 9 usiku uliopita. Rafiki yake James alilala 2/3 pekee ya saa ambazo Harry alilala. Harry alilala saa ngapi zaidi ya James?
+
+Jibu la Hatua kwa Hatua:
+
+Harry alilala kwa saa 9 usiku uliopita. Rafiki yake James alilala 2/3 pekee ya saa ambazo Harry alilala. Harry alilala saa ngapi zaidi ya James?
+
+Jibu la Hatua kwa Hatua:
+
+Harry alilala kwa saa 9 usiku uliopita. Rafiki yake James alilala 2/3 pekee ya saa ambazo Harry alilala. Harry alilala saa ngapi zaidi ya James?
+
+Jibu la Hatua kwa Hatua:
+
+Harry alilala kwa saa 9 usiku uliopita. Rafiki yake James alilala 2/3 pekee ya saa ambazo Harry alilala. Harry alilala saa ngapi zaidi ya James?
+nfe:  103
+avg nfe:  110.43298969072166
+====================
+
+Generating...:  97%|█████████▋| 97/100 [20:16<00:39, 13.01s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Jibu la Hatua kwa Hatua: Freda alitumia nyanya 16.
+nfe:  61
+avg nfe:  109.92857142857143
+====================
+
+Generating...:  98%|█████████▊| 98/100 [20:24<00:22, 11.47s/it]====================
+answer:  Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+
+Jibu la Hatua:
+nfe:  80
+avg nfe:  109.62626262626263
+====================
+
+Generating...:  99%|█████████▉| 99/100 [20:33<00:10, 10.72s/it]====================
+answer:  Jibu la Hatua kwa Hatua:
+
+Mary atasalia na mimea 21 iliyo kwenye nyungu.
+
+Kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke kwa hoke
+nfe:  90
+avg nfe:  109.43
+====================
+
+Generating...: 100%|██████████| 100/100 [20:43<00:00, 10.65s/it]Generating...: 100%|██████████| 100/100 [20:43<00:00, 12.44s/it]
+Total number of tokens generated: 58206
+Total time taken: 1243.956598997116 seconds
+Tokens per second: 46.79102325439453
+Total NFE is 10943
+2026-08-23:09:25:11,207 INFO     [lm_eval.loggers.evaluation_tracker:209] Saving results aggregated
+2026-08-23:09:25:11,209 INFO     [lm_eval.loggers.evaluation_tracker:290] Saving per-sample results for: mgsm_native_cot_sw
+llada_dist (model_path=GSAI-ML/LLaDA-8B-Instruct,gen_length=1024,steps=1024,block_length=32,use_cache=True,threshold=0.9,show_speed=True,is_check_greedy=False), gen_kwargs: (None), limit: 100.0, num_fewshot: None, batch_size: 1
+|      Tasks       |Version|     Filter     |n-shot|  Metric   |   |Value|   |Stderr|
+|------------------|------:|----------------|-----:|-----------|---|----:|---|-----:|
+|mgsm_native_cot_sw|      4|flexible-extract|     0|exact_match|↑  | 0.04|±  |0.0197|
+|                  |       |strict-match    |     0|exact_match|↑  | 0.00|±  |0.0000|
+

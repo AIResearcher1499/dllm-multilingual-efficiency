@@ -1,0 +1,150 @@
+{
+  "p1_intervention": {
+    "Dream-v0-Instruct-7B": {
+      "decision": "SUPPORTED",
+      "spearman_distinct_vs_penalty": 1.0,
+      "spearman_pf_vs_penalty": -1.0,
+      "spearman_pf_vs_penalty_rowlevel": -0.5338001498879076,
+      "spearman_pf_vs_penalty_controlling_length": -0.5339525678932573,
+      "cells": [
+        {
+          "penalty": 1.0,
+          "n": 50,
+          "distinct": 0.840746893490272,
+          "pf": 2.024944375104596,
+          "content_len": 116.88,
+          "acc": 0.8
+        },
+        {
+          "penalty": 1.05,
+          "n": 50,
+          "distinct": 0.8600025685972621,
+          "pf": 2.0024446387819292,
+          "content_len": 119.76,
+          "acc": 0.86
+        },
+        {
+          "penalty": 1.1,
+          "n": 50,
+          "distinct": 0.8827083257487253,
+          "pf": 1.9311760051155948,
+          "content_len": 111.36,
+          "acc": 0.76
+        },
+        {
+          "penalty": 1.2,
+          "n": 50,
+          "distinct": 0.9217693774639437,
+          "pf": 1.7758428340298624,
+          "content_len": 111.4,
+          "acc": 0.76
+        },
+        {
+          "penalty": 1.4,
+          "n": 50,
+          "distinct": 0.9698197858092922,
+          "pf": 1.3532238382420199,
+          "content_len": 110.32,
+          "acc": 0.56
+        }
+      ]
+    },
+    "LLaDA-8B-Instruct": {
+      "decision": "UNDECIDED",
+      "spearman_distinct_vs_penalty": 1.0,
+      "spearman_pf_vs_penalty": -0.7,
+      "spearman_pf_vs_penalty_rowlevel": -0.45414051377955894,
+      "spearman_pf_vs_penalty_controlling_length": -0.4549186871444211,
+      "cells": [
+        {
+          "penalty": 1.0,
+          "n": 50,
+          "distinct": 0.7446743493581743,
+          "pf": 2.6394107298827754,
+          "content_len": 233.0,
+          "acc": 0.8
+        },
+        {
+          "penalty": 1.05,
+          "n": 50,
+          "distinct": 0.7673826596045411,
+          "pf": 2.618254348825161,
+          "content_len": 229.16,
+          "acc": 0.84
+        },
+        {
+          "penalty": 1.1,
+          "n": 50,
+          "distinct": 0.7706417019183691,
+          "pf": 2.6497182531773804,
+          "content_len": 243.04,
+          "acc": 0.8
+        },
+        {
+          "penalty": 1.2,
+          "n": 50,
+          "distinct": 0.8089509645012588,
+          "pf": 2.5167786554767013,
+          "content_len": 243.78,
+          "acc": 0.74
+        },
+        {
+          "penalty": 1.4,
+          "n": 50,
+          "distinct": 0.9070988152395413,
+          "pf": 1.5697246865321242,
+          "content_len": 236.4,
+          "acc": 0.44
+        }
+      ]
+    }
+  },
+  "p2_detector": {
+    "Dream-v0-Instruct-7B": {
+      "decision": "UNDECIDED",
+      "n": 250,
+      "degenerate_cutoff_distinct": 0.8416447563506969,
+      "n_degenerate": 50,
+      "budgets": {
+        "10%": {
+          "auc_parallel_factor": 0.456,
+          "auc_ngram_repeat": 0.5,
+          "margin": -0.043999999999999984
+        },
+        "25%": {
+          "auc_parallel_factor": 0.51615,
+          "auc_ngram_repeat": 0.5,
+          "margin": 0.016149999999999998
+        },
+        "50%": {
+          "auc_parallel_factor": 0.71245,
+          "auc_ngram_repeat": 0.5302,
+          "margin": 0.18225000000000002
+        }
+      }
+    },
+    "LLaDA-8B-Instruct": {
+      "decision": "M1_DROPPED",
+      "n": 250,
+      "degenerate_cutoff_distinct": 0.6791213897249062,
+      "n_degenerate": 50,
+      "budgets": {
+        "10%": {
+          "auc_parallel_factor": 0.48905,
+          "auc_ngram_repeat": 0.51,
+          "margin": -0.020950000000000024
+        },
+        "25%": {
+          "auc_parallel_factor": 0.5472,
+          "auc_ngram_repeat": 0.6804,
+          "margin": -0.13319999999999999
+        },
+        "50%": {
+          "auc_parallel_factor": 0.59185,
+          "auc_ngram_repeat": 0.7574,
+          "margin": -0.16554999999999997
+        }
+      }
+    }
+  }
+}

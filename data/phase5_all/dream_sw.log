@@ -1,0 +1,2317 @@
+The following values were not passed to `accelerate launch` and had defaults used instead:
+	`--num_processes` was set to a value of `1`
+	`--num_machines` was set to a value of `1`
+	`--mixed_precision` was set to a value of `'no'`
+	`--dynamo_backend` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+2026-08-23:15:54:07,216 WARNING  [lm_eval.__main__:316]  --limit SHOULD ONLY BE USED FOR TESTING.REAL METRICS SHOULD NOT BE COMPUTED USING LIMIT.
+2026-08-23:15:54:07,217 INFO     [lm_eval.__main__:379] Selected Tasks: ['mgsm_native_cot_sw']
+2026-08-23:15:54:07,219 INFO     [lm_eval.evaluator:169] Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+2026-08-23:15:54:07,219 INFO     [lm_eval.evaluator:206] Initializing dream model, with arguments: {'pretrained': 'Dream-org/Dream-v0-Instruct-7B', 'max_new_tokens': 1024, 'diffusion_steps': 1024, 'max_length': 4096, 'alg': 'confidence_threshold', 'threshold': 0.9, 'use_cache': True, 'apply_chat_template': True}
+2026-08-23:15:54:07,394 INFO     [__main__:110] Using device 'cuda'
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.01it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.03it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.09it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.50it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.30it/s]
+/root/fdllm-venv/lib/python3.11/site-packages/transformers/generation/configuration_utils.py:629: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/root/fdllm-venv/lib/python3.11/site-packages/transformers/generation/configuration_utils.py:629: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+2026-08-23:15:54:44,446 INFO     [lm_eval.api.task:420] Building contexts for mgsm_native_cot_sw on rank 0...
+  0%|          | 0/100 [00:00<?, ?it/s]100%|██████████| 100/100 [00:00<00:00, 1768.31it/s]
+2026-08-23:15:54:44,505 INFO     [lm_eval.evaluator:517] Running generate_until requests
+Running generate_until requests:   0%|          | 0/100 [00:00<?, ?it/s]generated_token_num: 11
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Bata wa Janet hutaga mayai 16 kila siku. Huwa anakula matatu wakati wa staftahi kila asubuhi na huokea marafiki zake mafini kila siku kwa mayai manne. Huwa anauza yaliyosalia katika soko la wakulima kila siku kwa $2 kwa kila yai la bata. Huwa anatengeneza pesa ngapi katika dola kila siku katika soko la wakulima?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Hata anatengeneza $32.
+====================
+
+Running generate_until requests:   1%|          | 1/100 [00:07<12:56,  7.85s/it]generated_token_num: 16
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Joho hutumia komeo 2 za ufumwele wa buluu na nusu ya kiasi hicho cha ufumwele mweupe. Huwa inatumia jumla ya komeo ngapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Komeo 2
+====================
+
+Running generate_until requests:   2%|▏         | 2/100 [00:14<11:35,  7.10s/it]generated_token_num: 65
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Josha anaamua kujaribu kununua nyumba na kuuza kwa faida. Ananunua nyumba kwa $80,000 na kutumia $50,000 kuikarabati. Hii iliongeza thamani ya nyumba hiyo kwa 150%. Alipata faida ya kiasi gani?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  (a) $20,000
+(b) $30,000
+(c) $40,000
+(d) $50,000
+(e) $60,000
+====================
+
+Running generate_until requests:   3%|▎         | 3/100 [00:21<11:38,  7.20s/it]generated_token_num: 160
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: James anaamua kukimbia mbio 3 fupi mara 3 kwa wiki. Anakimbia mita 60 kwa kila mbio fupi. Huwa anakimbia jumla ya mita ngapi kwa wiki?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  James anakimbia mbio 3 fupi mara 3 kwa wiki, hivyo anakimbia mbio 3*3 = 9 fupi kwa wiki. Anakimbia mita 60 kwa kila mbio fupi, hivyo anakimbia mita 60*9 = 540 kwa wiki. Jibu hii ni 540.
+====================
+
+Running generate_until requests:   4%|▍         | 4/100 [00:32<13:54,  8.69s/it]generated_token_num: 162
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Kila siku, Wendi hulisha kila mmoja kati ya kuku wake vikombe vitatu vya chakula mseto cha kuku, kilicho na mbegu, wadudu na mboga ili kusaidia kudumisha afya yao nzuri. Yeye hupatia kuku hao chakula chao katika milo mitatu tofauti. Asubuhi, huwapa kuku wake vikombe 15 vya chakula. Mchana, huwapa kuku wake vikombe vingine 25 vya chakula. Anahitaji kuwapa kuku wake vikombe vingapi vya chakula katika mlo wa mwisho wa siku iwapo idadi ya kuku wa Wendi ni kuku 20?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  10
+====================
+
+Running generate_until requests:   5%|▌         | 5/100 [00:38<12:02,  7.61s/it]generated_token_num: 264
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Kylar alienda kwa duka kununua vioo vya jengo lake jipya. Kioo kimoja kinagharimu $5, lakini kila kioo cha pili kinagharimu 60% pekee ya bei. Kylar anataka kununua vioo 16. Anahitaji kulipa pesa ngapi kwa vioo hivyo?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Kila kioo cha pili kinagharimu 60% pekee ya $5, hivyo ni $5 * 0.6 = $3. Kila kioo cha pili kinagharimu $5 + $3 = $8. Kylar anataka kununua vioo 16, hivyo anahitaji kulipa 16 * $8 = $128. Jibu ni 128.
+====================
+
+Running generate_until requests:   6%|▌         | 6/100 [00:50<14:25,  9.21s/it]generated_token_num: 303
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Toulouse lina kondoo mara mbili ya idadi ya kondoo katika Charleston. Charleston lina kondoo mara 4 ya idadi ya kondoo katika Seattle. Majiji ya Toulouse, Charleston, na Seattle yana jumla ya kondoo wangapi kwa pamoja iwapo Seattle lina kondoo 20?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Toulouse lina kondoo 40. Charleston lina kondoo 80. Toulouse, Charleston, na Seattle yana jumla ya kondoo 140.
+====================
+
+Running generate_until requests:   7%|▋         | 7/100 [00:58<13:31,  8.73s/it]generated_token_num: 418
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Carla anapakua faili ya GB 200. Kwa kawaida anaweza kupakua GB 2 kila dakika, lakini akiwa 40% ya upakuaji, Windows hulazimisha kuanza upya ili kupakia visasisho, na huchukua dakika 20. Kisha Carla ni lazima aanze tena kupakua kuanzia mwanzoni. Itamchukua muda gani kupakuafaili hiyo?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Carla anapakua faili ya GB 200. Kwa kawaida anaweza kupakua GB 2 kila dakika, lakini akiwa 40% ya upakuaji, Windows hulazimisha kuanza upya ili kupakia visasisho, na huchukua dakika 20. Kisha Carla ni lazima anze tena kupakua kuanzia mwanzoni. Itamchukua muda gani kupakuafaili hiyo?
+====================
+
+Running generate_until requests:   8%|▊         | 8/100 [01:08<14:00,  9.13s/it]generated_token_num: 539
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: John huendesha kwa saa 3 kwa kasi ya maili 60 kwa kila saa na kisha kugeuka kwa sababu anagundua kuwa amesahau kitu muhimu sana nyumbani. Anajaribu kurudi nyumbani kwa saa 4 lakini anatumia saa 2 za kwanza katika trafiki isiyosonga. Anatumia nusu saa inayofuata akiendesha kwa kasi ya maili 30 kwa kila saa, kabla ya kuweza kuendesha muda unaosalia kwa saa 4 katika kasi ya maili 80 kwa saa. Yuko umbali upi kutoka nyumbani mwishoni mwa saa hizo 4?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  John huendesha kwa saa 3 kwa kasi ya maili 60 kwa kila saa, hivyo anapata 3 * 60 = 180 maili. Anatumia saa 2 kwa kasi ya maili 30 kwa kila saa, hivyo anapata 2 * 30 = 60 maili. Hivyo, kwa saa 4, anapata 180 + 60 = 240 maili.
+====================
+
+Running generate_until requests:   9%|▉         | 9/100 [01:20<15:00,  9.90s/it]generated_token_num: 613
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Kiwango cha Eliza kila saa kwa saa 40 za kwanza anazofanya kazi kila wiki ni $10. Pia anapokea malipo ya muda wa ziada ya mara 1.2 ya malipo yake ya kawaida ya saa. Iwapo Eliza alifanya kazi kwa saa 45 wiki hii, mapato yake ya wiki hii ni ngapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Eliza alifanya kazi kwa saa 45, anapokea malipo ya kawaida ya saa 40 mara 1.2, ni ni $10 * 1.2 = $12. Mapato yake ya wiki hii ni $10 + $12 = $22.
+====================
+
+Running generate_until requests:  10%|█         | 10/100 [01:32<16:07, 10.75s/it]generated_token_num: 713
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Programu mpya ilipakuliwa mara 60 mwezi wa kwanza. Idadi ya upakuaji katika mwezi wa pili ulikuwa mara tatu ya idadi ya upakuaji katika mwezi wa kwanza, lakini ikapungua kwa 30% katika mwezi wa tatu. Programu hiyo ilipakuliwa mara ngapi kwa jumla katika miezi hiyo mitatu?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Mwezi wa pili ilipakuliwa mara 60 * 3 = 180. Mwezi wa tatu ilipakuliwa mara 180 * 70 / 100 = 126. Jumla ya upakuaji katika miezi hiyo mitatu ni 60 + 180 + 126 = 366. Jibu: 366.
+====================
+
+Running generate_until requests:  11%|█         | 11/100 [01:43<16:11, 10.91s/it]generated_token_num: 764
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Toula alienda kwenye tanuri mikate na akanunua aina mbalimbali za vitobosho. Alinunua dazeni 3 za donati zinazogharimu $68 kwa kila dazeni, dazeni 2 za keki ndogo zinazogharimu $80 kwa kila dazeni, na dazeni 6 za keki ndogo za jibini kwa $55 kwa kila dazeni. Jumla ya gharama ilikuwa ngapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Jumla ya gharama ilikuwa 3 * $68 + 2 * $80 + 6 * $55 = $204 + $160 + $330 = $694.
+====================
+
+Running generate_until requests:  12%|█▏        | 12/100 [01:52<14:50, 10.12s/it]generated_token_num: 912
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Carlos anapanda mlimau. Mti huo utagharimu $90 kuupanda. Kila mwaka utazaa limau 7, anazoweza kuuza kwa $1.5 kila moja. Gharama ya kunyunyiza maji na kulisha mti huo kila mwaka ni $3. Itachukua miaka mingapi kabla ya yeye kuanza kupata mapato kutoka kwa mlimau huo?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Mti huo utagharimu $90. Kila mwaka, anazoweza kuuza $1.5 * 7 = $10.5. Kila mwaka, anazoweza kuuza $10.5 + $3 = $13.5. Kila mwaka, anazoweza kuuza $13.5 * 12 = $162. Kila mwaka, anazoweza kuuza $162 - $90 = $72. Kila miaka anazoweza kuuza $72 * 2 = $144. Jibu hii ni 2.
+====================
+
+Running generate_until requests:  13%|█▎        | 13/100 [02:06<16:40, 11.50s/it]generated_token_num: 1935
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Melanie ni mfanyabiashara wa nyumba kwa nyumba. Aliuza theluthi moja ya visafishaji vyake vya kuvuta uchafu katika nyumba ya kijani, 2 zaidi kwa nyumba nyekundu, na nusu ya vilivyosalia katika nyumba ya rangi ya chungwa. Iwapo Melanie amesalia na visafishaji 5 vya kuvuta uchafu, alianza na vingapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  (a) 1
+(b) 2
+(c) 3
+(d) 4
+(e) 5
+(f) 6
+(g) 7
+(h) 8
+(i) 9
+(j) 10
+(k) 11
+(l) 12
+(m) 13
+(n) 14
+(o) 15
+(p) 16
+(q) 17
+(r) 18
+(s) 19
+(t) 20
+(u) 21
+(v) 22
+(w) 23
+(x) 24
+(y) 25
+(z) 26
+(a) 27
+(b) 28
+(c) 29
+(d) 30
+(e) 31
+(f) 32
+(g) 33
+(h) 34
+(i) 35
+(j) 36
+(k) 37
+(l) 38
+(m) 39
+(n) 40
+(o) 41
+(p) 42
+(q) 43
+(r) 44
+(s) 45
+(t) 46
+(u) 47
+(v) 48
+(w) 49
+(x) 50
+(y) 51
+(z) 52
+(a) 53
+(b) 54
+(c) 55
+(d) 56
+(e) 57
+(f) 58
+(g) 59
+(h) 60
+(i) 61
+(j) 62
+(k) 63
+(l) 64
+(m) 65
+(n) 66
+(o) 67
+(p) 68
+(q) 69
+(r) 70
+(s) 71
+(t) 72
+(u) 73
+(v) 74
+(w) 75
+(x) 76
+(y) 77
+(z) 78
+(a) 79
+(b) 80
+(c) 81
+(d) 82
+(e) 83
+(f) 84
+(g) 85
+(h) 86
+(i) 87
+(j) 88
+(k) 89
+(l) 90
+(m) 91
+(n) 92
+(o) 93
+(p) 94
+(q) 95
+(r) 96
+(s) 97
+(t) 98
+(u) 99
+(v) 100
+(w) 101
+(x) 102
+(y) 103
+(z) 104
+(a) 105
+(b) 106
+(c) 107
+(d) 108
+(e) 109
+(f) 110
+(g) 111
+(h) 112
+(i) 113
+(j) 114
+(k) 115
+(l) 116
+(m) 117
+(n) 118
+(o) 119
+(p) 120
+(q) 121
+(r) 122
+(s) 123
+(t) 124
+(u) 125
+(v) 126
+(w) 127
+(x) 128
+(y) 129
+(z) 130
+(a) 131
+(b) 132
+(c) 133
+(d) 134
+(e) 135
+(f) 136
+(g) 137
+(h) 138
+(i) 139
+(j) 140
+(k) 141
+(l) 142
+(m) 143
+(n) 144
+(o) 145
+(p) 146
+(q) 147
+(r) 148
+(s) 149
+(t) 150
+(u) 151
+(v) 152
+(w) 153
+(x) 154
+(y) 155
+(z) 156
+(a) 157
+(b) 158
+(c) 159
+(d) 160
+(e) 161
+(f) 1
+====================
+
+Running generate_until requests:  14%|█▍        | 14/100 [02:16<15:50, 11.05s/it]generated_token_num: 1971
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Katika darasa la densi lenye wanafunzi 20, 20% walijisajili katika densi ya kisasa, 25% ya waliosalia walijisajili katika densi ya jazi, na wengine waliosalia wakajisajili katika densi ya muziki wa kufoka. Ni asilimia ngapi ya wanafunzi wote walijisajili katika densi ya muziki wa kufoka?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  20% ya 20 ni 4, 25% ya 20 ni 5, na 25% ya 20 ni 5.
+====================
+
+Running generate_until requests:  15%|█▌        | 15/100 [02:26<15:10, 10.71s/it]generated_token_num: 1995
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Mfanyabiashara anataka kufanya chaguo la ununuzi kati ya mipango 2 ya ununuzi: mapambo ya kito yenye thamani ya $5,000 au vifaa vya eletroniki vyenye thamani ya $8,000. Mshauri wake wa kifedha anakadiria kuwa soko la mapambo ya kito litapanda hadi 2.5% huku soko la vifaa vya elektroniki litapanda hadi 1.2% ndani ya mwezi huo mmoja. Iwapo mfanyabiashara huyo anataka kuwa na faida za juu zaidi mwishoni mwa mwezi huu kwa kufanya chaguo, hii itakuwa faida ya kiasi gani?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Mfanyabiashara anataka kufanya chaguo la vifaa vya elektroniki.
+====================
+
+Running generate_until requests:  16%|█▌        | 16/100 [02:34<13:29,  9.63s/it]generated_token_num: 2080
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Treni mbili zimetoka San Rafael kwa wakati mmoja. Zimeanza kusafiri kwenda upande wa Magharibi, zote mbili zinaenda umbali wa maili 80. Siku inayofuata, zinasafiri kwenda upande wa Kaskazini, umbali wa maili 150. Umbali ambao treni hizo mbili zilienda kwa siku hizo mbili ni gani?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Treni mbili zimetoka San Rafael kwa wakati mmoja, zinaenda umbali wa maili 80 kwa siku mmoja, na umbali wa maili 150 kwa siku mmoja. Siku zote mbili, zinaenda umbali wa maili 80 + 150 = 230.
+====================
+
+Running generate_until requests:  17%|█▋        | 17/100 [02:45<13:58, 10.10s/it]generated_token_num: 2182
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Jill analipwa $20 kila saa kufunza na $30 kuwa kocha wa mashabiki. Iwapo huwa anafanya kazi wiki 50 kwa mwaka, saa 35 kwa wiki kama mwalimu na saa 15 kama kocha, mshahara wake wa kila mwaka ni ngapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Jill analipwa $20 kila saa kufunza na $30 kila saa kama kocha. Kwa mwaka, Jill analipwa 50 * $20 = $1000 kama mwalimu na 50 * $30 = $1500 kama kocha. Kwa mwaka, Jill analipwa $1000 + $1500 = $2500.
+====================
+
+Running generate_until requests:  18%|█▊        | 18/100 [02:57<14:53, 10.89s/it]generated_token_num: 2184
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Claire huandaa kimanda chenye mayai 3 kila asubuhi wakati wa staftahi. Atakula dazeni ngapi za mayai baada katika wiki 4?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  12
+====================
+
+Running generate_until requests:  19%|█▉        | 19/100 [03:04<12:51,  9.53s/it]generated_token_num: 2313
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Marissa anatembea masafa marefu ya maili 12. Alitumia saa 1 kutembea maili 4 za kwanza, kisha saa nyingine moja kutembea maili mbili zinazofuata. Iwapo anataka kasi yake ya wastani iwe maili 4 kwa saa, anahitaji kutembea kwa kasi (katika maili kwa saa) gani kwa umbali unaosalia?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Marissa anatembea maili 4 kwa saa 1, kisha anatembea maili 2 kwa saa 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, na 12. 4 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 = 28. Marissa anatembea maili 28 kwa saa 12. Kwa
+====================
+
+Running generate_until requests:  20%|██        | 20/100 [03:20<15:32, 11.65s/it]generated_token_num: 2315
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Nina lita 10 za kinywaji cha chungwa ambacho theluthi mbili zake ni maji na ningependelea kukiongeza kwenye lita 15 za kinyaji cha nanasi ambacho humusi tatu zake ni maji. Lakini ninapokimimina, nimemwaga lita moja ya kinywaji cha chungwa. Kiasi kipi cha maji kipo kwenye lita 24 zinazosalia?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  10
+====================
+
+Running generate_until requests:  21%|██        | 21/100 [03:27<13:09,  9.99s/it]generated_token_num: 2392
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Raymond na Samantha ni binamu. Raymond alizaliwa miaka 6 kabla ya Samantha. Raymond alipata mwana akiwa na umri wa miaka 23. Iwapo Samantha sasa ana umri wa miaka 31, mwana wa Raymond alizaliwa miaka mingapi iliyopita?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Samantha alizaliwa miaka 6 kabla ya Raymond, hivyo alizaliwa miaka 23 + 6 = 29. Samantha sasa ana umri wa miaka 31, hivyo mwana wa Raymond alizaliwa miaka 31 - 29 = 2 iliyopita.
+====================
+
+Running generate_until requests:  22%|██▏       | 22/100 [03:38<13:42, 10.54s/it]generated_token_num: 2393
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Billy huuza santuri za DVD. Ana wateja 8 Jumanne. Wateja wake 3 wa kwanza hununua DVD moja kila mmoja. Wateja wake 2 wanaofuata hununua DVD 2 kila mmoja. Wateja wake 3 wa mwisho hawanunui DVD yoyote. Billy aliuza DVD ngapi siku ya Jumanne?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  A
+====================
+
+Running generate_until requests:  23%|██▎       | 23/100 [03:45<12:04,  9.41s/it]generated_token_num: 2458
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Mshumaa huyeyuka kwa sentimita 2 kila saa inayowaka. Mshumaa utapungua kwa sentimita ngapi baada ya kuwaka kuanzia saa 7:00 mchana hadi saa 11:00 jioni?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Mshumaa utapungua kwa sentimita 2 kila saa, kwa saa 7:00 mchana na saa 11:00 jioni, utapungua kwa sentimita 2 * 4 = 8 sentimita.
+====================
+
+Running generate_until requests:  24%|██▍       | 24/100 [03:56<12:26,  9.82s/it]generated_token_num: 2496
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Kyle alinunua kitabu kilichonunuliwa zaidi mwaka jana kwa $19.50. Hii ni baada ya kupokea kipunguzo cha 25% ya bei ya asili. Bei asili ya kitabu hicho ilikuwa ngapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  19.50 / 0.75 = 26.00. Kitabu hicho katika bei ya asili ya $26.00.
+====================
+
+Running generate_until requests:  25%|██▌       | 25/100 [04:05<11:58,  9.58s/it]generated_token_num: 2532
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Marie aliagiza chakula kimoja cha kuku kinachogharimu $12, pakiti 5 za maziwa zinazogharimu $3 kila moja, tufaha 4 zinazogharimu $1.50 kila moja, na maboksi mengine ya pizza. Marie alilipa jumla ya $50. Marie aliagiza maboksi mangapi ya pizza ikiwa kila boksi linagharimu $8.50?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Marie alilipa $50 - $12 - $15 - $6 = $17 maboksi ya pizza. Maboksi ya pizza
+====================
+
+Running generate_until requests:  26%|██▌       | 26/100 [04:16<12:19,  9.99s/it]generated_token_num: 2667
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Mishka alinunua jozi 3 za kaptura, jozi 3 za suruali, na jozi 3 za viatu. Jozi moja ya kaptura ni $16.50. Jozi moja ya suruali ni $22.50 na jozi moja ya viatu ni $42. Mishka alitumia dola ngapi kununua bidhaa zote za mavazi alizonunua?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Mishka alinunua jozi 3 za kaptura, jozi 3 za suruali, na jozi 3 za viatu. Jozi moja ya kaptura ni $16.50. Jozi moja ya suruali ni $22.50 na jozi moja ya viatu ni $42. Mishka alitumia dola 3 * 16.50 + 3 * 22.50 + 3 * 42 = 49.50 + 67.50 + 126 = $243.
+====================
+
+Running generate_until requests:  27%|██▋       | 27/100 [04:27<12:28, 10.25s/it]generated_token_num: 2828
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Cynthia hukula kipande kimoja cha aiskrimu kila usiku. Yeye hununua katoni za aiskrimu zilizo na vipande 15 vya aiskrimu kwa kila katoni kwa bei ya $4.00 kwa kila katoni. Baada ya siku 60, atakuwa ametumia pesa ngapi kwenye aiskrimu?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Cynthia hukula kipande kimoja cha aiskrimu kila usiku, na kila kipande hupatikana na 15 katoni za aiskrimu, hivyo kutumia 1 * 15 = 15 katoni za aiskrimu kila usiku. Kila katoni ya aiskrimu huitumia $4.00, hivyo kila usiku, kutumia 15 * $4.00 = $60.00. Baada ya siku 60, atakuwa ametumia 60 * $60.00 = $3600.00 kwenye aiskrimu.
+====================
+
+Running generate_until requests:  28%|██▊       | 28/100 [04:42<14:14, 11.87s/it]generated_token_num: 3851
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Henry alisimama mara mbili wakati wa safari yake ya maili 60 kwa baiskeli. Alisimama mara ya kwanza baada ya maili 20. Alisimama mara ya pili akiwa amebakisha maili 15 ili amalize safari hiyo. Alisafiri maili ngapi kati ya kusimama mara ya kwanza na ya pili?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  (a) 10
+(b) 15
+(c) 20
+(d) 25
+(e) 30
+(f) 35
+(g) 40
+(h) 45
+(i) 50
+(j) 55
+(k) 60
+(l) 65
+(m) 70
+(n) 75
+(o) 80
+(p) 85
+(q) 90
+(r) 95
+(s) 100
+(t) 105
+(u) 110
+(v) 115
+(w) 120
+(x) 125
+(y) 130
+(z) 135
+(a) 140
+(b) 145
+(c) 150
+(d) 155
+(e) 160
+(f) 165
+(g) 170
+(h) 175
+(i) 180
+(j) 185
+(k) 190
+(l) 195
+(m) 200
+(n) 205
+(o) 210
+(p) 215
+(q) 220
+(r) 225
+(s) 230
+(t) 235
+(u) 240
+(v) 245
+(w) 250
+(x) 255
+(y) 260
+(z) 265
+(a) 270
+(b) 275
+(c) 280
+(d) 285
+(e) 290
+(f) 295
+(g) 300
+(h) 305
+(i) 310
+(j) 315
+(k) 320
+(l) 325
+(m) 330
+(n) 335
+(o) 340
+(p) 345
+(q) 350
+(r) 355
+(s) 360
+(t) 365
+(u) 370
+(v) 375
+(w) 380
+(x) 385
+(y) 390
+(z) 395
+(a) 400
+(b) 405
+(c) 410
+(d) 415
+(e) 420
+(f) 425
+(g) 430
+(h) 435
+(i) 440
+(j) 445
+(k) 450
+(l) 455
+(m) 460
+(n) 465
+(o) 470
+(p) 475
+(q) 480
+(r) 485
+(s) 490
+(t) 495
+(u) 500
+(v) 505
+(w) 510
+(x) 515
+(y) 520
+(z) 525
+(a) 530
+(b) 535
+(c) 540
+(d) 545
+(e) 550
+(f) 555
+(g) 560
+(h) 565
+(i) 570
+(j) 575
+(k) 580
+(l) 585
+(m) 590
+(n) 595
+(o) 600
+(p) 605
+(q) 610
+(r) 615
+(s) 620
+(t) 625
+(u) 630
+(v) 635
+(w) 640
+(x) 645
+(y) 650
+(z) 655
+(a) 660
+(b) 665
+(c) 670
+(d) 675
+(e) 680
+(f) 685
+(g) 690
+(h) 695
+(i) 700
+(j) 705
+(k) 710
+(l) 715
+(m) 720
+(n) 725
+(o) 730
+(p) 735
+(q) 740
+(r) 745
+(s) 75
+====================
+
+Running generate_until requests:  29%|██▉       | 29/100 [04:54<13:57, 11.80s/it]generated_token_num: 3853
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Gloria ananunua anapokutana na jozi ya mabuti inayotoshea bajeti yake ya kiatu. Hata hivyo, ni lazima achague kati ya mabuti hayo na jozi mbili za viatu vyenye visigino vilivyoinuka ambazo kwa pamoja gharama yao ni chini ya gharama ya mabuti kwa dola tano. Iwapo jozi moja ya viatu vyenye visigino vilivyoinuka inagharimu $33 na jozi hiyo nyingine bei yake ni mara mbili ya jozi ya kwanza, bei ya mabuti ni dola ngapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  15
+====================
+
+Running generate_until requests:  30%|███       | 30/100 [05:00<11:38,  9.98s/it]generated_token_num: 3958
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Umri wa Darrel na Allen upo katika uwiano wa 7:11. Iwapo jumla ya umri wao wa sasa ni miaka 162, piga hesabu ya umri wa Allen miaka 10 ijayo kutoka sasa.
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  162 - 18 = 144
+144 - 18 = 126
+126 - 18 = 108
+108 - 18 = 90
+90 - 18 = 72
+72 - 18 = 54
+54 - 18 = 36
+36 - 18 = 18
+18 - 18 = 0
+
+====================
+
+Running generate_until requests:  31%|███       | 31/100 [05:11<12:03, 10.48s/it]generated_token_num: 4981
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Gunter anajaribu kuhesabu peremende zilizo kwenye chupa kubwa. Anawauliza marafiki zake kuwa wanadhani peremende ngapi zipo kwenye chupa hiyo kubwa. Mmoja anasema 80. Mwingine anasema 20 zaidi ya nusu ya ile wa kwanza alisema. Wa tatu anasema 25% zaidi ya wa kwanza. Wastani ya kisio lao ni ngapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  80 + 20 = 100. 100 + 20 = 120. 120 + 20 = 140. 140 + 20 = 160. 160 + 20 = 180. 180 + 20 = 200. 200 + 20 = 220. 220 + 20 = 240. 240 + 20 = 260. 260 + 20 = 280. 280 + 20 = 300. 300 + 20 = 320. 320 + 20 = 340. 340 + 20 = 360. 360 + 20 = 380. 380 + 20 = 400. 400 + 20 = 420. 420 + 20 = 440. 440 + 20 = 460. 460 + 20 = 480. 480 + 20 = 500. 500 + 20 = 520. 520 + 20 = 540. 540 + 20 = 560. 560 + 20 = 580. 580 + 20 = 600. 600 + 20 = 620. 620 + 20 = 640. 640 + 20 = 660. 660 + 20 = 680. 680 + 20 = 700. 700 + 20 = 720. 720 + 20 = 740. 740 + 20 = 760. 760 + 20 = 780. 780 + 20 = 800. 800 + 20 = 820. 820 + 20 = 840. 840 + 20 = 860. 860 + 20 = 880. 880 + 20 = 900. 900 + 20 = 920. 920 + 20 = 940. 940 + 20 = 960. 960 + 20 = 980. 980 + 20 = 1000. 1000 + 20 = 1020. 1020 + 20 = 1040. 1040 + 20 = 1060. 1060 + 20 = 1080. 1080 + 20 = 1100. 1100 + 20 = 1120. 1120 + 20 = 1140. 1140 + 20 = 1160. 1160 + 20 = 1180. 1180 + 20 = 1200. 1200 + 20 = 1220. 1220 + 20 = 1240. 1240 + 20 = 1260. 1260 + 20 = 1280. 1280 + 20 = 1300. 1300 + 20 = 1320. 1320 + 20 = 1340. 1340 + 20 = 1360. 1360 + 20 = 1380. 1380 + 20 = 1400. 1400 + 20 = 1420. 1420 + 20 = 1440. 1440 + 20 = 1460. Jibu la hayo ni 1460.
+====================
+
+Running generate_until requests:  32%|███▏      | 32/100 [05:27<13:38, 12.04s/it]generated_token_num: 5002
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: John hutunza mbwa 10. Kila mbwa humchukua saa .5 kwa siku kutembeza na kushughulikia. Huwa anatumia saa ngapi kwa wiki kuwatunza mbwa hao?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  John anatumia saa 5 kwa siku kuwatunza mbwa zao.
+====================
+
+Running generate_until requests:  33%|███▎      | 33/100 [05:34<11:50, 10.61s/it]generated_token_num: 5018
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Gretchen ana sarafu 110. Kuna sarafu 30 za dhahabu zaidi ya sarafu za fedha. Gretchen ana sarafu ngapi za dhahabu?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Gretchen ana sarafu 40 za dhahabu.
+====================
+
+Running generate_until requests:  34%|███▍      | 34/100 [05:41<10:15,  9.33s/it]generated_token_num: 5088
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Siobhan ana vito 2 chache zaidi ya vya Aaron. Aaron ana vito 5 zaidi ya nusu ya vito vya Raymond. Ikiwa Raymond ana vito 40, Siobhan ana vito vingapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Siobhan ana vito 2 chache zaidi ya vya Aaron. Aaron ana vito 5 zaidi ya nusu ya vito vya Raymond. Ikiwa Raymond ana vito 40, Siobhan ana vito 2 chache 5 chache 40 = 42.
+====================
+
+Running generate_until requests:  35%|███▌      | 35/100 [05:52<10:35,  9.78s/it]generated_token_num: 5153
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Mike anacheza tenisi kwa dakika 40. Katika dakika 20 za kwanza, anafunga alama 4. Katika dakika 20 za pili, anafunga alama 25% zaidi. Alifunga jumla ya alama ngapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Mike anafunga alama 4 katika dakika 20 za kwanza. Katika dakika 20 za pili, anafunga alama 25% zaidi, hivyo, anafunga 4 * 1.25 = 5 alama.
+====================
+
+Running generate_until requests:  36%|███▌      | 36/100 [06:03<10:59, 10.30s/it]generated_token_num: 5265
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Terry hukunywa maziwa 2 ya mtindi. Kwa sasa kuna ofa ya maziwa 4 ya mtindi kwa $5.00. Huwa anatumia pesa ngapi kununua maziwa ya mtindi kwa kipindi cha siku 30?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Terry hukunywa maziwa 2 ya mtindi, kwa sasa kuna ofa ya maziwa 4 ya mtindi kwa $5.00, kwa hii kuwa ananunua maziwa 2 * $5.00 = $10.00 ya mtindi. Kwa kipindi cha siku 30, Terry ananunua maziwa 30 * $10.00 = $300.00.
+====================
+
+Running generate_until requests:  37%|███▋      | 37/100 [06:17<11:48, 11.25s/it]generated_token_num: 5386
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: John anapanga kuuza wanasesere wake wote na kutumia pesa hizo kununua michezo ya video. Ana seti 13 za lego na anaziuza kwa $15 kwa kila seti. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusalia na $5. Bado ana seti ngapi za lego?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  John anaseti 13 za lego na anaziuza kwa $15 kwa kila seti, kwa hii anapata 13 * $15 = $195. Anafanikiwa kununua michezo 8 ya video kwa $20 kila moja na kusalia na $5, kwa hii anapata 8 * $20 + $5 = $165. Bado, anapata $195 - $165 = $30.
+====================
+
+Running generate_until requests:  38%|███▊      | 38/100 [06:29<12:08, 11.75s/it]generated_token_num: 5463
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: John hukimbia maili 60 kwa wiki. Huwa anakimbia siku 3 kwa wiki. Huwa anakimbia saa 3 siku ya kwanza na nusu ya kiasi hicho kwa siku nyingine mbili anazokimbia. Huwa anakimbia kwa kasi gani?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  John hukimbia maili 60 kwa wiki. Huwa anakimbia siku 3 kwa wiki. Huwa anakimbia saa 3 siku ya kwanza na nusu ya kiasi hicho kwa siku nyingine mbili anazokimbia. Huwa anakimbia kwa kasi gani?
+====================
+
+Running generate_until requests:  39%|███▉      | 39/100 [06:38<11:03, 10.87s/it]generated_token_num: 5558
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Dana anaweza kukimbia kwa kiwango cha kasi ambayo ni mara nne zaidi ya anavyoweza kutembea, lakini anaweza kuruka kwa kiwango cha kasi ambayo ni nusu ya kasi yake ya kukimbia. Iwapo anaweza kuruka maili 3 kwa saa, anaweza kusafiri maili ngapi kwa saa sita iwapo anatumia theluthi moja ya saa kukimbia na theluthi mbili ya saa kutembea?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Dana anaweza kuruka maili 3 kwa saa, lakini anaweza kukimbia maili 3/4 kwa saa. Iwapo anatumia theluthi moja ya saa kukimbia na theluthi mbili ya saa kutembea, anaweza kusafiri maili 3/4 + 3 = 15/4 kwa saa.
+====================
+
+Running generate_until requests:  40%|████      | 40/100 [06:49<10:58, 10.98s/it]generated_token_num: 5595
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: iPhone ya Brandon ni ya zamani mara nne zaidi ya iPhone ya Ben. iPhone ya Ben ni ya zamani mara mbili zaidi ya iPhone ya Suzy. Iwapo iPhone ya Suzy imekaa mwaka 1, iPhone ya Brandon imekaa kwa miaka mingapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Iwapo iPhone ya Suzy imekaa mwaka 1, iPhone ya Ben imekaa mwaka 2. iPhone ya Brandon imekaa mwaka 8.
+====================
+
+Running generate_until requests:  41%|████      | 41/100 [06:59<10:26, 10.63s/it]generated_token_num: 5642
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Zimwi mkubwa, Perg, alikaa sehemu ya juu zaidi ya mlima Farbo, akiwa na hasira zaidi kwa kitu chochote ndani ya umbali wa futi 1000. Polly aliweza kutupa mkuki wa dhahabu, silaha pekee inayojulikana inayoweza kumfikia zimwi huyo, kwa umbali wa futi 400, vizuri ndani ya ufikiaji wa miale ya zimwi. Lakini Polly aliposhikilia johari, aliweza kutupa mkuki huo mara tatu zaidi ya umbali wa wakati ambapo hajashikilia johari. Akishikilia johari, ni umbali gani zaidi usioweza kufikiwa na miale ya zimwi ambao Polly angesimama na bado kuweza kumgonga zimwi huyo kwa mkuki wa dhahabu?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Polly aliweza kutupa mkuki wa dhahabu kwa umbali wa futi 400, kwa umbali wa futi 400 * 3 = 1200.
+====================
+
+Running generate_until requests:  42%|████▏     | 42/100 [07:09<09:52, 10.22s/it]generated_token_num: 5644
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Bibiye Jones alioka keki 5 za tufaha kwa ajili ya chamcha ya afisa wa kuzima moto. Alikata kila keki kwa vipande 8 na kupanga keki tano kwenye meza ya chakula cha kujipakulia ili wageni waweze kujipakulia. Mwishoni mwa jioni, baada ya wageni kuchukua na kula vipande vyao vya keki, kulikuwa na vipande 14 vya keki ambavyo vilikuwa vimesalia. Wageni walikula vipande vingapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  A.
+====================
+
+Running generate_until requests:  43%|████▎     | 43/100 [07:16<08:49,  9.29s/it]generated_token_num: 5698
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Kulingana na maelezo yake ya lishe, mfuko wa chipsi una kalori 250 kwa kila sehemu iliyopakuliwa. Iwapo mfuko wa gramu 300 una sehemu 5 za kupakuliwa, unaweza kula gramu ngapi iwapo lengo lako la kalori kila siku ni 2000 na tayari umekula kalori 1800?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  1800 - 1500 = 300. 300 / 250 = 1.2. 1.2 * 300 = 360. Jibu: 360.
+====================
+
+Running generate_until requests:  44%|████▍     | 44/100 [07:26<08:50,  9.46s/it]generated_token_num: 5802
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Charlie anataka kuuza mishumaa ya nta ya nyuki. Kwa kila pauni ya nta ya nyuki, anaweza kutengeneza mishumaa 10. Pauni moja ya nta ya nyuki na tambi zote zinagharimu $10.00. Akiuza kila mshumaa kwa $2.00 kwa kila moja, jumla ya faida yake akitengeneza na kuuza mishumaa 20 itakuwa ngapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Charlie kuuza mishumaa 20 na kutengeneza mishumaa 20 kwa $10.00. Kwa kila mshumaa, kuuza $2.00. Kuuza 20 mshumaa, kuuza 20 * $2.00 = $40.00. Charlie kuuza $10.00 + $40.00 = $50.00.
+====================
+
+Running generate_until requests:  45%|████▌     | 45/100 [07:40<09:55, 10.84s/it]generated_token_num: 6023
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Meredith ni mwanablogu huria ambaye huandika kuhusu mada za afya na kuwasilishia wateja kila siku kama kazi yake ya muda wote. Makala ya blogu huchukua wastani ya saa 4 kuyafanyia utafiti na kuandika. Wiki iliyopita, aliandika makala 5 Jumatatu na Jumanne akaandika makala mara 2/5 zaidi siku ya Jumatatu. Jumatano, aliandika makala mara mbili ya zaidi ya aliyoandika Jumanne. Piga hesabu ya jumla ya saa alitumia kuandika makala katika siku hizo tatu.
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Meredith akaandika makala 5 makala katika siku ya Jumatatu. Jumanne, akaandika makala mara 2/5 zaidi siku ya Jumatatu, hivyo akaandika makala 5 + (2/5 * 5) = 5 + 2 = 7 makala. Jumatano, akaandika makala mara mbili ya zaidi ya Jumanne, hivyo akaandika makala 7 * 2 = 14 makala. Jumla ya makala alitandika katika siku hai tatu ni 5 + 7 + 14 = 26 makala. Suna kutumika kuandika makala katika siku hai tatu ni 26 makala * 4 saa makala = 104 saa. Jumla ya saa alitumia kuandika makala katika siku hai tatu ni 104 saa.
+====================
+
+Running generate_until requests:  46%|████▌     | 46/100 [07:57<11:37, 12.91s/it]generated_token_num: 6024
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Candice aliweka karatasi 80 zenye vibandiko kwenye pochi lake kabla ya kuondoka kwenda kazini katika duka lake la kahawa. Akiwa njiani, alisimama katika duka na kununua kifurushi cha karatasi zenye Kibandiko; Akiwa kazini, aliweka katarasi moja yenye kibandiko kwenye vikombe 220 tofauti vya kahawa. Iwapo alikuwa amesalia na karatasi 23 zenye vibandiko kwa jumla, karatasi ngapi zenye vibandiko zilikuwa katika kifurushi alichonunua?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  K
+====================
+
+Running generate_until requests:  47%|████▋     | 47/100 [08:04<09:45, 11.04s/it]generated_token_num: 6225
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: John ananunua tai nyekundu mara mbili zaidi ya tai za buluu. Bei ya tai nyekundu ni 50% zaidi ya bei ya tai za buluu. Alitumia $200 kununua tai za buluu ambazo zinauzwa $40 kila moja. Alitumia pesa ngapi kununua tai?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  John alitumia $200 kununua tai za buluu ambazo zinauzwa $40 kila moja. John alitumia $200 / $40 = 5 tai za buluu. John ananunua tai nyekundu mara mbili zaidi ya tai za buluu, hivyo alitumia 5 * 2 = 10 tai nyekundu. Bei ya tai nyekundu ni 50% zaidi ya bei ya tai za buluu, hivyo alitumia $40 * 1.5 = $60 kila moja. Alitumia 10 * $60 = $600 kununua tai nyekundu. Alitumia $200 + $600 = $800 kununua tai. Jibu hii ni 800.
+====================
+
+Running generate_until requests:  48%|████▊     | 48/100 [08:20<10:45, 12.41s/it]generated_token_num: 7231
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Tracy alitumia kipande cha waya wenye urefu wa futi 4 kushikilia mimea ya nyanya kwenye shamba. Waya huo ulikatwa katika vipande vyenye urefu wa inchi 6. Alipata vipande vingapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  A. 2
+B. 3
+C. 4
+D. 5
+E. 6
+F. 7
+G. 8
+H. 9
+I. 10
+J. 11
+K. 12
+L. 13
+M. 14
+N. 15
+O. 16
+P. 17
+Q. 18
+R. 19
+S. 20
+T. 21
+U. 22
+V. 23
+W. 24
+X. 25
+Y. 26
+Z. 27
+AA. 28
+BB. 29
+CC. 30
+DD. 31
+EE. 32
+FF. 33
+GG. 34
+HH. 35
+II. 36
+JJ. 37
+KK. 38
+LL. 39
+LL. 40
+MM. 41
+NN. 42
+OO. 43
+PP. 44
+QQ. 45
+RR. 46
+SS. 47
+TT. 48
+UU. 49
+VV. 50
+WW. 51
+XX. 52
+YY. 53
+ZZ. 54
+AA. 55
+BB. 56
+CC. 57
+DD. 58
+EE. 59
+FF. 60
+GG. 61
+HH. 62
+II. 63
+JJ. 64
+KK. 65
+LL. 66
+MM. 67
+NN. 68
+OO. 69
+PP. 70
+QQ. 71
+RR. 72
+SS. 73
+TT. 74
+UU. 75
+VV. 76
+WW. 77
+XX. 78
+YY. 79
+ZZ. 80
+AA. 81
+BB. 82
+CC. 83
+DD. 84
+EE. 85
+FF. 86
+GG. 87
+HH. 88
+II. 89
+JJ. 90
+KK. 91
+LL. 92
+MM. 93
+NN. 94
+OO. 95
+PP. 96
+QQ. 97
+RR. 98
+SS. 99
+TT. 100
+UU. 101
+VV. 102
+WW. 103
+XX. 104
+YY. 105
+ZZ. 106
+AA. 107
+BB. 108
+CC. 109
+DD. 110
+EE. 111
+FF. 112
+GG. 113
+HH. 114
+II. 115
+JJ. 116
+KK. 117
+LL. 118
+MM. 119
+NN. 120
+OO. 121
+PP. 122
+QQ. 123
+RR. 124
+SS. 125
+TT. 126
+UU. 127
+VV. 128
+WW. 129
+XX. 130
+YY. 131
+ZZ. 132
+AA. 133
+BB. 134
+CC. 135
+DD. 136
+EE. 137
+FF. 138
+GG. 139
+HH. 140
+II. 141
+JJ. 142
+KK. 143
+LL. 144
+MM. 145
+NN. 146
+OO. 147
+PP. 148
+QQ. 149
+RR. 150
+SS. 151
+TT. 152
+UU. 153
+VV. 154
+WW. 155
+XX. 156
+YY. 157
+ZZ. 158
+AA. 159
+BB. 160
+====================
+
+Running generate_until requests:  49%|████▉     | 49/100 [08:31<10:16, 12.09s/it]generated_token_num: 7245
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Richard anaishi katika jengo la ghorofa lenye orofa 15. Kila orofa lina nyumba 8, na 3/4 ya jengo hilo linamilikiwa. Jumla ya idadi ya nyumba ambazo hazijamilikiwa katika jengo hilo ni ngapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Jibu la hatua kwa hatua: 120
+====================
+
+Running generate_until requests:  50%|█████     | 50/100 [08:37<08:40, 10.41s/it]generated_token_num: 7330
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Lloyd ana shamba la mayai. Kuku wake hutaga mayai 252 kwa siku na huwa anauza mayai hayo $2 kwa kila dazeni. Lloyd hupata pesa ngapi kutoka kwa mayai kila wiki?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Lloyd hupata $2 kwa kila dazeni, na kila siku hupata 252 dazeni. Kwa siku, Lloyd hupata 252 * 2 = $504. Kwa siku, Lloyd hupata 504 * 7 = $3528. Jibu: 3528.
+====================
+
+Running generate_until requests:  51%|█████     | 51/100 [08:49<08:44, 10.70s/it]generated_token_num: 7364
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Meli ya Tom inaweza kusafiri kwa kasi ya maili 10 kwa saa. Anasafiri kuanzia saa 7 mchana hadi saa 10 jioni. Kisha anasafiri akirudi kwa kasi ya maili 6 kwa saa. Itamchukua muda gani kurudi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  (a) 1 saa
+(b) 2 saa
+(c) 3 saa
+(d) 4 saa
+(e) 5 saa
+====================
+
+Running generate_until requests:  52%|█████▏    | 52/100 [08:56<07:41,  9.61s/it]generated_token_num: 7380
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Mkoba wa kitabu wa Uriah unakuwa mzito sana kwake. Anahitaji kuondoa pauni 15 kwenye mkoba huo. Vitabu vyake vya futuhi vina uzani wa pauni 1/4 kila kimoja na wanasesere wake wana uzani wa pauni 1/2 kila mmoja. Akiondoa vitabu 30 vya futuhi, anahitaji kuondoa wanasesere wangapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Uriah anahitaji kuondoa wanasesere 30.
+====================
+
+Running generate_until requests:  53%|█████▎    | 53/100 [09:03<07:00,  8.95s/it]generated_token_num: 7511
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Makanika hutoza viwango tofauti katika kukarabati tairi za malori na magari. Kwa kila tairi ya lori ambayo imekarabatiwa, makanika atatoza $60 na kwa kila tairi ya gari ambayo imekarabatiwa, makanika atatoza $40. Alhamisi, makanika huyo alikarabati tairin 6 za lori na tairi 4 za gari. Ijumaa, makanika huyo alikarabati tairi 12 za gari na hakukarabati tairi zozote za lori. Mapato zaidi ambayo makanika huyo alipata siku ambayo alipata mapato mengi zaidi ni ngapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Makanika huyo alikarabati tairi 6 za lori na tairi 4 za gari alipata (6 * $60) + (4 * $40) = $360 + $160 = $520. Ijumaa, makanika huyo alikarabati tairi 12 za gari alipata 12 * $40 = $480. Makanikao alipata $520 - $480 = $40 zaidi siku siku siku.
+====================
+
+Running generate_until requests:  54%|█████▍    | 54/100 [09:17<07:58, 10.41s/it]generated_token_num: 7513
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Dada wa Doubtfire wanaendesha wakielekea nyumbani na watoto 7 wa paka waliochukua kutoka makao ya wanyama katika eneo lao kisha mama yao akawapigia simu kuwa paka wao wawili wa nyumba wamezaa watoto. Anasema kuwa Patchy, paka wa kwanza, ana watoto ambao idadi yao ni mara tatu ya watoto wa paka waliotwaa, huku Trixie, paka mwingine, ana watoto 12. Familia ya Doubtfire sasa ina watoto wangapi wa paka?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  19
+====================
+
+Running generate_until requests:  55%|█████▌    | 55/100 [09:23<06:48,  9.07s/it]generated_token_num: 7518
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Jean ana pipi 30. Jean anakula pipi 2 kati ya pipi hizo. Kwa pipi zilizosalia,Jean anataka kuweka pipi 2 kwenye mfuko moja. Jean anaweza kujaza mifuko mingapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  15 mifuko
+====================
+
+Running generate_until requests:  56%|█████▌    | 56/100 [09:29<05:56,  8.11s/it]generated_token_num: 7584
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Pete anapanga kwenda kwa filamu wiki hii. Kila mara huwa anapata tikiti ya $7 na bisi ya $7. Iwapo ana dola 42 za kutumia kwa wiki, ni mara ngapi anaweza kwenda kwenye filamu?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Pete anapata dola 42 kwa tikiti na bisi. Kila mara huwa anapata dola 7 kwa tikiti na dola 7 kwa bisi. Kila mara huwa anapata dola 7 + 7 = 14.
+====================
+
+Running generate_until requests:  57%|█████▋    | 57/100 [09:42<06:49,  9.52s/it]generated_token_num: 7625
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Daraja la mbao linaweza kubeba pauni zisizozidi 5000. Lori la uwasilishaji lililojaa na maboksi yanayofanana, kila boksi likiwa na uzani wa pauni 15, litapita juu ya daraja hilo. Jumla ya uzani wa dereva na lori tupu ni pauni 3755. Idadi ya juu zaidi ya maboksi yanayoweza kupakiwa kwenye lori bila kuzidi kikomo cha uzani wa daraja hilo ni ngapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Idadi ya maboksi yanayoweza kupakiwa kwenye lori bila kuzidi kikomo cha uzani wa daraja hilo ni 250.
+====================
+
+Running generate_until requests:  58%|█████▊    | 58/100 [09:51<06:38,  9.49s/it]generated_token_num: 7799
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Stephen aliagiza mboga mtandaoni. Bili yake ya mwisho ilikuwa $40.00. Kwa sababu hii ilikuwa kupitia muuzaji wa kuwasilisha bidhaa, walitoza ada ya 25% kwenye jumla yake ya mwisho na kumtoza $3.00 kama ada ya uwasilishaji. Stephen pia aliongeza $4.00 ya bahshishi. Baada ya ada za ziada, bei ya mwisho ya mboga za Stephen ilikuwa ngapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Jumla ya mwisho ya mboga za Stephen ilikuwa $40.00. Baada ya ada ya 25%, jumla ilikuwa $40.00 + 0.25 * $40.00 = $40.00 + $10.00 = $50.00. Baada ya ada ya $3.00, jumla ilikuwa $50.00 + $3.00 = $53.00. Baada ya ada ya $4.00, jumla ilikuwa $53.00 + $4.00 = $57.00. Jumla ya mwisho ya mboga za Stephen ilikuwa $57.00.
+====================
+
+Running generate_until requests:  59%|█████▉    | 59/100 [10:05<07:21, 10.77s/it]generated_token_num: 7833
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Kichaka cha rasiberi kina makundi 6 yenye matunda 20 kwa kila kundi na matunda 67 yametapakaa moja moja kwenye kichaka hicho. Juna rasiberi ngapi kwa jumla?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  (a) 120
+(b) 121
+(c) 122
+(d) 123
+(e) 124
+====================
+
+Running generate_until requests:  60%|██████    | 60/100 [10:12<06:31,  9.78s/it]generated_token_num: 7857
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Kikapu kina machungwa 25 na 1 miongoni mwao limeharibika, 20% hayajaiva, 2 ni chachu na mengine ni mazuri. Machungwa mangapi ni mazuri?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  (a) 1
+(b) 2
+(c) 3
+(d) 4
+(e) 5
+====================
+
+Running generate_until requests:  61%|██████    | 61/100 [10:20<05:52,  9.05s/it]generated_token_num: 7946
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Janet anamnunulia binti yake bruki. Analipa $500 ya kitambaa cha kuitengeneza na kisha $800 nyingine ya mtengeneza vito wa kuitengeneza. Baada ya hapo, analipa 10% ya hiyo kuiwekea bima. Alilipa pesa ngapi kwa jumla?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Janet analipa $500 + $800 = $1300 kwa kuitengeneza. Kwa kuitengeneza, analipa $1300 * 0.10 = $130. Kwa jumla, Janet analipa $1300 + $130 = $1430. Jibu: 1430.
+====================
+
+Running generate_until requests:  62%|██████▏   | 62/100 [10:31<06:07,  9.66s/it]generated_token_num: 8969
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Mercy akifanya kazi katika kampuni moja kwa miaka 40, atapata malipo ya uzeeni ya kila mwaka ya $50,000 kwa mwaka. Kuanzia baada ya miaka 20, anakuwa na haki ya kupata 5% ya thamani ya malipo ya uzeeni kila mwaka. Akiacha kazi baada ya miaka 30, malipo yake ya uzeeni ya kila mwaka yatakuwa ngapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Mwaka 20, anapata malipo ya uzeeni ya $50,000 kwa mwaka. Mwaka 21, anapata malipo ya uzeeni ya $50,000 + 5% ya $50,000 = $52,500. Mwaka 22, anapata malipo ya uzeeni ya $52,500 + 5% ya $52,500 = $55,125. Mwaka 23, anapata malipo ya uzeeni ya $55,125 + 5% ya $55,125 = $57,881. Mwaka 24, anapata malipo ya uzeeni ya $57,881 + 5% ya $57,881 = $60,775. Mwaka 25, anapata malipo ya uzeeni ya $60,775 + 5% ya $60,775 = $63,889. Mwaka 26, anapata malipo ya uzeeni ya $63,889 + 5% ya $63,889 = $67,276. Mwaka 27, anapata malipo ya uzeeni ya $67,276 + 5% ya $67,276 = $70,884. Mwaka 28, anapata malipo ya uzeeni ya $70,884 + 5% ya $70,884 = $74,882. Mwaka 29, anapata malipo ya uzeeni ya $74,882 + 5% ya $74,882 = $79,230. Mwaka 30, anapata malipo ya uzeeni ya $79,230 + 5% ya $79,230 = $84,138. Mwaka 31, anapata malipo ya uzeeni ya $84,138 + 5% ya $84,138 = $88,994. Mwaka 32, anapata malipo ya uzeeni ya $88,994 + 5% ya $88,994 = $93,893. Mwaka 33, anapata malipo ya uzeeni ya $93,893 + 5% ya $93,893 = $99,082. Mwaka 34, anapata malipo ya uzeeni ya $99,082 + 5% ya $99,082 = $104,542. Miaka 35, anapata malipo ya uzeeni ya $104,542 + 5% ya $104,542 = $110,275. Miaka 36, anapata malipo ya uzeeni ya $110,275 + 5% ya $110,275 = $116,289. Miaka 37, anapata malipo ya uzeeni ya $116,289 + 5% ya $116,289 = $122,544. Miaka 38, anapata malipo ya uzeeni ya $122,544 + 5% ya $122,544 = $128,977. Miaka 39, anapata malipo ya uzeeni ya $128,977 + 5% ya $128,977 = $135,877. Miaka 40, anapata malipo ya uzeeni ya $135,877 + 5% ya $135,877 = $143,666. Miaka 41, anapata malipo ya uzeeni ya $143,666 + 5% ya $143,666 = $152,594. Miaka 42, anapata malipo ya uzeeni ya $152,594 + 5% ya $152,
+====================
+
+Running generate_until requests:  63%|██████▎   | 63/100 [10:48<07:16, 11.79s/it]generated_token_num: 8973
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Aleena alijisajili kwenye huduma ya utiririshaji ambayo humtoza $140 kila mwezi. Iwapo kampuni ya utiririshaji ilimtoza kiwango hicho cha awali kwa nusu ya kwanza ya mwaka na kisha kumtoza kiwango kidogo kwa 10% kwa nusu nyingine ya mwaka huo, piga hesabu ya jumla ya kiwango ambacho alikuwa amelipia huduma ya utiririshaji mwishoni mwa mwaka huo.
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  $140
+====================
+
+Running generate_until requests:  64%|██████▍   | 64/100 [10:54<06:08, 10.24s/it]generated_token_num: 8976
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Sophia anafikiria kwenda safari kwa kutumia gari lake, na angependa kujua umbali ambao anaweza kwenda kwa tangi moja ya mafuta ya gari. Amesafiri maili 100 tangu mara ya mwisho alipojaza tangi yake, na alihitaji kuongeza galoni 4 za mafuta ya gari ili kujaza tangi yake tena. Kitabu cha mwongozo cha gari lake kinasema kuwa tangi yake inabeba galoni 12 za mafuta ya gari. Sophia anaweza kuendesha maili ngapi kwa kutumia tangi moja ya mafuta ya gari?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  100
+====================
+
+Running generate_until requests:  65%|██████▌   | 65/100 [11:00<05:16,  9.05s/it]generated_token_num: 9004
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Jim hutumia saa 2 kutazama televisheni na kisha kuamua kwenda kitandani na kusoma kitabu kwa nusu ya muda huo. Yeye hufanya hii mara 3 kwa wiki. Huwa anatumia saa ngapi kutazama televisheni na kusoma kitabu kwa wiki 4?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Jim hutumia saa 6 kutazama televisheni na kusoma kitabu kwa wiki 4.
+====================
+
+Running generate_until requests:  66%|██████▌   | 66/100 [11:08<04:51,  8.58s/it]generated_token_num: 10008
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Kuna shule nne zinazoshindana katika shindano la mpira wa kikapu. Kila shule imetuma timu ya wasichana ya mpira wa kikapu na timu ya wavulana ya mpira wa kikapu na kila timu ina wachezaji 5. Kila shule pia imetuma kocha wa kila timu. Kwa jumla, shule zote zimewatuma watu wangapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  (a) 10
+(b) 20
+(c) 30
+(d) 40
+(e) 50
+(f) 60
+(g) 70
+(h) 80
+(i) 90
+(j) 100
+(k) 110
+(l) 120
+(m) 130
+(n) 140
+(o) 150
+(p) 160
+(q) 170
+(r) 180
+(s) 190
+(t) 200
+(u) 210
+(v) 220
+(w) 230
+(x) 240
+(y) 250
+(z) 260
+(a) 270
+(b) 280
+(c) 290
+(d) 300
+(e) 310
+(f) 320
+(g) 330
+(h) 340
+(i) 350
+(j) 360
+(k) 370
+(l) 380
+(m) 390
+(n) 400
+(o) 410
+(p) 420
+(q) 430
+(r) 440
+(s) 450
+(t) 460
+(u) 470
+(v) 480
+(w) 490
+(x) 500
+(y) 510
+(z) 520
+(a) 530
+(b) 540
+(c) 550
+(d) 560
+(e) 570
+(f) 580
+(g) 590
+(h) 600
+(i) 610
+(j) 620
+(k) 630
+(l) 640
+(m) 650
+(n) 660
+(o) 670
+(p) 680
+(q) 690
+(r) 700
+(s) 710
+(t) 720
+(u) 730
+(v) 740
+(w) 750
+(x) 760
+(y) 770
+(z) 780
+(a) 790
+(b) 800
+(c) 810
+(d) 820
+(e) 830
+(f) 840
+(g) 850
+(h) 860
+(i) 870
+(j) 880
+(k) 890
+(l) 900
+(m) 910
+(n) 920
+(o) 930
+(p) 940
+(q) 950
+(r) 960
+(s) 970
+(t) 980
+(u) 990
+(v) 1000
+(w) 1010
+(x) 1020
+(y) 1030
+(z) 1040
+(a) 1050
+(b) 1060
+(c) 1070
+(d) 1080
+(e) 1090
+(f) 1100
+(g) 1110
+(h) 1120
+(i) 1130
+(j) 1140
+(k) 1150
+(l) 1160
+(m) 1170
+(n) 1180
+(o) 1190
+(p) 1200
+(q) 1210
+(r) 1220
+(s) 1230
+(t) 1240
+(u) 1250
+(v) 1260
+(w) 1270
+(x) 1280
+(y) 1290
+(z) 1300
+(a) 1310
+(b) 1320
+(c) 1330
+(d) 1340
+(e) 1350
+(f) 1360
+(g) 1370
+(h) 1380
+(i) 1390
+
+====================
+
+Running generate_until requests:  67%|██████▋   | 67/100 [11:19<05:03,  9.20s/it]generated_token_num: 10042
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Mwindaji wa hazina alipata hazina iliyozikwa ambayo ilikuwa imejaa na vito. Kulikuwa na almasi 175, rubi chache kuliko almasi kwa 35, na idadi ya zumaridi ilikuwa mara mbili zaidi ya idadi ya rubi. Kulikuwa na jumla ya vito vingapi katika hazina hiyo?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  A. 100
+B. 110
+C. 120
+D. 130
+E. 140
+====================
+
+Running generate_until requests:  68%|██████▊   | 68/100 [11:26<04:38,  8.71s/it]generated_token_num: 11046
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Idadi ya wavulana katika shule ya R. Wertz ni mara mbili zaidi ya idadi ya wasichana. Iwapo kuna wasichana 60 na wanafunzi 5 kwa kila mwanafunzi, shule hiyo ina walimu wangapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  (a) 10
+(b) 20
+(c) 30
+(d) 40
+(e) 50
+(f) 60
+(g) 70
+(h) 80
+(i) 90
+(j) 100
+(k) 110
+(l) 120
+(m) 130
+(n) 140
+(o) 150
+(p) 160
+(q) 170
+(r) 180
+(s) 190
+(t) 200
+(u) 210
+(v) 220
+(w) 230
+(x) 240
+(y) 250
+(z) 260
+(a) 270
+(b) 280
+(c) 290
+(d) 300
+(e) 310
+(f) 320
+(g) 330
+(h) 340
+(i) 350
+(j) 360
+(k) 370
+(l) 380
+(m) 390
+(n) 400
+(o) 410
+(p) 420
+(q) 430
+(r) 440
+(s) 450
+(t) 460
+(u) 470
+(v) 480
+(w) 490
+(x) 500
+(y) 510
+(z) 520
+(a) 530
+(b) 540
+(c) 550
+(d) 560
+(e) 570
+(f) 580
+(g) 590
+(h) 600
+(i) 610
+(j) 620
+(k) 630
+(l) 640
+(m) 650
+(n) 660
+(o) 670
+(p) 680
+(q) 690
+(r) 700
+(s) 710
+(t) 720
+(u) 730
+(v) 740
+(w) 750
+(x) 760
+(y) 770
+(z) 780
+(a) 790
+(b) 800
+(c) 810
+(d) 820
+(e) 830
+(f) 840
+(g) 850
+(h) 860
+(i) 870
+(j) 880
+(k) 890
+(l) 900
+(m) 910
+(n) 920
+(o) 930
+(p) 940
+(q) 950
+(r) 960
+(s) 970
+(t) 980
+(u) 990
+(v) 1000
+(w) 1010
+(x) 1020
+(y) 1030
+(z) 1040
+(a) 1050
+(b) 1060
+(c) 1070
+(d) 1080
+(e) 1090
+(f) 1100
+(g) 1110
+(h) 1120
+(i) 1130
+(j) 1140
+(k) 1150
+(l) 1160
+(m) 1170
+(n) 1180
+(o) 1190
+(p) 1200
+(q) 1210
+(r) 1220
+(s) 1230
+(t) 1240
+(u) 1250
+(v) 1260
+(w) 1270
+(x) 1280
+(y) 1290
+(z) 1300
+(a) 1310
+(b) 1320
+(c) 1330
+(d) 1340
+(e) 1350
+(f) 1360
+(g) 1370
+(h) 1380
+(i) 1390
+
+====================
+
+Running generate_until requests:  69%|██████▉   | 69/100 [11:37<04:50,  9.36s/it]generated_token_num: 11075
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Bailey huanza kwa kiasi fulani cha pesa. Kisha hupokea marupurupu ya kila wiki ya $5 kwa wiki 8. Mwishoni mwa wiki 8, iwapo ana jumla ya $100, Bailey alianza na pesa ngapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  (a) $10
+(b) $20
+(c) $30
+(d) $40
+(e) $50
+====================
+
+Running generate_until requests:  70%|███████   | 70/100 [11:44<04:20,  8.67s/it]generated_token_num: 11201
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Judy hufunza madarasa 5 ya densi, kila siku, siku za wiki na madarasa 8 Jumamosi. Ikiwa kila darasa lina wanafunzi 15 na anatoza $15.00 kwa kila mwanafunzi, huwa anatengeneza pesa ngapi kwa wiki 1?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Judy hufunza madarasa 5 ya densi, kila siku, siku za wiki, na madarasa 8 Jumamosi. Ikiwa kila darasa lina wanafunzi 15, huu hufunza 5 * 15 = 75 wanafunzi kila siku. Ikiwa kila kila mwanafunzi anatoza $15.00, huu anatengeneza 75 * $15 = $1,125 kwa siku.
+====================
+
+Running generate_until requests:  71%|███████   | 71/100 [11:58<04:59, 10.31s/it]generated_token_num: 11230
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Kelian ana mapishi mawili ya kuandaa milo, moja lina maelekezo 20 na la pili lina maelekezo mara tatu zaidi ya mapishi ya kwanza. Kelian anahitajika kusoma maelekezo mangapi ili kuandaa milo miwili?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  (a) 30
+(b) 40
+(c) 50
+(d) 60
+(e) 70
+====================
+
+Running generate_until requests:  72%|███████▏  | 72/100 [12:06<04:25,  9.49s/it]generated_token_num: 11377
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Tommy anafanya mchango wa hisa yake kwa kuuza keki za kahawia kwa $3 kwa kila slesi na keki za jibini kwa $4 kwa kila slesi. Tommy aliuza slesi 43 za keki za kahawia na slesi 23 za keki ya jibini, Tommy alichangisha pesa ngapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Tommy aliuza slesi 43 za keki za kahawia, na aliuza slesi 23 za keki za jibini. Kwa kila slesi za kahawia, Tommy alianza $3, na kwa kila slesi za jibini, Tommy alianza $4. Hii, Tommy alianza 43 * 3 = $129 kwa slesi za kahawia, na alianza 23 * 4 = $92 kwa slesi za jibini. Hii, Tommy alichangisha $129 + $92 = $221.
+====================
+
+Running generate_until requests:  73%|███████▎  | 73/100 [12:20<04:55, 10.96s/it]generated_token_num: 11529
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Shiela alinunua simu tano za mkononi kwa $150 kwa kila moja kwa malipo ya polepole ya miezi 3. Riba ya 2% itatozwa kwa kila simu. Sheila atalipa pesa ngapi kila mwezi kwa miezi 3?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Sheila alinunua simu tano kwa $150 kwa kila moja, 150 + 150 + 150 + 150 + 150 + 150 + 150 + 150 + 150 + 150 = $1500. Riba ya 2% itatozwa kwa kila simu, 1500 * 2 / 100 = $30. Kuna, Sheila atalipa 1500 + 30 = $1530 kwa kila simu. Jibu: 1530.
+====================
+
+Running generate_until requests:  74%|███████▍  | 74/100 [12:35<05:13, 12.06s/it]generated_token_num: 11579
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Artie ana sehemu ya kuuza maua katika Soko la Wakulima. Huwa anauza aina tatu za maua: matageta, petunia na begonia. Huwa anauza matageta kwa $2.74 kwa kila chungu, petunia kwa $1.87 kwa kila chungu na begonia kwa $2.12 kwa kila chungu. Artie hana pesa zozote za thamani ya chini hivyo anaamua kufanya bei zake zote kufika dola inayokaribia. Iwapo Artie atauza nyungu 12 za matageta, nyungu 9 za petunia na nyungu 17 za begonia, atatengeneza pesa ngapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Artie anauza nyungu 12 za matageta, nyungu 9 za petunia na nyungu 17 za begonia, atatengeneza pesa $62.88.
+====================
+
+Running generate_until requests:  75%|███████▌  | 75/100 [12:43<04:33, 10.96s/it]generated_token_num: 11607
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Luke ametulia kwenye ufuo wa bahari akijenga kasri za mchanga. Hatimaye anagundua kuwa kila kiwango cha kasri ya mchanga kitakuwa na nusu ya futi mraba ya kiwango kilichoko chini yake. Akiunda kasri ya mchanga yenye viwango 4 ambapo kiwango cha juu kina futi mraba 16, wastani wa futi mraba ya kiwango ni ngapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  (a) 8
+(b) 12
+(c) 16
+(d) 20
+(e) 24
+====================
+
+Running generate_until requests:  76%|███████▌  | 76/100 [12:51<03:58,  9.95s/it]generated_token_num: 11634
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Cecilia amenunua mtoto mdogo wa umbwa. Kulingana na daktari wake wa wanyama, anahitaji kumlisha mtoto huyo wa mbwa kikombe 1 cha chakula cha mbwa kila siku kwa siku 180 za kwanza. Kisha anahitaji kumlisha mtoto huyo wa mbwa vikombe 2 vya chakula cha mbwa kila siku kwa maisha yake yote. Iwapo mfuko moja wa chakula cha mbwa una vikombe 110, Cecilia atatumia mifuko mingapi ya chakula cha mbwa kwa mwaka wa kwanza?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Cecilia atatumia mifuko moja wa chakula cha mbwa kwa mwaka wa kwanza.
+====================
+
+Running generate_until requests:  77%|███████▋  | 77/100 [12:58<03:32,  9.24s/it]generated_token_num: 11637
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Iwapo Raymond hufua nguo nusu ya kiwango ambacho Sarah hufua, na Sarah hufua nguo mara 4 zaidi ya David, piga hesabu ya tofauti katika kiwango cha nguo ambazo Raymond na David hufua Sarah akifua pauni 400 za nguo.
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Kwani
+====================
+
+Running generate_until requests:  78%|███████▊  | 78/100 [13:06<03:10,  8.65s/it]generated_token_num: 11702
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Vincent anaweza kununua maua katika vifurushi vya 3 kwa $2.50 au katika vifurushi 2 vya $1. Huwa anaokoa pesa ngapi kwa kununua maua 18 kwa bei bora?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Vifurushi vya 3 kwa $2.50, anaokoa 18/3 * $2.50 = $15. Vifurushi vya 2 vya $1, anaokoa 18/2 * $1 = $9. Kwa
+====================
+
+Running generate_until requests:  79%|███████▉  | 79/100 [13:17<03:20,  9.54s/it]generated_token_num: 11731
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: John anachukua mbwa. Anampeleka mbwa huyo kwa mnadhifishaji, kwa gharama ya $100. Mnadhifishaji huyo anampa kipunguzo cha 30% kwa kuwa mteja mpya. Unadhifishaji huo utamgharimu pesa ngapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  (a) $10
+(b) $20
+(c) $30
+(d) $40
+(e) $50
+====================
+
+Running generate_until requests:  80%|████████  | 80/100 [13:25<02:58,  8.92s/it]generated_token_num: 12754
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Wasichana wawili kila mmoja alipata 1/6 ya lita 24 za maji. Kisha mvulana alipata lita 6 za maji. Lita ngapi za maji zilisalia?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  (a) 8
+(b) 10
+(c) 12
+(d) 14
+(e) 16
+(f) 18
+(g) 20
+(h) 22
+(i) 24
+(j) 26
+(k) 28
+(l) 30
+(m) 32
+(n) 34
+(o) 36
+(p) 38
+(q) 40
+(r) 42
+(s) 44
+(t) 46
+(u) 48
+(v) 50
+(w) 52
+(x) 54
+(y) 56
+(z) 58
+(a) 60
+(b) 62
+(c) 64
+(d) 66
+(e) 68
+(f) 70
+(g) 72
+(h) 74
+(i) 76
+(j) 78
+(k) 80
+(l) 82
+(m) 84
+(n) 86
+(o) 88
+(p) 90
+(q) 92
+(r) 94
+(s) 96
+(t) 98
+(u) 100
+(v) 102
+(w) 104
+(x) 106
+(y) 108
+(z) 110
+(a) 112
+(b) 114
+(c) 116
+(d) 118
+(e) 120
+(f) 122
+(g) 124
+(h) 126
+(i) 128
+(j) 130
+(k) 132
+(l) 134
+(m) 136
+(n) 138
+(o) 140
+(p) 142
+(q) 144
+(r) 146
+(s) 148
+(t) 150
+(u) 152
+(v) 154
+(w) 156
+(x) 158
+(y) 160
+(z) 162
+(a) 164
+(b) 166
+(c) 168
+(d) 170
+(e) 172
+(f) 174
+(g) 176
+(h) 178
+(i) 180
+(j) 182
+(k) 184
+(l) 186
+(m) 188
+(n) 190
+(o) 192
+(p) 194
+(q) 196
+(r) 198
+(s) 200
+(t) 202
+(u) 204
+(v) 206
+(w) 208
+(x) 210
+(y) 212
+(z) 214
+(a) 216
+(b) 218
+(c) 220
+(d) 222
+(e) 224
+(f) 226
+(g) 228
+(h) 230
+(i) 232
+(j) 234
+(k) 236
+(l) 238
+(m) 240
+(n) 242
+(o) 244
+(p) 246
+(q) 248
+(r) 250
+(s) 252
+(t) 254
+(u) 256
+(v) 258
+(w) 260
+(x) 262
+(y) 264
+(z) 266
+(a) 268
+(b) 270
+(c) 272
+(d) 274
+(e) 276
+(f) 278
+(g) 280
+(h) 282
+(i) 284
+(j) 286
+(k) 288
+(l) 290
+(m) 292
+(n) 294
+(o) 296
+(p) 298
+(q) 300
+(r) 302
+(s) 304
+(t) 306
+(u) 308
+(v) 310
+(w) 312
+====================
+
+Running generate_until requests:  81%|████████  | 81/100 [13:36<03:02,  9.61s/it]generated_token_num: 12874
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Charlie alikuwa na vibandiko 10. Alinunua vibandiko 21 kwenye duka katika jengo la maduka na kupata vibandiko 23 vya siku yake ya kuzaliwa. Kisha Charlie alimpa dadake vibandiko 9 na akatumia 28 kupamba kadi ya salamu. Charlie amesalia na vibandiko vingapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Charlie alikuwa na vibandiko 10. Alinunua vibandiko 21 kwenye duka, na alinunua vibandiko 23 vya siku yake ya kuzaliwa. Hii 10 + 21 + 23 = 54 vibandiko. Kisha Charlie alimpa dadake vibandiko 9 na akatumia 28 kupamba kadi ya salamu. Hii 54 - 9 - 28 = 17 vibandiko.
+====================
+
+Running generate_until requests:  82%|████████▏ | 82/100 [13:49<03:11, 10.64s/it]generated_token_num: 12944
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Grace ana uzani wa pauni 125. Uzani wa Alex ni pauni 2 kiasi kwa mara 4 ya uzani wa Grace. Jumla ya uzani wao kwa pauni ni ngapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Uzani wa Alex ni pauni 2 kiasi kwa mara 4 ya uzani wa Grace, Alex ni pauni 2 * 4 * 125 = 1000. Jumla ya uzani wao ni 125 + 100 = 1125.
+====================
+
+Running generate_until requests:  83%|████████▎ | 83/100 [14:00<03:01, 10.67s/it]generated_token_num: 12958
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Dan anapanda vichaka 3 vya waridi. Kila kichaka cha waridi kina waridi 25. Kila waridi una miiba 8. Kuna miiba mingapi kwa jumla?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Jibu la Hatua kwa Hatua: 600
+====================
+
+Running generate_until requests:  84%|████████▍ | 84/100 [14:07<02:33,  9.58s/it]generated_token_num: 12960
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Timu ya kandanda ilicheza michezo 22. Walishinda michezo 8 wazidi ya waliopoteza. Walishinda michezo mingapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  14
+====================
+
+Running generate_until requests:  85%|████████▌ | 85/100 [14:12<02:05,  8.34s/it]generated_token_num: 12962
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Gene anashona mfarishi kwa kutumia tisheti za kale za ukumbusho. Ana shati moja kutoka kwa kila likizo aliyowahi kwenda. Kila shati ni pande kubwa la mfarishi wake. Kila safu imeundwa kwa pande kubwa kutoka mwaka tofauti wa likizo. Huwa anaenda likizo nne kwa mwaka na amekuwa akienda likizo tangu alipokuwa na umri wa miaka 23. Sasa ana umri wa miaka 34. Ana pande kubwa za mfarishi ngapi kwa jumla?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  11
+====================
+
+Running generate_until requests:  86%|████████▌ | 86/100 [14:18<01:46,  7.60s/it]generated_token_num: 13045
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Greg ameweka king'ora kilie mara tatu kwa siku kama kikumbusho. King'ora kikianza kulia, huwa kinaendelea kulia hadi Greg akizime. Mara ya kwanza kilipoanza kulia leo, kililia mara nne. Mara ya pili kilipoanza kulia, kililia mara tatu zaidi ya mara ya kwanza kilipolia. Mara ya tatu kilipolia, kililia nusu ya kilivyolia mara ya pili. King'ora hicho kililia mara ngapi kwa jumla?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Mara ya kwanza kilipoanza kulia, kililia mara nne. Mara ya pili kilipoanza kulia, kililia mara tatu zaidi ya mara ya kwanza kilipolia. Mara ya tatu kilipolia, kililia nusu ya kilivyolia mara ya pili. King'ora hicho kililia mara tatu.
+====================
+
+Running generate_until requests:  87%|████████▋ | 87/100 [14:27<01:45,  8.12s/it]generated_token_num: 13175
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Kampuni hulipa kila mmoja wa wafanyakazi wake $600 kwa mwezi. Kampuni hiyo ina sera ya kuongeza mishahara ya kila mfanyakazi kwa 10% ya mshahara wa awali kila mwaka kwa wale ambao wamekaa kwenye kampuni hiyo kwa miaka mitano. Ikiwa Sylvie alifikisha miaka 5 katika kampuni hiyo Desemba iliyopita, mshahara wake wa kila mwaka baada ya miaka mitatu zaidi ya kuhudumia kampuni hiyo ni ngapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Mshahara ya Sylvie wa kila mwezi ni $600 * 10% = $60. Mshahara ya Sylvie wa kila mwaka ni $60 * 12 = $720. Mshahara ya Sylvie wa kila miaka ni $720 * 3 = $2160. Mshahara ya Sylvie wa kila mwaka baada ya miaka mitatu ni $600 * 2 + $2160 = $3960. Jibu: 3960.
+====================
+
+Running generate_until requests:  88%|████████▊ | 88/100 [14:42<01:58,  9.91s/it]generated_token_num: 13251
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Rekodi ya kwanza ya Marilyn iliuza nakala mara 10 zaidi ya rekodi ya Harald. Iwapo waliuza nakala 88,000 kwa jumla, Harald aliuza nakala ngapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Marilyn aliuza nakala 88,000 mara 10 = 880,000. Harald aliuza nakala 880,000 - 88,000 = 792,000. Jibu hii ni 792000.
+====================
+
+Running generate_until requests:  89%|████████▉ | 89/100 [14:52<01:51, 10.14s/it]generated_token_num: 13330
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Christina anapanga sherehe ya siku ya kuzaliwa na anahitaji mikoba .75 ya zawadi kwa kila mgeni aliyealikwa, kwa sababu 1/4 ya wahudhuriaji hawakuhudhuria. Alialika marafiki 16. Mikoba ya zawadi ni $2 kila moja. Atatumia pesa ngapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Mikoba ya zawadi ni 16 * $2 = $32. 1/4 ya marafiki 16 ni 16 / 4 = 4. 4 * 0.75 = 3. 3 * $2 = $6. 32 + 6 = $38. Jibu: 38.
+====================
+
+Running generate_until requests:  90%|█████████ | 90/100 [15:04<01:45, 10.55s/it]generated_token_num: 13457
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Ted the T-Rex alikuwa anapanga kupeleka kachumbari ya viazi kwenye mandari ya dinosaria. Anajua kuwa dinosaria mkubwa atakula lb 10 za kachumbari ya viazi, na mtoto atakula nusu ya kiwango ambacho mkubwa atakula. Iwapo kutakuwa na wakubwa 20 na watoto 5 katika mandari hiyo, Ted anahitaji kuleta pauni ngapi za kachumbari ya viazi kwenye mandari ikiwa anatarajia kulisha kila dinosaria?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Kwa kila mwanakubwa, Ted anahitaji kuleta 10 * 20 = 200 pauni za kachumbari ya viazi. Kwa kila mtoto, Ted anahitaji kuleta 10 * 5 = 50 pauni za kachumbari ya viazi. Kwa kila mandari, Ted anahitaji kuleta 200 + 50 = 250 pauni za kachumbari ya viazi. Jibu: 250.
+====================
+
+Running generate_until requests:  91%|█████████ | 91/100 [15:15<01:36, 10.70s/it]generated_token_num: 13480
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Idadi ya wanyama vipenzi wa Jani ni mara tatu zaidi ya wale wa Marcia. Marcia ana wanyama vipenzi wawili zaidi ya Cindy. Iwapo Cindy ana wanyama vipenzi wa nne, jumla ya idadi ya wanyama vipenzi wa watu hawa watatu ni ngapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Jumla ya idadi ya wanyama vipenzi wa watu hawa ni 26.
+====================
+
+Running generate_until requests:  92%|█████████▏| 92/100 [15:22<01:16,  9.52s/it]generated_token_num: 13557
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Emily ana watoto 4 wanaojulikana kama Amy, Jackson, Corey, na James. Ami ana miaka 5 zaidi ya Jackson na miaka 2 mdogo kwa Corey. Iwapo James ana miaka 10 na ni mdogo kwa Corey kwa mwaka 1, Jackson ana umri wa miaka mingapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  James ana miaka 10 na ni 1 mdogo kwa Corey, so Corey ana miaka 11. Corey ana miaka 11 na ni 2 mdogo kwa Amy, so Amy ana miaka 13. Amy ana miaka 13 na ni 5 zaidi ya Jackson, so Jackson ana miaka 8.
+====================
+
+Running generate_until requests:  93%|█████████▎| 93/100 [15:33<01:09,  9.96s/it]generated_token_num: 13584
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Lee alikuwa anaweza kukimbia mbio ya viunzi vya mita 400 sekunde mbili haraka zaidi ya jinsi ambavyo Gerald angekimbia viunzi vya mita 400. Lakini Gerald alibadilisha mlo wake, ulioboresha kasi yake kwa 10%. Iwapo Lee hukimbia viunzi vya mita 400 kwa sekunde 38, Gerald, kwa lishe yake iliyoboreshwa, anaweza kukimbia viunzi vya mita 400 kwa sekunde ngapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Gerald anaweza kukimbia viunzi vya mita 400 kwa sekunde 34.
+====================
+
+Running generate_until requests:  94%|█████████▍| 94/100 [15:39<00:54,  9.03s/it]generated_token_num: 13618
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Katika mtaa, idadi ya sungura ni kidogo na kumi na mbili kwa jumla ya idadi ya mbwa na paka. Ikiwa kuna paka wawili kwa kila mbwa, na idadi ya mbwa ni 60, kuna wanyama vipenzi wangapi kwa jumla katika mtaa huo?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  (a) 100
+(b) 120
+(c) 140
+(d) 160
+(e) 180
+====================
+
+Running generate_until requests:  95%|█████████▌| 95/100 [15:47<00:42,  8.56s/it]generated_token_num: 14629
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Kwa wanafunzi 200 wa darasa la 5, 2/5 ni wavulana na 2/3 ya wasichana wapo katika skauti ya wasichana. Ni wasichana wangapi hawako kwenye skauti ya wasichana?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  (a) 10
+(b) 20
+(c) 30
+(d) 40
+(e) 50
+(f) 60
+(g) 70
+(h) 80
+(i) 90
+(j) 100
+(k) 110
+(l) 120
+(m) 130
+(n) 140
+(o) 150
+(p) 160
+(q) 170
+(r) 180
+(s) 190
+(t) 200
+(u) 210
+(v) 220
+(w) 230
+(x) 240
+(y) 250
+(z) 260
+(a) 270
+(b) 280
+(c) 290
+(d) 300
+(e) 310
+(f) 320
+(g) 330
+(h) 340
+(i) 350
+(j) 360
+(k) 370
+(l) 380
+(m) 390
+(n) 400
+(o) 410
+(p) 420
+(q) 430
+(r) 440
+(s) 450
+(t) 460
+(u) 470
+(v) 480
+(w) 490
+(x) 500
+(y) 510
+(z) 520
+(a) 530
+(b) 540
+(c) 550
+(d) 560
+(e) 570
+(f) 580
+(g) 590
+(h) 600
+(i) 610
+(j) 620
+(k) 630
+(l) 640
+(m) 650
+(n) 660
+(o) 670
+(p) 680
+(q) 690
+(r) 700
+(s) 710
+(t) 720
+(u) 730
+(v) 740
+(w) 750
+(x) 760
+(y) 770
+(z) 780
+(a) 790
+(b) 800
+(c) 810
+(d) 820
+(e) 830
+(f) 840
+(g) 850
+(h) 860
+(i) 870
+(j) 880
+(k) 890
+(l) 900
+(m) 910
+(n) 920
+(o) 930
+(p) 940
+(q) 950
+(r) 960
+(s) 970
+(t) 980
+(u) 990
+(v) 1000
+(w) 1010
+(x) 1020
+(y) 1030
+(z) 1040
+(a) 1050
+(b) 1060
+(c) 1070
+(d) 1080
+(e) 1090
+(f) 1100
+(g) 1110
+(h) 1120
+(i) 1130
+(j) 1140
+(k) 1150
+(l) 1160
+(m) 1170
+(n) 1180
+(o) 1190
+(p) 1200
+(q) 1210
+(r) 1220
+(s) 1230
+(t) 1240
+(u) 1250
+(v) 1260
+(w) 1270
+(x) 1280
+(y) 1290
+(z) 1300
+(a) 1310
+(b) 1320
+(c) 1330
+(d) 1340
+(e) 1350
+(f) 1360
+(g) 1370
+(h) 1380
+(i) 1390
+(j) 1400
+====================
+
+Running generate_until requests:  96%|█████████▌| 96/100 [15:58<00:37,  9.32s/it]generated_token_num: 14662
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Harry alilala kwa saa 9 usiku uliopita. Rafiki yake James alilala 2/3 pekee ya saa ambazo Harry alilala. Harry alilala saa ngapi zaidi ya James?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  James alilala 2/3 pekee ya saa 9, James alilala 2/3 * 9 = 6 saa.
+====================
+
+Running generate_until requests:  97%|█████████▋| 97/100 [16:08<00:28,  9.55s/it]generated_token_num: 14701
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Freda akipika mchuzi wa nyanya zilizowekwa kwenye mkebe, huwa zinapoteza nusu ya ujazo wao. Kila mkebe wa nyanya wenye aunsi 16 ambao huwa anatumia una nyanya tatu. Kifurushi cha mwisho cha Freda cha mchuzi wa nyanya kilitengeneza aunsi 32 za mchuzi. Freda alitumia nyanya ngapi?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Freda alitumia nyanya tatu, ambao kila alitumia una nyanya tatu, hapa Freda alitumia una nyanya tatu.
+====================
+
+Running generate_until requests:  98%|█████████▊| 98/100 [16:19<00:19,  9.90s/it]generated_token_num: 14867
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Magari yamejipanga kwenye barabara. Baadhi ya magari hayo yanapita katika dakika 15 za kwanza za trafiki, kisha magari 20 zaidi yanapita katika dakika 15 zinazosalia za trafiki. Magari 5 kutoka kwenye laini yanaondoka kwenye barabara kuu ili yasiendshwe kwenye trafiki hiyo. Ikiwa awali kulikuwa na magari 30 kwenye barabara, ni magari mangapi yalipita trafiki katika dakika 15 za kwanza?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Magari 30 yanapita trafiki katika dakika 15 za kwanza. Magari 20 zaidi yanapita trafiki katika dakika 15 zinazosalia za trafiki, hivyo ni 30 + 20 = 50 magari yanapita trafiki katika dakika 15 zinazosalia za trafiki. Magari 5 kutoka kwenye laini yanaondoka kwenye barabara kuu ili yasiendshwe kwenye trafiki hiyo, hivyo ni 50 - 5 = 45 magari yanapita trafiki katika dakika 15 za kwanza. Jibu: 45.
+====================
+
+Running generate_until requests:  99%|█████████▉| 99/100 [16:34<00:11, 11.40s/it]generated_token_num: 14966
+====================
+question:  <|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+Swali: Mary mkulima wa bustani mwenye shauku. Jana, alipokea mimea 18 iliyowekwa kwenye nyungu kutoka kwa bustani ya miche anayopendelea zaidi. Tayari ana mimea 2 kwenye nyungu kwenye kila vishubaka 40 vya dirisha lake katika boma lake kubwa la mashambani. Kwa kuwa na ukarimu, ameamua kuwa kesho atapeana mmea 1 ulio kwenye chungu kutoka kwa kila kishubaka kwa marafiki na familia. Mary atasalia na mimea mingapi iliyo kwenye nyungu?
+Jibu la Hatua kwa Hatua:<|im_end|>
+<|im_start|>assistant
+
+answer:  Mary atana mimea 18 kwenye nyungu kutoka kwa bustani ya miche. Mary atana mimea 2 kwenye nyungu kwenye kila vishubaka 40 vya dirisha lake katika boma lake kubwa. Mary atana mimea 1 kwenye nyungu kutoka kwa kila kishubaka 40 kwa marafiki na marafiki.
+====================
+
+Running generate_until requests: 100%|██████████| 100/100 [16:47<00:00, 11.95s/it]Time taken: 1007.3748815059662 seconds
+Generated token num: 14966
+Generated token num per second: 14.856435548230774
+Running generate_until requests: 100%|██████████| 100/100 [16:47<00:00, 10.07s/it]
+2026-08-23:16:11:32,186 INFO     [lm_eval.loggers.evaluation_tracker:209] Saving results aggregated
+2026-08-23:16:11:32,187 INFO     [lm_eval.loggers.evaluation_tracker:290] Saving per-sample results for: mgsm_native_cot_sw
+dream (pretrained=Dream-org/Dream-v0-Instruct-7B,max_new_tokens=1024,diffusion_steps=1024,max_length=4096,alg=confidence_threshold,threshold=0.9,use_cache=True,apply_chat_template=True), gen_kwargs: (None), limit: 100.0, num_fewshot: None, batch_size: 1
+|      Tasks       |Version|     Filter     |n-shot|  Metric   |   |Value|   |Stderr|
+|------------------|------:|----------------|-----:|-----------|---|----:|---|-----:|
+|mgsm_native_cot_sw|      4|flexible-extract|     0|exact_match|↑  | 0.15|±  |0.0359|
+|                  |       |strict-match    |     0|exact_match|↑  | 0.00|±  |0.0000|
+

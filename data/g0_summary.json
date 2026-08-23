@@ -1,0 +1,194 @@
+{
+  "by_language": {
+    "bn": {
+      "n": 47,
+      "lang_drop_rate": {
+        "dllm": 0.040000000000000036,
+        "ar": 0.040000000000000036
+      },
+      "dllm_seconds": 1549.550395354163,
+      "ar_seconds": 738.8181081325747,
+      "cost_ratio": 2.097336784652968,
+      "mean_parallel_factor": 4.473689596276625,
+      "mean_tokens_dllm": 677.3829787234042,
+      "mean_padding": 634.6170212765958,
+      "stop_rate": 1.0
+    },
+    "de": {
+      "n": 48,
+      "lang_drop_rate": {
+        "dllm": 0.0,
+        "ar": 0.040000000000000036
+      },
+      "dllm_seconds": 417.9335988853127,
+      "ar_seconds": 417.9515175460838,
+      "cost_ratio": 0.999957127417849,
+      "mean_parallel_factor": 2.077488932810365,
+      "mean_tokens_dllm": 159.0,
+      "mean_padding": 513.0,
+      "stop_rate": 1.0
+    },
+    "en": {
+      "n": 48,
+      "lang_drop_rate": {
+        "dllm": 0.0,
+        "ar": 0.040000000000000036
+      },
+      "dllm_seconds": 255.5123635265045,
+      "ar_seconds": 372.02473798347637,
+      "cost_ratio": 0.6868155190740385,
+      "mean_parallel_factor": 2.0424660489425857,
+      "mean_tokens_dllm": 116.125,
+      "mean_padding": 395.875,
+      "stop_rate": 1.0
+    },
+    "es": {
+      "n": 40,
+      "lang_drop_rate": {
+        "dllm": 0.0,
+        "ar": 0.19999999999999996
+      },
+      "dllm_seconds": 307.85776903340593,
+      "ar_seconds": 329.20920633198693,
+      "cost_ratio": 0.935143255753761,
+      "mean_parallel_factor": 2.126166977591525,
+      "mean_tokens_dllm": 151.9,
+      "mean_padding": 488.1,
+      "stop_rate": 1.0
+    },
+    "fr": {
+      "n": 46,
+      "lang_drop_rate": {
+        "dllm": 0.0,
+        "ar": 0.07999999999999996
+      },
+      "dllm_seconds": 364.16960934735835,
+      "ar_seconds": 345.35442197928205,
+      "cost_ratio": 1.054480806298189,
+      "mean_parallel_factor": 2.295232446338954,
+      "mean_tokens_dllm": 162.41304347826087,
+      "mean_padding": 509.5869565217391,
+      "stop_rate": 1.0
+    },
+    "ja": {
+      "n": 50,
+      "lang_drop_rate": {
+        "dllm": 0.0,
+        "ar": 0.0
+      },
+      "dllm_seconds": 482.1007986944169,
+      "ar_seconds": 370.7542313435115,
+      "cost_ratio": 1.3003244681723956,
+      "mean_parallel_factor": 1.4999697166729828,
+      "mean_tokens_dllm": 126.34,
+      "mean_padding": 545.66,
+      "stop_rate": 1.0
+    },
+    "ru": {
+      "n": 35,
+      "lang_drop_rate": {
+        "dllm": 0.07999999999999996,
+        "ar": 0.28
+      },
+      "dllm_seconds": 335.2575629497878,
+      "ar_seconds": 338.81154371006414,
+      "cost_ratio": 0.9895104496105434,
+      "mean_parallel_factor": 2.2217539969548343,
+      "mean_tokens_dllm": 171.31428571428572,
+      "mean_padding": 532.6857142857143,
+      "stop_rate": 1.0
+    },
+    "sw": {
+      "n": 30,
+      "lang_drop_rate": {
+        "dllm": 0.0,
+        "ar": 0.4
+      },
+      "dllm_seconds": 285.3453692276962,
+      "ar_seconds": 282.3427101140842,
+      "cost_ratio": 1.010634803046265,
+      "mean_parallel_factor": 2.18976772502483,
+      "mean_tokens_dllm": 148.3,
+      "mean_padding": 619.7,
+      "stop_rate": 1.0
+    },
+    "te": {
+      "n": 48,
+      "lang_drop_rate": {
+        "dllm": 0.0,
+        "ar": 0.040000000000000036
+      },
+      "dllm_seconds": 2426.827545682434,
+      "ar_seconds": 1178.691666812636,
+      "cost_ratio": 2.0589163510801343,
+      "mean_parallel_factor": 4.008949468354371,
+      "mean_tokens_dllm": 659.1458333333334,
+      "mean_padding": 780.8541666666666,
+      "stop_rate": 1.0
+    },
+    "th": {
+      "n": 45,
+      "lang_drop_rate": {
+        "dllm": 0.0,
+        "ar": 0.09999999999999998
+      },
+      "dllm_seconds": 750.9504734845832,
+      "ar_seconds": 372.83161827130243,
+      "cost_ratio": 2.014181299768763,
+      "mean_parallel_factor": 1.4638313554642335,
+      "mean_tokens_dllm": 191.33333333333334,
+      "mean_padding": 288.6666666666667,
+      "stop_rate": 1.0
+    },
+    "zh": {
+      "n": 50,
+      "lang_drop_rate": {
+        "dllm": 0.0,
+        "ar": 0.0
+      },
+      "dllm_seconds": 313.0663022347726,
+      "ar_seconds": 334.36980028124526,
+      "cost_ratio": 0.9362876132098238,
+      "mean_parallel_factor": 2.1259292408209216,
+      "mean_tokens_dllm": 124.38,
+      "mean_padding": 451.62,
+      "stop_rate": 1.0
+    }
+  },
+  "verdict": {
+    "decision": "GO",
+    "k": 0.565933891366736,
+    "se": 0.10998020321554096,
+    "r2": 0.7463291587357662,
+    "n_langs": 11,
+    "thresholds": {
+      "max_se": 0.15,
+      "min_r2": 0.5
+    },
+    "cheapest": [
+      [
+        0.6868155190740385,
+        "en"
+      ],
+      [
+        0.935143255753761,
+        "es"
+      ]
+    ],
+    "dearest": [
+      [
+        2.0589163510801343,
+        "te"
+      ],
+      [
+        2.097336784652968,
+        "bn"
+      ]
+    ],
+    "spread": 3.0537119887456643,
+    "crossover": [
+      "de"
+    ],
+    "reads_as": "k = 0.57 +- 0.11: partial compensation. Report the decomposition -- how much of the canvas cost parallel_factor buys back -- rather than a direction."
+  }
+}

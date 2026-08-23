@@ -1,0 +1,43 @@
+[project]
+name = "dllmfert"
+version = "0.1.0"
+description = "Is the diffusion-LLM speedup a function of script?"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"   # torch 2.5.1 has no 3.13+ wheels
+dependencies = []
+
+[project.scripts]
+dllmfert = "dllmfert.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.optional-dependencies]
+# Fertility stage needs only a tokenizer; it runs on a Mac.
+# Fertility stage needs only a tokenizer, so it must not constrain the pin the
+# GPU stage requires; any modern transformers tokenises identically here.
+fertility = [
+    "datasets>=3.0",
+    "py3langid>=0.3",
+    "transformers>=4.40",
+]
+# Decoding stage: GPU. Pinned, not ranged.
+# Dream ships its own modeling code and states transformers==4.46.2 with
+# torch==2.5.1; other versions are "not fully tested". A modern transformers
+# resolves ROPE_INIT_FUNCTIONS differently and Dream's remote code dies with
+# KeyError: 'default' before a single token is generated. Verified on an A100,
+# 2026-08-21.
+gpu = [
+    "accelerate==1.1.1",
+    "py3langid>=0.3",
+    "datasets>=3.0,<4",
+    "torch==2.5.1",
+    "transformers==4.46.2",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

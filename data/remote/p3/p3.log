@@ -1,0 +1,282 @@
+===== 0. environment =====
+Cloning into '/root/Fast-dLLM'...
+Updating files:  99% (4250/4260)Updating files: 100% (4260/4260)Updating files: 100% (4260/4260), done.
+Using CPython 3.11.10 interpreter at: /usr/bin/python3.11
+Creating virtual environment at: /root/fdllm-venv
+Activate with: source /root/fdllm-venv/bin/activate
+Using Python 3.11.10 environment at: /root/fdllm-venv
+Resolved 22 packages in 654ms
+Downloading nvidia-cudnn-cu12 (634.0MiB)
+Downloading networkx (2.0MiB)
+Downloading sympy (5.9MiB)
+Downloading torch (744.3MiB)
+Downloading triton (199.8MiB)
+Downloading nvidia-nccl-cu12 (179.9MiB)
+Downloading nvidia-cuda-nvrtc-cu12 (22.6MiB)
+Downloading nvidia-cufft-cu12 (116.0MiB)
+Downloading nvidia-cusparse-cu12 (186.9MiB)
+Downloading nvidia-cublas-cu12 (391.6MiB)
+Downloading nvidia-cusolver-cu12 (118.4MiB)
+Downloading nvidia-cuda-cupti-cu12 (13.5MiB)
+Downloading nvidia-nvjitlink-cu12 (37.9MiB)
+Downloading nvidia-curand-cu12 (53.9MiB)
+ Downloaded nvidia-cuda-nvrtc-cu12
+ Downloaded nvidia-cuda-cupti-cu12
+ Downloaded triton
+ Downloaded nvidia-nccl-cu12
+ Downloaded nvidia-nvjitlink-cu12
+ Downloaded networkx
+ Downloaded nvidia-curand-cu12
+ Downloaded nvidia-cusolver-cu12
+ Downloaded nvidia-cudnn-cu12
+ Downloaded nvidia-cufft-cu12
+ Downloaded nvidia-cusparse-cu12
+ Downloaded sympy
+ Downloaded nvidia-cublas-cu12
+ Downloaded torch
+Prepared 22 packages in 28.59s
+Installed 22 packages in 4.58s
+ + filelock==3.32.3
+ + fsspec==2026.7.0
+ + jinja2==3.1.6
+ + markupsafe==3.0.3
+ + mpmath==1.3.0
+ + networkx==3.6.1
+ + nvidia-cublas-cu12==12.1.3.1
+ + nvidia-cuda-cupti-cu12==12.1.105
+ + nvidia-cuda-nvrtc-cu12==12.1.105
+ + nvidia-cuda-runtime-cu12==12.1.105
+ + nvidia-cudnn-cu12==9.1.0.70
+ + nvidia-cufft-cu12==11.0.2.54
+ + nvidia-curand-cu12==10.3.2.106
+ + nvidia-cusolver-cu12==11.4.5.107
+ + nvidia-cusparse-cu12==12.1.0.106
+ + nvidia-nccl-cu12==2.21.5
+ + nvidia-nvjitlink-cu12==12.9.86
+ + nvidia-nvtx-cu12==12.1.105
+ + sympy==1.13.1
+ + torch==2.5.1+cu121
+ + triton==3.1.0
+ + typing-extensions==4.16.0
+Using Python 3.11.10 environment at: /root/fdllm-venv
+Resolved 124 packages in 1.59s
+Downloading pillow (6.6MiB)
+Downloading zstandard (5.3MiB)
+Downloading nltk (1.7MiB)
+Downloading brotli (1.4MiB)
+Downloading transformers (9.5MiB)
+Downloading lxml (5.0MiB)
+Downloading scikit-learn (8.9MiB)
+Downloading pydantic-core (1.9MiB)
+Downloading scipy (33.7MiB)
+Downloading tokenizers (3.0MiB)
+Downloading gradio (30.8MiB)
+Downloading lm-eval (3.7MiB)
+   Building rouge-score==0.1.2
+   Building sqlitedict==2.1.0
+   Building word2number==1.1
+      Built rouge-score==0.1.2
+ Downloaded brotli
+      Built word2number==1.1
+      Built sqlitedict==2.1.0
+ Downloaded pydantic-core
+ Downloaded tokenizers
+ Downloaded nltk
+ Downloaded zstandard
+ Downloaded lxml
+ Downloaded pillow
+ Downloaded scikit-learn
+ Downloaded transformers
+ Downloaded scipy
+ Downloaded gradio
+ Downloaded lm-eval
+Prepared 74 packages in 3.55s
+Uninstalled 1 package in 3ms
+Installed 103 packages in 3.12s
+ + absl-py==2.5.0
+ + accelerate==0.34.2
+ + aiohappyeyeballs==2.7.1
+ + aiohttp==3.14.3
+ + aiosignal==1.4.0
+ + annotated-doc==0.0.5
+ + annotated-types==0.8.0
+ + antlr4-python3-runtime==4.11.0
+ + anyio==4.14.2
+ + attrs==26.1.0
+ + brotli==1.2.0
+ + certifi==2026.7.22
+ + chardet==6.0.0.post1
+ + charset-normalizer==3.5.1
+ + click==8.4.2
+ + colorama==0.4.6
+ + dataproperty==1.1.1
+ + datasets==5.0.1
+ + defusedxml==0.7.1
+ + dill==0.4.1
+ + evaluate==0.4.6
+ + fastapi==0.141.1
+ + frozenlist==1.8.0
+ - fsspec==2026.7.0
+ + fsspec==2026.6.0
+ + gradio==6.17.3
+ + gradio-client==2.5.0
+ + groovy==0.1.2
+ + h11==0.16.0
+ + hf-gradio==0.4.1
+ + hf-xet==1.6.0
+ + httpcore==1.0.9
+ + httpx==0.28.1
+ + huggingface-hub==0.36.2
+ + idna==3.19
+ + joblib==1.5.3
+ + jsonlines==4.0.0
+ + latex2sympy2-extended==1.11.0
+ + lm-eval==0.4.8
+ + lxml==6.1.2
+ + markdown-it-py==4.2.0
+ + math-verify==0.9.0
+ + mbstrdecoder==1.1.5
+ + mdurl==0.1.2
+ + more-itertools==11.1.0
+ + multidict==6.7.1
+ + multiprocess==0.70.19
+ + narwhals==2.25.0
+ + nltk==3.10.3
+ + numexpr==2.14.2
+ + numpy==2.4.6
+ + orjson==3.12.0
+ + packaging==26.3
+ + pandas==3.0.5
+ + pathvalidate==3.3.1
+ + peft==0.20.0
+ + pillow==12.3.0
+ + portalocker==4.2.0
+ + propcache==0.5.2
+ + psutil==7.2.2
+ + pyarrow==25.0.1
+ + pybind11==3.1.0
+ + pydantic==2.10.6
+ + pydantic-core==2.27.2
+ + pydub==0.25.1
+ + pygments==2.21.0
+ + pytablewriter==1.2.1
+ + python-dateutil==2.9.0.post0
+ + python-multipart==0.0.32
+ + pytz==2026.3.post1
+ + pyyaml==6.0.3
+ + regex==2026.7.19
+ + requests==2.34.2
+ + rich==15.0.0
+ + rouge-score==0.1.2
+ + sacrebleu==2.6.0
+ + safehttpx==0.1.7
+ + safetensors==0.8.0
+ + scikit-learn==1.9.0
+ + scipy==1.17.1
+ + semantic-version==2.10.0
+ + setuptools==84.0.0
+ + shellingham==1.5.4
+ + six==1.17.0
+ + sqlitedict==2.1.0
+ + starlette==1.6.0
+ + tabledata==1.3.5
+ + tabulate==0.10.0
+ + tcolorpy==0.1.7
+ + threadpoolctl==3.6.0
+ + tokenizers==0.21.4
+ + tomlkit==0.14.0
+ + tqdm==4.70.0
+ + tqdm-multiprocess==0.0.11
+ + transformers==4.49.0
+ + typepy==1.3.5
+ + typer==0.27.1
+ + typing-inspection==0.4.4
+ + urllib3==2.7.0
+ + uvicorn==0.52.4
+ + word2number==1.1
+ + xxhash==4.0.1
+ + yarl==1.24.5
+ + zstandard==0.25.0
+torch 2.5.1+cu121 | transformers 4.49.0 | lm_eval 0.4.8
+device: NVIDIA A100 80GB PCIe
+
+===== 0b. resolve the MGSM task names before spending anything =====
+en mgsm_native_cot_en
+te mgsm_native_cot_te
+th mgsm_native_cot_th
+ru mgsm_native_cot_ru
+
+===== cell mgsm_native_cot_en__accel  (n=100) =====
+exit=0
+Total number of tokens generated: 32432
+Total time taken: 1335.647619009018 seconds
+Tokens per second: 24.2818546295166
+Total NFE is 11787
+|mgsm_native_cot_en|      4|flexible-extract|     0|exact_match|↑  | 0.73|±  |0.0446|
+per-item nfe records: 100
+
+===== cell mgsm_native_cot_en__base  (n=20) =====
+exit=0
+Total number of tokens generated: 7346
+Total time taken: 1542.1884665489197 seconds
+Tokens per second: 4.763360500335693
+Total NFE is 20480
+|mgsm_native_cot_en|      4|flexible-extract|     0|exact_match|↑  | 0.65|±  |0.1094|
+per-item nfe records: 20
+
+===== cell mgsm_native_cot_te__accel  (n=100) =====
+exit=0
+Total number of tokens generated: 56435
+Total time taken: 1727.8903443813324 seconds
+Tokens per second: 32.661216735839844
+Total NFE is 17599
+|mgsm_native_cot_te|      4|flexible-extract|     0|exact_match|↑  | 0.01|±  |  0.01|
+per-item nfe records: 100
+
+===== cell mgsm_native_cot_te__base  (n=20) =====
+exit=0
+Total number of tokens generated: 9423
+Total time taken: 1608.5411207675934 seconds
+Tokens per second: 5.858103275299072
+Total NFE is 20480
+|mgsm_native_cot_te|      4|flexible-extract|     0|exact_match|↑  |    0|±  |     0|
+per-item nfe records: 20
+
+===== cell mgsm_native_cot_th__accel  (n=100) =====
+exit=0
+Total number of tokens generated: 51827
+Total time taken: 1724.4854526519775 seconds
+Tokens per second: 30.05360221862793
+Total NFE is 16722
+|mgsm_native_cot_th|      4|flexible-extract|     0|exact_match|↑  | 0.06|±  |0.0239|
+per-item nfe records: 100
+
+===== cell mgsm_native_cot_th__base  (n=20) =====
+exit=0
+Total number of tokens generated: 13508
+Total time taken: 1580.6641054153442 seconds
+Tokens per second: 8.545775413513184
+Total NFE is 20480
+|mgsm_native_cot_th|      4|flexible-extract|     0|exact_match|↑  |    0|±  |     0|
+per-item nfe records: 20
+
+===== cell mgsm_native_cot_ru__accel  (n=100) =====
+exit=0
+Total number of tokens generated: 52522
+Total time taken: 2279.9744107723236 seconds
+Tokens per second: 23.036224365234375
+Total NFE is 21664
+|mgsm_native_cot_ru|      4|flexible-extract|     0|exact_match|↑  | 0.51|±  |0.0502|
+per-item nfe records: 100
+
+===== cell mgsm_native_cot_ru__base  (n=20) =====
+exit=0
+Total number of tokens generated: 12620
+Total time taken: 1558.0964789390564 seconds
+Tokens per second: 8.099627494812012
+Total NFE is 20480
+|mgsm_native_cot_ru|      4|flexible-extract|     0|exact_match|↑  |  0.5|±  |0.1147|
+per-item nfe records: 20
+
+===== P3 sweep complete =====
+3.5M	/root/dllm-fertility/data/p3
